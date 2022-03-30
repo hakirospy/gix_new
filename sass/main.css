@@ -145,7 +145,7 @@ body {
   }
 }
 
-@media (max-device-width: 580px) {
+@media (max-width: 580px) {
   .razdel_main_page {
     -ms-grid-columns: (minmax(287px, 447px))[2];
         grid-template-columns: repeat(2, minmax(287px, 447px));
@@ -246,7 +246,7 @@ body {
   }
 }
 
-@media (max-device-width: 580px) {
+@media (max-width: 580px) {
   .razdel_main_page span {
     font-size: 14px;
   }
@@ -281,7 +281,7 @@ body {
   }
 }
 
-@media (max-device-width: 580px) {
+@media (max-width: 580px) {
   .info-main {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
