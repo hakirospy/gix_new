@@ -7,7 +7,11 @@ $large-width: 1600px
 $medium-width: 928px
 
 @mixin for-macbook-and-tablet-me
- @media  (max-width: 919px)
+ @media  (min-width: 769px) and (max-width: 990px)
+  @content;
+
+@mixin for-mobile_580_max
+ @media    (max-device-width: 580px) 
   @content;
 
 @mixin for-desktop
@@ -75,6 +79,8 @@ body
  place-content: center
  margin-top: 35px
  grid-gap: 30px
+ margin-left: 30px
+ margin-right: 30px
  /*justify-content: center*/
  @include for-macbook-and-tablet
   grid-template: 320px / minmax(580px, 884px) 290px
@@ -129,16 +135,21 @@ body
 
 .razdel_main_page 
  display: grid
- max-width: $large-width
- margin: 0 auto
+ margin-left: 30px 
+ margin-right: 30px
+
  grid-template-columns: repeat(6, minmax(200px,240px))
  
  margin-top: 30px
  gap: 30px
  justify-content: space-between 
  @include for-macbook-and-tablet
-  grid-template-columns: repeat(3, minmax(295px, 380px))
+  grid-template-columns: repeat(3, minmax(287px, 380px))
   justify-content: center
+ @include for-mobile_580_max 
+  grid-template-columns: repeat(2, minmax(287px, 447px))
+  justify-content: center
+
 
 
   
@@ -226,6 +237,12 @@ body
  display: block
  @include for-macbook-and-tablet
   font-size: 20px
+ @include for-mobile_580_max
+  font-size: 14px
+ @include for-macbook-and-tablet-me
+ font-size: 18px
+
+  
   
 
 .razdel_main_page img
@@ -236,18 +253,32 @@ body
 
 .info-main 
   display: grid
+  margin-left: 30px
+  margin-right: 30px
+  
+
+
+ 
+ 
+
 
   @include for-macbook-and-tablet-me
    grid-template-columns:  repeat(2, minmax(200px, 462px))
    justify-content: center
    max-width: initial
+
+    
+  @include for-mobile_580_max
+  
+   grid-template-columns:  repeat(1, 1fr) 
+
    
   
 
   
   grid-template-columns: repeat(4, minmax(200px, 375px))
   grid-gap: 30px 
-  margin: 0 auto
+  
   max-width: $large-width
  
   margin-top: 80px
@@ -274,6 +305,12 @@ body
     padding-right: 30px
     padding-bottom: 16px
     justify-items: baseline
+
+  @include  for-macbook-and-tablet-me
+    grid-template:  minmax(100px, auto)/ 58px 1fr
+  
+
+
 
 
 .info-main .text span
