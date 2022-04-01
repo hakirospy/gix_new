@@ -31,6 +31,10 @@ $medium-width: 928px
  @media (min-width: 769px) and (max-width: 1024px)  
   @content; 
 
+@mixin for-650_768
+ @media (min-width: 650px) and (max-width: 768px)  
+  @content; 
+
 
 @mixin for-macbook-and-tablet 
  @media (min-width: 768px) and (max-width: 1550px)  
@@ -133,7 +137,7 @@ body
  
 
 .slider_main_block .small
- max-width: 375px
+ 
  position: relative
 
  &:after
@@ -143,12 +147,21 @@ body
   display: block
 
  @include for-macbook-and-tablet
-  max-width: 290px
+
   background-color: $greey-color
   border-radius: 40px
   &:after
     background-image: url('../img/mask-banner-small-medium.png')
     height: 320px
+
+ @include   for-321_930
+ 
+  &:after
+    background-image: url('../img/mask-banner-small-mobile.png')
+    height: 160px
+    background-color: $greey-color
+    border-radius: 40px
+ 
 
 
 
@@ -165,10 +178,17 @@ body
  @include for-macbook-and-tablet
   grid-template-columns: repeat(3, minmax(200px, 380px))
   justify-content: center
+
+  
  @include for-mobile_768_max
   grid-template-columns:  repeat(2, minmax(183px, 447px))
   justify-content: center
-  grid-template-rows: 181px
+  grid-template-rows: repeat(3, 160px)
+
+ @include for-650_768
+  grid-template-columns:  repeat(3, minmax(183px, 447px))
+  justify-content: center
+  grid-template-rows: 181px  
 
 
 
@@ -194,7 +214,15 @@ body
     margin-left: 60px
     margin-top: 16px
     border-bottom-right-radius: 46px
-
+    @include for-650_768 
+     width: 164px
+     height: 96px
+    @include  for-mobile_768_max
+     background-size: cover
+     width: 116px
+     height: 91px
+     margin-top: 5px
+     
     
   
  &:nth-child(2)
@@ -205,6 +233,15 @@ body
     margin-left: 59px
     margin-top: 28px
     border-bottom-right-radius: 49px
+    @include for-650_768
+     width: 164px
+     height: 84px
+    @include  for-mobile_768_max
+     background-size: cover
+     width: 108px
+     height: 94px
+     margin-top: 2px
+
  &:nth-child(3)
   &:after
     background:url('../img/desc.png') 
@@ -213,6 +250,10 @@ body
     margin-left: 86px
     border-bottom-right-radius: 52px
     margin-top: 11px
+    @include for-650_768
+      width: 100px
+      height: 102px
+      background-size: contain
   
 
 
@@ -280,7 +321,9 @@ body
 
  
  
-
+  @include for-macbook-and-tablet-mobile
+   grid-template-columns: repeat(4, minmax(200px, 277px))
+   justify-content: center
 
   @include for-769_990
   
@@ -296,11 +339,11 @@ body
    
   
 
-  
   grid-template-columns: repeat(4, minmax(200px, 375px))
   grid-gap: 30px 
+  justify-content: center
   
-  max-width: $large-width
+
  
   margin-top: 80px
 
@@ -389,6 +432,20 @@ body
 
     left: 40px
     top: 215px
+
+  @include for-321_930 
+    align-items: center
+    padding: 16px 24px
+
+    position: absolute
+    width: 133px
+    height: 49px
+    left: 475px
+    top: 55px
+
+    border: 1.2px solid #1E242E
+    box-sizing: border-box
+    border-radius: 4px
   
 
   
@@ -412,6 +469,18 @@ body
     left: 40px
     top: 64px
     font-size: 32px
+  @include for-321_930 
+    position: absolute
+    width: 133px
+    height: 87px
+    left: 64px
+    top: 36px
+
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 600
+    font-size: 24px
+    line-height: 120%
 
   
 
