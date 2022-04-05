@@ -56,6 +56,8 @@ $seren-color: #9860F7
 
 body 
   margin: 0px
+  font-family: 'Montserrat'
+  font-style: normal
 
 .slider_main
  background: $black-text-color
@@ -572,7 +574,7 @@ body
   justify-self: end
   display: grid
   align-content: space-around
-  grid-template-columns: 1fr 20px
+  grid-template-columns: 100px 20px
   gap: 12px
 
   &:after
@@ -655,8 +657,8 @@ body
 
 .cart_block
   display: grid
-  grid-template-columns: repeat(4, minmax(200px, 375px))
-  grid-gap: 30px
+  grid-template-columns: repeat(4, minmax(200px, 374px))
+  grid-gap: 29px
   @include for-macbook-and-tablet
    grid-template-columns: repeat(3, minmax(200px, 289px))
    
@@ -684,7 +686,7 @@ body
   font-weight: 500
   font-size: 14px
   line-height: 17px
-  color: #1E242E
+  color: $main-black-color
 
 
   width: 124px
@@ -717,17 +719,204 @@ body
 .seren.black
   background: #202732
 
-.seren.black .title,.seren.black .desc
+.seren.black .title,.seren.black .desc, .seren.news .title,.seren.news .desc
   color: $white-color
 
-.seren.black .name, .seren.black .all_tovar
+.seren.black .name, .seren.black .all_tovar,.seren.news .name, .seren.news .all_tovar
   color: $main-green-color
-.seren.black .all_tovar
+.seren.black .all_tovar, .seren.news .all_tovar
   &:after
     background: url(../img/strelka_green.svg)
     
+.seren .desc
+  max-width: 763px
+
+.seren.news
+  background: #1B1C1B
+
+.seren.news
+
+  .cart_block
+    margin-top: 30px
+
+  .cart
+    padding: 0px
+    background: linear-gradient(247.73deg, #1E242E 0%, #2B3547 100%)
+    border-radius: 32px
+    border: none
+    height: 564px
+
+    position: relative
+
+  .cart .img  
+
+    border-radius: 32px 32px 0px 0px
+    height: initial
+    position: relative
   
+
+  .cart .label
+
+    position: absolute
+    width: 94px
+    height: 29px
+    left: 16px
+    top: 195px
+    background: #1E242E
+    border-radius: 20px
+    font-size: 12px
+    text-transform: uppercase
+    color: #FFFFFF
+
+  .cart .label span
+    padding: 7px 12px
+    display: block
+
+  .content
+    padding-left: 40px
+    padding-right: 40px
+    padding-top: 24px
+    color: $white-color
+
+  .date
+    font-size: 12px
+    line-height: 145%
+    text-transform: uppercase
+    color: #FFFFFF
+
+  .cart .name_tovar
+    color: $white-color
+    font-weight: 500
+    font-size: 20px
+    line-height: 125%
+    padding-bottom: 8px
+
+  .cart .prev
+    font-weight: 400
+    font-size: 14px
+    line-height: 135%
+  .more 
+    font-weight: 500
+    font-size: 14px
+    line-height: 17px
+    color: $main-green-color
+    
+    position: absolute
+    bottom: 26px
+    a
+      padding-right: 11px
+    &:after
+      background: url("../img/more.svg")
+      content: ""
+      width: 20px
+      height: 12px
+      display: inline-block
+
+
+.contact_block
+  display: grid
+  grid-template-columns: 1fr 2fr
+  background: #1E242E
   
+
+  .picture_contact
+    background: url('../img/picture_contact.png')
+    width: 1213px
+    height: 553px
+
+  .submit_form
+    width: 375px
+    margin: 0 auto
+    padding-top: 80px
+
+  .name_contact
+    font-weight: 400
+    font-size: 12px
+    line-height: 145%
+    color: $main-green-color
+    text-transform: uppercase
+  
+  .desc_contact
+    font-weight: 400
+    font-size: 14px
+    line-height: 145%
+    color: $white-color
+    max-width: 335px
+
+
+
+  .title_contact
+
+    font-weight: 600
+    font-size: 40px
+    line-height: 120%
+    color: $white-color
+    padding-top: 16px
+    padding-bottom: 16px
+
+  form
+    input[name=name], input[name=tel]
+      border: 1px solid #FFFFFF
+      box-sizing: border-box
+      border-radius: 4px
+      width: 100%
+      height: 49px
+      padding: 16px
+      background: initial
+
+      &::placeholder
+        color: $white-color
+        font-weight: 500
+        font-size: 14px
+        line-height: 17px
+
+    input[name=tel]
+      margin-bottom: 16px
+
+    input[name=name]
+      margin-top: 24px
+      margin-bottom: 12px 
+
+    input[type=checkbox]
+      width: 16px
+      height: 16px
+
+    .check_text
+      font-weight: 400
+      font-size: 14px
+      line-height: 17px
+      color: $white-color
+      margin-top: 16px
+      
+
+    a
+      text-decoration: none
+      color: $main-green-color
+    button
+      border-radius: 4px
+      padding: 16px 24px
+      width: 129px
+      height: 49px
+      background: $main-green-color
+      margin-top: 40px
+      border: none
+
+    .check
+      position: absolute
+      top: 0
+      left: 0
+      height: 25px
+      width: 25px
+      background-color: lightgray
+
+    .check:hover input ~ .mark 
+      background-color: $main-green-color
+
+    .check input:checked ~ .mark 
+      background-color: $main-green-color
+
+
+
 
 
     

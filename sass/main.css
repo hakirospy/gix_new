@@ -1,5 +1,7 @@
 body {
   margin: 0px;
+  font-family: 'Montserrat';
+  font-style: normal;
 }
 
 .slider_main {
@@ -632,8 +634,8 @@ body {
   display: grid;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
-  -ms-grid-columns: 1fr 20px;
-      grid-template-columns: 1fr 20px;
+  -ms-grid-columns: 100px 20px;
+      grid-template-columns: 100px 20px;
   gap: 12px;
 }
 
@@ -727,9 +729,9 @@ body {
 .cart_block {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(200px, 375px))[4];
-      grid-template-columns: repeat(4, minmax(200px, 375px));
-  grid-gap: 30px;
+  -ms-grid-columns: (minmax(200px, 374px))[4];
+      grid-template-columns: repeat(4, minmax(200px, 374px));
+  grid-gap: 29px;
 }
 
 @media (min-width: 768px) and (max-width: 1550px) {
@@ -803,15 +805,247 @@ body {
   background: #202732;
 }
 
-.seren.black .title, .seren.black .desc {
+.seren.black .title, .seren.black .desc, .seren.news .title, .seren.news .desc {
   color: #FFFFFF;
 }
 
-.seren.black .name, .seren.black .all_tovar {
+.seren.black .name, .seren.black .all_tovar, .seren.news .name, .seren.news .all_tovar {
   color: #A9FF35;
 }
 
-.seren.black .all_tovar:after {
+.seren.black .all_tovar:after, .seren.news .all_tovar:after {
   background: url(../img/strelka_green.svg);
+}
+
+.seren .desc {
+  max-width: 763px;
+}
+
+.seren.news {
+  background: #1B1C1B;
+}
+
+.seren.news .cart_block {
+  margin-top: 30px;
+}
+
+.seren.news .cart {
+  padding: 0px;
+  background: linear-gradient(247.73deg, #1E242E 0%, #2B3547 100%);
+  border-radius: 32px;
+  border: none;
+  height: 564px;
+  position: relative;
+}
+
+.seren.news .cart .img {
+  border-radius: 32px 32px 0px 0px;
+  height: initial;
+  position: relative;
+}
+
+.seren.news .cart .label {
+  position: absolute;
+  width: 94px;
+  height: 29px;
+  left: 16px;
+  top: 195px;
+  background: #1E242E;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.seren.news .cart .label span {
+  padding: 7px 12px;
+  display: block;
+}
+
+.seren.news .content {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 24px;
+  color: #FFFFFF;
+}
+
+.seren.news .date {
+  font-size: 12px;
+  line-height: 145%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.seren.news .cart .name_tovar {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 125%;
+  padding-bottom: 8px;
+}
+
+.seren.news .cart .prev {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135%;
+}
+
+.seren.news .more {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #A9FF35;
+  position: absolute;
+  bottom: 26px;
+}
+
+.seren.news .more a {
+  padding-right: 11px;
+}
+
+.seren.news .more:after {
+  background: url("../img/more.svg");
+  content: "";
+  width: 20px;
+  height: 12px;
+  display: inline-block;
+}
+
+.contact_block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  background: #1E242E;
+}
+
+.contact_block .picture_contact {
+  background: url("../img/picture_contact.png");
+  width: 1213px;
+  height: 553px;
+}
+
+.contact_block .submit_form {
+  width: 375px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.contact_block .name_contact {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 145%;
+  color: #A9FF35;
+  text-transform: uppercase;
+}
+
+.contact_block .desc_contact {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+  color: #FFFFFF;
+  max-width: 335px;
+}
+
+.contact_block .title_contact {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  color: #FFFFFF;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.contact_block form input[name=name], .contact_block form input[name=tel] {
+  border: 1px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+  height: 49px;
+  padding: 16px;
+  background: initial;
+}
+
+.contact_block form input[name=name]::-webkit-input-placeholder, .contact_block form input[name=tel]::-webkit-input-placeholder {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.contact_block form input[name=name]:-ms-input-placeholder, .contact_block form input[name=tel]:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.contact_block form input[name=name]::-ms-input-placeholder, .contact_block form input[name=tel]::-ms-input-placeholder {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.contact_block form input[name=name]::placeholder, .contact_block form input[name=tel]::placeholder {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.contact_block form input[name=tel] {
+  margin-bottom: 16px;
+}
+
+.contact_block form input[name=name] {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.contact_block form input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+}
+
+.contact_block form .check_text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin-top: 16px;
+}
+
+.contact_block form a {
+  text-decoration: none;
+  color: #A9FF35;
+}
+
+.contact_block form button {
+  border-radius: 4px;
+  padding: 16px 24px;
+  width: 129px;
+  height: 49px;
+  background: #A9FF35;
+  margin-top: 40px;
+  border: none;
+}
+
+.contact_block form .check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: lightgray;
+}
+
+.contact_block form .check:hover input ~ .mark {
+  background-color: #A9FF35;
+}
+
+.contact_block form .check input:checked ~ .mark {
+  background-color: #A9FF35;
 }
 /*# sourceMappingURL=main.css.map */
