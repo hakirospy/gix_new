@@ -14,14 +14,101 @@ body {
   padding-top: 33px;
   display: -ms-grid;
   display: grid;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  -ms-grid-columns: 200px 200px 200px 200px;
-      grid-template-columns: 200px 200px 200px 200px;
+  -ms-grid-columns: 195px 150px 338px 200px 180px (135px)[4];
+      grid-template-columns: 195px 150px 338px 200px 180px repeat(4, 135px);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: white;
+  -ms-grid-rows: 43px;
+      grid-template-rows: 43px;
+}
+
+.main_slider_block input {
+  border: 1px solid #A9FF35;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 16px 12px 16px;
+  width: 100%;
+  background: initial;
+  color: #A9FF35;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.main_slider_block input::-webkit-input-placeholder {
+  color: #A9FF35;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.main_slider_block input:-ms-input-placeholder {
+  color: #A9FF35;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.main_slider_block input::-ms-input-placeholder {
+  color: #A9FF35;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.main_slider_block input::placeholder {
+  color: #A9FF35;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.main_slider_block .city {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.tel .add_call {
+  color: #A9FF35;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  padding-top: 4px;
+  display: inline-block;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.go_cab .text {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  display: -ms-grid;
+  display: grid;
+  opacity: 0.5;
+  padding-top: 4px;
+}
+
+.backet .text {
+  display: -ms-grid;
+  display: grid;
+  padding-top: 4px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  opacity: 0.5;
 }
 
 .logo_main {
@@ -957,6 +1044,7 @@ body {
   height: 49px;
   padding: 16px;
   background: initial;
+  color: white;
 }
 
 .contact_block form input[name=name]::-webkit-input-placeholder, .contact_block form input[name=tel]::-webkit-input-placeholder {

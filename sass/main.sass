@@ -1,6 +1,4 @@
 
-
-  
 $main-black-color: #1E242E
 $main-green-color: #A9FF35
 $greey-color: #EDEDED
@@ -68,10 +66,68 @@ body
  margin: 0 auto
  padding-top: 33px
  display: grid
- align-items: end
- grid-template-columns: 200px 200px 200px 200px
- justify-content: center
 
+ grid-template-columns: 195px 150px 338px 200px 180px repeat(4,135px)
+ justify-content: center
+ color: white
+ grid-template-rows: 43px
+
+ input
+   border: 1px solid #A9FF35
+   box-sizing: border-box
+   border-radius: 4px
+   padding: 12px 16px 12px 16px
+   width: 100%
+   background: initial
+   color: $main-green-color
+   font-weight: 400
+   font-size: 14px
+   line-height: 17px
+
+   &::placeholder
+     color: $main-green-color
+     font-weight: 400
+     font-size: 14px
+     line-height: 17px
+ .city
+    display: grid
+    justify-content: center
+    align-content: center
+
+.tel
+  
+
+  .add_call
+    color: $main-green-color
+    font-weight: 400
+    font-size: 11px
+    line-height: 13px
+    padding-top: 4px
+    display: inline-block
+
+.title
+    font-weight: 400
+    font-size: 14px
+    line-height: 17px
+.go_cab
+  .text
+
+    font-weight: 400
+    font-size: 11px
+    line-height: 13px
+    display: grid
+    opacity: 0.5
+    padding-top: 4px
+.backet
+  .text
+    display: grid
+    padding-top: 4px
+    font-weight: 400
+    font-size: 11px
+    line-height: 13px
+    opacity: 0.5
+
+   
 
 .logo_main
  align-self: start
@@ -864,6 +920,7 @@ body
       height: 49px
       padding: 16px
       background: initial
+      color: white
 
       &::placeholder
         color: $white-color
