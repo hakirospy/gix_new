@@ -182,20 +182,20 @@ body
  
  margin-top: 30px
  gap: 30px
- justify-content: space-between 
+ justify-content: center 
  @include for-macbook-and-tablet
   grid-template-columns: repeat(3, minmax(200px, 380px))
-  justify-content: center
+
 
   
  @include for-mobile_768_max
   grid-template-columns:  repeat(2, minmax(183px, 447px))
-  justify-content: center
+
   grid-template-rows: repeat(3, 160px)
 
  @include for-650_768
   grid-template-columns:  repeat(3, minmax(183px, 447px))
-  justify-content: center
+
   grid-template-rows: 181px  
 
 
@@ -821,8 +821,9 @@ body
 
   .picture_contact
     background: url('../img/picture_contact.png')
-    width: 1213px
+    /*width: 1213px*/
     height: 553px
+    background-size: cover
 
   .submit_form
     width: 375px
@@ -883,7 +884,7 @@ body
 
     .check_text
       font-weight: 400
-      font-size: 14px
+      font-size: 13px
       line-height: 17px
       color: $white-color
       margin-top: 16px
@@ -918,8 +919,67 @@ body
 
 
 
-
+footer
+  background: #1B1C1B
+  
+  .footer
+    display: grid
+    grid-template-columns: 400px 400px 400px 400px
+    height: 240px
+    color: $white-color
+    padding-top: 64px
+    justify-content: center
     
+    .logo_bottom
+      img
+        display: grid
+      span
+        font-weight: 400
+        font-size: 14px
+        line-height: 145%
+        display: grid
+        max-width: 204px
+
+      .first_span  
+        padding-bottom: 32px
+        padding-top: 16px
+
+      
+    
+    
+        
+
+
+    .menu_bottom >span,  .contact_bottom>span
+      font-weight: 600
+      font-size: 14px
+      line-height: 145%
+      text-transform: uppercase
+      display: grid
+
+    .menu_bottom div
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: repeat(3,48px)
+      margin-top: 24px
+      
+      a
+        font-weight: 400
+        font-size: 14px
+        line-height: 145%
+        color: white
+        text-decoration: none
+    .contact_bottom 
+      .text
+        font-weight: 400
+        font-size: 14px
+        line-height: 50px
+      span
+        padding-bottom: 10px
+
+
+
+
 
 
 

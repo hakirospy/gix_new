@@ -156,18 +156,15 @@ body {
       grid-template-columns: repeat(6, minmax(200px, 240px));
   margin-top: 30px;
   gap: 30px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 768px) and (max-width: 1550px) {
   .razdel_main_page {
     -ms-grid-columns: (minmax(200px, 380px))[3];
         grid-template-columns: repeat(3, minmax(200px, 380px));
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
@@ -175,9 +172,6 @@ body {
   .razdel_main_page {
     -ms-grid-columns: (minmax(183px, 447px))[2];
         grid-template-columns: repeat(2, minmax(183px, 447px));
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -ms-grid-rows: (160px)[3];
         grid-template-rows: repeat(3, 160px);
   }
@@ -187,9 +181,6 @@ body {
   .razdel_main_page {
     -ms-grid-columns: (minmax(183px, 447px))[3];
         grid-template-columns: repeat(3, minmax(183px, 447px));
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -ms-grid-rows: 181px;
         grid-template-rows: 181px;
   }
@@ -921,8 +912,9 @@ body {
 
 .contact_block .picture_contact {
   background: url("../img/picture_contact.png");
-  width: 1213px;
+  /*width: 1213px*/
   height: 553px;
+  background-size: cover;
 }
 
 .contact_block .submit_form {
@@ -1011,7 +1003,7 @@ body {
 
 .contact_block form .check_text {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 17px;
   color: #FFFFFF;
   margin-top: 16px;
@@ -1047,5 +1039,78 @@ body {
 
 .contact_block form .check input:checked ~ .mark {
   background-color: #A9FF35;
+}
+
+footer {
+  background: #1B1C1B;
+}
+
+footer .footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 400px 400px 400px 400px;
+      grid-template-columns: 400px 400px 400px 400px;
+  height: 240px;
+  color: #FFFFFF;
+  padding-top: 64px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer .logo_bottom img {
+  display: -ms-grid;
+  display: grid;
+}
+
+footer .footer .logo_bottom span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+  display: -ms-grid;
+  display: grid;
+  max-width: 204px;
+}
+
+footer .footer .logo_bottom .first_span {
+  padding-bottom: 32px;
+  padding-top: 16px;
+}
+
+footer .footer .menu_bottom > span, footer .footer .contact_bottom > span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 145%;
+  text-transform: uppercase;
+  display: -ms-grid;
+  display: grid;
+}
+
+footer .footer .menu_bottom div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: (48px)[3];
+      grid-template-rows: repeat(3, 48px);
+  margin-top: 24px;
+}
+
+footer .footer .menu_bottom div a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer .contact_bottom .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 50px;
+}
+
+footer .footer .contact_bottom span {
+  padding-bottom: 10px;
 }
 /*# sourceMappingURL=main.css.map */
