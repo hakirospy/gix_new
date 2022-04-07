@@ -24,6 +24,20 @@ body {
       grid-template-rows: 43px;
 }
 
+.main_slider_block .search {
+  position: relative;
+}
+
+.main_slider_block button {
+  background: url("../img/search.svg");
+  width: 18px;
+  height: 19px;
+  position: absolute;
+  border: none;
+  right: 16px;
+  top: 12px;
+}
+
 .main_slider_block input {
   border: 1px solid #A9FF35;
   -webkit-box-sizing: border-box;
@@ -76,6 +90,26 @@ body {
       align-content: center;
 }
 
+.tel {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tel .icon {
+  background: url("../img/call_green.svg");
+  content: '';
+  width: 14px;
+  height: 15px;
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  left: -22px;
+}
+
 .tel .add_call {
   color: #A9FF35;
   font-weight: 400;
@@ -91,6 +125,26 @@ body {
   line-height: 17px;
 }
 
+.go_cab {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.go_cab .icon {
+  background: url("../img/vhod.svg");
+  content: '';
+  width: 16px;
+  height: 17px;
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  left: -25px;
+}
+
 .go_cab .text {
   font-weight: 400;
   font-size: 11px;
@@ -98,7 +152,75 @@ body {
   display: -ms-grid;
   display: grid;
   opacity: 0.5;
-  padding-top: 4px;
+}
+
+.compare {
+  position: relative;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.compare .icon {
+  background: url("../img/compare_green.svg");
+  content: '';
+  width: 16px;
+  height: 17px;
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  left: -25px;
+  top: 10px;
+}
+
+.liked {
+  position: relative;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.liked .icon {
+  background: url("../img/liked_green.svg");
+  content: '';
+  width: 16px;
+  height: 17px;
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  left: -25px;
+  top: 10px;
+}
+
+.backet {
+  position: relative;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.backet .icon {
+  background: url("../img/backet.svg");
+  content: '';
+  width: 16px;
+  height: 17px;
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  left: -25px;
+  top: 10px;
 }
 
 .backet .text {

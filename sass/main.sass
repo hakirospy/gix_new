@@ -72,6 +72,23 @@ body
  color: white
  grid-template-rows: 43px
 
+ .search
+   position: relative
+
+ button
+  background: url('../img/search.svg')
+ 
+
+  width: 18px
+  height: 19px
+  position: absolute
+  border: none
+  right: 16px
+  top: 12px
+
+
+   
+
  input
    border: 1px solid #A9FF35
    box-sizing: border-box
@@ -84,6 +101,9 @@ body
    font-size: 14px
    line-height: 17px
 
+
+   
+
    &::placeholder
      color: $main-green-color
      font-weight: 400
@@ -93,8 +113,22 @@ body
     display: grid
     justify-content: center
     align-content: center
-
+ 
 .tel
+  position: relative
+  display: grid
+  align-items: center
+  .icon
+    background: url("../img/call_green.svg")
+    content: ''
+    width: 14px
+    height: 15px
+    display: grid
+    position: absolute
+    left: -22px
+ 
+
+  
   
 
   .add_call
@@ -110,6 +144,20 @@ body
     font-size: 14px
     line-height: 17px
 .go_cab
+  position: relative
+
+  display: grid
+  align-items: center
+  .icon
+    background: url("../img/vhod.svg")
+    content: ''
+    width: 16px
+    height: 17px
+    display: grid
+    position: absolute
+    left: -25px
+  
+
   .text
 
     font-weight: 400
@@ -117,8 +165,53 @@ body
     line-height: 13px
     display: grid
     opacity: 0.5
-    padding-top: 4px
+
+
+.compare
+  position: relative
+  justify-self: center
+  display: grid
+  align-items: center
+  .icon
+    background: url("../img/compare_green.svg")
+    content: ''
+    width: 16px
+    height: 17px
+    display: grid
+    position: absolute
+    left: -25px
+    top: 10px
+    
+.liked
+  position: relative
+  justify-self: center
+  display: grid
+  align-items: center
+  .icon
+    background: url("../img/liked_green.svg")
+    content: ''
+    width: 16px
+    height: 17px
+    display: grid
+    position: absolute
+    left: -25px
+    top: 10px
+
 .backet
+  position: relative
+  justify-self: center
+  display: grid
+  align-items: center
+  .icon
+    background: url("../img/backet.svg")
+    content: ''
+    width: 16px
+    height: 17px
+    display: grid
+    position: absolute
+    left: -25px
+    top: 10px
+
   .text
     display: grid
     padding-top: 4px
