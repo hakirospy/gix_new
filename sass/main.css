@@ -976,6 +976,26 @@ body {
   }
 }
 
+@media (max-width: 850px) {
+  .cart_block {
+    -ms-grid-columns: (minmax(200px, 100%))[2];
+        grid-template-columns: repeat(2, minmax(200px, 100%));
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 580px) {
+  .cart_block {
+    -ms-grid-columns: (minmax(200px, 100%))[1];
+        grid-template-columns: repeat(1, minmax(200px, 100%));
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .seren a {
   -webkit-text-decoration: auto;
           text-decoration: auto;
@@ -1104,6 +1124,13 @@ body {
   color: #FFFFFF;
 }
 
+@media (max-width: 985px) {
+  .seren.news .content {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
 .seren.news .date {
   font-size: 12px;
   line-height: 145%;
@@ -1119,10 +1146,22 @@ body {
   padding-bottom: 8px;
 }
 
+@media (max-width: 985px) {
+  .seren.news .cart .name_tovar {
+    font-size: 1rem;
+  }
+}
+
 .seren.news .cart .prev {
   font-weight: 400;
   font-size: 14px;
   line-height: 135%;
+}
+
+@media (max-width: 985px) {
+  .seren.news .cart .prev {
+    font-size: 12px;
+  }
 }
 
 .seren.news .more {
@@ -1301,7 +1340,7 @@ body {
 .contact_block form button {
   border-radius: 4px;
   padding: 16px 24px;
-  width: 129px;
+  width: 100%;
   height: 49px;
   background: #A9FF35;
   margin-top: 40px;
@@ -1332,14 +1371,53 @@ footer {
 footer .footer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 400px 400px 400px 400px;
-      grid-template-columns: 400px 400px 400px 400px;
-  height: 240px;
+  -ms-grid-columns: minmax(200px, 400px) minmax(100px, 400px) minmax(100px, 400px) minmax(200px, 400px);
+      grid-template-columns: minmax(200px, 400px) minmax(100px, 400px) minmax(100px, 400px) minmax(200px, 400px);
+  padding-bottom: 30px;
   color: #FFFFFF;
   padding-top: 64px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 40px;
+}
+
+@media (max-width: 940px) {
+  footer .footer {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  footer .footer {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 470px) {
+  footer .footer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+footer .footer .menu_bottom {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+footer .footer .menu_bottom.second {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+footer .footer .logo_bottom {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 footer .footer .logo_bottom img {
@@ -1370,6 +1448,12 @@ footer .footer .menu_bottom > span, footer .footer .contact_bottom > span {
   display: grid;
 }
 
+@media (max-width: 1024px) {
+  footer .footer .menu_bottom > span, footer .footer .contact_bottom > span {
+    font-size: 12px;
+  }
+}
+
 footer .footer .menu_bottom div {
   display: -ms-grid;
   display: grid;
@@ -1380,12 +1464,33 @@ footer .footer .menu_bottom div {
   margin-top: 24px;
 }
 
+@media (max-width: 980px) {
+  footer .footer .menu_bottom div {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (39px)[5];
+        grid-template-rows: repeat(5, 39px);
+  }
+}
+
 footer .footer .menu_bottom div a {
   font-weight: 400;
   font-size: 14px;
   line-height: 145%;
   color: white;
   text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  footer .footer .menu_bottom div a {
+    font-size: 12px;
+  }
+}
+
+footer .footer .contact_bottom {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
 }
 
 footer .footer .contact_bottom .text {
@@ -1396,5 +1501,28 @@ footer .footer .contact_bottom .text {
 
 footer .footer .contact_bottom span {
   padding-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+  footer .footer .menu_bottom {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  footer .footer .menu_bottom.second {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  footer .footer .logo_bottom {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  footer .footer .contact_bottom {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
 }
 /*# sourceMappingURL=main.css.map */

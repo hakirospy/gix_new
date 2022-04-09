@@ -830,7 +830,16 @@ body
   @media (max-width: 1280px)
     
     grid-template-columns: repeat(3, minmax(200px, 289px))
+
+  @media (max-width: 850px)
     
+    grid-template-columns: repeat(2, minmax(200px, 100%))
+    justify-content: center
+    
+  @media (max-width: 580px)
+    
+    grid-template-columns: repeat(1, minmax(200px, 100%))
+    justify-content: center
  
    
    
@@ -915,6 +924,7 @@ body
 
   .cart_block
     margin-top: 30px
+   
 
   .cart
     padding: 0px
@@ -954,6 +964,9 @@ body
     padding-right: 40px
     padding-top: 24px
     color: $white-color
+    @media (max-width: 985px)
+      padding-left: 32px
+      padding-right: 32px
 
   .date
     font-size: 12px
@@ -967,11 +980,17 @@ body
     font-size: 1.1rem
     line-height: 125%
     padding-bottom: 8px
+    @media (max-width: 985px)
+      font-size: 1rem
+
 
   .cart .prev
     font-weight: 400
     font-size: 14px
     line-height: 135%
+    @media (max-width: 985px)
+      font-size: 12px
+
   .more 
     font-weight: 500
     font-size: 14px
@@ -1085,14 +1104,15 @@ body
       @media (max-width: 900px)
         font-size: 0.7rem
       
-
+ 
     a
       text-decoration: none
       color: $main-green-color
+
     button
       border-radius: 4px
       padding: 16px 24px
-      width: 129px
+      width: 100%
       height: 49px
       background: $main-green-color
       margin-top: 40px
@@ -1120,13 +1140,31 @@ footer
   
   .footer
     display: grid
-    grid-template-columns: 400px 400px 400px 400px
-    height: 240px
+    grid-template-columns:  minmax(200px, 400px)  minmax(100px, 400px)  minmax(100px, 400px)  minmax(200px, 400px)
+    padding-bottom: 30px
     color: $white-color
     padding-top: 64px
     justify-content: center
-    
+    padding-left: 40px
+    @media (max-width: 940px)
+        font-size: 12px
+    @media (max-width: 700px)
+      grid-template-columns: 1fr 1fr
+    @media (max-width: 470px)
+      grid-template-columns: 1fr
+
+
+
+
+    .menu_bottom
+      order: 2
+    .menu_bottom.second
+      order: 3
+
+      
+          
     .logo_bottom
+      order: 1
       img
         display: grid
       span
@@ -1152,12 +1190,18 @@ footer
       line-height: 145%
       text-transform: uppercase
       display: grid
+      @media (max-width: 1024px)
+        font-size: 12px
 
     .menu_bottom div
       display: grid
       grid-template-columns: 1fr 1fr
       grid-template-rows: repeat(3,48px)
       margin-top: 24px
+      @media (max-width: 980px)
+        grid-template-columns: 1fr
+
+        grid-template-rows: repeat(5, 39px)
       
       a
         font-weight: 400
@@ -1165,7 +1209,10 @@ footer
         line-height: 145%
         color: white
         text-decoration: none
+        @media (max-width: 1024px)
+          font-size: 12px
     .contact_bottom 
+      order: 4
       .text
         font-weight: 400
         font-size: 14px
@@ -1173,7 +1220,24 @@ footer
       span
         padding-bottom: 10px
 
+    @media (max-width: 700px)
+      .menu_bottom
+        order: 1
 
+      .menu_bottom.second
+        order: 2
+
+      .logo_bottom
+
+        order: 3
+      .contact_bottom 
+        order: 4
+
+    
+
+
+   
+      
 
 
 
