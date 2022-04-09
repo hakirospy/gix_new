@@ -317,8 +317,8 @@ body {
 @media (min-width: 321px) and (max-width: 930px) {
   .slider_main_block {
     -ms-grid-rows: 320px;
-    -ms-grid-columns: minmax(580px, 884px);
-        grid-template: 320px/minmax(580px, 884px);
+    -ms-grid-columns: minmax(280px, 884px);
+        grid-template: 320px/minmax(280px, 884px);
   }
 }
 
@@ -470,7 +470,7 @@ body {
 
 @media (max-width: 650px) {
   .razdel_main_page div:nth-child(1):after {
-    margin-top: 29px;
+    margin-top: 68px;
     border-bottom-right-radius: 24px;
   }
 }
@@ -502,7 +502,7 @@ body {
 
 @media (max-width: 650px) {
   .razdel_main_page div:nth-child(2):after {
-    margin-top: 26px;
+    margin-top: 65px;
     border-bottom-right-radius: 24px;
   }
 }
@@ -527,8 +527,8 @@ body {
 
 @media (max-width: 650px) {
   .razdel_main_page div:nth-child(3):after {
-    margin-top: 26px;
-    border-bottom-right-radius: 24px;
+    margin-top: 65px;
+    border-bottom-right-radius: 33px;
   }
 }
 
@@ -545,7 +545,7 @@ body {
   .razdel_main_page div:nth-child(4):after {
     width: 111px;
     height: 94px;
-    margin-top: 26px;
+    margin-top: 65px;
     border-bottom-right-radius: 24px;
   }
 }
@@ -568,7 +568,7 @@ body {
   .razdel_main_page div:nth-child(5):after {
     width: 111px;
     height: 94px;
-    margin-top: 26px;
+    margin-top: 65px;
     border-bottom-right-radius: 24px;
   }
 }
@@ -586,7 +586,7 @@ body {
   .razdel_main_page div:nth-child(6):after {
     width: 104px;
     height: 94px;
-    margin-top: 26px;
+    margin-top: 65px;
     margin-right: 0px;
     border-bottom-right-radius: 24px;
   }
@@ -628,6 +628,9 @@ body {
     padding-top: 22px;
     padding-left: 22px;
     font-size: 14px;
+    position: absolute;
+    width: 7rem;
+    display: inline-block;
   }
 }
 
