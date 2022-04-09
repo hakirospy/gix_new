@@ -66,14 +66,17 @@ body
  margin: 0 auto
  padding-top: 33px
  display: grid
-
  grid-template-columns: 195px 150px 338px 200px 180px repeat(4,135px)
+
+ 
  justify-content: center
  color: white
  grid-template-rows: 43px
 
+ 
  .search
    position: relative
+   order: 3
 
  button
   background: url('../img/search.svg')
@@ -113,11 +116,13 @@ body
     display: grid
     justify-content: center
     align-content: center
+    order: 4
  
 .tel
   position: relative
   display: grid
   align-items: center
+  order: 5
   .icon
     background: url("../img/call_green.svg")
     content: ''
@@ -145,9 +150,10 @@ body
     line-height: 17px
 .go_cab
   position: relative
-
+  order: 6 
   display: grid
   align-items: center
+  justify-self: center
   .icon
     background: url("../img/vhod.svg")
     content: ''
@@ -171,6 +177,7 @@ body
   position: relative
   justify-self: center
   display: grid
+  order: 7
   align-items: center
   .icon
     background: url("../img/compare_green.svg")
@@ -187,6 +194,7 @@ body
   justify-self: center
   display: grid
   align-items: center
+  order: 8
   .icon
     background: url("../img/liked_green.svg")
     content: ''
@@ -202,6 +210,7 @@ body
   justify-self: center
   display: grid
   align-items: center
+  order: 9
   .icon
     background: url("../img/backet.svg")
     content: ''
@@ -224,6 +233,10 @@ body
 
 .logo_main
  align-self: start
+ order: 1
+
+
+ 
  
  @include for-769_1024
  
@@ -242,6 +255,7 @@ body
  align-self: start
  width: 100px
  height: 41px
+ order: 2
 
 
 .slider_main_block
@@ -710,7 +724,7 @@ body
   
 .seren .name
   color: $seren-color
-
+  margin-left: 30px
   font-size: 12px
   line-height: 145%
 
@@ -725,6 +739,7 @@ body
   align-content: space-around
   grid-template-columns: 100px 20px
   gap: 12px
+  margin-right: 30px
 
   &:after
     display: block
@@ -746,6 +761,7 @@ body
   grid-template-columns: 1fr 1fr
   justify-content: center
   align-content: space-evenly
+  margin-left: 30px
 
 
 .seren .desc
@@ -753,6 +769,7 @@ body
   font-size: 14px
   line-height: 145%
   color: #1E242E
+  margin-left: 30px
 
 .cart
   
@@ -808,8 +825,14 @@ body
   display: grid
   grid-template-columns: repeat(4, minmax(200px, 374px))
   grid-gap: 29px
-  @include for-macbook-and-tablet
-   grid-template-columns: repeat(3, minmax(200px, 289px))
+  margin-left: 30px
+  margin-right: 30px
+  @media (max-width: 1280px)
+    
+    grid-template-columns: repeat(3, minmax(200px, 289px))
+    
+ 
+   
    
 
 
@@ -820,7 +843,9 @@ body
 .cart .img
   justify-content: center
   display: grid
-  height: 210px
+  height: 240px
+     
+  background-size: cover
 
 .cart .price
   font-weight: 600
@@ -871,8 +896,11 @@ body
 .seren.black .title,.seren.black .desc, .seren.news .title,.seren.news .desc
   color: $white-color
 
+
 .seren.black .name, .seren.black .all_tovar,.seren.news .name, .seren.news .all_tovar
   color: $main-green-color
+  
+
 .seren.black .all_tovar, .seren.news .all_tovar
   &:after
     background: url(../img/strelka_green.svg)
@@ -900,7 +928,7 @@ body
   .cart .img  
 
     border-radius: 32px 32px 0px 0px
-    height: initial
+ 
     position: relative
   
 
@@ -936,7 +964,7 @@ body
   .cart .name_tovar
     color: $white-color
     font-weight: 500
-    font-size: 20px
+    font-size: 1.1rem
     line-height: 125%
     padding-bottom: 8px
 
@@ -966,6 +994,17 @@ body
   display: grid
   grid-template-columns: 1fr 2fr
   background: #1E242E
+  @media (max-width: 1354px)
+    grid-template-columns: 1fr 1.5fr
+
+  @media (max-width: 1100px)
+    grid-template-columns: 1fr 1fr
+    .submit_form
+      margin-left: 30px
+      margin-right: 30px
+  @media (max-width: 750px)
+    grid-template-columns: 1fr
+
   
 
   .picture_contact
@@ -978,6 +1017,11 @@ body
     width: 375px
     margin: 0 auto
     padding-top: 80px
+    @media (max-width: 900px)
+    
+      width: initial
+      margin-right: 30px
+      margin-left: 30px
 
   .name_contact
     font-weight: 400
@@ -1038,6 +1082,8 @@ body
       line-height: 17px
       color: $white-color
       margin-top: 16px
+      @media (max-width: 900px)
+        font-size: 0.7rem
       
 
     a

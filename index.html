@@ -3,7 +3,14 @@
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <link rel="stylesheet" href="./sass/main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        </head>
+
+<!--      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.0/dist/js/splide.min.js"></script>  
+    
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.4.0/dist/js/splide-extension-grid.min.js"></script>
+    <link href='https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.0/dist/css/splide.min.css' rel='stylesheet'>
+
+    <script type="module" src="./js/main.js"></script>-->  
+    </head>
 <body>
     <section class="slider_main">
 
@@ -90,17 +97,18 @@
     </section>
 
 
-    <section class="seren">
+    <section class="seren ">
 <div class="name">Каталог</div>
 
 <div class="title"><div>Подборка товаров для вас</div> <div class="all_tovar"><a href="#">Все товары </a></div></div>
 <div class="desc">Мы продаем смартфоны, планшеты, ноутбуки. Помогаем разобраться <br> в важных характеристиках, подбрать защиту и аксессуары к вашему устройству.</div>
+<div class="splide" id="splide01" >
+<div class="splide__track">
+  
 
+<div class="cart_block splide__list">
 
-
-<div class="cart_block">
-
-<div class="cart">
+<div class="cart splide__slide">
 <div class="img"> <img src="./img/cart1.png" alt="" /></div>
 <div class="label"><span class="new">новинка</span><span class="sale">-15%</span></div>
 <div class="name_tovar">Моноблок 27" Apple iMac (Retina 5K, 6C i5 3.3 Ггц, 8 Гб, 512 Гб, AMD Radeon Retina 5K, 6C i5 3.3 Ггц, 8 Гб, 512 Гб, AMD Radeon Pro 5300) MXWU2 RU/A</div>
@@ -109,7 +117,7 @@
 
 </div>
 
-<div class="cart">
+<div class="cart splide__slide">
     <div class="img"> <img src="./img/cart2.png" alt="" /></div>
     <div class="label"><span class="new">новинка</span><span class="sale">-15%</span></div>
     <div class="name_tovar">Телефон Apple iPhone 11 Pro Max 64Gb (Midnight green)</div>
@@ -119,7 +127,7 @@
     </div>
 
 
-    <div class="cart">
+    <div class="cart splide__slide">
         <div class="img"> <img src="./img/cart3.png" alt="" /></div>
         <div class="label"><span class="new">новинка</span><span class="sale">-15%</span></div>
         <div class="name_tovar">Моноблок 27" Apple iMac (Retina 5K, 6C i5 3.3 Ггц, 8 Гб, 512 Гб, AMD Radeon Retina 5K, 6C i5 3.3 Ггц, 8 Гб, 512 Гб, AMD Radeon Pro 5300) MXWU2 RU/A</div>
@@ -129,7 +137,7 @@
         </div>
 
 
-        <div class="cart">
+        <div class="cart splide__slide">
             <div class="img"> <img src="./img/cart4.png" alt="" /></div>
             <div class="label"><span class="new">новинка</span><span class="sale">-15%</span></div>
             <div class="name_tovar">Моноблок 27" Apple iMac (Retina 5K, 6C i5 3.3 Ггц, 8 Гб, 512 Гб, AMD Radeon Retina 5K, 6C i5 3.3 Ггц, 8 Гб, 512 Гб, AMD Radeon Pro 5300) MXWU2 RU/A</div>
@@ -139,6 +147,8 @@
             </div>
 
 
+</div>
+</div>
 </div>
 
 
@@ -215,7 +225,7 @@
                 <div class="cart_block">
                 
                 <div class="cart">
-                <div class="img"> <img src="./img/news1.png" alt="" />
+                <div class="img" style="background: url(./img/news1.png)"> 
                 <div class="label"><span class="razdel">ноутбуки</span></div></div>
                 <div class="content"> 
                 <div class="date">12.02.2022</div>
@@ -228,8 +238,8 @@
                 </div>
                 
                 <div class="cart">
-                    <div class="img"> <img src="./img/news2.png" alt="" /></div>
-                    <div class="label"><span class="razdel">ноутбуки</span></div>
+                    <div class="img" style="background: url(./img/news2.png)">
+                    <div class="label"><span class="razdel">ноутбуки</span></div> </div>
                     <div class="content"> 
                     <div class="date">12.02.2022</div>
                     <div class="name_tovar">A4Tech представила четыре модели легких стереонаушников</div>
@@ -242,7 +252,7 @@
                 
                 
                     <div class="cart">
-                        <div class="img"> <img src="./img/news3.png" alt="" /></div>
+                        <div class="img" style="background: url(./img/news3.png)"> </div>
                         <div class="label"><span class="razdel">ноутбуки</span></div>
                     <div class="content"> 
                     <div class="date">12.02.2022</div>
@@ -257,7 +267,7 @@
                 
                 
                         <div class="cart">
-                            <div class="img"> <img src="./img/news4.png" alt="" /></div>
+                            <div class="img" style="background: url(./img/news4.png)"> </div>
                             <div class="label"><span class="razdel">ноутбуки</span></div>
                             <div class="content"> 
                             <div class="date">12.02.2022</div>
@@ -358,13 +368,9 @@
 
 </footer>
 
-</body>
-</html>
-
-
-
-
 
 
 </body>
 </html>
+
+
