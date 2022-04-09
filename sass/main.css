@@ -309,8 +309,8 @@ body {
 @media (min-width: 768px) and (max-width: 1550px) {
   .slider_main_block {
     -ms-grid-rows: 320px;
-    -ms-grid-columns: minmax(580px, 884px) 290px;
-        grid-template: 320px/minmax(580px, 884px) 290px;
+    -ms-grid-columns: minmax(580px, 100%) 290px;
+        grid-template: 320px/minmax(580px, 100%) 290px;
   }
 }
 
@@ -401,15 +401,15 @@ body {
 
 @media (min-width: 768px) and (max-width: 1550px) {
   .razdel_main_page {
-    -ms-grid-columns: (minmax(200px, 380px))[3];
-        grid-template-columns: repeat(3, minmax(200px, 380px));
+    -ms-grid-columns: (minmax(200px, 100%))[3];
+        grid-template-columns: repeat(3, minmax(200px, 100%));
   }
 }
 
 @media (max-width: 768px) {
   .razdel_main_page {
-    -ms-grid-columns: (minmax(183px, 447px))[2];
-        grid-template-columns: repeat(2, minmax(183px, 447px));
+    -ms-grid-columns: (minmax(183px, 100%))[2];
+        grid-template-columns: repeat(2, minmax(183px, 100%));
     -ms-grid-rows: (160px)[3];
         grid-template-rows: repeat(3, 160px);
   }
@@ -417,8 +417,8 @@ body {
 
 @media (min-width: 650px) and (max-width: 768px) {
   .razdel_main_page {
-    -ms-grid-columns: (minmax(183px, 447px))[3];
-        grid-template-columns: repeat(3, minmax(183px, 447px));
+    -ms-grid-columns: (minmax(183px, 100%))[3];
+        grid-template-columns: repeat(3, minmax(183px, 100%));
     -ms-grid-rows: 181px;
         grid-template-rows: 181px;
   }
@@ -584,8 +584,8 @@ body {
 
 @media (min-width: 608px) and (max-width: 1550px) {
   .info-main {
-    -ms-grid-columns: (minmax(200px, 277px))[4];
-        grid-template-columns: repeat(4, minmax(200px, 277px));
+    -ms-grid-columns: (minmax(200px, 100%))[4];
+        grid-template-columns: repeat(4, minmax(200px, 100%));
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -840,6 +840,12 @@ body {
   background-color: #EDEDED;
 }
 
+@media (max-width: 700px) {
+  .seren {
+    padding-top: 56px;
+  }
+}
+
 .seren div, .seren span {
   font-family: 'Montserrat';
   font-style: normal;
@@ -852,6 +858,13 @@ body {
   font-size: 12px;
   line-height: 145%;
   text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .seren .name {
+    text-align: center;
+    margin-left: 0px;
+  }
 }
 
 .seren .all_tovar {
@@ -868,6 +881,12 @@ body {
       grid-template-columns: 100px 20px;
   gap: 12px;
   margin-right: 30px;
+}
+
+@media (max-width: 700px) {
+  .seren .all_tovar {
+    display: none;
+  }
 }
 
 .seren .all_tovar:after {
@@ -895,6 +914,18 @@ body {
   -ms-flex-line-pack: space-evenly;
       align-content: space-evenly;
   margin-left: 30px;
+  margin-right: 30px;
+}
+
+@media (max-width: 700px) {
+  .seren .title {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: -18px;
+    margin-top: -18px;
+  }
 }
 
 .seren .desc {
@@ -902,6 +933,13 @@ body {
   line-height: 145%;
   color: #1E242E;
   margin-left: 30px;
+  margin-right: 30px;
+}
+
+@media (max-width: 700px) {
+  .seren .desc {
+    text-align: center;
+  }
 }
 
 .cart {
@@ -916,6 +954,12 @@ body {
 @media (min-width: 768px) and (max-width: 1550px) {
   .cart {
     padding: 24px 32px 32px;
+  }
+}
+
+@media (max-width: 700px) {
+  .cart {
+    padding: 24px 24px 32px;
   }
 }
 
@@ -950,6 +994,10 @@ body {
   padding-top: 16px;
   height: 76px;
   color: #202732;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
 
 @media (min-width: 768px) and (max-width: 1550px) {
@@ -967,12 +1015,15 @@ body {
   grid-gap: 29px;
   margin-left: 30px;
   margin-right: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 1280px) {
   .cart_block {
-    -ms-grid-columns: (minmax(200px, 289px))[3];
-        grid-template-columns: repeat(3, minmax(200px, 289px));
+    -ms-grid-columns: (minmax(200px, 100%))[3];
+        grid-template-columns: repeat(3, minmax(200px, 100%));
   }
 }
 
@@ -1156,6 +1207,10 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 135%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
 }
 
 @media (max-width: 985px) {

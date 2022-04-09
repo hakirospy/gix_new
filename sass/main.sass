@@ -271,7 +271,7 @@ body
 
   
  @include for-macbook-and-tablet
-  grid-template: 320px / minmax(580px, 884px) 290px
+  grid-template: 320px / minmax(580px, 100%) 290px
 
  @include for-321_930
   grid-template: 320px / minmax(580px, 884px) 
@@ -347,17 +347,17 @@ body
  gap: 30px
  justify-content: center 
  @include for-macbook-and-tablet
-  grid-template-columns: repeat(3, minmax(200px, 380px))
+  grid-template-columns: repeat(3, minmax(200px, 100%))
 
 
   
  @include for-mobile_768_max
-  grid-template-columns:  repeat(2, minmax(183px, 447px))
+  grid-template-columns:  repeat(2, minmax(183px, 100%))
 
   grid-template-rows: repeat(3, 160px)
 
  @include for-650_768
-  grid-template-columns:  repeat(3, minmax(183px, 447px))
+  grid-template-columns:  repeat(3, minmax(183px, 100%))
 
   grid-template-rows: 181px  
 
@@ -494,7 +494,7 @@ body
  
  
   @include for-macbook-and-tablet-mobile
-   grid-template-columns: repeat(4, minmax(200px, 277px))
+   grid-template-columns: repeat(4, minmax(200px, 100%))
    justify-content: center
 
   @include for-769_990
@@ -711,11 +711,14 @@ body
   font-weight: 400
   padding-bottom: 80px
 
+
   grid-gap: 30px
 
   justify-content: center
   padding-top: 81px
   background-color: $greey-color
+  @media (max-width: 700px)
+    padding-top: 56px
 
 .seren div, .seren span
   font-family: 'Montserrat'
@@ -727,6 +730,9 @@ body
   margin-left: 30px
   font-size: 12px
   line-height: 145%
+  @media (max-width: 700px)
+    text-align: center
+    margin-left: 0px 
 
   text-transform: uppercase
 
@@ -740,6 +746,8 @@ body
   grid-template-columns: 100px 20px
   gap: 12px
   margin-right: 30px
+  @media (max-width: 700px)
+    display: none
 
   &:after
     display: block
@@ -757,11 +765,20 @@ body
   font-size: 40px
   line-height: 120%
   color: #1E242E
+   
   display: grid
   grid-template-columns: 1fr 1fr
   justify-content: center
   align-content: space-evenly
   margin-left: 30px
+  margin-right: 30px
+  @media (max-width: 700px)
+    grid-template-columns: 1fr
+    font-size: 24px
+    text-align: center
+    margin-bottom: -18px
+    margin-top: -18px
+
 
 
 .seren .desc
@@ -770,6 +787,9 @@ body
   line-height: 145%
   color: #1E242E
   margin-left: 30px
+  margin-right: 30px
+  @media (max-width: 700px)
+    text-align: center 
 
 .cart
   
@@ -782,6 +802,8 @@ body
   padding: 32px 40px 40px
   @include for-macbook-and-tablet
    padding: 24px 32px 32px
+  @media (max-width: 700px)
+    padding: 24px 24px 32px
   
 
 .label .new
@@ -817,6 +839,10 @@ body
   padding-top: 16px
   height: 76px
   color: #202732
+  overflow: hidden
+  display: -webkit-box
+  -webkit-line-clamp: 5
+  -webkit-box-orient: vertical
   @include for-macbook-and-tablet
    font-size: 12px
    height: 80px
@@ -827,9 +853,10 @@ body
   grid-gap: 29px
   margin-left: 30px
   margin-right: 30px
+  justify-content: center
   @media (max-width: 1280px)
     
-    grid-template-columns: repeat(3, minmax(200px, 289px))
+    grid-template-columns: repeat(3, minmax(200px, 100%))
 
   @media (max-width: 850px)
     
@@ -988,6 +1015,11 @@ body
     font-weight: 400
     font-size: 14px
     line-height: 135%
+    overflow: hidden
+    display: -webkit-box
+    -webkit-line-clamp: 8
+    -webkit-box-orient: vertical
+
     @media (max-width: 985px)
       font-size: 12px
 
