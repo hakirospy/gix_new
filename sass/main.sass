@@ -66,14 +66,16 @@ body
  margin: 0 auto
  padding-top: 33px
  display: grid
- grid-template-columns: 195px 150px 338px 200px 180px repeat(4,135px)
+ margin-left: 34px
+ grid-template-columns: 195px 150px minmax(100px, 338px) minmax(100px, 200px) 180px repeat(4,135px)
 
  
  justify-content: center
  color: white
  grid-template-rows: 43px
 
- 
+
+
  .search
    position: relative
    order: 3
@@ -117,8 +119,7 @@ body
     justify-content: center
     align-content: center
     order: 4
- 
-.tel
+ .tel
   position: relative
   display: grid
   align-items: center
@@ -143,6 +144,79 @@ body
     line-height: 13px
     padding-top: 4px
     display: inline-block
+
+ @media (max-width: 1420px)
+   .compare .title 
+     display: none
+   grid-template-columns: 145px 150px minmax(150px, 338px) minmax(100px, 200px) 180px 135px 50px 135px 135px
+  
+ @media (max-width: 1350px)
+    .liked .title 
+      display: none
+    grid-template-columns: 145px 115px minmax(150px, 338px) minmax(100px, 200px) 180px 135px 50px 50px 135px
+  
+ @media (max-width: 1160px)
+    .go_cab 
+      .title, .text 
+        display: none
+    grid-template-columns: 145px 115px minmax(150px, 338px) minmax(130px, 200px) 180px 50px 50px 50px 135px
+  
+ @media (max-width: 1060px)
+    .city  span
+      display: none
+    grid-template-columns: 145px 115px minmax(150px, 338px) 37px 180px 50px 50px 50px 135px
+ @media (max-width: 1024px)
+   grid-template-columns: 100px 115px minmax(150px, 338px) 37px 140px 50px 50px 50px 135px
+ @media (max-width: 870px)
+   grid-template-columns: 100px 115px minmax(150px, 338px) 37px 140px 50px 50px 50px 50px
+   .backet
+      .title, .text 
+        display: none
+
+ @media (max-width: 800px)
+   .search input
+     display: none
+   grid-template-columns: 100px 148px 143px  37px 21px  50px 50px 50px 50px
+   .search
+     order: 4
+   .tel 
+     order: 3
+
+ @media (max-width: 680px)
+   grid-template-columns: 100px 148px 25px  37px 21px  50px 50px 50px 50px
+   .tel
+     .add_call, .title
+       display: none
+ 
+ @media (max-width: 650px)
+   grid-template-columns: minmax(10px, 31px)  minmax(10px, 50px) 1fr   minmax(5px, 60px)  minmax(27px, 50px)
+   position: sticky
+   .liked, .compare, .tel, .city
+     display: none
+   .button_menu 
+     background-image: url(../img/menu_mobile.svg)
+     width: 14px
+     height: 12px
+     margin-top: 14px
+     order: 1
+   .search
+     order: 2
+   .logo_main
+     order: 3
+     margin-inline: auto
+   .go_cab
+     order: 3
+     .icon 
+       left: -19px
+
+   .backet
+     order: 4 
+     .icon
+       position: relative
+       left: initial
+       top: initial
+       right: 11px
+
 
 .title
     font-weight: 400
@@ -234,20 +308,22 @@ body
 .logo_main
  align-self: start
  order: 1
+ background-image: url('../img/logo_main.svg')
+ width: 131px
+ height: 47px
 
 
  
  
- @include for-769_1024
- 
-  background-image: url('../img/logo_1024.svg')
-  width: 88px
-  height: 21px
- @include  for-1025_min
- 
-  background-image: url('../img/logo_main.svg')
-  width: 131px
-  height: 47px
+
+
+  
+
+ @media (max-width: 1024px)
+   margin-top: 10px
+   background-image: url('../img/logo_1024.svg')
+   width: 88px
+   height: 21px
 
 
 .button_menu
