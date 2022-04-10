@@ -419,8 +419,8 @@ body {
   .razdel_main_page {
     -ms-grid-columns: (minmax(183px, 100%))[3];
         grid-template-columns: repeat(3, minmax(183px, 100%));
-    -ms-grid-rows: 181px;
-        grid-template-rows: 181px;
+    -ms-grid-rows: 160px  160px;
+        grid-template-rows: 160px  160px;
   }
 }
 
@@ -464,7 +464,7 @@ body {
     background-size: cover;
     width: 116px;
     height: 91px;
-    margin-top: 46px;
+    margin-top: 25px;
   }
 }
 
@@ -496,7 +496,7 @@ body {
     background-size: cover;
     width: 108px;
     height: 94px;
-    margin-top: 42px;
+    margin-top: 22px;
   }
 }
 
@@ -521,7 +521,7 @@ body {
     width: 100px;
     height: 102px;
     background-size: cover;
-    margin-top: 37px;
+    margin-top: 16px;
   }
 }
 
@@ -543,7 +543,9 @@ body {
 
 @media (max-width: 768px) {
   .razdel_main_page div:nth-child(4):after {
-    margin-top: 48px;
+    margin-top: -15px;
+    width: 114px;
+    height: 130px;
   }
 }
 
@@ -572,7 +574,10 @@ body {
 
 @media (max-width: 768px) {
   .razdel_main_page div:nth-child(5):after {
-    margin-top: 74px;
+    margin-top: 20px;
+    width: 174px;
+    height: 96px;
+    margin-left: 0px;
   }
 }
 
@@ -596,7 +601,9 @@ body {
 
 @media (max-width: 768px) {
   .razdel_main_page div:nth-child(6):after {
-    margin-top: 63px;
+    margin-top: 19px;
+    width: 104px;
+    height: 97px;
   }
 }
 
@@ -699,6 +706,7 @@ body {
   .info-main {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+    margin-top: 62px;
   }
 }
 
@@ -1649,6 +1657,29 @@ footer .footer .contact_bottom .text {
 
 footer .footer .contact_bottom span {
   padding-bottom: 10px;
+}
+
+footer .footer .contact_bottom .facebook {
+  background-image: url("../img/facebook.svg");
+  width: 10px;
+  height: 20px;
+}
+
+footer .footer .contact_bottom .instagram {
+  background-image: url("../img/instagram.svg");
+  width: 15px;
+  height: 16px;
+}
+
+footer .footer .contact_bottom .youtube {
+  background-image: url("../img/youtube.svg");
+  width: 18px;
+  height: 14px;
+}
+
+footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtube, footer .footer .contact_bottom .instagram {
+  display: inline-block;
+  margin-right: 21px;
 }
 
 @media (max-width: 700px) {
