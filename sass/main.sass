@@ -395,7 +395,7 @@ body
      background-size: cover
      width: 116px
      height: 91px
-     margin-top: 5px
+     margin-top: 46px
     @media (max-width: 650px)
       margin-top: 68px
       border-bottom-right-radius: 24px
@@ -417,7 +417,7 @@ body
      background-size: cover
      width: 108px
      height: 94px
-     margin-top: 2px
+     margin-top: 42px
     @media (max-width: 650px)
       margin-top: 65px
       border-bottom-right-radius: 24px
@@ -434,7 +434,7 @@ body
       width: 100px
       height: 102px
       background-size: cover
-      margin-top: 0px
+      margin-top: 37px
 
     @media (max-width: 650px)
       margin-top: 65px
@@ -451,6 +451,8 @@ body
     margin-left: 111px
     border-bottom-right-radius: 48px
     margin-top: 22px
+    @media (max-width: 768px)
+     margin-top: 48px
     @media (max-width: 650px)
       width: 111px
       height: 94px
@@ -466,6 +468,8 @@ body
     margin-top: 18px
     @include for-macbook-and-tablet
       margin-top: 48px
+    @media (max-width: 768px)
+      margin-top: 74px
 
     @media (max-width: 650px)
       width: 111px
@@ -481,6 +485,9 @@ body
     margin-right: 40px
     border-bottom-right-radius: 1px
     margin-top: 37px
+    @media (max-width: 768px)
+      margin-top: 63px
+
     @media (max-width: 650px)
       width: 104px
       height: 94px
@@ -503,10 +510,12 @@ body
  display: block
  @include for-macbook-and-tablet
   font-size: 20px
- @include for-mobile_580_max
-  font-size: 14px
- @include for-769_990
- font-size: 18px
+
+ @media (max-width: 990px)
+  font-size: 16px
+  padding-left: 32px
+  padding-top: 24px
+ 
  @media (max-width: 650px)
    padding-top: 22px
    padding-left: 22px
