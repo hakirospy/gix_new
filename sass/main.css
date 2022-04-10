@@ -314,7 +314,7 @@ body {
   }
 }
 
-@media (min-width: 321px) and (max-width: 930px) {
+@media (max-width: 930px) {
   .slider_main_block {
     -ms-grid-rows: 320px;
     -ms-grid-columns: minmax(280px, 884px);
@@ -376,7 +376,7 @@ body {
   }
 }
 
-@media (min-width: 321px) and (max-width: 930px) {
+@media (max-width: 930px) {
   .slider_main_block .small:after {
     background-image: url("../img/mask-banner-small-mobile.png");
     height: 160px;
@@ -836,6 +836,12 @@ body {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-radius: 4px;
+  }
+}
+
+@media (max-width: 690px) {
+  .small .button_slider {
+    display: none;
   }
 }
 

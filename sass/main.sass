@@ -273,7 +273,7 @@ body
  @include for-macbook-and-tablet
   grid-template: 320px / minmax(580px, 100%) 290px
 
- @include for-321_930
+ @media (max-width: 930px)
   grid-template: 320px / minmax(280px, 884px) 
 
   
@@ -325,13 +325,15 @@ body
     background-image: url('../img/mask-banner-small-medium.png')
     height: 320px
 
- @include   for-321_930
+ @media (max-width: 930px)
  
   &:after
     background-image: url('../img/mask-banner-small-mobile.png')
     height: 160px
     background-color: $greey-color
     border-radius: 40px
+
+  
  
 
 
@@ -679,6 +681,9 @@ body
     border: 1.2px solid #1E242E
     box-sizing: border-box
     border-radius: 4px
+
+  @media (max-width: 690px)
+    display: none
   
 
   
