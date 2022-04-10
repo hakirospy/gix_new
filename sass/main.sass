@@ -275,6 +275,9 @@ body
 
  @media (max-width: 930px)
   grid-template: 320px / minmax(280px, 884px) 
+ @media (max-width: 650px)
+  grid-template: 400px  / minmax(280px, 884px) 
+
 
   
 
@@ -289,20 +292,30 @@ body
   content: ''
   height: 400px
   display: block
- @include for-macbook-and-tablet
+  @include for-macbook-and-tablet
   
-  &:after
     background-image: url('../img/mask-banner-big_.png')
     height: 320px
     background-position: right
     background-repeat: no-repeat
 
- @include for-321_930
-  &:after
+  @media (max-width: 930px)
+
     background-image: url('../img/mask-banner-big_.png')
     height: 320px
     background-position: right
     background-repeat: no-repeat
+
+  @media (max-width: 650px)
+      background-image: url('../img/mask_banner_big_mob.png')
+      height: 16rem
+      background-position: bottom center
+      background-repeat: no-repeat
+
+      bottom: 3.5rem
+      position: relative
+         
+     
  
 
  
@@ -658,6 +671,12 @@ body
   @include for-macbook-and-tablet-mobile
     left: 56px
     top: 212px 
+  @media (max-width: 650px)
+    position: relative
+    left: initial
+    top: initial
+    margin-inline: auto
+    margin-top: 24px
 
 .small .button_slider
   left: 48px
@@ -742,7 +761,17 @@ body
     left: 56px
     top: 64px
     font-size: 20px
-  
+  @media (max-width: 650px)
+    width: initial 
+    height: 29px
+
+    font-size: 14px
+    text-align: center
+    position: relative
+    margin-top: 40px
+    top: initial
+    left: initial
+    
 
 
 
@@ -768,6 +797,15 @@ body
     left: 56px
     top: 104px
     font-size: 32px
+  @media (max-width: 650px)
+    width: 149px
+    margin-inline: auto
+    height: initial
+    left: initial
+    top: initial
+    font-size: 24px
+    text-align: center
+    position: relative
 
 
 .seren
