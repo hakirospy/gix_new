@@ -74,6 +74,9 @@ body
  color: white
  grid-template-rows: 43px
 
+ @media (max-width: 650px)
+   margin-left: 20px
+
 
 
  .search
@@ -90,6 +93,14 @@ body
   border: none
   right: 16px
   top: 12px
+  @media (max-width: 650px)
+    position: relative
+  
+    right: initial
+    top: initial
+
+    margin-top: 10px;
+    margin-left: 15px;
 
 
    
@@ -189,7 +200,7 @@ body
        display: none
  
  @media (max-width: 650px)
-   grid-template-columns: minmax(10px, 31px)  minmax(10px, 50px) 1fr   minmax(5px, 60px)  minmax(27px, 50px)
+   grid-template-columns: minmax(10px, 31px)  minmax(10px, 50px) 1fr   minmax(5px, 60px)  minmax(27px, 33px)
    position: sticky
    .liked, .compare, .tel, .city
      display: none

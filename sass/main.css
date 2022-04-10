@@ -25,6 +25,12 @@ body {
       grid-template-rows: 43px;
 }
 
+@media (max-width: 650px) {
+  .main_slider_block {
+    margin-left: 20px;
+  }
+}
+
 .main_slider_block .search {
   position: relative;
   -webkit-box-ordinal-group: 4;
@@ -40,6 +46,16 @@ body {
   border: none;
   right: 16px;
   top: 12px;
+}
+
+@media (max-width: 650px) {
+  .main_slider_block button {
+    position: relative;
+    right: initial;
+    top: initial;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
 }
 
 .main_slider_block input {
@@ -218,8 +234,8 @@ body {
 
 @media (max-width: 650px) {
   .main_slider_block {
-    -ms-grid-columns: minmax(10px, 31px) minmax(10px, 50px) 1fr minmax(5px, 60px) minmax(27px, 50px);
-        grid-template-columns: minmax(10px, 31px) minmax(10px, 50px) 1fr minmax(5px, 60px) minmax(27px, 50px);
+    -ms-grid-columns: minmax(10px, 31px) minmax(10px, 50px) 1fr minmax(5px, 60px) minmax(27px, 33px);
+        grid-template-columns: minmax(10px, 31px) minmax(10px, 50px) 1fr minmax(5px, 60px) minmax(27px, 33px);
     position: -webkit-sticky;
     position: sticky;
   }
