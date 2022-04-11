@@ -40,7 +40,7 @@ body {
 
 .main_slider_block button {
   background: url("../img/search.svg");
-  width: 18px;
+  width: 1rem;
   height: 19px;
   position: absolute;
   border: none;
