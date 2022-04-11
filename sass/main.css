@@ -238,6 +238,12 @@ body {
         grid-template-columns: minmax(10px, 31px) minmax(10px, 50px) 1fr minmax(5px, 60px) minmax(27px, 33px);
     position: -webkit-sticky;
     position: sticky;
+    top: 0px;
+    z-index: 9;
+    background: #202732;
+    padding-top: 28px;
+    margin-left: 0px;
+    padding-left: 28px;
   }
   .main_slider_block .liked, .main_slider_block .compare, .main_slider_block .tel, .main_slider_block .city {
     display: none;
