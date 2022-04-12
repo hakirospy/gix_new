@@ -76,6 +76,8 @@ body
 
  @media (max-width: 650px)
    margin-left: 20px
+   padding-top: 10px
+   padding-bottom: 8px
 
 
 
@@ -87,20 +89,13 @@ body
   background: url('../img/search.svg')
  
 
-  width: 1rem
+  width: 18px
   height: 19px
   position: absolute
   border: none
   right: 16px
   top: 12px
-  @media (max-width: 650px)
-    position: relative
-  
-    right: initial
-    top: initial
-
-    margin-top: 10px
-    /*margin-left: 15px*/
+ 
 
 
    
@@ -205,7 +200,8 @@ body
    top: 0px
    z-index: 9
    background: #202732
-   padding-top: 28px
+   padding-top: 10px
+   padding-bottom: 8px
    margin-left: 0px
    padding-left: 28px
    .liked, .compare, .tel, .city
@@ -370,6 +366,8 @@ body
   grid-template: 320px / minmax(280px, 884px) 
  @media (max-width: 650px)
   grid-template: 400px  / minmax(280px, 884px) 
+ @media (max-width: 460px)
+   text-align: center
 
 
   
@@ -416,6 +414,10 @@ body
 .slider_main_block .small
  
  position: relative
+ @media (max-width: 460px)
+   top: -129px
+   
+   margin-bottom: -127px
 
  &:after
   background-image: url('../img/mask-banner-small.png')
@@ -438,6 +440,34 @@ body
     height: 160px
     background-color: $greey-color
     border-radius: 40px
+
+ @media (max-width: 690px)
+ 
+  &:after
+    background-image: url('../img/small-banner-600.png')
+    height: 160px
+    background-color: $greey-color
+    border-radius: 40px
+
+ @media (max-width: 560px)
+ 
+  &:after
+    background-image: url('../img/mask-mobile-medium.png')
+    height: 160px
+    background-color: $greey-color
+    border-radius: 40px
+    background-repeat: no-repeat
+
+ @media (max-width: 460px)
+ 
+  &:after
+    background-image: url('../img/mask-small-mobile-small.png')
+    height: 288px
+    background-color: $greey-color
+    border-radius: 40px
+    background-repeat: no-repeat
+    background-position: bottom center
+    
 
   
  
@@ -795,7 +825,18 @@ body
     border-radius: 4px
 
   @media (max-width: 690px)
-    display: none
+    left: 69%
+
+  @media (max-width: 560px)
+    left: 64%
+  
+
+  @media (max-width: 460px)
+    left: inherit
+    margin-inline: auto
+    position: relative
+    right: initial
+    top: 158px
   
 
   
@@ -819,7 +860,7 @@ body
     left: 40px
     top: 64px
     font-size: 32px
-  @include for-321_930 
+  @media (max-width: 930px) 
     position: absolute
     width: 133px
     height: 87px
@@ -831,6 +872,18 @@ body
     font-weight: 600
     font-size: 24px
     line-height: 120%
+
+
+  @media (max-width: 460px)
+    position: relative
+    width: 180px
+    height: 87px
+    left: 0px
+    right: initial
+    top: 164px
+  
+    align-items: center
+    margin: 0 auto
 
   
 
