@@ -40,7 +40,7 @@ body {
           order: 3;
 }
 
-.main_slider_block button {
+.main_slider_block .search .icon {
   background: url("../img/search.svg");
   width: 18px;
   height: 19px;
