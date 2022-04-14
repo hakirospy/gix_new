@@ -1788,23 +1788,6 @@ body {
   border: none;
 }
 
-.contact_block form .check {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: lightgray;
-}
-
-.contact_block form .check:hover input ~ .mark {
-  background-color: #A9FF35;
-}
-
-.contact_block form .check input:checked ~ .mark {
-  background-color: #A9FF35;
-}
-
 footer {
   background: #1B1C1B;
 }
@@ -1988,5 +1971,57 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
         -ms-flex-order: 4;
             order: 4;
   }
+}
+
+.style_green {
+  display: inline-block;
+  position: relative;
+  vertical-align: sub;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.style_green input {
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.style_green .check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 2px;
+  background-color: lightgray;
+}
+
+.style_green .check::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.style_green:hover input ~ .check {
+  background-color: #A9FF35;
+}
+
+.style_green input:checked ~ .check {
+  background-color: #A9FF35;
+}
+
+.style_green input:checked ~ .check:after {
+  display: block;
+}
+
+.style_green .mark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 /*# sourceMappingURL=main.css.map */

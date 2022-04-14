@@ -1400,19 +1400,7 @@ body
       margin-top: 40px
       border: none
 
-    .check
-      position: absolute
-      top: 0
-      left: 0
-      height: 25px
-      width: 25px
-      background-color: lightgray
-
-    .check:hover input ~ .mark 
-      background-color: $main-green-color
-
-    .check input:checked ~ .mark 
-      background-color: $main-green-color
+    
 
 
 
@@ -1533,6 +1521,47 @@ footer
         order: 4
 
     
+.style_green
+  display: inline-block
+  position: relative
+
+
+  vertical-align: sub
+  cursor: pointer
+  font-size: 25px
+  input
+    visibility: hidden
+    cursor: pointer
+  .check
+    position: absolute
+    top: 0
+    left: 0
+    height: 16px
+    width: 16px
+    border-radius: 2px
+    background-color: lightgray
+    &::after 
+      content: ""
+      position: absolute
+      display: none
+
+
+.style_green:hover input ~ .check 
+  background-color: $main-green-color
+
+.style_green input:checked ~ .check 
+  background-color: $main-green-color
+
+.style_green input:checked ~ .check:after 
+  display: block
+.style_green .mark:after 
+  left: 9px
+  top: 5px
+  width: 5px
+  height: 10px
+  border: solid white
+  border-width: 0 3px 3px 0
+  transform: rotate(45deg)
 
 
    
