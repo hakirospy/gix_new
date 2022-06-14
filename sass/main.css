@@ -1,4 +1,10 @@
 body {
+  background: #1E242E;
+  margin: 0 auto !important;
+  max-width: 1600px;
+}
+
+body {
   margin: 0px;
   font-family: 'Montserrat';
   font-style: normal;
@@ -2020,5 +2026,106 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 
 .style_green input:checked ~ .check:after {
   display: block;
+}
+
+.news-main {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 50px;
+}
+
+.news-main .text-main-news .link-to-main {
+  color: #A9FF35;
+}
+
+.news-main .text-main-news .desc {
+  color: white;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+  max-width: 760px;
+}
+
+.news-main .text-main-news .name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  color: white;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+.news-main .news-main-block {
+  -ms-grid-columns: minmax(200px, 375px) 1fr;
+      grid-template-columns: minmax(200px, 375px) 1fr;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 80px;
+}
+
+.news-main .news-main-block .news-sort {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.news-main .news-main-block .news-sort:hover {
+  background: #9860F7;
+  font-weight: 700;
+}
+
+.news-main .news-main-block .filter-news .filter-clear {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #FFFFFF;
+  margin-top: -37px;
+  margin-bottom: 10px;
+}
+
+.news-main .news-main-block .filter-news .filter-new-button {
+  background: #1E242E;
+  border-radius: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 145%;
+  cursor: pointer;
+  height: 17px;
+  padding: 6px 12px 6px 12px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  float: left;
+  margin-right: 14px;
+  margin-bottom: 14px;
+  color: #FFFFFF;
+  /* or 17px */
+  text-transform: uppercase;
+}
+
+.news-main .news-main-block .filter-news .filter-new-button:hover {
+  background: #9860F7;
+}
+
+.news-main .news-main-block .filter-news .active {
+  background: #9860F7;
+}
+
+.news-main .cart_block {
+  -ms-grid-columns: (minmax(200px, 375px))[3];
+      grid-template-columns: repeat(3, minmax(200px, 375px));
 }
 /*# sourceMappingURL=main.css.map */

@@ -8,7 +8,10 @@ $large-width: 1600px
 $medium-width: 928px
 $seren-color: #9860F7
 
-
+body
+  background: $main-black-color
+  margin: 0 auto !important
+  max-width: 1600px 
 
 @mixin for-769_990
  @media  (min-width: 769px) and (max-width: 990px)
@@ -1561,6 +1564,94 @@ footer
 
 .style_green input:checked ~ .check:after 
   display: block
+
+//start main-news page 
+.news-main 
+
+  display: grid
+  margin-top: 50px
+
+  
+  .text-main-news 
+    
+    .link-to-main
+      color: $main-green-color
+    .desc
+      color: white
+      font-family: 'Montserrat'
+      font-style: normal
+      font-weight: 400
+      font-size: 14px
+      line-height: 145%
+      max-width: 760px
+    .name
+      font-family: 'Montserrat'
+      font-style: normal
+      font-weight: 600
+      font-size: 40px
+      line-height: 120%
+      color: white
+      padding-bottom: 16px
+      padding-top: 16px
+  
+  .news-main-block
+    grid-template-columns: minmax(200px, 375px) 1fr
+    display: grid
+    margin-top: 80px
+    .news-sort
+
+      font-family: 'Montserrat'
+      font-style: normal
+      font-weight: 500
+      font-size: 16px
+      line-height: 24px
+      &:hover
+        background: $seren-color
+        font-weight: 700
+
+    .filter-news
+      .filter-clear
+        font-family: 'Montserrat'
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 24px
+        cursor: pointer
+
+        text-decoration-line: underline
+        color: $white-color
+        margin-top: -37px
+        margin-bottom: 10px
+
+      .filter-new-button
+        background: $main-black-color
+        border-radius: 20px
+        font-family: 'Montserrat'
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        line-height: 145%
+        cursor: pointer
+        
+        height: 17px
+        padding: 6px 12px 6px 12px
+        width: fit-content
+        float: left
+        margin-right: 14px
+        margin-bottom: 14px
+        color: $white-color
+        /* or 17px */
+
+        text-transform: uppercase
+        &:hover
+          background: $seren-color
+      .active
+        background: $seren-color
+
+  .cart_block 
+    grid-template-columns: repeat(3, minmax(200px, 375px)) 
+ 
+
  
   
 
