@@ -7,11 +7,11 @@ $black-text-color: #202732
 $large-width: 1600px
 $medium-width: 928px
 $seren-color: #9860F7
+$black-color-news: #1B1C1B
 
 body
-  background: $main-black-color
-  margin: 0 auto !important
-  max-width: 1600px 
+  background: $black-color-news
+
 
 @mixin for-769_990
  @media  (min-width: 769px) and (max-width: 990px)
@@ -62,11 +62,11 @@ body
 
 .slider_main
  background: $black-text-color
+ height: 113px
 
 
 .main_slider_block
- max-width: $large-width
- margin: 0 auto
+
  padding-top: 33px
  display: grid
  margin-left: 34px
@@ -1569,6 +1569,8 @@ footer
 .news-main 
 
   display: grid
+  margin: 0 auto
+  max-width: 1600px
   margin-top: 50px
 
   
@@ -1598,16 +1600,38 @@ footer
     grid-template-columns: minmax(200px, 375px) 1fr
     display: grid
     margin-top: 80px
-    .news-sort
+    .seren.news .cart_block 
+      margin-top: -30px
 
+    .seren 
+      padding-top: 0px
+    .sort-news
+          margin-top: -33px
+          /* right: 1px; */
+          /* text-align: right; */
+          display: grid
+          /* grid-auto-columns: 1fr; */
+          grid-template-columns: 109px 110px 163px 166px
+          justify-content: end
+          gap: 14px
+          margin-right: 14px
+    .news-sort
       font-family: 'Montserrat'
       font-style: normal
       font-weight: 500
       font-size: 16px
       line-height: 24px
+      color: $white-color
+      
+ 
+ 
+      cursor: pointer
       &:hover
-        background: $seren-color
+        color: $seren-color
         font-weight: 700
+    .news-sort.active
+      color: $seren-color
+
 
     .filter-news
       .filter-clear
@@ -1618,7 +1642,7 @@ footer
         line-height: 24px
         cursor: pointer
 
-        text-decoration-line: underline
+        text-decoration-line: underline 
         color: $white-color
         margin-top: -37px
         margin-bottom: 10px
@@ -1650,6 +1674,54 @@ footer
 
   .cart_block 
     grid-template-columns: repeat(3, minmax(200px, 375px)) 
+
+
+.pagenation
+  display: grid
+  grid-template-columns: repeat(5,50px)
+  gap: 24px
+  justify-content: end
+  .first
+    background-image: url(../img/pagenation-left.svg)
+    
+  .last
+
+    background-image: url(../img/pagenation-right.svg)
+  .last, .first
+    background-repeat: no-repeat 
+    background-position-x: 10px
+    background-position-y: 15px
+  .page-item
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 24px
+    padding: 13px 20px 13px 20px
+    border: 1px solid #E6E6E6
+    border-radius: 4px
+    color: white
+    width: 8px
+    height: 22px
+    float: left
+    margin-right: 23px
+    cursor: pointer
+    &:hover
+      border-color: $main-green-color
+
+  .page-item.active
+    border-color: $main-green-color
+.pagenation-more 
+  display: grid
+  
+  align-content: space-around
+  justify-items: center
+  a 
+    color: white
+    border: 1px solid white
+    padding: 13px 44px 13px 44px
+    cursor: pointer
+
  
 
  
