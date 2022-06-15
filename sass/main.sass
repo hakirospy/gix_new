@@ -1569,9 +1569,14 @@ footer
 .news-main 
 
   display: grid
-  margin: 0 auto
-  max-width: 1600px
+
+  justify-content: space-around
   margin-top: 50px
+  grid-template-columns: minmax(900px ,1600px)
+
+
+
+  margin-left: 33px
 
   
   .text-main-news 
@@ -1600,6 +1605,13 @@ footer
     grid-template-columns: minmax(200px, 375px) 1fr
     display: grid
     margin-top: 80px
+    
+    @media (max-width: 1340px)
+      grid-template-columns: fit-content(30%) fit-content(70%)
+      margin-right: 20px
+
+
+    
     .seren.news .cart_block 
       margin-top: -30px
 
@@ -1672,15 +1684,27 @@ footer
       .active
         background: $seren-color
 
-  .cart_block 
+  .cart_block
+    margin-left: 0px
+    margin-right: 0px 
     grid-template-columns: repeat(3, minmax(200px, 375px)) 
+    @media (max-width: 1340px)
+      grid-template-columns: repeat(2, minmax(200px, 375px)) 
+
+.nonePad
+  @media screen and ( max-width: 1340px )
+    display: contents
 
 
 .pagenation
   display: grid
   grid-template-columns: repeat(5,50px)
   gap: 24px
+
   justify-content: end
+  @media screen and ( max-width: 1140px )
+    gap: 7px
+
   .first
     background-image: url(../img/pagenation-left.svg)
     
@@ -1691,6 +1715,12 @@ footer
     background-repeat: no-repeat 
     background-position-x: 10px
     background-position-y: 15px
+    @media screen and ( max-width: 1140px )
+      background-repeat: no-repeat
+      background-position-x: 10px
+      background-position-y: 14px
+      background-size: 50%
+      
   .page-item
     font-family: 'Montserrat'
     font-style: normal
@@ -1706,11 +1736,12 @@ footer
     float: left
     margin-right: 23px
     cursor: pointer
-    &:hover
+    &:hover, ~ .active
       border-color: $main-green-color
+    @media (max-width: 1140px)
+      padding: 8px 15px 8px 15px
 
-  .page-item.active
-    border-color: $main-green-color
+  
 .pagenation-more 
   display: grid
   
@@ -1720,7 +1751,9 @@ footer
     color: white
     border: 1px solid white
     padding: 13px 44px 13px 44px
-    cursor: pointer
+    cursor: pointer 
+    @media screen and ( max-width:1140px  )
+      padding: 9px 31px 9px 31px
 
  
 
