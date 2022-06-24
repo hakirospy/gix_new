@@ -1763,8 +1763,130 @@ footer
     @media screen and ( max-width:1140px  )
       padding: 9px 31px 9px 31px
 
- 
+.contact-section
+  display: grid
 
+  justify-content: space-around
+  margin-top: 50px
+  margin-bottom: 80px
+
+  grid-template-columns: minmax(200px, 1600px)
+  margin-left: 33px
+  .link-to-main 
+    color: black
+  .name
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 600
+    font-size: 42px
+    line-height: 48px
+    margin-top: 16px
+    margin-bottom: 40px
+
+
+    color: #1E242E
+
+  
+  .contact-block
+    display: grid
+    grid-template-columns: 375px 375px minmax(200px, 800px)
+    gap: 30px
+    color: white
+    margin-right: 30px
+    @media (max-width: 1240px)
+      grid-template-columns: 290px 290px 
+
+    @media (max-width: 700px)
+      grid-template-columns: 1fr 
+
+
+
+    .contact-map
+      @media (max-width: 1240px)
+        grid-column-start: 1
+        grid-column-end: 4
+        grid-row-start: 2
+        grid-row-end: 2
+      @media (max-width: 700px)
+        grid-column-start: 1
+        grid-column-end: 1
+        
+        grid-row-start: 3
+        grid-row-end: 3
+
+      
+      .gmap_canvas 
+        border-radius: 32px
+
+    .contact-elem
+      padding: 35px
+      background: linear-gradient(247.73deg, #1E242E 0%, #2B3547 100%)
+      border-radius: 32px
+
+      .title, .email-title
+        font-weight: 600
+        font-size: 28px
+        line-height: 36px
+        display: block
+        @media (max-width: 1240px)
+          font-size: 22px
+          line-height: 28px
+
+      .desc
+        font-weight: 500
+        font-size: 14px
+        line-height: 120%
+        padding-bottom: 16px
+        padding-top: 16px
+        display: BLOCK
+        @media (max-width: 1240px)
+          font-size: 12px
+          line-height: 18px
+
+      .tel
+        font-weight: 600
+        font-size: 22px
+        line-height: 28px
+        display: block
+        padding-bottom: 40px
+        @media (max-width: 1240px)
+          font-size: 18px
+          line-height: 24px
+
+      .email
+        font-style: normal
+        font-weight: 600
+        font-size: 22px
+        line-height: 28px
+        padding-top: 16px
+        display: block
+        @media (max-width: 1240px)
+          font-size: 18px
+          line-height: 24px
+      .adress
+        padding-bottom: 40px
+        padding-top: 16px
+        font-weight: 600
+        font-size: 22px
+        line-height: 28px
+        display: block
+        @media (max-width: 1240px)
+          font-size: 18px
+          line-height: 24px
+          padding-bottom: 32px
+
+      .reshum
+        font-style: normal
+        font-weight: 600
+        font-size: 22px
+        line-height: 28px
+        padding-top: 16px
+        display: block
+        @media (max-width: 1240px)
+          font-size: 18px
+          line-height: 24px
+
+      
  
   
 
