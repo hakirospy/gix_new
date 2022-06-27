@@ -3090,6 +3090,12 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   }
 }
 
+@media screen and (max-width: 1200px) and (max-width: 810px) {
+  .thank-section .big-svg-1200 {
+    display: none;
+  }
+}
+
 .thank-section .main-text {
   max-width: 600px;
   margin: 0 auto;
