@@ -5,13 +5,13 @@ class SlideStories {
     this.init();
   }
 
-  activeSlide(index) {
+  activeSlide(index, start = 'Y') {
     this.active = index;
     this.items.forEach((item) => item.classList.remove('active'));
     this.items[index].classList.add('active');
     this.thumbItems.forEach((item) => item.classList.remove('active'));
     this.thumbItems[index].classList.add('active');
-    this.autoSlide();
+    this.autoSlide(start);
   }
 
   prev() {
@@ -26,9 +26,11 @@ class SlideStories {
     if (this.active < this.items.length - 1) {
       this.activeSlide(this.active + 1);
     } else {
-      this.activeSlide(0);
+      //this.activeSlide(0);
     }
-  }
+  }  
+
+
 
   addNavigation() {
     const nextBtn = this.slide.querySelector('.slide-next');
@@ -42,9 +44,9 @@ class SlideStories {
     this.thumbItems = Array.from(this.thumb.children);
   }
 
-  autoSlide() {
+  autoSlide(start) {
     clearTimeout(this.timeout);
-    this.timeout = setTimeout(this.next, 5000);
+    if (start == 'Y') {this.timeout = setTimeout(this.next, 5000);}
   }
 
   init() {
@@ -58,8 +60,4 @@ class SlideStories {
   }
 }
 //slide.activeSlide(0);
-var slide = new SlideStories('slide');
-new SlideStories('slide1');
-new SlideStories('slide2');
-new SlideStories('slide3');
-new SlideStories('slide4');
+

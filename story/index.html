@@ -6,12 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Carousel</title>
   <link rel="stylesheet" href="carousel.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?t=55">
 </head>
 <body>
   <div class="gallery">
     <div class="gallery-container">
-      <div class="gallery-item gallery-item-1"  data-index="1">  
+      <div class="gallery-item gallery-item-1"  data-index="1"> 
+        <div class="holst"></div> 
         <div data-slide="slide" class="slide">
         <div class="slide-items">
           <img src="https://source.unsplash.com/V7IJzp_ElQc/1000x1500" class="active" alt="Img 1">
@@ -26,7 +27,7 @@
         </nav>
       </div></div>
       <div class="gallery-item gallery-item-2"  data-index="2">
-
+        <div class="holst"></div> 
         <div data-slide="slide1" class="slide">
           <div class="slide-items">
             <img src="https://source.unsplash.com/xWEHhKYqdlY/1000x1500" class="active" alt="Img 1">
@@ -45,7 +46,7 @@
 
       </div>
       <div class="gallery-item gallery-item-3"  data-index="3">
-
+        <div class="holst"></div> 
  
         <div data-slide="slide2" class="slide">
           <div class="slide-items">
@@ -63,7 +64,7 @@
 
       </div>
       <div class="gallery-item gallery-item-4"  data-index="4">
-
+        <div class="holst"></div> 
         <div data-slide="slide3" class="slide">
           <div class="slide-items">
             <img src="https://source.unsplash.com/V7IJzp_ElQc/1000x1500" class="active" alt="Img 1">
@@ -80,7 +81,7 @@
 
       </div>
       <div class="gallery-item gallery-item-5"  data-index="5">
-
+        <div class="holst"></div> 
         <div data-slide="slide4" class="slide">
           <div class="slide-items">
             <img src="https://source.unsplash.com/V7IJzp_ElQc/1000x1500" class="active"  alt="Img 1">
@@ -96,13 +97,50 @@
         </div>
 
       </div>
+
+
+
+      <div class="gallery-item gallery-item-6"  data-index="6">
+        <div class="holst"></div> 
+        <div data-slide="slide5" class="slide">
+           
+          <div class="slide-items">
+            <img src="https://source.unsplash.com/V7IJzp_ElQc/1000x1500" class="active"  alt="Img 1">
+            <img src="https://source.unsplash.com/GJIc8O6sM5M/1000x1500" alt="Img 2">
+            <img src="https://source.unsplash.com/VlMMBxSZuSI/1000x1500" alt="Img 3">
+            <img src="https://source.unsplash.com/xWEHhKYqdlY/1000x1500"  alt="Img 4">
+          </div>
+          <nav class="slide-nav">
+            <div class="slide-thumb"></div>
+            <button class="slide-prev">Prev</button>
+            <button class="slide-next">Next</button>
+          </nav>
+        </div>
+
+      </div>
+
+
      
     </div>
     <div class="gallery-controls"></div>
   </div>
-
-  <script src="carousel.js"></script>
   <script src="slide-stories.js"></script>
+  <script src="carousel.js?h=95"></script>
+  
+ 
+ 
+
+  <script>
+
+var slide = new SlideStories('slide');
+//var slide1 = new SlideStories('slide1');
+//new SlideStories('slide2');
+//new SlideStories('slide3');
+//new SlideStories('slide4');
+//new SlideStories('slide5');
+
+
+  </script>
 </body>
 </html>
 

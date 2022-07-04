@@ -38,14 +38,14 @@ class Carousel {
   }
 
   // Construct the carousel navigation
-  // setNav() {
-    // galleryContainer.appendChild(document.createElement('ul')).className = 'gallery-nav';
+   setNav() {
+   galleryContainer.appendChild(document.createElement('ul')).className = 'gallery-nav';
 
-    // this.carouselArray.forEach(item => {
-    //   const nav = galleryContainer.lastElementChild;
-    //   nav.appendChild(document.createElement('li'));
-    // }); 
-  // }s
+     this.carouselArray.forEach(item => {
+      const nav = galleryContainer.lastElementChild;
+       nav.appendChild(document.createElement('li'));
+     }); 
+ }s
 
   // Construct the carousel controls
   setControls() {
@@ -60,9 +60,11 @@ class Carousel {
   useControls() {
     const triggers = [...galleryControlsContainer.childNodes];
 
+
     triggers.forEach(control => {
       control.addEventListener('click', e => {
         e.preventDefault();
+        
 
         if (control.className == 'gallery-controls-add') {
           const newItem = document.createElement('img');
@@ -93,5 +95,65 @@ class Carousel {
 const exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryControls);
 
 exampleCarousel.setControls();
-// exampleCarousel.setNav();
+//exampleCarousel.setNav();
 exampleCarousel.useControls();
+document.querySelector('.gallery-item-3').children[0].classList.add('hidden');
+
+slider = new SlideStories(document.querySelector('.gallery-item-3').children[1].getAttribute('data-slide'));
+
+slider.activeSlide(0,'Y');
+
+document.querySelectorAll('.holst').forEach(item => {
+
+
+    item.addEventListener('click', (e) => {
+
+//var countSlider = e.target.parentElement.classList[3].split('-')[2]; e.target.parentElement.getBoundingClientRect().right e.target.parentElement.nextElementSibling.children[0].classList.add('hidden');
+
+//slide.autoSlide('N');
+//delete slide;
+
+
+
+if(e.target.parentElement.nextElementSibling != null) {
+
+
+if( e.target.parentElement.nextElementSibling.classList.contains('gallery-item-3')){
+
+
+  exampleCarousel.carouselArray.unshift(exampleCarousel.carouselArray.pop())
+
+}else{
+
+  exampleCarousel.carouselArray.push(exampleCarousel.carouselArray.shift());
+ 
+}
+}else {
+
+
+if(e.target.parentElement.previousElementSibling.classList.contains('gallery-item-3')){
+  exampleCarousel.carouselArray.push(exampleCarousel.carouselArray.shift());
+
+ }
+  else{
+    exampleCarousel.carouselArray.unshift(exampleCarousel.carouselArray.pop())
+   
+
+
+  }
+
+}
+document.querySelector('.gallery-item-3').children[0].classList.remove('hidden');
+slider.activeSlide(0,'N');
+
+document.querySelector('.gallery-item-3').children[1].children[1].children[0].innerHTML = ''
+
+exampleCarousel.updateGallery();
+
+document.querySelector('.gallery-item-3').children[0].classList.add('hidden');
+slider = new SlideStories(document.querySelector('.gallery-item-3').children[1].getAttribute('data-slide'));
+slider.activeSlide(0);
+
+})
+
+})
