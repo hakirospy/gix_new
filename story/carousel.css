@@ -1,5 +1,7 @@
 .gallery {
   width: 100%;
+  top: 10%;
+    position: absolute;
 }
 
 .gallery-container {
@@ -25,31 +27,31 @@
 
 .gallery-item-2,
 .gallery-item-4 {
-  height: 200px;
+  height: 235px;
   opacity: 1;
-  width: 200px;
+  width: 300px;
   z-index: 1;
 }
 
 .gallery-item-2 {
   left: 30%;
-  transform: translateX(-50%);
+  transform: translateX(-40%);
 }
 
 .gallery-item-3 {
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
-  height: 300px;
+  height: 400px;
   opacity: 1;
   left: 50%;
   transform: translateX(-50%);
-  width: 300px;
+  width: 405px;
   z-index: 2;
   border-radius: 10px;
 }
 
 .gallery-item-4 {
   left: 70%;
-  transform: translateX(-50%);
+  transform: translateX(-55%);
 }
 
 
@@ -57,8 +59,7 @@
 .gallery-controls {
   display: flex;
   justify-content: center;
-
-    top: 37%;
+    top: 65%;
     position: absolute;
     justify-content: space-around;
     width: 100%;
@@ -83,46 +84,39 @@
 }
 
 .gallery-controls-previous::before {
-  border: solid #000;
-  border-width: 0 2px 2px 0;
+
+
   content: '';
   display: inline-block;
-  height: 4px;
+  height: 56px;
   left: -10px;
-  padding: 2px;
+
   position: absolute;
   top: 0;
-  transform: rotate(135deg) translateY(-50%);
-  transition: left 0.15s ease-in-out;
-  width: 4px;
+  background-image: url('Arrow_left_default.svg');
+  width: 56px;
 }
 
-.gallery-controls-previous:hover::before {
-  left: -18px;
-}
+
 
 .gallery-controls-next {
   position: relative;
 }
 
 .gallery-controls-next::before {
-  border: solid #000;
-  border-width: 0 2px 2px 0;
+
   content: '';
   display: inline-block;
-  height: 4px;
-  padding: 2px;
+  height: 56px;
+
   position: absolute;
   right: -10px;
   top: 50%;
-  transform: rotate(-45deg) translateY(-50%);
-  transition: right 0.15s ease-in-out;
-  width: 4px;
+  background-image: url('Arrow_right_default.svg');
+  width: 56px;
 }
 
-.gallery-controls-next:hover::before {
-  right: -18px;
-}
+
 
 .gallery-nav {
   bottom: -15px;

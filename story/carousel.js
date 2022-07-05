@@ -33,8 +33,18 @@ class Carousel {
     } else {
       this.carouselArray.push(this.carouselArray.shift());
     }
+
+    document.querySelector('.gallery-item-3').children[0].classList.remove('hidden');
+    slider.activeSlide(0,'N');
+
+    document.querySelector('.gallery-item-3').children[1].children[1].children[0].innerHTML = ''
     
     this.updateGallery();
+
+
+    document.querySelector('.gallery-item-3').children[0].classList.add('hidden');
+slider = new SlideStories(document.querySelector('.gallery-item-3').children[1].getAttribute('data-slide'));
+slider.activeSlide(0);
   }
 
   // Construct the carousel navigation
@@ -52,7 +62,7 @@ class Carousel {
     this.carouselControls.forEach(control => {
       galleryControlsContainer.appendChild(document.createElement('button')).className = `gallery-controls-${control}`;
 
-      document.querySelector(`.gallery-controls-${control}`).innerText = control;
+      //document.querySelector(`.gallery-controls-${control}`).innerText = control;
     });
   }
  
