@@ -20,14 +20,27 @@ class SlideStories {
     } else {
       this.activeSlide(this.items.length - 1);
     }
+    this.addHref()
   }
+  autoClick(elem){
 
+    var click_event = new CustomEvent('click');
+    var btn_element = document.querySelector(elem);
+    btn_element.dispatchEvent(click_event);
+
+  }
+  addHref(){
+
+    document.querySelector('.gallery-item-3').children[2].setAttribute('href',document.querySelector('.gallery-item-3').children[1].children[0].querySelector('.active').getAttribute('data-href'))
+
+  }
   next() {
     if (this.active < this.items.length - 1) {
       this.activeSlide(this.active + 1);
     } else {
-      //this.activeSlide(0);
+      this.autoClick('.gallery-controls-next');
     }
+    this.addHref()
   }  
 
 
