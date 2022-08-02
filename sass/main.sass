@@ -2682,7 +2682,28 @@ footer
     .cart_three
 
       display: grid
-      grid-template-columns: 1fr 1fr 1fr
+      grid-template-columns: 1.5fr 1fr 1fr
+      .slider_cart
+
+        .slider__next
+          transform: rotate(180deg)
+          margin: 20px auto 0px auto
+          
+        .slider__prev
+
+          margin: 0px auto 20px auto
+
+        
+      
+
+        .slider__prev, .slider__next
+          
+          background-image: url(../img/strelka_cart.svg)
+          width: 16px
+          height: 10px
+          
+  
+
 
       .short_prop
         justify-self: self-end
@@ -2869,9 +2890,7 @@ footer
             width: 16px
             height: 10px
             cursor: pointer
-        .title.open
-          &::after
-            transform: rotate(180deg)
+        
 
           
         .text
@@ -2879,6 +2898,53 @@ footer
           font-size: 14px
           line-height: 145%
           color: #202732
+          p
+            font-weight: 700
+
+
+/* specific animation */
+/* https://daneden.me/animate/ */
+
+.details_cart_tab[open] .title
+  &::after
+    transform: rotate(180deg)
+
+
+@mixin inline-animation($duration)
+  $name: inline-#{unique-id()}
+
+  @keyframes #{$name}
+    @content
+
+  animation-name: $name
+  animation-duration: $duration
+  animation-timing-function: ease-out
+
+.details_cart_tab:not([open])
+  .text
+    display: none
+   
+summary
+  &::marker
+   
+    content: ''
+  
+
+.details_cart_tab[open]
+  .text 
+    @include inline-animation(1000ms)
+      0%
+        opacity: 0
+      100%
+        opacity: 1
+
+
+
+
+
+
+
+
 
 
 

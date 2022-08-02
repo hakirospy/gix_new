@@ -3583,8 +3583,24 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 .main_white .main_cart .cart_three {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1.5fr 1fr 1fr;
+      grid-template-columns: 1.5fr 1fr 1fr;
+}
+
+.main_white .main_cart .cart_three .slider_cart .slider__next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin: 20px auto 0px auto;
+}
+
+.main_white .main_cart .cart_three .slider_cart .slider__prev {
+  margin: 0px auto 20px auto;
+}
+
+.main_white .main_cart .cart_three .slider_cart .slider__prev, .main_white .main_cart .cart_three .slider_cart .slider__next {
+  background-image: url(../img/strelka_cart.svg);
+  width: 16px;
+  height: 10px;
 }
 
 .main_white .main_cart .cart_three .short_prop {
@@ -3878,15 +3894,56 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   cursor: pointer;
 }
 
-.main_white .main_cart .detail_block .detail_vkladka .title.open::after {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
 .main_white .main_cart .detail_block .detail_vkladka .text {
   margin-top: 24px;
   font-size: 14px;
   line-height: 145%;
   color: #202732;
+}
+
+.main_white .main_cart .detail_block .detail_vkladka .text p {
+  font-weight: 700;
+}
+
+/* specific animation */
+/* https://daneden.me/animate/ */
+.details_cart_tab[open] .title::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.details_cart_tab:not([open]) .text {
+  display: none;
+}
+
+summary::marker {
+  content: '';
+}
+
+.details_cart_tab[open] .text {
+  -webkit-animation-name: inline-u1935cc50;
+          animation-name: inline-u1935cc50;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes inline-u1935cc50 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes inline-u1935cc50 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */

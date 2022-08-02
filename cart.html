@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="./sass/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
+<script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap-reboot.min.css">
 
 </head>
 
@@ -72,7 +75,234 @@
 
             <section class="cart_three">
 
-                <div class="slider_cart"><img src="./img/foto_slider_cart.png" alt=""></div>
+                <div class="slider_cart">
+                    
+
+                    <section class="slider">
+                        <div class="slider__flex">
+                          <div class="slider__col">
+                      
+                            <div class="slider__prev"></div> <!-- Кнопка для переключения на предыдущий слайд -->
+                      
+                            <div class="slider__thumbs">
+                              <div class="swiper-container"> <!-- Слайдер с превью -->
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <div class="slider__image"><img src="https://picsum.photos/1920/1080" alt=""/></div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="slider__image"><img src="https://picsum.photos/1920/1081" alt=""/></div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="slider__image"><img src="https://picsum.photos/1920/1082" alt=""/></div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="slider__image"><img src="https://picsum.photos/1920/1083" alt=""/></div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="slider__image"><img src="https://picsum.photos/1920/1084" alt=""/></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      
+                            <div class="slider__next"></div> <!-- Кнопка для переключения на следующий слайд -->
+                      
+                          </div>
+                      
+                          <div class="slider__images">
+                            <div class="swiper-container"> <!-- Слайдер с изображениями -->
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <div class="slider__image"><img src="https://picsum.photos/1920/1080" alt=""/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="slider__image"><img src="https://picsum.photos/1920/1081" alt=""/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="slider__image"><img src="https://picsum.photos/1920/1082" alt=""/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="slider__image"><img src="https://picsum.photos/1920/1083" alt=""/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="slider__image"><img src="https://picsum.photos/1920/1084" alt=""/></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      
+                        </div>
+                      </section>
+
+
+                      <style>
+
+
+.slider {
+ margin-top: 33px;
+}
+.slider .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.slider__flex {
+  display: flex;
+  align-items: flex-start;
+}
+.slider__col {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-right: 112px;
+}
+.slider__prev,
+.slider__next {
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.slider__prev:focus,
+.slider__next:focus {
+  outline: none;
+}
+.slider__thumbs {
+  height: calc(400px - 96px);
+}
+.slider__thumbs .slider__image {
+  transition: 0.25s;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  border: 1px solid rgba(32, 39, 50, 0.15);
+  border-radius: 8px;
+  padding: 10px;
+}
+.slider__thumbs .slider__image:hover {
+  opacity: 1;
+}
+.slider__thumbs .swiper-slide-thumb-active .slider__image {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+
+  border: 1px solid #C5FA2D;
+  
+  
+}
+.slider__images {
+  height: 400px;
+}
+.slider__images .slider__image img {
+  transition: 3s;
+}
+.slider__images .slider__image:hover img {
+  transform: scale(1.1);
+}
+.slider__image {
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+.slider__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+@media (max-width: 767.98px) {
+  .slider__flex {
+    flex-direction: column-reverse;
+  }
+  .slider__col {
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0;
+    margin-top: 24px;
+    width: 100%;
+  }
+  .slider__images {
+    width: 100%;
+  }
+  .slider__thumbs {
+    height: 100px;
+    width: calc(100% - 96px);
+    margin: 0 16px;
+  }
+  .slider__prev,
+  .slider__next {
+    height: auto;
+    width: 32px;
+  }
+}
+
+
+
+
+
+                      </style>
+
+
+<script>
+
+// Инициализация превью слайдера
+const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', { // ищем слайдер превью по селектору
+	// задаем параметры
+	direction: 'vertical', // вертикальная прокрутка
+	slidesPerView: 3, // показывать по 3 превью
+	spaceBetween: 24, // расстояние между слайдами
+	navigation: { // задаем кнопки навигации
+		nextEl: '.slider__next', // кнопка Next
+		prevEl: '.slider__prev' // кнопка Prev
+	},
+	freeMode: true, // при перетаскивании превью ведет себя как при скролле
+	breakpoints: { // условия для разных размеров окна браузера
+		0: { // при 0px и выше
+			direction: 'horizontal', // горизонтальная прокрутка
+		},
+		768: { // при 768px и выше
+			direction: 'vertical', // вертикальная прокрутка
+		}
+	}
+});
+// Инициализация слайдера изображений
+const sliderImages = new Swiper('.slider__images .swiper-container', { // ищем слайдер превью по селектору
+	// задаем параметры
+	direction: 'vertical', // вертикальная прокрутка
+	slidesPerView: 1, // показывать по 1 изображению
+	spaceBetween: 32, // расстояние между слайдами
+	mousewheel: true, // можно прокручивать изображения колёсиком мыши
+	navigation: { // задаем кнопки навигации
+		nextEl: '.slider__next', // кнопка Next
+		prevEl: '.slider__prev' // кнопка Prev
+	},
+	grabCursor: true, // менять иконку курсора
+	thumbs: { // указываем на превью слайдер
+		swiper: sliderThumbs // указываем имя превью слайдера
+	},
+	breakpoints: { // условия для разных размеров окна браузера
+		0: { // при 0px и выше
+			direction: 'horizontal', // горизонтальная прокрутка
+		},
+		768: { // при 768px и выше
+			direction: 'vertical', // вертикальная прокрутка
+		}
+	}
+});
+
+
+</script>
+
+
+                </div>
 
                 <div class="short_prop">
 
@@ -184,24 +414,30 @@
 
             <section class="detail_block">
 
-                <div class="detail_vkladka">
-                    <div class="title open">Описание товара</div>
+                <details class="detail_vkladka details_cart_tab">
+                    <summary><div class="title ">Описание товара </div></summary>
                     <div class="text">
 
                         Apple iPad Air 10,9 дюйма стал более универсальным, чем когда-либо. Благодаря потрясающему
                         дисплею Liquid Retina, чипу A14 Bionic и возможности редактирования видео 4K вы можете
                         наслаждаться каждым фото и видео с еще большей детализацией.
-                        Полноэкранный дизайнКак и iPad Pro, iPad Air имеет красивый полноэкранный дизайн. Итак, ваш iPad
+
+                        <p>Полноэкранный дизайн</p>
+                        Как и iPad Pro, iPad Air имеет красивый полноэкранный дизайн. Итак, ваш iPad
                         Air выглядит великолепно, а на экране Liquid Retina все выглядит еще лучше.
+                        <p></p>
                         Когда дело доходит до ваших любимых шоу и игр, вы знаете, что все будет выглядеть потрясающе.
                         Играйте в игры Apple Arcade с помощью контроллера консоли и следите за последними шоу Apple TV+
                         на ходу.
+                        <p></p>
                         iPad Air, оснащенный процессором Apple A14 Bionic, обладает всеми возможностями, необходимыми
                         для воплощения ваших творческих идей. Благодаря совместимости с Apple Pencil 2-го поколения вы
                         можете рисовать и рисовать с невероятной детализацией.
+                        <p></p>
                         А благодаря iPadOS 14 вы можете делать потрясающие заметки. Превратите рукописные заметки в
                         печатный текст и преобразуйте эскизы в идеальные формы.
-                        Аккумулятор на весь деньПосле целого дня редактирования изображений, работы с видео и просмотра
+                        <p>Аккумулятор на весь день</p>
+                        После целого дня редактирования изображений, работы с видео и просмотра
                         документальных фильмов Netflix вам не придется бежать к зарядному устройству. Даже если вы
                         используете его без перерыва, у iPad Air есть 10 часов автономной работы.
 
@@ -209,13 +445,42 @@
                     </div>
 
 
-                </div>
+                </details>
+
+              
+               
+              
+                    <details class="detail_vkladka details_cart_tab">
+                    <summary><div class="title ">Характеристики </div></summary>
+                    <div class="text">
+
+                        Apple iPad Air 10,9 дюйма стал более универсальным, чем когда-либо. Благодаря потрясающему
+                        дисплею Liquid Retina, чипу A14 Bionic и возможности редактирования видео 4K вы можете
+                        наслаждаться каждым фото и видео с еще большей детализацией.
+
+                        <p>Полноэкранный дизайн</p>
+                        Как и iPad Pro, iPad Air имеет красивый полноэкранный дизайн. Итак, ваш iPad
+                        Air выглядит великолепно, а на экране Liquid Retina все выглядит еще лучше.
+                        <p></p>
+                        Когда дело доходит до ваших любимых шоу и игр, вы знаете, что все будет выглядеть потрясающе.
+                        Играйте в игры Apple Arcade с помощью контроллера консоли и следите за последними шоу Apple TV+
+                        на ходу.
+                        <p></p>
+                        iPad Air, оснащенный процессором Apple A14 Bionic, обладает всеми возможностями, необходимыми
+                        для воплощения ваших творческих идей. Благодаря совместимости с Apple Pencil 2-го поколения вы
+                        можете рисовать и рисовать с невероятной детализацией.
+                        <p></p>
+                        А благодаря iPadOS 14 вы можете делать потрясающие заметки. Превратите рукописные заметки в
+                        печатный текст и преобразуйте эскизы в идеальные формы.
+                        <p>Аккумулятор на весь день</p>
+                        После целого дня редактирования изображений, работы с видео и просмотра
+                        документальных фильмов Netflix вам не придется бежать к зарядному устройству. Даже если вы
+                        используете его без перерыва, у iPad Air есть 10 часов автономной работы.
 
 
-                <div class="detail_vkladka">
-                    <div class="title">Характеристики</div>
+                    </div>
 
-                </div>
+                    </details>
 
 
                 <div class="detail_vkladka">
