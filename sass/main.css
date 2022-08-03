@@ -4017,6 +4017,18 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
           align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .main_white .main_cart .detail_block .detail_vkladka .title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .main_white .main_cart .detail_block .detail_vkladka .title {
+    font-size: 16px;
+  }
+}
+
 .main_white .main_cart .detail_block .detail_vkladka .title::after {
   background-image: url("../img/strelka_cart.svg");
   content: '';
@@ -4056,15 +4068,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ufc8754ae;
-          animation-name: inline-ufc8754ae;
+  -webkit-animation-name: inline-u556d7f19;
+          animation-name: inline-u556d7f19;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ufc8754ae {
+@-webkit-keyframes inline-u556d7f19 {
   0% {
     opacity: 0;
   }
@@ -4073,7 +4085,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ufc8754ae {
+@keyframes inline-u556d7f19 {
   0% {
     opacity: 0;
   }
