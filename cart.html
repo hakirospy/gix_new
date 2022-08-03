@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="./sass/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+
 <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap-reboot.min.css">
 
@@ -148,13 +148,16 @@
 }
 .slider__flex {
   display: flex;
-  align-items: flex-start;
+
+  align-items: center;
+
+justify-content: space-around;
 }
 .slider__col {
   display: flex;
   flex-direction: column;
-  width: 200px;
-  margin-right: 112px;
+  width: 110px;
+  /*margin-right: 112px;*/
 }
 .slider__prev,
 .slider__next {
@@ -198,6 +201,7 @@
 }
 .slider__images {
   height: 400px;
+  max-width: 350px;
 }
 .slider__images .slider__image img {
   transition: 3s;
@@ -218,7 +222,7 @@
   -o-object-fit: cover;
   object-fit: cover;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 1023.98px) {
   .slider__flex {
     flex-direction: column-reverse;
   }
@@ -227,7 +231,7 @@
     align-items: center;
     margin-right: 0;
     margin-top: 24px;
-    width: 100%;
+    width: 348px;
   }
   .slider__images {
     width: 100%;
@@ -249,7 +253,7 @@
 
 
                       </style>
-
+<script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
 
 <script>
 
@@ -266,9 +270,21 @@ const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', { // ище
 	freeMode: true, // при перетаскивании превью ведет себя как при скролле
 	breakpoints: { // условия для разных размеров окна браузера
 		0: { // при 0px и выше
-			direction: 'horizontal', // горизонтальная прокрутка
+			direction: 'horizontal',
+            spaceBetween: 14,
+            slidesPerView: 1,  
 		},
-		768: { // при 768px и выше
+        350: { // при 0px и выше
+			direction: 'horizontal',
+            spaceBetween: 14,
+            slidesPerView: 2,  
+		},
+        515: { // при 0px и выше
+			direction: 'horizontal',
+            spaceBetween: 14,
+            slidesPerView: 3,  
+		},
+		1024: { // при 768px и выше
 			direction: 'vertical', // вертикальная прокрутка
 		}
 	}
@@ -287,12 +303,12 @@ const sliderImages = new Swiper('.slider__images .swiper-container', { // ище
 	grabCursor: true, // менять иконку курсора
 	thumbs: { // указываем на превью слайдер
 		swiper: sliderThumbs // указываем имя превью слайдера
-	},
+	}, 
 	breakpoints: { // условия для разных размеров окна браузера
 		0: { // при 0px и выше
 			direction: 'horizontal', // горизонтальная прокрутка
-		},
-		768: { // при 768px и выше
+		}, 
+		1024: { // при 768px и выше
 			direction: 'vertical', // вертикальная прокрутка
 		}
 	}
@@ -300,6 +316,7 @@ const sliderImages = new Swiper('.slider__images .swiper-container', { // ище
 
 
 </script>
+
 
 
                 </div>

@@ -2615,6 +2615,7 @@ footer
 
   grid-template-columns: minmax(200px, 1600px)
   padding-left: 32px
+  padding-right: 32px
   
   .crumbs
     font-style: normal
@@ -2628,8 +2629,16 @@ footer
     .seren.white
       background-color: white
       padding-left: 0px
+      .title
+
+        @media screen and ( max-width: 700px  )
+          grid-template-columns: 3fr
+
     .cart_block
       margin-left: 0px
+      margin-right: 0px
+      
+
     hr
       margin-top: 16px
       background: #1E242E
@@ -2643,6 +2652,13 @@ footer
       justify-content: space-between
       grid-template-columns: 6fr 1fr
       align-items: center
+      @media screen and ( max-width: 1060px  )
+        grid-template-columns: 4fr 1fr
+      @media screen and ( max-width: 790px  )
+        grid-template-columns: 3fr 1fr
+      
+
+
     
       .text
 
@@ -2650,6 +2666,8 @@ footer
         font-size: 32px
         line-height: 120%
         color: #202732
+        @media screen and ( max-width: 790px  )
+          font-size: 14px
        
       .artikul
         text-align: right
@@ -2658,16 +2676,22 @@ footer
         line-height: 145%
         color: #8E9297
         mix-blend-mode: normal
+        @media screen and ( max-width: 790px  )
+          font-size: 12px
 
     .labels_cart
       margin-top: 27px
       display: grid
       grid-template-columns: 6fr 1fr
+      @media screen and ( max-width: 790px  )
+        grid-template-columns: 2fr 1fr
       .share
         text-align: right
         color: #8E9297
         font-size: 14px
         line-height: 145%
+        @media screen and ( max-width: 790px  )
+          font-size: 12px
         &::before
           background-image: url('../img/share.svg')
           content: ''
@@ -2683,15 +2707,45 @@ footer
 
       display: grid
       grid-template-columns: 1.5fr 1fr 1fr
+      @media screen and ( max-width: 1400px  )
+        grid-template-columns: 1fr 1fr
+      @media screen and ( max-width: 720px  )
+        grid-template-columns: 1fr
+
+  
+
+        
       .slider_cart
+        @media screen and ( max-width: 1400px  )
+          grid-row-start: 1
+          grid-row-end: 3
+
+        @media screen and ( max-width: 900px  )
+          grid-row-end: 1
+        @media screen and ( max-width: 720px  )
+          grid-column-start: 1 
+          grid-column-end: 3
+
+        .slider__images, .slider__col
+          @media screen and ( max-width: 720px  )
+            width: 100%
+        
+
+
 
         .slider__next
           transform: rotate(180deg)
           margin: 20px auto 0px auto
-          
+          @media screen and ( max-width: 1024px  )
+            transform: rotate(90deg)
+            margin: 0px auto 0px auto
+
         .slider__prev
 
           margin: 0px auto 20px auto
+          @media screen and ( max-width: 1024px  )
+            transform: rotate(-90deg)
+            margin: 0px auto 0px auto
 
         
       
@@ -2703,11 +2757,21 @@ footer
           height: 10px
           
   
-
+      
 
       .short_prop
         justify-self: self-end
-        width: 376px
+      
+        align-content: center
+        justify-content: space-between
+        width: 100%
+
+        padding-left: 30px
+        @media screen and ( max-width: 720px  )
+          padding-left: 0px
+        
+          
+  
 
         .title_prop
           font-size: 14px
@@ -2783,7 +2847,6 @@ footer
                 border-bottom: 1px solid rgba(125, 129, 136, 1)
                 width: 129%
                 height: 1px
-
                 transform: rotate(134deg)
                 position: absolute
                 left: -5px
@@ -2797,18 +2860,26 @@ footer
           .value
             font-size: 14px
     .buy_block
-      width: 376px
+      width: 100%
       justify-self: end
       position: relative
       margin-top: 30px
+      @media screen and ( max-width: 900px  )
+        grid-column-start: 1
+        grid-column-end: 3
+  
     .block_backet
       display: flex
       flex-direction: column
       align-items: flex-start
-      padding: 40px 24px 40px 40px
+      padding: 40px 40px 40px 40px
       gap: 24px
       background: #F1F7FF
       border-radius: 32px
+      margin-left: 32px
+      @media screen and ( max-width: 900px  )
+        margin-left: 0px
+        margin-bottom: 20px
      
       .main_price
         font-weight: 600
@@ -2823,7 +2894,9 @@ footer
         flex-direction: row
         justify-content: center
         align-items: center
-        padding: 23px 108px
+        padding: 23px 
+        width: 100%
+        
 
       .block_liked_favourite
         display: flex
@@ -2867,7 +2940,7 @@ footer
           line-height: 145%
 
     .detail_block
-      max-width: 1056px
+
       .detail_vkladka
         margin-bottom: 10px
         border: 1px solid #E5EFFE
@@ -2925,6 +2998,8 @@ footer
     display: none
    
 summary
+  &::-webkit-details-marker
+    display: none
   &::marker
    
     content: ''
