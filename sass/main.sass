@@ -2700,6 +2700,93 @@ footer
         font-size: 10px
 
 
+  // order.html 
+
+  .main_order
+    .title_order
+      font-weight: 600
+      font-size: 32px
+      line-height: 120%
+      margin-top: 32px
+      color: #202732
+
+    .hr
+      background: #1E242E
+      opacity: 0.15
+      transform: matrix(1, 0, 0, -1, 0, 0)
+      width: 100%
+      height: 1px
+      margin-top: 16px
+      margin-bottom: 32px
+    .order
+      display: grid
+      grid-template-columns: minmax(700px, 1056px) 1fr
+      justify-items: end
+      .order_content
+        background: #E5EFFE
+        border-radius: 32px 32px 0px 0px
+        width: 100%
+        .title
+          margin-top: 40px
+          margin-left: 32px
+          font-weight: 500
+          font-size: 18px
+          line-height: 125%
+          margin-bottom: 12px
+        .navigate_order 
+          display: grid
+          grid-template-columns: 1fr 1fr 1fr
+          gap: 16px
+          margin-left: 32px
+          margin-right: 32px
+          span 
+            height: 6px
+            background: #FFFFFF
+            border-radius: 3px
+          .gren span
+            background: #A9FF35
+            width: 50%
+            display: block
+          .grens span
+            background: #A9FF35
+            width: 100%
+            display: block
+          
+        .order_elements
+          border: 1px solid #E5EFFE
+          border-radius: 32px
+          padding: 40px 48px
+       
+          background: #FFFFFF
+          margin-top: 28px
+          .title_order_elements
+            font-weight: 600
+            font-size: 24px
+            line-height: 125%
+          .elements_list
+            color: #202732
+            display: grid
+            grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr
+            border-top:  1px solid #E5EFFE
+            height: 144px
+            align-items: center
+
+
+            .name_element
+              font-weight: 400
+              font-size: 12px
+              line-height: 135%
+
+            .price_element, .summ_element
+              font-weight: 400
+              font-size: 14px
+              line-height: 135%
+      .order_summ_block
+        width: 376px
+        background: #F1F7FF
+        border-radius: 32px
+
+  // cart.html 
   .main_cart
     .seren.white
       background-color: white
