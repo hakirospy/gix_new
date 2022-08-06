@@ -2696,13 +2696,16 @@ footer
         background: #EDEDED
         border-radius: 40px
         margin-bottom: 9px
-        display: inline-block
+        display: inline-block 
         font-size: 10px
-
+ 
 
   // order.html 
 
   .main_order
+    .seren.white
+      background-color: white
+      padding-left: 0px
     .title_order
       font-weight: 600
       font-size: 32px
@@ -2726,6 +2729,7 @@ footer
         background: #E5EFFE
         border-radius: 32px 32px 0px 0px
         width: 100%
+        height: 37%
         .title
           margin-top: 40px
           margin-left: 32px
@@ -2763,28 +2767,175 @@ footer
             font-weight: 600
             font-size: 24px
             line-height: 125%
+          .elements_list_title
+            display: grid
+            grid-template-columns: 4fr 1fr 1fr 1fr 0.5fr
+            margin-top: 24px
+            margin-bottom: 11px
+            div
+              font-weight: 400
+              font-size: 14px
+              line-height: 145%
+              color: #8E9297
+            .title_price, .title_coll, .title_summ
+              margin: 0 auto
+
           .elements_list
             color: #202732
             display: grid
-            grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr
+            grid-template-columns: 1fr 3fr 1fr 1fr 1fr 0.5fr
             border-top:  1px solid #E5EFFE
             height: 144px
             align-items: center
 
-
+            .img
+              margin: 0 auto
             .name_element
               font-weight: 400
               font-size: 12px
               line-height: 135%
+            .count_element
+              margin: 0 auto
+              .plus, .minus
+                vertical-align: middle
+                display: inline-block
+                cursor: pointer
+            .input_coll
+              width: 48px
+              height: 19px
+              font-weight: 400
+              font-size: 15px
+              line-height: 135%
+              text-align: center
+              border: none
+            .delete_element
+              margin: 0 auto
+          
+            
 
             .price_element, .summ_element
               font-weight: 400
               font-size: 14px
               line-height: 135%
+              margin: 0 auto
+          .summ_block
+            display: grid
+            grid-template-columns: 1fr 1fr
+            border-top: 1px solid #E5EFFE
+
+            .order_next_button_block
+              font-weight: 500
+              font-size: 14px
+              line-height: 125%
+              background: $main-green-color
+              padding: 23px 39px
+              text-align: center
+              cursor: pointer
+            .calc_summ_block
+              margin-top: 24px
+              display: grid
+              grid-template-columns: 1fr 1fr
+
+              .calc_block
+                grid-column-start: 1
+                grid-column-end: 3
+              .div_summ
+                margin-bottom: 4px
+                max-width: 200px
+                display: flex
+                justify-content: space-between
+                align-items: flex-end
+
+              .line_summ_title, .line_summ_value
+                font-weight: 500
+                font-size: 16px
+                line-height: 125%
+              .summ_block_line
+                align-content: space-around
+                display: grid
+                .line_summ_title
+                  font-weight: 600
+                  font-size: 20px
+                  line-height: 135%
+            
+
+
+            .coupon_block
+              display: flex
+              margin-top: 26px
+              .left_coupon
+                background-image: url('../img/coupon_left.svg')
+                width: 213px
+                height: 64px
+                span    
+                  font-size: 12px
+                  padding-left: 32px
+                  display: block
+                  padding-top: 14px
+                input
+                  
+                  padding-left: 32px
+                  
+                  border: none
+                  background: initial
+                  font-weight: 600
+                  font-size: 14px
+                  line-height: 145%
+              
+              .right_coupon
+                background-image: url('../img/coupon_right.svg')
+                width: max-content
+                padding: 23px
+                height: fit-content
+                font-size: 15px
+                color: white 
+                cursor: pointer
+        .tabs
+          .delivery .title, .oplata .title
+            border: 1px solid #E5EFFE
+            border-radius: 32px
+            background: white
+            margin-top: 10px
+            vertical-align: middle
+            padding: 40px 48px
+            margin-left: 0px
+            color: #8E9297
+            font-weight: 600
+            font-size: 24px
+            line-height: 125%
       .order_summ_block
         width: 376px
         background: #F1F7FF
         border-radius: 32px
+        height: max-content
+        position: sticky
+        top: 0px
+        .content
+          padding: 40px
+          .title
+            font-weight: 500
+            font-size: 18px
+            line-height: 125%
+          .line
+            background: #DAE2EC
+            height: 1px
+            width: 100%
+            margin: 21px 0px 21px 0px
+          .count_tov
+            font-weight: 500
+            font-size: 18px
+            line-height: 125%
+            margin-bottom: 5px
+          .all_price
+            font-weight: 600
+            font-size: 32px
+            line-height: 120%
+          .order_right_button
+            background: #A9FF35
+            border-radius: 4px
+            text-align: center
+            padding: 23px 
+            margin-top: 23px
 
   // cart.html 
   .main_cart
