@@ -2725,13 +2725,19 @@ footer
       display: grid
       grid-template-columns: minmax(700px, 1056px) 1fr
       justify-items: end
-      .order_content
+      .order_content_blue
         background: #E5EFFE
         border-radius: 32px 32px 0px 0px
+        height: 150px
+        margin-bottom: -55px
+       
+
+      .order_content
         width: 100%
-        height: 37%
+       
+  
         .title
-          margin-top: 40px
+          padding-top: 40px
           margin-left: 32px
           font-weight: 500
           font-size: 18px
@@ -2763,10 +2769,74 @@ footer
        
           background: #FFFFFF
           margin-top: 28px
+          .animation_tab.close 
+            display: none
           .title_order_elements
             font-weight: 600
             font-size: 24px
             line-height: 125%
+            display: flex
+            justify-content: space-between
+            .edit_tab
+              font-weight: 400
+              font-size: 14px
+              line-height: 145%
+              display: flex
+              align-items: flex-end
+              cursor: pointer
+              span    
+                padding-right: 5px
+          .fio, .contact_data, .type_delivery
+            font-weight: 500
+            font-size: 16px
+            line-height: 125%
+            padding-top: 24px
+            padding-bottom: 15px
+          .line
+            margin: 21px 0px 0px 0px
+          .radio_button
+            .radio_div
+              padding-bottom: 10px
+              input
+                &:checked
+            
+                  accent-color: $main-green-color
+              .names
+                font-weight: 500
+                font-size: 14px
+                line-height: 125%
+                color: #8E9297
+              .opis
+                font-weight: 400
+                font-size: 12px
+                line-height: 135%
+                color: #8E9297
+                padding-left: 25
+                padding-top: 4px
+                display: inline-block
+          .fio_input
+            display: flex
+            justify-content: space-between
+            gap: 10px
+            input
+              padding: 15px
+              border: 1px solid #EDEDED
+              border-radius: 4px
+              width: 100%
+          .summ_first_tab
+            display: flex
+            justify-content: space-between
+            margin-top: 24px
+            .summ_title
+              font-size: 20px
+            .summ_tovar_count
+              font-weight: 500
+              font-size: 16px
+              line-height: 125%
+              color: #8E9297
+              span
+                color: #1E242E
+                padding-left: 10px
           .elements_list_title
             display: grid
             grid-template-columns: 4fr 1fr 1fr 1fr 0.5fr
@@ -2903,6 +2973,13 @@ footer
             font-weight: 600
             font-size: 24px
             line-height: 125%
+          .title.active
+            color: #202732
+      .line
+        background: #DAE2EC
+        height: 1px
+        width: 100%
+        margin: 21px 0px 21px 0px
       .order_summ_block
         width: 376px
         background: #F1F7FF
@@ -2916,11 +2993,7 @@ footer
             font-weight: 500
             font-size: 18px
             line-height: 125%
-          .line
-            background: #DAE2EC
-            height: 1px
-            width: 100%
-            margin: 21px 0px 21px 0px
+         
           .count_tov
             font-weight: 500
             font-size: 18px
@@ -2936,6 +3009,32 @@ footer
             text-align: center
             padding: 23px 
             margin-top: 23px
+            font-size: 14px
+          .calc_block
+            .div_summ
+              margin-bottom: 4px
+              width: 100%
+              display: flex
+              justify-content: space-between
+              align-items: flex-end
+
+              .line_summ_title, .line_summ_value
+                font-weight: 500
+                font-size: 16px
+                line-height: 125%
+              .line_summ_title
+                color: #8E9297
+              .summ_block_line
+                align-content: space-around
+                display: grid
+                .line_summ_title
+                  font-weight: 600
+                  font-size: 20px
+                  line-height: 135%
+
+
+
+
 
   // cart.html 
   .main_cart
