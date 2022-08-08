@@ -3660,6 +3660,13 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   justify-items: end;
 }
 
+@media screen and (max-width: 1500px) {
+  .main_white .main_order .order {
+    -ms-grid-columns: minmax(600px, 1456px);
+        grid-template-columns: minmax(600px, 1456px);
+  }
+}
+
 .main_white .main_order .order .order_content_blue {
   background: #E5EFFE;
   border-radius: 32px 32px 0px 0px;
@@ -3763,20 +3770,44 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 
 .main_white .main_order .order .order_content .order_elements .radio_button .radio_div {
   padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.main_white .main_order .order .order_content .order_elements .radio_button .radio_div input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #a9ff36;
+  border-radius: 50%;
+  background-clip: content-box;
+  padding: 3px;
+  margin-left: 0px;
+  margin-top: 0px;
+  position: absolute;
+  accent-color: #60a404;
+}
+
+.main_white .main_order .order .order_content .order_elements .radio_button .radio_div input:checked + .names {
+  color: #202732;
 }
 
 .main_white .main_order .order .order_content .order_elements .radio_button .radio_div input:checked {
-  accent-color: #A9FF35;
+  background-color: #a9ff36;
 }
 
 .main_white .main_order .order .order_content .order_elements .radio_button .radio_div .names {
+  cursor: pointer;
   font-weight: 500;
   font-size: 14px;
   line-height: 125%;
   color: #8E9297;
+  margin-left: 25px;
 }
 
 .main_white .main_order .order .order_content .order_elements .radio_button .radio_div .opis {
+  cursor: pointer;
   font-weight: 400;
   font-size: 12px;
   line-height: 135%;
@@ -3801,6 +3832,56 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   border: 1px solid #EDEDED;
   border-radius: 4px;
   width: 100%;
+}
+
+.main_white .main_order .order .order_content .order_elements .order_next_button_block {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+.main_white .main_order .order .order_content .order_elements .order_buttom_next {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 125%;
+  background: #A9FF35;
+  padding: 23px 39px;
+  text-align: center;
+  cursor: pointer;
+  width: 200px;
+}
+
+.main_white .main_order .order .order_content .order_elements .bottom_order_block_oplata {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 24px;
+}
+
+.main_white .main_order .order .order_content .order_elements .bottom_order_block_oplata .order_next_button_block {
+  margin-top: 0px;
+}
+
+.main_white .main_order .order .order_content .order_elements .bottom_order_block_oplata .soglasie .dai_soglacie {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+}
+
+.main_white .main_order .order .order_content .order_elements .bottom_order_block_oplata .soglasie .dai_soglacie a {
+  color: #8E9297;
+}
+
+.main_white .main_order .order .order_content .order_elements .bottom_order_block_oplata .soglasie .check {
+  top: 11px;
 }
 
 .main_white .main_order .order .order_content .order_elements .summ_first_tab {
@@ -3916,7 +3997,7 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   font-size: 14px;
   line-height: 125%;
   background: #A9FF35;
-  padding: 23px 39px;
+  padding: 22px 60px;
   text-align: center;
   cursor: pointer;
 }
@@ -4046,6 +4127,12 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
+}
+
+@media screen and (max-width: 1500px) {
+  .main_white .main_order .order .order_summ_block {
+    display: none;
+  }
 }
 
 .main_white .main_order .order .order_summ_block .content {
@@ -4732,15 +4819,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u849bdef1;
-          animation-name: inline-u849bdef1;
+  -webkit-animation-name: inline-u57b77bc2;
+          animation-name: inline-u57b77bc2;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u849bdef1 {
+@-webkit-keyframes inline-u57b77bc2 {
   0% {
     opacity: 0;
   }
@@ -4749,7 +4836,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u849bdef1 {
+@keyframes inline-u57b77bc2 {
   0% {
     opacity: 0;
   }

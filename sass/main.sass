@@ -2725,6 +2725,9 @@ footer
       display: grid
       grid-template-columns: minmax(700px, 1056px) 1fr
       justify-items: end
+      @media screen and ( max-width: 1500px  )
+        grid-template-columns: minmax(600px, 1456px) 
+    
       .order_content_blue
         background: #E5EFFE
         border-radius: 32px 32px 0px 0px
@@ -2795,18 +2798,41 @@ footer
           .line
             margin: 21px 0px 0px 0px
           .radio_button
+            
             .radio_div
               padding-bottom: 10px
+              cursor: pointer
+
               input
+                appearance: none
+                width: 18px
+                height: 18px
+                border: 1px solid #a9ff36
+                border-radius: 50%
+                background-clip: content-box
+                padding: 3px
+                margin-left: 0px
+                margin-top: 0px
+                position: absolute
+                accent-color: rgb(96, 164, 4)
+
+                &:checked + .names
+                  color: #202732
                 &:checked
-            
-                  accent-color: $main-green-color
+                  background-color: #a9ff36
+                  
+                  
+                
+                   
               .names
+                cursor: pointer
                 font-weight: 500
                 font-size: 14px
                 line-height: 125%
                 color: #8E9297
+                margin-left: 25px
               .opis
+                cursor: pointer
                 font-weight: 400
                 font-size: 12px
                 line-height: 135%
@@ -2823,6 +2849,37 @@ footer
               border: 1px solid #EDEDED
               border-radius: 4px
               width: 100%
+          .order_next_button_block
+            display: grid
+            justify-content: end
+            margin-top: 24px
+            cursor: pointer
+          .order_buttom_next
+            font-weight: 500
+            font-size: 14px
+            line-height: 125%
+            background: #A9FF35
+            padding: 23px 39px
+            text-align: center
+            cursor: pointer
+            width: 200px
+          .bottom_order_block_oplata
+            display: grid
+            grid-template-columns: 2fr 1fr 1fr
+            align-items: center
+            margin-top: 24px
+            .order_next_button_block
+              margin-top: 0px
+            .soglasie
+              .dai_soglacie
+                font-weight: 400
+                font-size: 14px
+                line-height: 145%
+                a 
+                  color: #8E9297
+              .check    
+                top: 11px
+          
           .summ_first_tab
             display: flex
             justify-content: space-between
@@ -2898,7 +2955,7 @@ footer
               font-size: 14px
               line-height: 125%
               background: $main-green-color
-              padding: 23px 39px
+              padding: 22px 60px
               text-align: center
               cursor: pointer
             .calc_summ_block
@@ -2987,6 +3044,9 @@ footer
         height: max-content
         position: sticky
         top: 0px
+        @media screen and ( max-width: 1500px  )
+          display: none
+
         .content
           padding: 40px
           .title
