@@ -2772,6 +2772,21 @@ footer
        
           background: #FFFFFF
           margin-top: 28px
+          .edit_tab.close
+            display: none!important
+          .title_order_elements
+            .edit_tab
+              display: none
+          .animation_tab + .summ_first_tab
+            display: none
+          .animation_tab.close + .summ_first_tab
+            display: flex
+
+
+          .tabcontent.close
+              display: none
+          .countAllElem
+            padding-top: 4px
           .animation_tab.close 
             display: none
           .title_order_elements
@@ -2884,6 +2899,8 @@ footer
             display: flex
             justify-content: space-between
             margin-top: 24px
+           
+           
             .summ_title
               font-size: 20px
             .summ_tovar_count
@@ -2891,9 +2908,22 @@ footer
               font-size: 16px
               line-height: 125%
               color: #8E9297
+              flex-grow: 1
+              text-align: right
+              display: flex
+              &::before
+                content: ''
+                background: repeating-linear-gradient(to right, currentColor, currentColor 1px, transparent 2px, transparent 8px)
+                height: 1px
+                flex-grow: 1
+                display: inline-block
+                margin-top: 19px
+                margin-left: 10px
+                color: #b9d7ff
               span
                 color: #1E242E
                 padding-left: 10px
+                padding-top: 3px
           .elements_list_title
             display: grid
             grid-template-columns: 4fr 1fr 1fr 1fr 0.5fr
@@ -2914,6 +2944,8 @@ footer
             border-top:  1px solid #E5EFFE
             height: 144px
             align-items: center
+
+            
 
             .img
               margin: 0 auto
@@ -2937,9 +2969,8 @@ footer
               border: none
             .delete_element
               margin: 0 auto
+              cursor: pointer
           
-            
-
             .price_element, .summ_element
               font-weight: 400
               font-size: 14px

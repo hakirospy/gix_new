@@ -3,6 +3,7 @@
 <head>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="./popap.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 
@@ -78,10 +79,11 @@
 
 
                     <div class="order_elements">
-                        <div class="title_order_elements">1. Текущий заказ <div class="edit_tab"><span><img
+                        <div class="title_order_elements">1. Текущий заказ <div class="edit_tab topTab" style="display:none"><span><img
                                         src="./img/edit.svg" alt=""></span>Редактировать</div>
                         </div>
-                        <div class="animation_tab "><!--close-->
+                        <div class="animation_tab ">
+                            <!--close-->
                             <div class="elements_list_title">
 
                                 <div>Наименование товара</div>
@@ -235,17 +237,17 @@
                                 </div>
                                 <div class="calc_summ_block">
                                     <div class="calc_block">
-                                        <div class="div_summ"><span class="line_summ_title">Итого:</span> <span
-                                                class="line_summ_value">197 498 ₽</span></div>
+                                        <div class="div_summ"><span class="line_summ_title ">Итого:</span> <span
+                                                class="line_summ_value all_summ_span all_price_elem">197 498 ₽</span></div>
                                         <div class="div_summ"><span class="line_summ_title">Скидка:</span> <span
-                                                class="line_summ_value">– 90 500 ₽</span></div>
-                                        <div class="div_summ"><span class="line_summ_title">Доставка:</span> <span
                                                 class="line_summ_value">0 ₽</span></div>
+                                        <div class="div_summ"><span class="line_summ_title">Доставка:</span> <span
+                                                class="line_summ_value deliveCalc">0 ₽</span></div>
 
                                     </div>
                                     <div class="summ_block_line">
                                         <div class="div_summ"><span class="line_summ_title">К оплате:</span> <span
-                                                class="line_summ_value">106 998 ₽</span></div>
+                                                class="line_summ_value allPriceCalc">106 998 ₽</span></div>
 
                                     </div>
                                     <div class="order_next_button_block">
@@ -261,7 +263,7 @@
 
                         <div class="summ_first_tab">
                             <div class="summ_title">Итого</div>
-                            <div class="summ_tovar_count">4 товара <span>106 998 ₽</span></div>
+                            <div class="summ_tovar_count"><b class="countAllElem">4 товара</b> <span>106 998 ₽</span></div>
 
                         </div>
                     </div>
@@ -272,8 +274,9 @@
                     <div class="tabs">
                         <div class="delivery">
                             <div class="order_elements">
-                                <div class="title_order_elements">2. Способ доставки</div>
-
+                                <div class="title_order_elements">2. Способ доставки <div class="edit_tab"><span><img
+                                    src="./img/edit.svg" alt=""></span>Редактировать</div></div>
+<div class="tabcontent close">
                                 <div class="fio">Данные получателя</div>
                                 <div class="fio_input">
                                     <input type="text" name="name" placeholder="Имя*">
@@ -303,23 +306,27 @@
 
                                 <div class="type_delivery">Способ доставки</div>
 
-                                <div class="radio_button">
+                                <div class="radio_button deliv">
 
 
-                                    <div class="radio_div"><input type="radio" name="radio" id="radio_1" /><label
-                                            for="radio_1" class="names"> Курьером по Москве (в пределах МКАД) <br><span
+                                    <div class="radio_div"><input type="radio" value="100"  name="radio" id="radio_1" /><label
+                                            for="radio_1"  class="names"> Курьером по Москве (в пределах МКАД) <br><span
                                                 class="opis">300 рублей, 1-2 дня</span></label></div>
 
-                                    <div class="radio_div"><input type="radio" id="radio_2" name="radio"><label
+                                    <div class="radio_div"><input  value = "200" type="radio" id="radio_2" name="radio"><label
                                             for="radio_2" class="names"> Экспрес-доставка по Москве<br> <span
                                                 class="opis">500 рублей, 3 часа</span></label></div>
 
-                                    <div class="radio_div"><input type="radio" id="radio_3" name="radio"><label
-                                            for="radio_3" class="names"> По России (СДЭК) <br><span class="opis">от 300
+                                    <div class="radio_div"><input type="radio" value = "300" id="radio_3" name="radio"><label
+                                            for="radio_3"  class="names"> По России (СДЭК) <br><span class="opis">от 300
                                                 рублей, 1-3 дня</span></label></div>
-                                    <div class="radio_div"><input type="radio" id="radio_4" name="radio"><label
+                                    <div class="radio_div"><input type="radio" value = "400" id="radio_4" name="radio"><label
                                             for="radio_4" class="names"> Самовывоз (метро Баррикадная)<br> <span
                                                 class="opis">бесплатно, 1 день</span></label></div>
+
+                                                <input type="hidden" name="delivery_price" value="0" />
+                                                <input type="hidden" name="all_price" value="0" />
+
 
 
                                 </div>
@@ -338,13 +345,22 @@
                                     <div class="order_buttom_next">Перейти к оплате</div>
 
                                 </div>
-
                             </div>
+                                <div class="summ_first_tab">
+                                    <div class="summ_title">Доставка</div>
+                                   
+                                    <div class="summ_tovar_count"> <span class="deliverMainBlock">0 ₽</span></div>
+        
+                                </div>
+                            </div>
+
+                            
                         </div>
                         <div class="oplata">
                             <div class="order_elements">
-                                <div class="title_order_elements">3. Оплата</div>
-
+                                <div class="title_order_elements">3. Оплата <div class="edit_tab"><span><img
+                                    src="./img/edit.svg" alt=""></span>Редактировать</div></div>
+                                    <div class="tabcontent close">
                                 <div class="type_delivery">Способ оплаты</div>
 
                                 <div class="radio_button">
@@ -377,7 +393,7 @@
                                         <label class="style_green">
                                             <input type="checkbox" checked>
                                             <span class="check"></span>
-                                            <span class="dai_soglacie"> Я согласен на обработку <a href="#">Персональных
+                                            <span class="dai_soglacie"> Я согласен на обработку <a href="#" data-modal="modal-one">Персональных
                                                     данных</a></span>
                                         </label>
                                     </div>
@@ -387,7 +403,7 @@
 
 
                                         <div class="div_summ"><span class="line_summ_title">К оплате:</span> <span
-                                                class="line_summ_value">106 998 ₽</span></div>
+                                                class="line_summ_value allPriceOplata">0 ₽</span></div>
 
 
 
@@ -400,6 +416,7 @@
                                         </div>
 
 
+                                    </div>
                                     </div>
                                 </div>
 
@@ -415,18 +432,18 @@
 
                 </div>
                 <div class="order_summ_block">
-
+ 
                     <div class="content">
                         <span class="title">Ваш заказ</span>
                         <div class="line"></div>
-
+ 
                         <div class="calc_block">
                             <div class="div_summ"><span class="line_summ_title">Итого:</span> <span
-                                    class="line_summ_value">197 498 ₽</span></div>
+                                    class="line_summ_value all_price_elem_f">0 ₽</span></div>
                             <div class="div_summ"><span class="line_summ_title">Скидка:</span> <span
-                                    class="line_summ_value">– 90 500 ₽</span></div>
-                            <div class="div_summ"><span class="line_summ_title">Доставка:</span> <span
-                                    class="line_summ_value">300 ₽</span></div>
+                                    class="line_summ_value">0 ₽</span></div>
+                            <div class="div_summ"><span  class="line_summ_title ">Доставка:</span> <span
+                                    class="line_summ_value deliverLast">0 ₽</span></div>
 
                         </div>
 
@@ -513,13 +530,17 @@
 
     </section>
 
-    <script>
-        textInput = document.querySelector('#numberInput');
-        plusButton = document.querySelector('#plusButton');
-        minusButton = document.querySelector('#minusButton');
-        plusButton.onclick = () => textInput.value = parseInt(textInput.value) + 1;
-        minusButton.onclick = () => textInput.value = parseInt(textInput.value) - 1;  
-    </script>
+
+    <div class="modal" id="modal-one">
+        <div class="modal-bg modal-exit"></div>
+        <div class="modal-container">
+          <h1>Amazing Modal</h1>
+          <h2>Pure Vanilla JavaScript</h2>
+          <button class="modal-close modal-exit">X</button>
+        </div>
+      </div>
+
+    <script src="./mainOrder.js"> </script>
 
     <section class="contact_block">
         <div class="submit_form">
