@@ -241,39 +241,93 @@ return s;
 }
 
 /* click on button edetor*/
+function activeRemoveTab(){
+
+    document.querySelector('.animation_tab').classList.add('close');
+    document.querySelector('.animation_tab').classList.remove('active');
+    
+    document.querySelector('.topTab').style.display ='flex';
+    var elementList = document.querySelectorAll('.tabcontent');
+    Array.prototype.forEach.call(elementList, function (e) {
+    
+        e.classList.add('close');
+        e.classList.remove('active');
+    
+    });
+    
+    var elementList = document.querySelectorAll('.edit_tab');
+    Array.prototype.forEach.call(elementList, function (e) {
+    
+        e.classList.remove('close');
+        e.classList.remove('active');
+    });
+
+}
+
 
 document.querySelectorAll('.edit_tab').forEach(function (editor) {editor.addEventListener('click', function (e) {
 
-document.querySelector('.animation_tab').classList.add('close');
-document.querySelector('.topTab').style.display ='flex';
-
-
-var elementList = document.querySelectorAll('.tabcontent');
-Array.prototype.forEach.call(elementList, function (e) {
-
-    e.classList.add('close');
-});
-
-
-
-var elementList = document.querySelectorAll('.edit_tab');
-Array.prototype.forEach.call(elementList, function (e) {
-
-    e.classList.remove('close');
-});
+activeRemoveTab()
 
 editor.classList.add('close');
-
 editor.parentNode.parentNode.children[1].classList.remove('close');
+editor.parentNode.parentNode.children[1].classList.add('active');
+console.log(editor.parentNode.parentNode.children[1])
+
 
 
 })
 
 })
+
+let button_next = document.querySelector('.button_next')
+button_next.addEventListener('click', function (event) {
+
+    activeRemoveTab()
+ 
+
+document.querySelector('.navigate_order').children[1].appendChild(document.createElement('span'))
+document.querySelector('.navigate_order').children[0].classList.add('grens')
+document.querySelector('.delivery .tabcontent').classList.remove('close');
+document.querySelector('.delivery .tabcontent').classList.add('active');
+
+document.querySelector('.order_content_blue .title').innerHTML = "Шаг 2 из 3. Введите данные для доставки"
+
+
+})
+
+
+let button_next_delivery = document.querySelector('.button_next_delivery')
+button_next_delivery.addEventListener('click', function (event) {
+
+    activeRemoveTab()
+
+   
+    document.querySelector('.navigate_order').children[2].appendChild(document.createElement('span'))
+    document.querySelector('.navigate_order').children[1].classList.add('grens')
+document.querySelector('.oplata .tabcontent').classList.remove('close');
+document.querySelector('.oplata .tabcontent').classList.add('active');
+
+document.querySelector('.order_content_blue .title').innerHTML = "Шаг 3 из 3. Выберите удобный способ оплаты"
+
+
+})
+
+
+let button_next_oplata= document.querySelector('.button_next_oplata')
+button_next_oplata.addEventListener('click', function (event) {
+
+activeRemoveTab()
+
+
+
+})
+
+
 function initAcc(elem, option){
 
 document.addEventListener('click', function (e) {
-if (!e.target.matches(elem+' .a-btn')) return;
+if (!e.target.matches(elem+' .edit_tab')) return;
 else{
 if(!e.target.parentElement.classList.contains('active')){
     if(option==true){
@@ -290,7 +344,7 @@ if(!e.target.parentElement.classList.contains('active')){
 });
 }
 
-initAcc('.accordion.v1', true);
+initAcc('.tabs', true);
 
 
 /*popap*/
