@@ -3779,8 +3779,8 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 }
 
 .main_white .main_order .order .order_content .order_elements .tabcontent, .main_white .main_order .order .order_content .order_elements .animation_tab {
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   opacity: 0;
   height: auto;
   max-height: 0;
@@ -3815,6 +3815,12 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main_white .main_order .order .order_content .order_elements .title_order_elements {
+    padding-bottom: 0px;
   }
 }
 
@@ -5118,15 +5124,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ue3513332;
-          animation-name: inline-ue3513332;
+  -webkit-animation-name: inline-ucb71056c;
+          animation-name: inline-ucb71056c;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ue3513332 {
+@-webkit-keyframes inline-ucb71056c {
   0% {
     opacity: 0;
   }
@@ -5135,7 +5141,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ue3513332 {
+@keyframes inline-ucb71056c {
   0% {
     opacity: 0;
   }

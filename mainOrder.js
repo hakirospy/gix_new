@@ -91,13 +91,13 @@ function animationData( old_price, price_element, deliverPrice){
     let allPriceOplata = document.querySelector('.allPriceOplata')
     
 
-    animateValue(mainPrice, old_price, price_element + deliverPrice, 200)
-    animateValue(mainPriceSpan, old_price, price_element, 200)
-    animateValue(smallAll, old_price, price_element, 200)
-    animateValue(allPriceElem, old_price, price_element, 200)
-    animateValue(allPriceElemF, old_price, price_element, 200)
-    animateValue(allPriceCalc, old_price, price_element + deliverPrice, 200)
-    animateValue(allPriceOplata, old_price, price_element + deliverPrice, 200)
+    animateValue(mainPrice, old_price, price_element + deliverPrice, 500)
+    animateValue(mainPriceSpan, old_price, price_element, 500)
+    animateValue(smallAll, old_price, price_element, 500)
+    animateValue(allPriceElem, old_price, price_element, 500)
+    animateValue(allPriceElemF, old_price, price_element, 500)
+    animateValue(allPriceCalc, old_price, price_element + deliverPrice, 500)
+    animateValue(allPriceOplata, old_price, price_element + deliverPrice, 500)
     
 
 
@@ -111,9 +111,9 @@ function addDeliveryToSumm(){
     var mainPrice = parseInt(document.querySelector('input[name="all_price"]').value)
     var newMainPrice = mainPrice + parseInt(deliverPrice)
 
-    animateValue(mainPriceElem, mainPrice, newMainPrice, 200)
-    animateValue(allPriceCalc, mainPrice, newMainPrice, 200)
-    animateValue(allPriceOplata, mainPrice, newMainPrice, 200)
+    animateValue(mainPriceElem, mainPrice, newMainPrice, 500)
+    animateValue(allPriceCalc, mainPrice, newMainPrice, 500)
+    animateValue(allPriceOplata, mainPrice, newMainPrice, 500)
 
 
 }

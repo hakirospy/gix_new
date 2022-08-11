@@ -2801,8 +2801,8 @@ footer
 
           .tabcontent, .animation_tab
         
-            -webkit-transition: all 0.8s ease-in-out
-            transition: all 0.8s ease-in-out
+            -webkit-transition: all 0.3s ease-in-out
+            transition: all 0.3s ease-in-out
             opacity: 0
             height: auto
             max-height: 0
@@ -2824,6 +2824,8 @@ footer
               font-size: 12px
               flex-wrap: wrap
               padding-bottom: 10px
+            @media screen and ( max-width: 450px  )
+              padding-bottom: 0px
             .edit_tab
               font-weight: 400
               font-size: 14px
