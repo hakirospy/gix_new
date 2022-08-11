@@ -3731,7 +3731,7 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 
 @media screen and (max-width: 850px) {
   .main_white .main_order .order .order_content .order_elements {
-    padding: 40px 24px;
+    padding: 24px 24px;
   }
 }
 
@@ -3793,7 +3793,7 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 
 @media screen and (max-width: 650px) {
   .main_white .main_order .order .order_content .order_elements .title_order_elements {
-    font-size: 16px;
+    font-size: 12px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -3814,7 +3814,8 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 
 @media screen and (max-width: 650px) {
   .main_white .main_order .order .order_content .order_elements .title_order_elements .edit_tab {
-    margin-top: 16px;
+    margin-top: -7px;
+    font-size: 12px;
   }
 }
 
@@ -3972,6 +3973,25 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   }
 }
 
+@media screen and (max-width: 480px) {
+  .main_white .main_order .order .order_content .order_elements .bottom_order_block_oplata .order_next_button_block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main_white .main_order .order .order_content .order_elements .bottom_order_block_oplata .div_summ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .main_white .main_order .order .order_content .order_elements .bottom_order_block_oplata .order_next_button_block {
   margin-top: 0px;
 }
@@ -3980,6 +4000,12 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   font-weight: 400;
   font-size: 14px;
   line-height: 145%;
+}
+
+@media screen and (max-width: 650px) {
+  .main_white .main_order .order .order_content .order_elements .bottom_order_block_oplata .soglasie .dai_soglacie {
+    font-size: 12px;
+  }
 }
 
 .main_white .main_order .order .order_content .order_elements .bottom_order_block_oplata .soglasie .dai_soglacie a {
@@ -4004,6 +4030,12 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   font-size: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  .main_white .main_order .order .order_content .order_elements .summ_first_tab .summ_title {
+    font-size: 15px;
+  }
+}
+
 .main_white .main_order .order .order_content .order_elements .summ_first_tab .summ_tovar_count {
   font-weight: 500;
   font-size: 16px;
@@ -4016,6 +4048,12 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .main_white .main_order .order .order_content .order_elements .summ_first_tab .summ_tovar_count {
+    font-size: 12px;
+  }
 }
 
 .main_white .main_order .order .order_content .order_elements .summ_first_tab .summ_tovar_count::before {
@@ -4212,6 +4250,12 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   line-height: 125%;
 }
 
+@media screen and (max-width: 470px) {
+  .main_white .main_order .order .order_content .order_elements .summ_block .calc_summ_block .line_summ_title, .main_white .main_order .order .order_content .order_elements .summ_block .calc_summ_block .line_summ_value {
+    font-size: 12px;
+  }
+}
+
 .main_white .main_order .order .order_content .order_elements .summ_block .calc_summ_block .summ_block_line {
   -ms-flex-line-pack: distribute;
       align-content: space-around;
@@ -4223,6 +4267,12 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   font-weight: 600;
   font-size: 20px;
   line-height: 135%;
+}
+
+@media screen and (max-width: 470px) {
+  .main_white .main_order .order .order_content .order_elements .summ_block .calc_summ_block .summ_block_line .line_summ_title {
+    font-size: 15px;
+  }
 }
 
 .main_white .main_order .order .order_content .order_elements .summ_block .coupon_block {
@@ -4254,11 +4304,26 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   height: 64px;
 }
 
+@media screen and (max-width: 470px) {
+  .main_white .main_order .order .order_content .order_elements .summ_block .coupon_block .left_coupon {
+    background-image: url("../img/coupon_left_small.svg");
+    width: 135px;
+    height: 48px;
+  }
+}
+
 .main_white .main_order .order .order_content .order_elements .summ_block .coupon_block .left_coupon span {
   font-size: 12px;
   padding-left: 32px;
   display: block;
   padding-top: 14px;
+}
+
+@media screen and (max-width: 470px) {
+  .main_white .main_order .order .order_content .order_elements .summ_block .coupon_block .left_coupon span {
+    font-size: 10px;
+    padding-left: 20px;
+  }
 }
 
 .main_white .main_order .order .order_content .order_elements .summ_block .coupon_block .left_coupon input {
@@ -4268,6 +4333,13 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   font-weight: 600;
   font-size: 14px;
   line-height: 145%;
+}
+
+@media screen and (max-width: 470px) {
+  .main_white .main_order .order .order_content .order_elements .summ_block .coupon_block .left_coupon input {
+    font-size: 10px;
+    padding-left: 20px;
+  }
 }
 
 .main_white .main_order .order .order_content .order_elements .summ_block .coupon_block .right_coupon {
@@ -4282,6 +4354,16 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   font-size: 15px;
   color: white;
   cursor: pointer;
+}
+
+@media screen and (max-width: 470px) {
+  .main_white .main_order .order .order_content .order_elements .summ_block .coupon_block .right_coupon {
+    background-image: url("../img/coupon_right_small.svg");
+    width: auto;
+    height: auto;
+    padding: 16px;
+    font-size: 12px;
+  }
 }
 
 .main_white .main_order .order .order_content .tabs .delivery .title, .main_white .main_order .order .order_content .tabs .oplata .title {
@@ -5011,15 +5093,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uf0356b6a;
-          animation-name: inline-uf0356b6a;
+  -webkit-animation-name: inline-u053cc334;
+          animation-name: inline-u053cc334;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uf0356b6a {
+@-webkit-keyframes inline-u053cc334 {
   0% {
     opacity: 0;
   }
@@ -5028,7 +5110,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uf0356b6a {
+@keyframes inline-u053cc334 {
   0% {
     opacity: 0;
   }
