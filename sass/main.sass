@@ -2713,6 +2713,8 @@ footer
       line-height: 120%
       margin-top: 32px
       color: #202732
+      @media screen and ( max-width: 470px  )
+        margin-top: 16px
 
     .hr
       background: #1E242E
@@ -2776,14 +2778,19 @@ footer
 
           background: #FFFFFF
           margin-top: 28px
+          
           @media screen and ( max-width: 850px  )
             padding: 24px 24px
+          @media screen and ( max-width: 470px  )
+            margin-top: 10px
           .edit_tab.close
             display: none!important
           .title_order_elements
             @media screen and ( max-width: 720px  )
               padding-bottom: 16px
               font-size: 16px
+            @media screen and ( max-width: 480px  )
+              padding-bottom: 0px
             .edit_tab
               display: none
           .animation_tab + .summ_first_tab
@@ -2816,6 +2823,7 @@ footer
             @media screen and ( max-width: 650px  )
               font-size: 12px
               flex-wrap: wrap
+              padding-bottom: 10px
             .edit_tab
               font-weight: 400
               font-size: 14px
@@ -2828,6 +2836,8 @@ footer
                 font-size: 12px
               span    
                 padding-right: 5px
+                @media screen and ( max-width: 345px  )
+                  display: none
           .fio, .contact_data, .type_delivery
             font-weight: 500
             font-size: 16px

@@ -3641,6 +3641,12 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   color: #202732;
 }
 
+@media screen and (max-width: 470px) {
+  .main_white .main_order .title_order {
+    margin-top: 16px;
+  }
+}
+
 .main_white .main_order .hr {
   background: #1E242E;
   opacity: 0.15;
@@ -3735,6 +3741,12 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   }
 }
 
+@media screen and (max-width: 470px) {
+  .main_white .main_order .order .order_content .order_elements {
+    margin-top: 10px;
+  }
+}
+
 .main_white .main_order .order .order_content .order_elements .edit_tab.close {
   display: none !important;
 }
@@ -3743,6 +3755,12 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   .main_white .main_order .order .order_content .order_elements .title_order_elements {
     padding-bottom: 16px;
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main_white .main_order .order .order_content .order_elements .title_order_elements {
+    padding-bottom: 0px;
   }
 }
 
@@ -3796,6 +3814,7 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
     font-size: 12px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding-bottom: 10px;
   }
 }
 
@@ -3821,6 +3840,12 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 
 .main_white .main_order .order .order_content .order_elements .title_order_elements .edit_tab span {
   padding-right: 5px;
+}
+
+@media screen and (max-width: 345px) {
+  .main_white .main_order .order .order_content .order_elements .title_order_elements .edit_tab span {
+    display: none;
+  }
 }
 
 .main_white .main_order .order .order_content .order_elements .fio, .main_white .main_order .order .order_content .order_elements .contact_data, .main_white .main_order .order .order_content .order_elements .type_delivery {
@@ -5093,15 +5118,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u053cc334;
-          animation-name: inline-u053cc334;
+  -webkit-animation-name: inline-ue3513332;
+          animation-name: inline-ue3513332;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u053cc334 {
+@-webkit-keyframes inline-ue3513332 {
   0% {
     opacity: 0;
   }
@@ -5110,7 +5135,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u053cc334 {
+@keyframes inline-ue3513332 {
   0% {
     opacity: 0;
   }
