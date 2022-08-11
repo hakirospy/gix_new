@@ -274,12 +274,20 @@ editor.parentNode.parentNode.children[1].classList.remove('close');
 editor.parentNode.parentNode.children[1].classList.add('active');
 console.log(editor.parentNode)
 
-editor.parentNode.parentNode.scrollIntoView(true);
 
+timerOpenP(editor.parentNode.parentNode)
+
+})
 
 })
 
-})
+function timerOpenP(elem){
+
+    setTimeout(function() {
+        elem.scrollIntoView(true);
+        window.scrollBy(0, -80);
+      }, 300);
+}
 
 let button_next = document.querySelector('.button_next')
 button_next.addEventListener('click', function (event) {
@@ -294,8 +302,9 @@ document.querySelector('.delivery .tabcontent').classList.add('active');
 
 document.querySelector('.order_content_blue .title').innerHTML = "Шаг 2 из 3. Введите данные для доставки"
 
-document.querySelector('.delivery ').scrollIntoView(true);
 
+
+  timerOpenP(document.querySelector('.delivery ').parentNode.children[1])
 
 })
 
@@ -312,7 +321,9 @@ document.querySelector('.oplata .tabcontent').classList.remove('close');
 document.querySelector('.oplata .tabcontent').classList.add('active');
 
 document.querySelector('.order_content_blue .title').innerHTML = "Шаг 3 из 3. Выберите удобный способ оплаты"
-document.querySelector('.oplata').scrollIntoView(true);
+
+timerOpenP(document.querySelector('.oplata'))
+
 
 
 })
@@ -322,8 +333,6 @@ let button_next_oplata= document.querySelector('.button_next_oplata')
 button_next_oplata.addEventListener('click', function (event) {
 
 activeRemoveTab()
-
-
 
 })
 
