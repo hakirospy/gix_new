@@ -4871,8 +4871,19 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   width: 100%;
   -ms-grid-column-align: end;
       justify-self: end;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
   margin-top: 30px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  top: 0px;
+}
+
+@media screen and (max-width: 1400px) {
+  .main_white .main_cart .buy_block {
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -5041,6 +5052,13 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   }
 }
 
+.main_white .main_cart .detail_block {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 35px;
+}
+
 .main_white .main_cart .detail_block .detail_vkladka {
   margin-bottom: 10px;
   border: 1px solid #E5EFFE;
@@ -5124,15 +5142,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ucb71056c;
-          animation-name: inline-ucb71056c;
+  -webkit-animation-name: inline-u897d6c93;
+          animation-name: inline-u897d6c93;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ucb71056c {
+@-webkit-keyframes inline-u897d6c93 {
   0% {
     opacity: 0;
   }
@@ -5141,7 +5159,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ucb71056c {
+@keyframes inline-u897d6c93 {
   0% {
     opacity: 0;
   }

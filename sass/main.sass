@@ -3488,14 +3488,18 @@ footer
           justify-content: space-between
           margin-bottom: 10px
           .title_prop
-            margin-bottom: 0px
+            margin-bottom: 0px 
           .value
             font-size: 14px
     .buy_block
       width: 100%
       justify-self: end
-      position: relative
+      position: sticky
       margin-top: 30px
+      height: max-content
+      top: 0px
+      @media screen and ( max-width: 1400px  )
+        position: relative
       @media screen and ( max-width: 900px  )
         grid-column-start: 1
         grid-column-end: 3
@@ -3583,6 +3587,9 @@ footer
             padding-top: 0px 
 
     .detail_block
+      grid-column-start: 1
+      grid-column-end: 3
+      margin-top: 35px
 
       .detail_vkladka
         margin-bottom: 10px
