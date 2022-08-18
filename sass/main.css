@@ -4789,7 +4789,7 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   border-radius: 8px;
 }
 
-.main_white .main_cart .cart_three .short_prop .volume .value span:hover {
+.main_white .main_cart .cart_three .short_prop .volume .value span:hover, .main_white .main_cart .cart_three .short_prop .volume .value span .active {
   border: 1px solid #C5FA2D;
   cursor: pointer;
 }
@@ -5156,15 +5156,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ub7de8b7c;
-          animation-name: inline-ub7de8b7c;
+  -webkit-animation-name: inline-udc1ca3a3;
+          animation-name: inline-udc1ca3a3;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ub7de8b7c {
+@-webkit-keyframes inline-udc1ca3a3 {
   0% {
     opacity: 0;
   }
@@ -5173,7 +5173,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ub7de8b7c {
+@keyframes inline-udc1ca3a3 {
   0% {
     opacity: 0;
   }
