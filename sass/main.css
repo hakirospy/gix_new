@@ -3636,6 +3636,10 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   }
 }
 
+.main_white .crumbs a {
+  color: #202732;
+}
+
 .main_white .main_order .seren.white {
   background-color: white;
   padding-left: 0px;
@@ -5150,15 +5154,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u3bf19696;
-          animation-name: inline-u3bf19696;
+  -webkit-animation-name: inline-u24c95899;
+          animation-name: inline-u24c95899;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u3bf19696 {
+@-webkit-keyframes inline-u24c95899 {
   0% {
     opacity: 0;
   }
@@ -5167,7 +5171,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u3bf19696 {
+@keyframes inline-u24c95899 {
   0% {
     opacity: 0;
   }
