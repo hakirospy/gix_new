@@ -3427,6 +3427,9 @@ footer
         .volume
           margin-top: 24px
           .value
+            span.active
+              border: 1px solid #C5FA2D
+              cursor: pointer
             
             span 
               font-size: 16px
@@ -3436,10 +3439,12 @@ footer
               border: 1px solid rgba(32, 39, 50, 0.15)
               margin-right: 10px
               border-radius: 8px
+       
 
-              &:hover, .active
+              &:hover
                 border: 1px solid #C5FA2D
                 cursor: pointer
+                
               
             span.disable
               background: #f5f5f5
