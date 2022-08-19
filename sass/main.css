@@ -3142,7 +3142,7 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   line-height: 30px;
 }
 
-.white.super {
+.white .super {
   background-color: white;
   padding-left: 0px;
 }
@@ -5171,15 +5171,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u9866ebbe;
-          animation-name: inline-u9866ebbe;
+  -webkit-animation-name: inline-u67952d61;
+          animation-name: inline-u67952d61;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u9866ebbe {
+@-webkit-keyframes inline-u67952d61 {
   0% {
     opacity: 0;
   }
@@ -5188,7 +5188,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u9866ebbe {
+@keyframes inline-u67952d61 {
   0% {
     opacity: 0;
   }
