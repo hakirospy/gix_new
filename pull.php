@@ -1,6 +1,4 @@
 <? 
-
-
 $mySecret = "821f62662605a59982c97fa17c77b26d8c7af47dae24198197933e5a06b97316";
 $githubHeader = $_SERVER['HTTP_X_HUB_SIGNATURE']; 
 $rawPost = file_get_contents("php://input");
@@ -13,9 +11,5 @@ else{
 
  shell_exec( 'git pull origin master ' );
 }
-
-
-
-
 
 ?>
