@@ -3569,9 +3569,12 @@ footer
             a    
               text-decoration: none
               color: #202732
-            span.active
-              border: 1px solid #C5FA2D
-              cursor: pointer
+              @media screen and ( max-width: 720px  )
+                display: inline-block
+                padding-bottom: 13px
+              span.active
+                border: 1px solid #C5FA2D
+                cursor: pointer
             
             span 
               font-size: 16px
