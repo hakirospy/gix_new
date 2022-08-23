@@ -63,25 +63,29 @@ body
   font-style: normal
 
 .slider_main
- background: $black-text-color
- height: 113px
- @media screen and ( max-width: 450px  )
-  height: 47px
-  position: fixed
-  width: 100%
-  z-index: 2
-  top: 0px
-.main_white
+  background: $black-text-color
+  height: 78px 
+  display: flex
+  align-content: center
+  flex-wrap: wrap
+  justify-content: space-around
   @media screen and ( max-width: 450px  )
+    height: 61px
+    position: fixed
+    width: 100%
+    z-index: 2
+    top: 0px
+.main_white
+  @media screen and ( max-width: 450px  ) 
     margin-top: 20px
   
 
 
 .main_slider_block
 
- padding-top: 33px
+
  display: grid
- margin-left: 34px
+
  grid-template-columns: 195px 150px minmax(100px, 338px) minmax(100px, 200px) 180px repeat(4,135px)
 
  
@@ -143,8 +147,9 @@ body
  .tel
   position: relative
   display: grid
-  align-items: center
+  align-items: start
   order: 5
+  margin-top: 12px
   .icon
     background: url("../img/call_green.svg")
     content: ''
@@ -210,7 +215,7 @@ body
        display: none
  
  @media (max-width: 650px)
-   grid-template-columns: minmax(10px, 31px)  minmax(10px, 50px) 1fr   minmax(5px, 60px)  minmax(27px, 33px)
+   grid-template-columns: 1fr 6fr 12fr 6fr 3fr
    position: sticky
    top: 0px
    z-index: 9
@@ -233,9 +238,11 @@ body
      order: 3
      margin-inline: auto
    .go_cab
+     justify-content: space-around
      order: 3
      .icon 
-       left: -19px
+       
+       position: relative
 
    .backet
      order: 4 
@@ -254,8 +261,9 @@ body
   position: relative
   order: 6 
   display: grid
-  align-items: center
-  justify-self: center
+  align-items: start
+  margin-top: 12px
+
   .icon
     background: url("../img/vhod.svg")
     content: ''
@@ -264,13 +272,15 @@ body
     display: grid
     position: absolute
     left: -25px
+    @media (max-width: 1024px)
+      left: 0px
   
 
   .text
 
     font-weight: 400
     font-size: 11px
-    line-height: 13px
+    line-height: 18px
     display: grid
     opacity: 0.5
 
@@ -311,8 +321,9 @@ body
   position: relative
   justify-self: center
   display: grid
-  align-items: center
+  align-items: start  
   order: 9
+  margin-top: 12px
   .icon
     background: url("../img/backet.svg")
     content: ''
@@ -321,7 +332,7 @@ body
     display: grid
     position: absolute
     left: -25px
-    top: 10px
+
 
   .text
     display: grid
@@ -381,8 +392,10 @@ body
   grid-template: 320px / minmax(280px, 884px) 
  @media (max-width: 650px)
   grid-template: 400px  / minmax(280px, 884px) 
+
  @media (max-width: 460px)
    text-align: center
+   margin-top: 77px
 
 
   
