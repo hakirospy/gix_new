@@ -31,9 +31,10 @@ body {
 @media screen and (max-width: 450px) {
   .slider_main {
     height: 61px;
+    padding-left: 0px;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 99;
     top: 0px;
   }
 }
@@ -443,7 +444,6 @@ body {
 .backet .text {
   display: -ms-grid;
   display: grid;
-  padding-top: 4px;
   font-weight: 400;
   font-size: 11px;
   line-height: 13px;
@@ -1524,7 +1524,7 @@ body {
 
 .cart .compare {
   background: url("../img/compare.svg");
-  width: 49px;
+  width: 38px;
   height: 48px;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -1640,6 +1640,11 @@ body {
   .seren.news .cart .name_tovar {
     font-size: 1rem;
   }
+}
+
+.seren.news .cart .name_tovar a {
+  text-decoration: none;
+  color: #202732;
 }
 
 .seren.news .cart .prev {
@@ -4568,7 +4573,10 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 .main_white .catalog .main_filter {
   background-color: #F1F7FF;
   border-radius: 32px;
-  height: 300px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 32px;
 }
 
 @media screen and (max-width: 1230px) {
@@ -5401,15 +5409,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u94839811;
-          animation-name: inline-u94839811;
+  -webkit-animation-name: inline-ufba77f48;
+          animation-name: inline-ufba77f48;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u94839811 {
+@-webkit-keyframes inline-ufba77f48 {
   0% {
     opacity: 0;
   }
@@ -5418,7 +5426,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u94839811 {
+@keyframes inline-ufba77f48 {
   0% {
     opacity: 0;
   }
