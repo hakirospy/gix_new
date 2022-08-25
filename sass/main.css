@@ -1482,6 +1482,10 @@ body {
   }
 }
 
+.catalog-section .cart_block {
+  margin-right: 0px;
+}
+
 .seren a {
   -webkit-text-decoration: auto;
           text-decoration: auto;
@@ -1640,6 +1644,11 @@ body {
   .seren.news .cart .name_tovar {
     font-size: 1rem;
   }
+}
+
+.seren.news .cart .name_tovar a {
+  text-decoration: none;
+  color: #202732;
 }
 
 .seren.news .cart .name_tovar a {
@@ -5409,15 +5418,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ufba77f48;
-          animation-name: inline-ufba77f48;
+  -webkit-animation-name: inline-uaf75d045;
+          animation-name: inline-uaf75d045;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ufba77f48 {
+@-webkit-keyframes inline-uaf75d045 {
   0% {
     opacity: 0;
   }
@@ -5426,7 +5435,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ufba77f48 {
+@keyframes inline-uaf75d045 {
   0% {
     opacity: 0;
   }
