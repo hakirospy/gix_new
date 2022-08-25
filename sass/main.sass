@@ -3314,114 +3314,115 @@ footer
       padding: 32px
       @media screen and ( max-width: 1230px  )
         display: none
-    .catalog_content
-      .navigation_catalog
-        display: flex
-        justify-content: space-between
-        margin-top: 96px
-        margin-bottom: 108px
-        .pages
-          gap: 10px
-          display: flex
-          span.active
-            background: #A9FF35
-            border-radius: 4px
-            a
-              color: #202732
-     
-       
-          span
-            font-weight: 400
-            font-size: 14px
-            line-height: 145%
-            padding: 6px
-            a
-              text-decoration: none
-              
-              color: #8E9297
-            &:hover
-              background: #A9FF35
-              border-radius: 4px
-        .prev_navig, .next_navig 
-          font-weight: 400
-          font-size: 14px
-          line-height: 145%
+    
+  .navigation_catalog
+    display: flex
+    justify-content: space-between
+    margin-top: 96px
+    margin-bottom: 108px
+    .pages
+      gap: 10px
+      display: flex
+      span.active
+        background: #A9FF35
+        border-radius: 4px
+        a
           color: #202732
-        .prev_navig
+
+    
+      span
+        font-weight: 400
+        font-size: 14px
+        line-height: 145%
+        padding: 6px
+        a
+          text-decoration: none
           
-          &::before
-            content: ''
-            background-image: url("../img/prev_navig.svg")
-            width: 20px
-            height: 12px
-            display: inline-block
-            margin-right: 12px
-        .next_navig
-          &::after
-            content: ''
-            background-image: url("../img/next_navig.svg")
-            width: 20px
-            height: 12px
-            display: inline-block
-            margin-left: 12px
-      .content_items
-        margin-top: 24px
-        .cart_block
-          grid-template-columns: repeat(3, minmax(280px, 376px))
-          @media screen and ( max-width: 1024px  )
-            grid-template-columns: repeat(2, minmax(280px, 376px))
-          @media screen and ( max-width: 650px  )
-            grid-template-columns:  minmax(280px, 376px)
+          color: #8E9297
+        &:hover
+          background: #A9FF35
+          border-radius: 4px
+    .prev_navig, .next_navig 
+      font-weight: 400
+      font-size: 14px
+      line-height: 145%
+      color: #202732
+    .prev_navig
+      
+      &::before
+        content: ''
+        background-image: url("../img/prev_navig.svg")
+        width: 20px
+        height: 12px
+        display: inline-block
+        margin-right: 12px
+    .next_navig
+      &::after
+        content: ''
+        background-image: url("../img/next_navig.svg")
+        width: 20px
+        height: 12px
+        display: inline-block
+        margin-left: 12px
+  .catalog_content
+    .content_items
+      margin-top: 24px
+      .cart_block
+        grid-template-columns: repeat(3, minmax(280px, 376px))
+        @media screen and ( max-width: 1024px  )
+          grid-template-columns: repeat(2, minmax(280px, 376px))
+        @media screen and ( max-width: 650px  )
+          grid-template-columns:  minmax(280px, 376px)
 
 
 
-      .sort_panel
-        background-color:  #F1F7FF
+    .sort_panel
+      background-color:  #F1F7FF
+      border-radius: 30px
+      display: flex
+      gap: 37px
+      justify-content: flex-start
+      flex-direction: row-reverse
+      padding-right: 37px
+      height: 50px
+      align-content: space-between
+      align-items: center
+      margin-top: 34px
+      div
+        font-size: 14px
+        line-height: 145%
+        color: #8E9297
+        &::after
+          content: ''
+          background-image: url('../img/drop.svg')
+          width: 8px
+          height: 5px
+          display: inline-block
+          margin-left: 12px
+    .seo_tag
+      display: flex
+      gap: 10px
+      justify-content: flex-start
+      align-content: flex-start
+      flex-wrap: wrap
+      span
+        font-weight: 400
+        font-size: 14px
+        line-height: 145%
+        color: #8E9297
+        border: 1px solid #EDEDED
         border-radius: 30px
-        display: flex
-        gap: 37px
-        justify-content: flex-start
-        flex-direction: row-reverse
-        padding-right: 37px
-        height: 50px
-        align-content: space-between
-        align-items: center
-        margin-top: 34px
-        div
-          font-size: 14px
-          line-height: 145%
-          color: #8E9297
-          &::after
-            content: ''
-            background-image: url('../img/drop.svg')
-            width: 8px
-            height: 5px
-            display: inline-block
-            margin-left: 12px
-      .seo_tag
-        display: flex
-        gap: 10px
-        justify-content: flex-start
-        align-content: flex-start
-        flex-wrap: wrap
-        span
-          font-weight: 400
-          font-size: 14px
-          line-height: 145%
-          color: #8E9297
-          border: 1px solid #EDEDED
-          border-radius: 30px
-          padding: 10px 16px
-          cursor: pointer
-          &:hover, &:active
-            background: #A9FF35
-            color: #202732
-            border-color: #A9FF35
-            
-        span.active
+        padding: 10px 16px
+        cursor: pointer
+        &:hover, &:active
           background: #A9FF35
           color: #202732
           border-color: #A9FF35
+          
+      span.active
+        background: #A9FF35
+        color: #202732
+        border-color: #A9FF35
 
          
           
