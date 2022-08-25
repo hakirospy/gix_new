@@ -1483,7 +1483,7 @@ body {
 }
 
 .catalog-section .cart_block {
-  margin-right: 0px;
+  margin: 0px;
 }
 
 .seren a {
@@ -5418,15 +5418,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uaf75d045;
-          animation-name: inline-uaf75d045;
+  -webkit-animation-name: inline-u920f1b90;
+          animation-name: inline-u920f1b90;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uaf75d045 {
+@-webkit-keyframes inline-u920f1b90 {
   0% {
     opacity: 0;
   }
@@ -5435,7 +5435,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uaf75d045 {
+@keyframes inline-u920f1b90 {
   0% {
     opacity: 0;
   }
