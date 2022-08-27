@@ -5048,12 +5048,7 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   text-decoration: none;
   color: #202732;
   padding-bottom: 13px;
-}
-
-@media screen and (max-width: 720px) {
-  .main_white .main_cart .cart_three .short_prop .volume .value a {
-    display: inline-block;
-  }
+  display: inline-block;
 }
 
 .main_white .main_cart .cart_three .short_prop .volume .value .active {
@@ -5443,15 +5438,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-udea2589a;
-          animation-name: inline-udea2589a;
+  -webkit-animation-name: inline-u3895bea0;
+          animation-name: inline-u3895bea0;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-udea2589a {
+@-webkit-keyframes inline-u3895bea0 {
   0% {
     opacity: 0;
   }
@@ -5460,7 +5455,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-udea2589a {
+@keyframes inline-u3895bea0 {
   0% {
     opacity: 0;
   }
