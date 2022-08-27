@@ -1544,12 +1544,20 @@ body {
       justify-self: center;
 }
 
+.cart .compare.active {
+  background: url("../img/compare_active.svg");
+}
+
 .cart .liked {
   background: url("../img/liked.svg");
   width: 49px;
   height: 48px;
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+.cart .liked.active {
+  background: url("../img/liked_active.svg");
 }
 
 .cart .block_button {
@@ -5447,15 +5455,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u6568fadf;
-          animation-name: inline-u6568fadf;
+  -webkit-animation-name: inline-u693fc56f;
+          animation-name: inline-u693fc56f;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u6568fadf {
+@-webkit-keyframes inline-u693fc56f {
   0% {
     opacity: 0;
   }
@@ -5464,7 +5472,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u6568fadf {
+@keyframes inline-u693fc56f {
   0% {
     opacity: 0;
   }
