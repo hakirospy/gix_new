@@ -50,6 +50,11 @@ body {
   text-decoration: none;
 }
 
+.main_slider_block a:hover {
+  color: initial;
+  text-decoration: none;
+}
+
 .main_slider_block {
   display: -ms-grid;
   display: grid;
@@ -5438,15 +5443,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u2dda4f29;
-          animation-name: inline-u2dda4f29;
+  -webkit-animation-name: inline-u8d9e6f51;
+          animation-name: inline-u8d9e6f51;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u2dda4f29 {
+@-webkit-keyframes inline-u8d9e6f51 {
   0% {
     opacity: 0;
   }
@@ -5455,7 +5460,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u2dda4f29 {
+@keyframes inline-u8d9e6f51 {
   0% {
     opacity: 0;
   }
