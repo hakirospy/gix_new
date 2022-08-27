@@ -5047,12 +5047,12 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 .main_white .main_cart .cart_three .short_prop .volume .value a {
   text-decoration: none;
   color: #202732;
+  padding-bottom: 13px;
 }
 
 @media screen and (max-width: 720px) {
   .main_white .main_cart .cart_three .short_prop .volume .value a {
     display: inline-block;
-    padding-bottom: 13px;
   }
 }
 
@@ -5443,15 +5443,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u35c5ba7e;
-          animation-name: inline-u35c5ba7e;
+  -webkit-animation-name: inline-udea2589a;
+          animation-name: inline-udea2589a;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u35c5ba7e {
+@-webkit-keyframes inline-udea2589a {
   0% {
     opacity: 0;
   }
@@ -5460,7 +5460,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u35c5ba7e {
+@keyframes inline-udea2589a {
   0% {
     opacity: 0;
   }
