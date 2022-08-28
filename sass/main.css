@@ -4803,6 +4803,7 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
     border: 1px solid var(--select-border);
     border-radius: 0.25em;
     font-family: 'Montserrat';
+    color: #202732;
     font-size: 12px;
     cursor: pointer;
     line-height: 1.1;
@@ -5550,15 +5551,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u11950706;
-          animation-name: inline-u11950706;
+  -webkit-animation-name: inline-ud5dbe850;
+          animation-name: inline-ud5dbe850;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u11950706 {
+@-webkit-keyframes inline-ud5dbe850 {
   0% {
     opacity: 0;
   }
@@ -5567,7 +5568,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u11950706 {
+@keyframes inline-ud5dbe850 {
   0% {
     opacity: 0;
   }
