@@ -4597,8 +4597,8 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 
 @media screen and (max-width: 1230px) {
   .main_white .catalog {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: minmax(250px, 376px);
+        grid-template-columns: minmax(250px, 376px);
   }
 }
 
@@ -4782,6 +4782,36 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   position: relative;
 }
 
+@media screen and (max-width: 380px) {
+  .main_white .catalog_content .sort_panel {
+    padding-right: 17px;
+  }
+}
+
+.main_white .catalog_content .sort_panel select {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .main_white .catalog_content .sort_panel .for_price, .main_white .catalog_content .sort_panel .for_pop, .main_white .catalog_content .sort_panel .for_news {
+    display: none;
+  }
+  .main_white .catalog_content .sort_panel select {
+    display: block;
+    min-width: 15ch;
+    max-width: 30ch;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #F1F7FF;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#F1F7FF), color-stop(33%, #F1F7FF));
+    background-image: linear-gradient(to top, #F1F7FF, #F1F7FF 33%);
+  }
+}
+
 .main_white .catalog_content .sort_panel div {
   font-size: 14px;
   line-height: 145%;
@@ -4900,8 +4930,8 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 
 @media screen and (max-width: 550px) {
   .main_white .main_cart .title {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr 0fr;
+        grid-template-columns: 1fr 0fr;
   }
 }
 
@@ -5520,15 +5550,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ueef5f4d7;
-          animation-name: inline-ueef5f4d7;
+  -webkit-animation-name: inline-u11950706;
+          animation-name: inline-u11950706;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ueef5f4d7 {
+@-webkit-keyframes inline-u11950706 {
   0% {
     opacity: 0;
   }
@@ -5537,7 +5567,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ueef5f4d7 {
+@keyframes inline-u11950706 {
   0% {
     opacity: 0;
   }

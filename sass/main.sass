@@ -3317,7 +3317,7 @@ footer
     gap: 24px
     margin-top: 32px
     @media screen and ( max-width: 1230px  )
-      grid-template-columns: 1fr 
+      grid-template-columns: minmax(250px, 376px) 
 
 
     .main_filter
@@ -3441,6 +3441,26 @@ footer
       align-items: center
       margin-top: 34px
       position: relative
+      @media screen and ( max-width: 380px  )
+        padding-right: 17px 
+      select
+        display: none
+      @media screen and ( max-width: 650px  )
+        .for_price, .for_pop, .for_news
+          display: none
+        select
+          display: block
+          min-width: 15ch
+          max-width: 30ch
+          border: 1px solid var(--select-border)
+          border-radius: 0.25em
+          font-family: 'Montserrat'
+          font-size: 12px
+          cursor: pointer
+          line-height: 1.1
+          background-color: #F1F7FF
+          background-image: linear-gradient(to top, #F1F7FF, #F1F7FF 33%)
+      
       div
         font-size: 14px
         line-height: 145%
@@ -3517,7 +3537,7 @@ footer
       @media screen and ( max-width: 790px  )
         grid-template-columns: 3fr 1fr
       @media screen and ( max-width: 550px  )
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr 0fr
       
 
 
