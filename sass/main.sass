@@ -3323,7 +3323,6 @@ footer
     .main_filter
       background-color:  #F1F7FF
       border-radius: 32px
-
       padding: 32px
       position: relative
       @media screen and ( max-width: 1230px  )
@@ -3339,7 +3338,19 @@ footer
         bottom: 0
         width: 320px
         max-width: 100%
-   
+    .main_filter
+      .close_filter
+        display: none
+        justify-content: end
+        @media screen and ( max-width: 1230px  )
+          display: grid
+        .close
+        
+          background-image: url('../img/close_filter.svg')
+          width: 16px
+          height: 16px
+        
+        
     .main_filter.show
       @media screen and ( max-width: 1230px  )
         left: 0
