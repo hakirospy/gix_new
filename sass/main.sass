@@ -3326,7 +3326,28 @@ footer
       height: max-content
       padding: 32px
       @media screen and ( max-width: 1230px  )
-        display: none
+        border-top-left-radius: 0px
+        border-bottom-left-radius: 0px
+        z-index: 3002
+        overflow: hidden
+        overflow-y: auto
+        transition: left 0.4s ease 0s, opacity 0.4s ease 0s
+        position: fixed
+        left: -100%
+        top: 0
+        bottom: 0
+        width: 320px
+        max-width: 100%
+   
+    .main_filter.show
+      @media screen and ( max-width: 1230px  )
+        left: 0
+        box-shadow: 3px 0px 10px 0px rgba(0, 0, 0, 0.45)
+
+
+
+
+    
     
   .navigation_catalog
     display: flex
@@ -3407,6 +3428,7 @@ footer
       align-content: space-between
       align-items: center
       margin-top: 34px
+      position: relative
       div
         font-size: 14px
         line-height: 145%
@@ -3852,6 +3874,46 @@ footer
           
           p
             font-weight: 700
+
+
+.filterMom
+  display: none
+  @media screen and ( max-width: 1230px  )
+    display: flex
+    color: black!important
+    position: absolute
+    left: 22px
+    &::after
+      background-image: none!important
+    &::before
+      background-image: url('../img/mobile_filter.svg')
+      content: ''
+      width: 20px
+      height: 22px
+      display: inline-block
+      margin-right: 13px
+   
+
+
+.main_filter
+
+  z-index: 3002
+  overflow: hidden
+  overflow-y: auto
+  transition: left 0.4s ease 0s, opacity 0.4s ease 0s
+  position: fixed
+
+
+#mobilemenu.leftside
+  left: -100%
+  top: 0
+  bottom: 0
+  width: 320px
+  max-width: 100%
+#mobilemenu.leftside.show 
+    left: 0
+    box-shadow: 3px 0px 10px 0px rgba(0, 0, 0, 0.45)
+
 
 
 /* specific animation */
