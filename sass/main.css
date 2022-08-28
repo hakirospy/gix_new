@@ -4605,9 +4605,6 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 .main_white .catalog .main_filter {
   background-color: #F1F7FF;
   border-radius: 32px;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
   padding: 32px;
   position: relative;
 }
@@ -5503,15 +5500,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u5c645987;
-          animation-name: inline-u5c645987;
+  -webkit-animation-name: inline-ua2cb7528;
+          animation-name: inline-ua2cb7528;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u5c645987 {
+@-webkit-keyframes inline-ua2cb7528 {
   0% {
     opacity: 0;
   }
@@ -5520,7 +5517,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u5c645987 {
+@keyframes inline-ua2cb7528 {
   0% {
     opacity: 0;
   }
