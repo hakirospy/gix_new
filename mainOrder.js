@@ -67,6 +67,8 @@ price_element = price_element + parseInt(trigger.children[3].innerText.slice(0, 
 countElem++
 })
 
+console.log(price_element)
+
 var mainPrice = document.querySelector('.all_price')
 var countAllElemName = document.querySelector('.countAllElem')
 var deliverPrice = parseInt(document.querySelector('input[name="delivery_price"]').value)
