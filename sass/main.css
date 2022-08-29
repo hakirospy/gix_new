@@ -4658,6 +4658,13 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   display: grid;
 }
 
+.main_white .catalog .main_filter .smart-filter-parameters-box-container .result_filter {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+  color: #8E9297;
+}
+
 .main_white .catalog .main_filter .smart-filter-parameters-box-container #set_filter {
   background-color: #A9FF35;
   font-weight: 400;
@@ -5639,15 +5646,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ub36cafc8;
-          animation-name: inline-ub36cafc8;
+  -webkit-animation-name: inline-ucbf8d6ee;
+          animation-name: inline-ucbf8d6ee;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ub36cafc8 {
+@-webkit-keyframes inline-ucbf8d6ee {
   0% {
     opacity: 0;
   }
@@ -5656,7 +5663,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ub36cafc8 {
+@keyframes inline-ucbf8d6ee {
   0% {
     opacity: 0;
   }
