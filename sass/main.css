@@ -5078,6 +5078,10 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   }
 }
 
+.main_white .main_cart .ya-share2__container_shape_round .ya-share2__badge {
+  border-radius: 0px;
+}
+
 .main_white .main_cart .ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__icon_more {
   background: url("../img/share.svg");
   width: 19px;
@@ -5655,15 +5659,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uffda5532;
-          animation-name: inline-uffda5532;
+  -webkit-animation-name: inline-u4b8f70b2;
+          animation-name: inline-u4b8f70b2;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uffda5532 {
+@-webkit-keyframes inline-u4b8f70b2 {
   0% {
     opacity: 0;
   }
@@ -5672,7 +5676,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uffda5532 {
+@keyframes inline-u4b8f70b2 {
   0% {
     opacity: 0;
   }
