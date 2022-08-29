@@ -5085,6 +5085,8 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 .main_white .main_cart .ya-share2__title {
   color: #8E9297;
   margin-left: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
 }
 
 .main_white .main_cart .ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__icon_more {
@@ -5664,15 +5666,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u4970806d;
-          animation-name: inline-u4970806d;
+  -webkit-animation-name: inline-ubde5d36d;
+          animation-name: inline-ubde5d36d;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u4970806d {
+@-webkit-keyframes inline-ubde5d36d {
   0% {
     opacity: 0;
   }
@@ -5681,7 +5683,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u4970806d {
+@keyframes inline-ubde5d36d {
   0% {
     opacity: 0;
   }
