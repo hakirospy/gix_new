@@ -61,7 +61,7 @@ body
   margin: 0px
   font-family: 'Montserrat'
   font-style: normal
-  
+
 body.overflow_html 
     overflow: hidden
 
@@ -3320,9 +3320,13 @@ footer
     grid-template-columns: minmax(250px, 376px) 1fr 
     gap: 24px
     margin-top: 32px
+    @media screen and ( max-width: 1024px  )
+      margin-top: 24px
+
     @media screen and ( max-width: 1230px  )
       grid-template-columns:  1fr 
     @media screen and ( max-width: 420px  )
+      margin-top: 16px
       grid-template-columns: minmax(250px, 376px) 
 
 
@@ -3459,6 +3463,10 @@ footer
       align-items: center
       margin-top: 34px
       position: relative
+      @media screen and ( max-width: 1024px  )
+        margin-top: 24px
+      @media screen and ( max-width: 420px  )
+        margin-top: 16px
       @media screen and ( max-width: 380px  )
         padding-right: 17px 
       select
@@ -3551,12 +3559,18 @@ footer
       justify-content: space-between
       grid-template-columns: 6fr 1fr
       align-items: center
+      
+
       @media screen and ( max-width: 1060px  )
         grid-template-columns: 4fr 1fr
+
+      @media screen and ( max-width: 1024px  )
+        padding-top: 24px
       @media screen and ( max-width: 790px  )
         grid-template-columns: 3fr 1fr
       @media screen and ( max-width: 550px  )
         grid-template-columns: 1fr 0fr
+        padding-top: 16px
       
 
 

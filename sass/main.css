@@ -4599,6 +4599,12 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   margin-top: 32px;
 }
 
+@media screen and (max-width: 1024px) {
+  .main_white .catalog {
+    margin-top: 24px;
+  }
+}
+
 @media screen and (max-width: 1230px) {
   .main_white .catalog {
     -ms-grid-columns: 1fr;
@@ -4608,6 +4614,7 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 
 @media screen and (max-width: 420px) {
   .main_white .catalog {
+    margin-top: 16px;
     -ms-grid-columns: minmax(250px, 376px);
         grid-template-columns: minmax(250px, 376px);
   }
@@ -4809,6 +4816,18 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   position: relative;
 }
 
+@media screen and (max-width: 1024px) {
+  .main_white .catalog_content .sort_panel {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .main_white .catalog_content .sort_panel {
+    margin-top: 16px;
+  }
+}
+
 @media screen and (max-width: 380px) {
   .main_white .catalog_content .sort_panel {
     padding-right: 17px;
@@ -4949,6 +4968,12 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .main_white .main_cart .title {
+    padding-top: 24px;
+  }
+}
+
 @media screen and (max-width: 790px) {
   .main_white .main_cart .title {
     -ms-grid-columns: 3fr 1fr;
@@ -4960,6 +4985,7 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   .main_white .main_cart .title {
     -ms-grid-columns: 1fr 0fr;
         grid-template-columns: 1fr 0fr;
+    padding-top: 16px;
   }
 }
 
@@ -5578,15 +5604,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u0c52ec57;
-          animation-name: inline-u0c52ec57;
+  -webkit-animation-name: inline-ua335c3a8;
+          animation-name: inline-ua335c3a8;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u0c52ec57 {
+@-webkit-keyframes inline-ua335c3a8 {
   0% {
     opacity: 0;
   }
@@ -5595,7 +5621,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u0c52ec57 {
+@keyframes inline-ua335c3a8 {
   0% {
     opacity: 0;
   }
