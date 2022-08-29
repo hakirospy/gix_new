@@ -5078,11 +5078,9 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   }
 }
 
-.main_white .main_cart .ya-share2__link_more {
-  padding: 0px;
-}
-
 .main_white .main_cart .ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__link_more {
+  background: none;
+  border: none;
   padding: 0px;
 }
 
@@ -5674,15 +5672,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u78a44fd1;
-          animation-name: inline-u78a44fd1;
+  -webkit-animation-name: inline-u7dc133d0;
+          animation-name: inline-u7dc133d0;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u78a44fd1 {
+@-webkit-keyframes inline-u7dc133d0 {
   0% {
     opacity: 0;
   }
@@ -5691,7 +5689,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u78a44fd1 {
+@keyframes inline-u7dc133d0 {
   0% {
     opacity: 0;
   }
