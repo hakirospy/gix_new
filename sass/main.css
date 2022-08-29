@@ -5080,6 +5080,10 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 
 .main_white .main_cart .ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__icon_more {
   background: url("../img/share.svg");
+  width: 19px;
+  height: 22px;
+  display: inline-block;
+  opacity: 0.5;
 }
 
 .main_white .main_cart .share {
@@ -5087,6 +5091,15 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   color: #8E9297;
   font-size: 14px;
   line-height: 145%;
+  /*&::before
+        background-image: url('../img/share.svg')
+        content: ''
+        width: 19px
+        height: 22px
+        display: inline-block
+        opacity: 0.5
+        margin-right: 13px
+        vertical-align: middle*/
 }
 
 @media screen and (max-width: 790px) {
@@ -5101,17 +5114,6 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
     display: -ms-flexbox;
     display: flex;
   }
-}
-
-.main_white .main_cart .share::before {
-  background-image: url("../img/share.svg");
-  content: '';
-  width: 19px;
-  height: 22px;
-  display: inline-block;
-  opacity: 0.5;
-  margin-right: 13px;
-  vertical-align: middle;
 }
 
 .main_white .main_cart .cart_three {
@@ -5653,15 +5655,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u665e3c90;
-          animation-name: inline-u665e3c90;
+  -webkit-animation-name: inline-uffda5532;
+          animation-name: inline-uffda5532;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u665e3c90 {
+@-webkit-keyframes inline-uffda5532 {
   0% {
     opacity: 0;
   }
@@ -5670,7 +5672,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u665e3c90 {
+@keyframes inline-uffda5532 {
   0% {
     opacity: 0;
   }
