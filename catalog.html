@@ -82,7 +82,7 @@ asdsdasdasd
 asdasdasd
                 </div>
 
-
+                <div id="mobilemenu-overlay" style="display: none;"></div>
     
 
                 
@@ -129,12 +129,19 @@ asdasdasd
                         
                         element.addEventListener("click", function() {
                             document.querySelector('.main_filter').classList.add('show')
+                            document.querySelector('#mobilemenu-overlay').style.display='block'
                           
                         });
                         
                         document.querySelector('.close_filter').addEventListener("click", function() {
                             document.querySelector('.main_filter').classList.remove('show')
+                            document.querySelector('#mobilemenu-overlay').style.display='none'
                           
+                        });
+
+                        document.querySelector('#mobilemenu-overlay').addEventListener("click", function() {
+                            document.querySelector('.main_filter').classList.remove('show')
+                            document.querySelector('#mobilemenu-overlay').style.display='none'
                         });
                         
                     

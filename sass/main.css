@@ -4634,6 +4634,7 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
     bottom: 0;
     width: 320px;
     max-width: 100%;
+    height: initial;
   }
 }
 
@@ -4663,6 +4664,18 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
     -webkit-box-shadow: 3px 0px 10px 0px rgba(0, 0, 0, 0.45);
             box-shadow: 3px 0px 10px 0px rgba(0, 0, 0, 0.45);
   }
+}
+
+.main_white #mobilemenu-overlay {
+  display: none;
+  background: #3a3f44;
+  opacity: 0.7 !important;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 2999;
 }
 
 .main_white .navigation_catalog {
@@ -5561,15 +5574,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u9d087471;
-          animation-name: inline-u9d087471;
+  -webkit-animation-name: inline-u0cd3634f;
+          animation-name: inline-u0cd3634f;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u9d087471 {
+@-webkit-keyframes inline-u0cd3634f {
   0% {
     opacity: 0;
   }
@@ -5578,7 +5591,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u9d087471 {
+@keyframes inline-u0cd3634f {
   0% {
     opacity: 0;
   }
