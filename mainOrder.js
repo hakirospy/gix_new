@@ -35,11 +35,11 @@ choose_price_tovar(quantityAmount, value)
 
 function choose_price_tovar(quantityAmount, value){
 
-var price = parseInt(quantityAmount.parentNode.parentNode.children[3].innerText.slice(0, -1).replace(/ /g, ''));
+var price = parseInt(quantityAmount.parentNode.parentNode.children[3].innerText.replace(/ /g, ''));
 var summa = parseInt(price) * parseInt(value)
 var inputWork = quantityAmount.parentNode.parentNode.children[4]
 
-animateValue(inputWork, parseInt(inputWork.innerText.slice(0, -1).replace(/ /g, '')), summa, 500);
+animateValue(inputWork, parseInt(inputWork.innerText.replace(/ /g, '')), summa, 500);
 
 count_all_summ() 
 
@@ -63,7 +63,7 @@ var price_element = 0;
 var countElem = 0
 elements.forEach(function (trigger) {
 
-price_element = price_element + parseInt(trigger.children[3].innerText.slice(0, -1).replace(/ /g, '')) * parseInt(trigger.children[2].children[1].value)
+price_element = price_element + parseInt(trigger.children[3].innerText.replace(/ /g, '')) * parseInt(trigger.children[2].children[1].value)
 countElem++
 })
 
@@ -72,7 +72,7 @@ console.log(price_element)
 var mainPrice = document.querySelector('.all_price')
 var countAllElemName = document.querySelector('.countAllElem')
 var deliverPrice = parseInt(document.querySelector('input[name="delivery_price"]').value)
-var old_price = parseInt(mainPrice.innerText.slice(0, -1).replace(/ /g, ''))
+var old_price = parseInt(mainPrice.innerText.replace(/ /g, ''))
 document.querySelector('input[name="all_price"]').value = price_element
 countAllElemName.innerHTML = countElem + nameTovar(countElem)
 animationData( old_price, price_element, deliverPrice)
