@@ -130,18 +130,22 @@ asdasdasd
                         element.addEventListener("click", function() {
                             document.querySelector('.main_filter').classList.add('show')
                             document.querySelector('#mobilemenu-overlay').style.display='block'
+                            document.querySelector('body').classList.add('overflow_html')
+                            
                           
                         });
                         
                         document.querySelector('.close_filter').addEventListener("click", function() {
                             document.querySelector('.main_filter').classList.remove('show')
                             document.querySelector('#mobilemenu-overlay').style.display='none'
+                            document.querySelector('body').classList.remove('overflow_html')
                           
                         });
 
                         document.querySelector('#mobilemenu-overlay').addEventListener("click", function() {
                             document.querySelector('.main_filter').classList.remove('show')
                             document.querySelector('#mobilemenu-overlay').style.display='none'
+                            document.querySelector('body').classList.remove('overflow_html')
                         });
                         
                     
