@@ -61,12 +61,7 @@ document.querySelector('input[name="address"]').addEventListener("keyup", (event
 })
 
 
- function soglasie(){
 
-    document.querySelector("#bx-soa-orderSave > .checkbox label").click()
-
-
- }
 
 
 function init() {
