@@ -9,13 +9,33 @@ increase.addEventListener('click', function () { increaseValue(quantityAmount); 
 decrease.addEventListener('click', function () { decreaseValue(quantityAmount); });
 }
 
+
+
 document.querySelector('input[name="name"]').addEventListener("keyup", (event) => { 
     
     console.log(event.srcElement.value)
 
+    document.querySelector('input[name="ORDER_PROP_1"]').value  = event.srcElement.value + ' ' + document.querySelector('input[name="lastname"]') + ' ' + document.querySelector('input[name="otchestvo"]')
+
+})
+
+document.querySelector('input[name="lastname"]').addEventListener("keyup", (event) => { 
+    
+    console.log(event.srcElement.value)
+
+    document.querySelector('input[name="ORDER_PROP_1"]').value  = document.querySelector('input[name="name"]') + ' ' + event.srcElement.value + ' ' + document.querySelector('input[name="otchestvo"]')
+
 })
 
 
+
+document.querySelector('input[name="otchestvo"]').addEventListener("keyup", (event) => { 
+    
+    console.log(event.srcElement.value)
+
+    document.querySelector('input[name="ORDER_PROP_1"]').value  = document.querySelector('input[name="name"]') + ' ' + document.querySelector('input[name="lastname"]') + ' ' + event.srcElement.value
+
+})
 
 
 
@@ -36,7 +56,7 @@ document.querySelector('input[name="phone"]').addEventListener("keyup", (event) 
 
 document.querySelector('input[name="address"]').addEventListener("keyup", (event) => { 
     
-    document.querySelector('input[name="ORDER_PROP_7"]').value = event.srcElement.value
+    document.querySelector('textarea[name="ORDER_PROP_7"]').value = event.srcElement.value
 
 })
 
