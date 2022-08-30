@@ -13,27 +13,27 @@ decrease.addEventListener('click', function () { decreaseValue(quantityAmount); 
 
 document.querySelector('input[name="name"]').addEventListener("keyup", (event) => { 
     
-    console.log(event.srcElement.value)
+    
 
-    document.querySelector('input[name="ORDER_PROP_1"]').value  = event.srcElement.value + ' ' + document.querySelector('input[name="lastname"]') + ' ' + document.querySelector('input[name="otchestvo"]')
+    document.querySelector('input[name="ORDER_PROP_1"]').value  = event.srcElement.value + ' ' + document.querySelector('input[name="lastname"]').value + ' ' + document.querySelector('input[name="otchestvo"]').value
 
 })
 
 document.querySelector('input[name="lastname"]').addEventListener("keyup", (event) => { 
     
-    console.log(event.srcElement.value)
+   
 
-    document.querySelector('input[name="ORDER_PROP_1"]').value  = document.querySelector('input[name="name"]') + ' ' + event.srcElement.value + ' ' + document.querySelector('input[name="otchestvo"]')
+    document.querySelector('input[name="ORDER_PROP_1"]').value  = document.querySelector('input[name="name"]').value + ' ' + event.srcElement.value + ' ' + document.querySelector('input[name="otchestvo"]').value
 
 })
 
-
+ 
 
 document.querySelector('input[name="otchestvo"]').addEventListener("keyup", (event) => { 
     
-    console.log(event.srcElement.value)
+    
 
-    document.querySelector('input[name="ORDER_PROP_1"]').value  = document.querySelector('input[name="name"]') + ' ' + document.querySelector('input[name="lastname"]') + ' ' + event.srcElement.value
+    document.querySelector('input[name="ORDER_PROP_1"]').value  = document.querySelector('input[name="name"]').value + ' ' + document.querySelector('input[name="lastname"]').value + ' ' + event.srcElement.value
 
 })
 
@@ -61,7 +61,7 @@ document.querySelector('input[name="address"]').addEventListener("keyup", (event
 })
 
 
-
+ 
 
 
 function init() {
