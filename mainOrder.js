@@ -70,6 +70,11 @@ document.querySelector("#bx-soa-orderSave > a").click()
 
 
 
+
+
+
+
+
 function init() {
 for (var i = 0; i < quantity.length; i++) {
     createBindings(quantity[i]);
@@ -372,8 +377,42 @@ document.querySelector('.order_content_blue .title').innerHTML = "Шаг 2 из 
 })
 
 
+function validate_delivery(){
+
+if(document.querySelector('input[name="phone"]').checkValidity() == false){
+document.querySelector('input[name="phone"]').reportValidity()
+}else if(document.querySelector('input[name="email"]').checkValidity() == false){
+
+    document.querySelector('input[name="email"]').reportValidity()
+
+
+}else if(document.querySelector('input[name="otchestvo"]').checkValidity() == false){
+    document.querySelector('input[name="otchestvo"]').reportValidity()
+
+}else if(document.querySelector('input[name="lastname"]').checkValidity() == false){
+
+    document.querySelector('input[name="lastname"]').reportValidity()
+
+
+}else if(document.querySelector('input[name="name"]').checkValidity() == false){
+
+    document.querySelector('input[name="name"]').reportValidity()
+}else if(document.querySelector('textarea[name="address"]').checkValidity() == false){
+
+document.querySelector('textarea[name="address"]').reportValidity()
+
+}else{
+
+return true
+
+}
+}
+
 let button_next_delivery = document.querySelector('.button_next_delivery')
 button_next_delivery.addEventListener('click', function (event) {
+
+    
+if(validate_delivery() == true){
 
     activeRemoveTab()
 
@@ -386,7 +425,7 @@ document.querySelector('.oplata .tabcontent').classList.add('active');
 document.querySelector('.order_content_blue .title').innerHTML = "Шаг 3 из 3. Выберите удобный способ оплаты"
 
 timerOpenP(document.querySelector('.oplata'))
-
+}
 
 
 })
