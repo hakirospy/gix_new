@@ -379,25 +379,25 @@ document.querySelector('.order_content_blue .title').innerHTML = "Шаг 2 из 
 
 function validate_delivery(){
 
-if(document.querySelector('input[name="phone"]').checkValidity() === false){
+if(document.querySelector('input[name="phone"]').value  == '' ){
 document.querySelector('input[name="phone"]').reportValidity()
-}else if(document.querySelector('input[name="email"]').checkValidity() == false){
+}else if(document.querySelector('input[name="email"]').value  == '' ){
 
     document.querySelector('input[name="email"]').reportValidity()
 
 
-}else if(document.querySelector('input[name="otchestvo"]').checkValidity() == false){
+}else if(document.querySelector('input[name="otchestvo"]').value  == '' ){
     document.querySelector('input[name="otchestvo"]').reportValidity()
 
-}else if(document.querySelector('input[name="lastname"]').checkValidity() == false){
+}else if(document.querySelector('input[name="lastname"]').value  == '' ){
 
     document.querySelector('input[name="lastname"]').reportValidity()
 
 
-}else if(document.querySelector('input[name="name"]').checkValidity() == false){
+}else if(document.querySelector('input[name="name"]').value  == '' ){
 
     document.querySelector('input[name="name"]').reportValidity()
-}else if(document.querySelector('textarea[name="address"]').checkValidity() == false){
+}else if(document.querySelector('textarea[name="address"]').value  == '' ){
 
 document.querySelector('textarea[name="address"]').reportValidity()
 
