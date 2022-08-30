@@ -9,6 +9,41 @@ increase.addEventListener('click', function () { increaseValue(quantityAmount); 
 decrease.addEventListener('click', function () { decreaseValue(quantityAmount); });
 }
 
+document.querySelector('input[name="name"]').addEventListener("keyup", (event) => { 
+    
+    console.log(event.srcElement.value)
+
+})
+
+
+
+
+
+document.querySelector('input[name="email"]').addEventListener("keyup", (event) => { 
+    
+
+
+    document.querySelector('input[name="ORDER_PROP_2"]').value = event.srcElement.value
+
+})
+
+
+document.querySelector('input[name="phone"]').addEventListener("keyup", (event) => { 
+    
+    document.querySelector('input[name="ORDER_PROP_3"]').value = event.srcElement.value
+
+})
+
+document.querySelector('input[name="address"]').addEventListener("keyup", (event) => { 
+    
+    document.querySelector('input[name="ORDER_PROP_7"]').value = event.srcElement.value
+
+})
+
+
+
+
+
 function init() {
 for (var i = 0; i < quantity.length; i++) {
     createBindings(quantity[i]);
@@ -141,9 +176,7 @@ return " товар"
 let allTovarsList = document.querySelectorAll('.elements_list .delete_element')
 allTovarsList.forEach((deletes) => { 
     deletes.addEventListener('click', (event) => {
-   
-    
-        
+         
   event.target.parentNode.parentNode.remove()
   count_all_summ()
 
