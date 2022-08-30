@@ -379,7 +379,7 @@ document.querySelector('.order_content_blue .title').innerHTML = "Шаг 2 из 
 
 function validate_delivery(){
 
-if(document.querySelector('input[name="phone"]').checkValidity() == false){
+if(document.querySelector('input[name="phone"]').checkValidity() === false){
 document.querySelector('input[name="phone"]').reportValidity()
 }else if(document.querySelector('input[name="email"]').checkValidity() == false){
 
