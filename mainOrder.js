@@ -60,9 +60,11 @@ document.querySelector('input[name="address"]').addEventListener("keyup", (event
 
 })
 
+document.querySelector('.button_next_oplata').addEventListener("click", (event) => { 
 
+document.querySelector("#bx-soa-orderSave > a").click()
 
-
+})
 
 function init() {
 for (var i = 0; i < quantity.length; i++) {
