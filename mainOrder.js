@@ -61,7 +61,12 @@ document.querySelector('input[name="address"]').addEventListener("keyup", (event
 })
 
 
- 
+ function soglasie(){
+
+    document.querySelector("#bx-soa-orderSave > .checkbox label").click()
+
+
+ }
 
 
 function init() {
@@ -70,6 +75,8 @@ for (var i = 0; i < quantity.length; i++) {
 }
 
 count_all_summ()
+
+document.querySelector("#ID_PAY_SYSTEM_ID_2").click()
 };
 
 function increaseValue(quantityAmount) {
