@@ -4041,7 +4041,7 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 
 .main_white .main_order .order .order_content .order_elements .order_buttom_next {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 125%;
   background: #A9FF35;
   padding: 23px 39px;
@@ -5672,15 +5672,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u7dc133d0;
-          animation-name: inline-u7dc133d0;
+  -webkit-animation-name: inline-u7bbd5a95;
+          animation-name: inline-u7bbd5a95;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u7dc133d0 {
+@-webkit-keyframes inline-u7bbd5a95 {
   0% {
     opacity: 0;
   }
@@ -5689,7 +5689,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u7dc133d0 {
+@keyframes inline-u7bbd5a95 {
   0% {
     opacity: 0;
   }
