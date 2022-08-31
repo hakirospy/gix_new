@@ -196,21 +196,6 @@ return " товар"
 
 }
 
-/*delete element*/
-
-
-let allTovarsList = document.querySelectorAll('.elements_list .delete_element')
-allTovarsList.forEach((deletes) => { 
-    deletes.addEventListener('click', (event) => {
-         
-  event.target.parentNode.parentNode.remove()
-  count_all_summ()
-
-         
-     
-    
-    })
-    })
 
 /*checked*/ 
 
@@ -561,26 +546,23 @@ if(!e.target.parentElement.classList.contains('active')){
 
 initAcc('.tabs', true);
 
+function deleteTovar(id){
 
-/*popap*/
+fetch(`/ajax/delete_tovar.php?&tovar=${id}`).then(data => data.json()).then(data => {
 
-const modals = document.querySelectorAll('[data-modal]');
+  
+count_all_summ()
+document.querySelector("#delete"+id).remove()
 
-modals.forEach(function (trigger) {
-trigger.addEventListener('click', function (event) {
-event.preventDefault();
-const modal = document.getElementById(trigger.dataset.modal);
-modal.classList.add('open');
-const exits = modal.querySelectorAll('.modal-exit');
-exits.forEach(function (exit) {
-exit.addEventListener('click', function (event) {
-event.preventDefault();
-modal.classList.remove('open');
-});
-});
-});
-});
+console.log(data);
+   
 
+ 
 
+   
+
+   
+})
+}
 
 
