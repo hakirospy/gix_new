@@ -410,9 +410,9 @@ document.querySelector('input[name="phone"]').setCustomValidity('Введите 
 document.querySelector('input[name="address"]').reportValidity()
 document.querySelector('input[name="address"]').setCustomValidity('Введите адресс доставки')
 
-}else if(document.querySelector('input[name="radio"]').reportValidity()){
+}else if(document.querySelector('.deliv input[name="radio"]').reportValidity()){
 
-    document.querySelector('input[name="radio"]').setCustomValidity('Выберите один из вариантов доставки ')
+    document.querySelector('.deliv input[name="radio"]').setCustomValidity('Выберите один из вариантов доставки ')
 
 }else{
 
