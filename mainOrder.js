@@ -390,7 +390,7 @@ document.querySelector('input[name="phone"]').reportValidity()
 document.querySelector('input[name="phone"]').setCustomValidity('Введите номер телефона')
 
 
-}else if(validateEmail(document.querySelector('input[name="email"]').value) == false ){
+}else if(validateEmail(document.querySelector('input[name="email"]').value) == '' ){
 
 
 
