@@ -381,6 +381,7 @@ function validate_delivery(){
 
 if(document.querySelector('input[name="phone"]').value  == '' ){
 document.querySelector('input[name="phone"]').reportValidity()
+document.querySelector('input[name="phone"]').setCustomValidity = ''
 }else if(document.querySelector('input[name="email"]').value  == '' ){
 
     document.querySelector('input[name="email"]').reportValidity()
