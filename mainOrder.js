@@ -381,12 +381,13 @@ function validate_delivery(){
 
 if(document.querySelector('input[name="phone"]').value  == '' ){
 document.querySelector('input[name="phone"]').reportValidity()
+document.querySelector('input[name="phone"]').setCustomValidity('Введите номер телефона')
 
 
 }else if(document.querySelector('input[name="email"]').value  == '' ){
 
     document.querySelector('input[name="email"]').reportValidity()
-
+    document.querySelector('input[name="email"]').setCustomValidity('Введите адресс вашей почты')
 
 }else if(document.querySelector('input[name="otchestvo"]').value  == '' ){
     document.querySelector('input[name="otchestvo"]').reportValidity()
