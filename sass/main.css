@@ -5666,6 +5666,91 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   }
 }
 
+@media screen and (max-width: 1230px) {
+  .button_menu .menu_mob {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    z-index: 3002;
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-transition: left 0.4s ease 0s, opacity 0.4s ease 0s;
+    transition: left 0.4s ease 0s, opacity 0.4s ease 0s;
+    position: fixed;
+    left: -100%;
+    top: 60;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    height: initial;
+  }
+  .button_menu .menu_mob .item {
+    background-color: #1E242E;
+    padding: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 125%;
+    color: white;
+    border-bottom: 1px solid #1B1C1B;
+    width: 100%;
+  }
+  .button_menu .menu_mob .item::after {
+    background-image: url("../img/strelka_right_mob.svg");
+    content: '';
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    position: absolute;
+    right: 16px;
+  }
+  .button_menu .menu_mob .item:hover {
+    background-color: #A9FF35;
+  }
+  .button_menu .menu_mob .item:hover::after {
+    background-image: url("../img/strelka_right_mob_black.svg");
+  }
+  .button_menu .menu_mob .item:hover a {
+    color: #1E242E;
+  }
+  .button_menu .menu_mob .item_menu {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 125%;
+    color: #FFFFFF;
+    padding: 13px 16px;
+    background-color: #1B1C1B;
+    border-bottom: 1px solid #1E242E;
+  }
+}
+
+.button_menu.open {
+  background-image: url("../img/close_menu_mob.svg");
+  height: 16px;
+}
+
+.button_menu.open .menu_mob {
+  left: 0;
+  -webkit-box-shadow: 3px 0px 10px 0px rgba(0, 0, 0, 0.45);
+          box-shadow: 3px 0px 10px 0px rgba(0, 0, 0, 0.45);
+}
+
+.button_menu.open #mobilemenu-overlay {
+  display: block;
+  background-color: #3a3f449c;
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+}
+
+#mobilemenu-overlay {
+  display: none;
+  opacity: 0.7 !important;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  top: 60px;
+  z-index: 2999;
+}
+
 /* specific animation */
 /* https://daneden.me/animate/ */
 .details_cart_tab[open] .title::after {
@@ -5686,15 +5771,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uec7fbe16;
-          animation-name: inline-uec7fbe16;
+  -webkit-animation-name: inline-u4f5cdf9c;
+          animation-name: inline-u4f5cdf9c;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uec7fbe16 {
+@-webkit-keyframes inline-u4f5cdf9c {
   0% {
     opacity: 0;
   }
@@ -5703,7 +5788,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uec7fbe16 {
+@keyframes inline-u4f5cdf9c {
   0% {
     opacity: 0;
   }

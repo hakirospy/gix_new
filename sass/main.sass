@@ -4022,7 +4022,79 @@ footer
    
 
 
+// menu mobile
 
+.button_menu
+  @media screen and ( max-width: 1230px  )
+    .menu_mob  
+      border-top-left-radius: 0px
+      border-bottom-left-radius: 0px
+      z-index: 3002
+      overflow: hidden
+      overflow-y: auto
+      transition: left 0.4s ease 0s, opacity 0.4s ease 0s
+      position: fixed
+      left: -100%
+      top: 60
+      bottom: 0
+      width: 320px
+      max-width: 100%
+      height: initial
+      .item
+        background-color: #1E242E 
+        padding: 16px
+        font-weight: 500
+        font-size: 14px
+        line-height: 125%
+        color: white
+        border-bottom: 1px solid #1B1C1B
+        width: 100%
+        &::after
+          background-image: url("../img/strelka_right_mob.svg")
+          content: ''
+          height: 16px
+          width: 16px
+          display: inline-block
+          position: absolute
+          right: 16px
+        &:hover
+          background-color: $main-green-color
+          &::after
+            background-image: url("../img/strelka_right_mob_black.svg")
+          a
+            color: #1E242E
+
+
+      .item_menu
+        font-weight: 500
+        font-size: 12px
+        line-height: 125%
+        color: $white-color
+        padding: 13px 16px
+        background-color: #1B1C1B
+        border-bottom: 1px solid #1E242E
+.button_menu.open
+  background-image: url("../img/close_menu_mob.svg")
+  height: 16px
+  .menu_mob
+
+    left: 0
+    box-shadow: 3px 0px 10px 0px rgba(0, 0, 0, 0.45)
+  #mobilemenu-overlay 
+    display: block
+    background-color: #3a3f449c
+    backdrop-filter: blur(16px)
+
+#mobilemenu-overlay 
+  display: none
+
+  opacity: 0.7 !important
+  height: 100%
+  width: 100%
+  position: fixed
+  left: 0px
+  top: 60px
+  z-index: 2999
 
 
 

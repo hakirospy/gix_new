@@ -39,5 +39,6 @@ chek.classList.add('active');
 document.querySelector('.button_menu').addEventListener('click', function(){
 
     this.classList.toggle('open')
+    document.querySelector('body').classList.toggle('overflow_html')
     
     })
