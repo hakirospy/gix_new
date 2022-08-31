@@ -410,6 +410,14 @@ return true
 }
 }
 
+document.querySelector('input[name="phone"]').addEventListener('keyup', function (e) {
+
+this.setCustomValidity('');
+
+})
+
+
+
 
 
 /*document.querySelector('input[name="phone"]').addEventListener('input', function (y) {
