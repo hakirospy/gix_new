@@ -4237,6 +4237,8 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   .main_white .main_order .order .order_content .order_elements .elements_list {
     -ms-grid-columns: 1fr 4fr 4fr 0fr 0fr 0.1fr;
         grid-template-columns: 1fr 4fr 4fr 0fr 0fr 0.1fr;
+    height: 164px;
+    padding-top: 14px;
   }
 }
 
@@ -5680,15 +5682,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uf2009d86;
-          animation-name: inline-uf2009d86;
+  -webkit-animation-name: inline-u9fbc9ec6;
+          animation-name: inline-u9fbc9ec6;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uf2009d86 {
+@-webkit-keyframes inline-u9fbc9ec6 {
   0% {
     opacity: 0;
   }
@@ -5697,7 +5699,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uf2009d86 {
+@keyframes inline-u9fbc9ec6 {
   0% {
     opacity: 0;
   }
