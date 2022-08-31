@@ -385,7 +385,7 @@ function validate_delivery(){
         );
       };
 
-if(document.querySelector('input[name="phone"]').value  == '' ){
+if(document.querySelector('input[name="phone"]').value  == null ){
 document.querySelector('input[name="phone"]').reportValidity()
 document.querySelector('input[name="phone"]').setCustomValidity('Введите номер телефона')
 
@@ -393,7 +393,7 @@ document.querySelector('input[name="phone"]').setCustomValidity('Введите 
 }else if(validateEmail(document.querySelector('input[name="email"]').value) == '' ){
 
 
-
+ 
     document.querySelector('input[name="email"]').reportValidity()
     document.querySelector('input[name="email"]').setCustomValidity('Введите адресс вашей почты')
 
