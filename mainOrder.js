@@ -399,7 +399,7 @@ document.querySelector('input[name="phone"]').reportValidity()
     document.querySelector('input[name="name"]').reportValidity()
 }else if(document.querySelector('textarea[name="address"]').value  == '' ){
 
-document.querySelector('textarea[name="address"]').reportValidity()
+document.querySelector('input[name="address"]').reportValidity()
 
 }else{
 
@@ -407,6 +407,13 @@ return true
 
 }
 }
+
+
+
+document.querySelector('input[name="phone"]').addEventListener('input', function (y) {
+    var a = y.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+    y.target.value = !a[2] ? a[1] : '+7(' + a[1] + ') ' + a[2] + (a[3] ? '-' + a[3] : '')+(a[4] ? '-' + a[4] : '');
+});
 
 let button_next_delivery = document.querySelector('.button_next_delivery')
 button_next_delivery.addEventListener('click', function (event) {
