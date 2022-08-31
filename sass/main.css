@@ -5666,60 +5666,64 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   }
 }
 
-@media screen and (max-width: 1230px) {
-  .button_menu .menu_mob {
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    z-index: 3002;
-    overflow: hidden;
-    overflow-y: auto;
-    -webkit-transition: left 0.4s ease 0s, opacity 0.4s ease 0s;
-    transition: left 0.4s ease 0s, opacity 0.4s ease 0s;
-    position: fixed;
-    left: -100%;
-    top: 60px;
-    bottom: 0;
-    width: 320px;
-    max-width: 100%;
-    height: initial;
-  }
-  .button_menu .menu_mob .item {
-    background-color: #1E242E;
-    padding: 16px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 125%;
-    color: white;
-    border-bottom: 1px solid #1B1C1B;
-    width: 100%;
-  }
-  .button_menu .menu_mob .item::after {
-    background-image: url("../img/strelka_right_mob.svg");
-    content: '';
-    height: 16px;
-    width: 16px;
-    display: inline-block;
-    position: absolute;
-    right: 16px;
-  }
-  .button_menu .menu_mob .item:hover {
-    background-color: #A9FF35;
-  }
-  .button_menu .menu_mob .item:hover::after {
-    background-image: url("../img/strelka_right_mob_black.svg");
-  }
-  .button_menu .menu_mob .item:hover a {
-    color: #1E242E;
-  }
-  .button_menu .menu_mob .item_menu {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 125%;
-    color: #FFFFFF;
-    padding: 13px 16px;
-    background-color: #1B1C1B;
-    border-bottom: 1px solid #1E242E;
-  }
+.button_menu .menu_mob {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  z-index: 3002;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-transition: left 0.4s ease 0s, opacity 0.4s ease 0s;
+  transition: left 0.4s ease 0s, opacity 0.4s ease 0s;
+  position: fixed;
+  left: -100%;
+  top: 60px;
+  bottom: 0;
+  width: 320px;
+  max-width: 100%;
+  height: initial;
+}
+
+.button_menu .menu_mob .item {
+  background-color: #1E242E;
+  padding: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 125%;
+  color: white;
+  border-bottom: 1px solid #1B1C1B;
+  width: 100%;
+}
+
+.button_menu .menu_mob .item::after {
+  background-image: url("../img/strelka_right_mob.svg");
+  content: '';
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  position: absolute;
+  right: 16px;
+}
+
+.button_menu .menu_mob .item:hover {
+  background-color: #A9FF35;
+}
+
+.button_menu .menu_mob .item:hover::after {
+  background-image: url("../img/strelka_right_mob_black.svg");
+}
+
+.button_menu .menu_mob .item:hover a {
+  color: #1E242E;
+}
+
+.button_menu .menu_mob .item_menu {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 125%;
+  color: #FFFFFF;
+  padding: 13px 16px;
+  background-color: #1B1C1B;
+  border-bottom: 1px solid #1E242E;
 }
 
 .button_menu.open {
@@ -5771,15 +5775,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u204b29b5;
-          animation-name: inline-u204b29b5;
+  -webkit-animation-name: inline-u6bff7b16;
+          animation-name: inline-u6bff7b16;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u204b29b5 {
+@-webkit-keyframes inline-u6bff7b16 {
   0% {
     opacity: 0;
   }
@@ -5788,7 +5792,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u204b29b5 {
+@keyframes inline-u6bff7b16 {
   0% {
     opacity: 0;
   }
