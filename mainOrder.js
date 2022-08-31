@@ -548,7 +548,7 @@ initAcc('.tabs', true);
 
 function deleteTovar(id){
 
-fetch(`/ajax/delete_tovar.php?&tovar=${id}`).then(data => data.json()).then(data => {
+fetch(`/local/ajax/delete_tovar.php?&tovar=${id}`).then(data => data.json()).then(data => {
 
   
 count_all_summ()
