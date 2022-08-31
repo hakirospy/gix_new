@@ -405,10 +405,14 @@ document.querySelector('input[name="phone"]').setCustomValidity('Введите 
     document.querySelector('input[name="name"]').reportValidity()
     document.querySelector('input[name="name"]').setCustomValidity('Введите свое имя')
 
-}else if(document.querySelector('textarea[name="address"]').value  == '' ){
+}else if(document.querySelector('input[name="address"]').value  == '' ){
 
 document.querySelector('input[name="address"]').reportValidity()
 document.querySelector('input[name="address"]').setCustomValidity('Введите адресс доставки')
+
+}else if(document.querySelector('input[name="radio"]').reportValidity()){
+
+    document.querySelector('input[name="radio"]').setCustomValidity('Выберите один из вариантов доставки ')
 
 }else{
 
