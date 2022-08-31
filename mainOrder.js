@@ -350,7 +350,7 @@ function timerOpenP(elem){
       }, 300);
 }
 
-let button_next = document.querySelector('.button_next')
+let button_next = document.querySelector('.order_next_button_block .button_next')
 button_next.addEventListener('click', function (event) {
 
     activeRemoveTab()
@@ -494,7 +494,7 @@ var phoneMask = IMask(
       mask: '+{7} (000) 000-00-00'
     });
 
-let button_next_delivery = document.querySelector('.button_next_delivery')
+let button_next_delivery = document.querySelector('.order_next_button_block .button_next_delivery')
 button_next_delivery.addEventListener('click', function (event) {
 
     
@@ -517,7 +517,7 @@ timerOpenP(document.querySelector('.oplata'))
 })
 
 
-let button_next_oplata= document.querySelector('.button_next_oplata')
+let button_next_oplata= document.querySelector('.order_next_button_block .button_next_oplata')
 button_next_oplata.addEventListener('click', function (event) {
 
     if(checkedRadio('radioPay') == false ){
