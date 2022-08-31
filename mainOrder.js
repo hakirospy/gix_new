@@ -410,10 +410,15 @@ return true
 
 
 
-document.querySelector('input[name="phone"]').addEventListener('input', function (y) {
+/*document.querySelector('input[name="phone"]').addEventListener('input', function (y) {
     var a = y.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
     y.target.value = !a[2] ? a[1] : '(' + a[1] + ') ' + a[2] + (a[3] ? '-' + a[3] : '')+(a[4] ? '-' + a[4] : '');
-});
+});*/
+
+var phoneMask = IMask(
+    document.querySelector('input[name="phone"]'), {
+      mask: '+{7}(000)000-00-00'
+    });
 
 let button_next_delivery = document.querySelector('.button_next_delivery')
 button_next_delivery.addEventListener('click', function (event) {
