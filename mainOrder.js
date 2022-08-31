@@ -391,18 +391,24 @@ document.querySelector('input[name="phone"]').setCustomValidity('Введите 
 
 }else if(document.querySelector('input[name="otchestvo"]').value  == '' ){
     document.querySelector('input[name="otchestvo"]').reportValidity()
+    document.querySelector('input[name="otchestvo"]').setCustomValidity('Введите свое Отчество')
+
 
 }else if(document.querySelector('input[name="lastname"]').value  == '' ){
 
     document.querySelector('input[name="lastname"]').reportValidity()
+    document.querySelector('input[name="lastname"]').setCustomValidity('Введите свою Фамилию')
 
 
 }else if(document.querySelector('input[name="name"]').value  == '' ){
 
     document.querySelector('input[name="name"]').reportValidity()
+    document.querySelector('input[name="name"]').setCustomValidity('Введите свое имя')
+
 }else if(document.querySelector('textarea[name="address"]').value  == '' ){
 
 document.querySelector('input[name="address"]').reportValidity()
+document.querySelector('input[name="address"]').setCustomValidity('Введите адресс доставки')
 
 }else{
 
@@ -417,6 +423,39 @@ this.setCustomValidity('');
 
 })
 
+
+document.querySelector('input[name="name"]').addEventListener('keyup', function (e) {
+
+    this.setCustomValidity('');
+    
+    })
+
+
+
+    document.querySelector('input[name="email"]').addEventListener('keyup', function (e) {
+
+        this.setCustomValidity('');
+        
+        })
+
+
+
+
+        document.querySelector('input[name="lastname"]').addEventListener('keyup', function (e) {
+
+            this.setCustomValidity('');
+            
+            })
+            document.querySelector('input[name="otchestvo"]').addEventListener('keyup', function (e) {
+
+                this.setCustomValidity('');
+                
+                })
+                document.querySelector('input[name="address"]').addEventListener('keyup', function (e) {
+
+                    this.setCustomValidity('');
+                    
+                    })
 
 
 
