@@ -4420,7 +4420,7 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   .main_white .main_order .order .order_content .order_elements .summ_block .coupon_block .left_coupon {
     background-image: url("../img/coupon_left_small.svg");
     width: 135px;
-    height: 48px;
+    height: 50px;
   }
 }
 
@@ -4435,6 +4435,7 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   .main_white .main_order .order .order_content .order_elements .summ_block .coupon_block .left_coupon span {
     font-size: 10px;
     padding-left: 20px;
+    padding-top: 6px;
   }
 }
 
@@ -5672,15 +5673,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u7822797f;
-          animation-name: inline-u7822797f;
+  -webkit-animation-name: inline-ueca7741b;
+          animation-name: inline-ueca7741b;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u7822797f {
+@-webkit-keyframes inline-ueca7741b {
   0% {
     opacity: 0;
   }
@@ -5689,7 +5690,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u7822797f {
+@keyframes inline-ueca7741b {
   0% {
     opacity: 0;
   }
