@@ -557,10 +557,6 @@ document.querySelector("#delete"+id).remove()
 console.log(data);
    
 
- 
-
-   
-
    
 })
 }
