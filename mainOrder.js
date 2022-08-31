@@ -379,12 +379,20 @@ document.querySelector('.order_content_blue .title').innerHTML = "Шаг 2 из 
 
 function validate_delivery(){
 
+    const validateEmail = (email) => {
+        return email.match(
+          /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        );
+      };
+
 if(document.querySelector('input[name="phone"]').value  == '' ){
 document.querySelector('input[name="phone"]').reportValidity()
 document.querySelector('input[name="phone"]').setCustomValidity('Введите номер телефона')
 
 
-}else if(document.querySelector('input[name="email"]').value  == '' ){
+}else if(validateEmail(document.querySelector('input[name="email"]').value) ){
+
+
 
     document.querySelector('input[name="email"]').reportValidity()
     document.querySelector('input[name="email"]').setCustomValidity('Введите адресс вашей почты')
