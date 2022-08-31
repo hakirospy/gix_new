@@ -385,12 +385,12 @@ function validate_delivery(){
         );
       };
 
-if(document.querySelector('input[name="phone"]').value  == null ){
+if(document.querySelector('input[name="phone"]').value.length < 10  ){
 document.querySelector('input[name="phone"]').reportValidity()
 document.querySelector('input[name="phone"]').setCustomValidity('Введите номер телефона')
 
 
-}else if(validateEmail(document.querySelector('input[name="email"]').value) == '' ){
+}else if(validateEmail(document.querySelector('input[name="email"]').value) == null ){
 
 
  
