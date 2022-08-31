@@ -2827,7 +2827,11 @@ footer
             background: #A9FF35
             width: 100%
             display: block
-          
+            
+        .a-container .title_order_elements
+            @media screen and ( max-width: 480px  )
+              padding-bottom: 16px
+              font-size: 16px  
         .order_elements
           border: 1px solid #E5EFFE
           border-radius: 32px
@@ -2854,6 +2858,7 @@ footer
             display: none
           .animation_tab.close + .summ_first_tab
             display: flex
+          
 
 
           .tabcontent, .animation_tab
