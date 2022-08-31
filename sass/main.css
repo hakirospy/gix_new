@@ -5744,11 +5744,17 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   transition: left 0.4s ease 0s, opacity 0.4s ease 0s;
   position: fixed;
   left: -100%;
-  top: 60px;
+  top: 77px;
   bottom: 0;
   width: 320px;
   max-width: 100%;
   height: initial;
+}
+
+@media screen and (max-width: 450px) {
+  .button_menu .menu_mob .item .sum_menu {
+    top: 60px;
+  }
 }
 
 .button_menu .menu_mob .item .sum_menu .item_sub {
@@ -5840,8 +5846,14 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   width: 100%;
   position: fixed;
   left: 0px;
-  top: 60px;
+  top: 77px;
   z-index: 2999;
+}
+
+@media screen and (max-width: 450px) {
+  #mobilemenu-overlay {
+    top: 60px;
+  }
 }
 
 /* specific animation */
@@ -5864,15 +5876,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uff86ae34;
-          animation-name: inline-uff86ae34;
+  -webkit-animation-name: inline-uab67fe80;
+          animation-name: inline-uab67fe80;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uff86ae34 {
+@-webkit-keyframes inline-uab67fe80 {
   0% {
     opacity: 0;
   }
@@ -5881,7 +5893,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uff86ae34 {
+@keyframes inline-uab67fe80 {
   0% {
     opacity: 0;
   }
