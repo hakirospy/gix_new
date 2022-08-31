@@ -381,7 +381,7 @@ function validate_delivery(){
 
 if(document.querySelector('input[name="phone"]').value  == '' ){
 document.querySelector('input[name="phone"]').reportValidity()
-document.querySelector('input[name="phone"]').validationMessage('Введите номер телефона')
+
 
 }else if(document.querySelector('input[name="email"]').value  == '' ){
 
