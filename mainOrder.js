@@ -60,13 +60,6 @@ document.querySelector('input[name="address"]').addEventListener("keyup", (event
 
 })
 
-document.querySelector('.button_next_oplata').addEventListener("click", (event) => { 
-
-    document.querySelector("#ID_PAY_SYSTEM_ID_2").click() 
-
-document.querySelector("#bx-soa-orderSave > a").click()
-
-})
 
 
 
@@ -416,23 +409,23 @@ document.querySelector('input[name="phone"]').setCustomValidity('Введите 
     document.querySelector('input[name="email"]').reportValidity()
     document.querySelector('input[name="email"]').setCustomValidity('Введите адресс вашей почты')
 
-}else if(document.querySelector('input[name="otchestvo"]').value.length > 5 ){
+}else if(document.querySelector('input[name="otchestvo"]').value.length < 5 ){
     document.querySelector('input[name="otchestvo"]').reportValidity()
     document.querySelector('input[name="otchestvo"]').setCustomValidity('Введите свое Отчество')
 
 
-}else if(document.querySelector('input[name="lastname"]').value.length > 2 ){
+}else if(document.querySelector('input[name="lastname"]').value.length < 2 ){
 
     document.querySelector('input[name="lastname"]').reportValidity()
     document.querySelector('input[name="lastname"]').setCustomValidity('Введите свою Фамилию')
 
 
-}else if(document.querySelector('input[name="name"]').value.length > 2 ){
+}else if(document.querySelector('input[name="name"]').value.length < 2 ){
 
     document.querySelector('input[name="name"]').reportValidity()
     document.querySelector('input[name="name"]').setCustomValidity('Введите свое имя')
 
-}else if(document.querySelector('input[name="address"]').value.length > 7 ){
+}else if(document.querySelector('input[name="address"]').value.length < 7 ){
 
 document.querySelector('input[name="address"]').reportValidity()
 document.querySelector('input[name="address"]').setCustomValidity('Введите адресс доставки')
@@ -445,7 +438,7 @@ document.querySelector('input[name="address"]').setCustomValidity('Введит�
 
 return true
 
-}
+} 
 }
 
 document.querySelector('input[name="phone"]').addEventListener('keyup', function (e) {
@@ -527,7 +520,21 @@ timerOpenP(document.querySelector('.oplata'))
 let button_next_oplata= document.querySelector('.button_next_oplata')
 button_next_oplata.addEventListener('click', function (event) {
 
-activeRemoveTab()
+    if(checkedRadio('radioPay') == false ){
+        document.querySelector('input[name="radio"]').reportValidity()
+        document.querySelector('input[name="radio"]').setCustomValidity('Выберите один из вариантов оплаты ')
+    
+    }else{
+
+       
+
+        document.querySelector("#ID_PAY_SYSTEM_ID_2").click() 
+        activeRemoveTab()
+        
+        document.querySelector("#bx-soa-orderSave > a").click()
+
+
+    }
 
 })
 
