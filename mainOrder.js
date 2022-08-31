@@ -517,6 +517,7 @@ button_next_oplata.addEventListener('click', function (event) {
         activeRemoveTab()
         
         document.querySelector("#bx-soa-orderSave > a").click()
+        document.querySelector("#bx-soa-orderSave > a").click()
 
 
     }
