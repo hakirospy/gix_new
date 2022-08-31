@@ -397,23 +397,23 @@ document.querySelector('input[name="phone"]').setCustomValidity('Введите 
     document.querySelector('input[name="email"]').reportValidity()
     document.querySelector('input[name="email"]').setCustomValidity('Введите адресс вашей почты')
 
-}else if(document.querySelector('input[name="otchestvo"]').value  == '' ){
+}else if(document.querySelector('input[name="otchestvo"]').value.length > 5 ){
     document.querySelector('input[name="otchestvo"]').reportValidity()
     document.querySelector('input[name="otchestvo"]').setCustomValidity('Введите свое Отчество')
 
 
-}else if(document.querySelector('input[name="lastname"]').value  == '' ){
+}else if(document.querySelector('input[name="lastname"]').value.length > 2 ){
 
     document.querySelector('input[name="lastname"]').reportValidity()
     document.querySelector('input[name="lastname"]').setCustomValidity('Введите свою Фамилию')
 
 
-}else if(document.querySelector('input[name="name"]').value  == '' ){
+}else if(document.querySelector('input[name="name"]').value.length > 2 ){
 
     document.querySelector('input[name="name"]').reportValidity()
     document.querySelector('input[name="name"]').setCustomValidity('Введите свое имя')
 
-}else if(document.querySelector('input[name="address"]').value  == '' ){
+}else if(document.querySelector('input[name="address"]').value.length > 7 ){
 
 document.querySelector('input[name="address"]').reportValidity()
 document.querySelector('input[name="address"]').setCustomValidity('Введите адресс доставки')
