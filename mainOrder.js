@@ -377,6 +377,25 @@ document.querySelector('.order_content_blue .title').innerHTML = "Шаг 2 из 
 })
 
 
+
+function checkedRadio(elem){
+    let result =false
+    const radioButtons = document.querySelectorAll('input[name="'+elem+'"]');
+    radioButtons.forEach(function($checkbox) {
+
+        
+            if ($checkbox.checked) {
+        
+                result = true
+            }
+        
+    }
+    )
+
+    return result
+}
+
+
 function validate_delivery(){
 
     const validateEmail = (email) => {
@@ -418,9 +437,9 @@ document.querySelector('input[name="phone"]').setCustomValidity('Введите 
 document.querySelector('input[name="address"]').reportValidity()
 document.querySelector('input[name="address"]').setCustomValidity('Введите адресс доставки')
 
-}else if(document.querySelector('.deliv input[name="radio"]').reportValidity()){
-
-    document.querySelector('.deliv input[name="radio"]').setCustomValidity('Выберите один из вариантов доставки ')
+}else if(checkedRadio('radio') == false ){
+    document.querySelector('input[name="radio"]').reportValidity()
+    document.querySelector('input[name="radio"]').setCustomValidity('Выберите один из вариантов доставки ')
 
 }else{
 
