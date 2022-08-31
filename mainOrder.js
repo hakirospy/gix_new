@@ -128,7 +128,7 @@ price_element = price_element + parseInt(trigger.children[3].innerText.replace(/
 countElem++
 })
 
-console.log(price_element)
+if(price_element == 0)  window.location.replace("/personal/cart/");
 
 var mainPrice = document.querySelector('.all_price')
 var countAllElemName = document.querySelector('.countAllElem')
