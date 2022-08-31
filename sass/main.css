@@ -4488,6 +4488,10 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   }
 }
 
+.main_white .main_order .order .order_content .tabs {
+  margin-bottom: 100px;
+}
+
 .main_white .main_order .order .order_content .tabs .delivery .title, .main_white .main_order .order .order_content .tabs .oplata .title {
   border: 1px solid #E5EFFE;
   border-radius: 32px;
@@ -5682,15 +5686,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ue834d625;
-          animation-name: inline-ue834d625;
+  -webkit-animation-name: inline-uec7fbe16;
+          animation-name: inline-uec7fbe16;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ue834d625 {
+@-webkit-keyframes inline-uec7fbe16 {
   0% {
     opacity: 0;
   }
@@ -5699,7 +5703,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ue834d625 {
+@keyframes inline-uec7fbe16 {
   0% {
     opacity: 0;
   }
