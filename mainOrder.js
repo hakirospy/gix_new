@@ -381,7 +381,8 @@ function validate_delivery(){
 
 if(document.querySelector('input[name="phone"]').value  == '' ){
 document.querySelector('input[name="phone"]').reportValidity()
-document.querySelector('input[name="phone"]').setCustomValidity = ''
+document.querySelector('input[name="phone"]').setCustomValidity('Введите номер телефона')
+
 }else if(document.querySelector('input[name="email"]').value  == '' ){
 
     document.querySelector('input[name="email"]').reportValidity()
@@ -418,7 +419,7 @@ return true
 
 var phoneMask = IMask(
     document.querySelector('input[name="phone"]'), {
-      mask: '+{7}(000)000-00-00'
+      mask: '+{7} (000) 000-00-00'
     });
 
 let button_next_delivery = document.querySelector('.button_next_delivery')
