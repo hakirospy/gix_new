@@ -465,6 +465,10 @@ body.overflow_html {
   top: 10px;
 }
 
+.liked .icon:hover {
+  background: url("../img/favourite_hover.svg");
+}
+
 .backet {
   position: relative;
   -ms-grid-column-align: center;
@@ -5955,15 +5959,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uc1f31b01;
-          animation-name: inline-uc1f31b01;
+  -webkit-animation-name: inline-u38895757;
+          animation-name: inline-u38895757;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uc1f31b01 {
+@-webkit-keyframes inline-u38895757 {
   0% {
     opacity: 0;
   }
@@ -5972,7 +5976,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uc1f31b01 {
+@keyframes inline-u38895757 {
   0% {
     opacity: 0;
   }
