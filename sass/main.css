@@ -95,8 +95,9 @@ body.overflow_html {
 
 .main_slider_block .search .icon {
   background-image: url("../img/search.svg");
-  background-size: cover;
-  width: 18px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   height: 19px;
   position: absolute;
   border: none;
@@ -5912,15 +5913,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uef145090;
-          animation-name: inline-uef145090;
+  -webkit-animation-name: inline-u9de67ea0;
+          animation-name: inline-u9de67ea0;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uef145090 {
+@-webkit-keyframes inline-u9de67ea0 {
   0% {
     opacity: 0;
   }
@@ -5929,7 +5930,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uef145090 {
+@keyframes inline-u9de67ea0 {
   0% {
     opacity: 0;
   }
