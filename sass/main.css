@@ -94,7 +94,7 @@ body.overflow_html {
 }
 
 .main_slider_block .search .icon {
-  background: url("../img/search.svg");
+  background-image: url("../img/search.svg");
   width: 18px;
   height: 19px;
   position: absolute;
@@ -320,7 +320,7 @@ body.overflow_html {
     justify-items: center;
   }
   .main_slider_block .search .icon {
-    position: relative;
+    position: inherit;
   }
   .main_slider_block .logo_main {
     -webkit-box-ordinal-group: 4;
@@ -5911,15 +5911,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uefcb68f4;
-          animation-name: inline-uefcb68f4;
+  -webkit-animation-name: inline-uee11e809;
+          animation-name: inline-uee11e809;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uefcb68f4 {
+@-webkit-keyframes inline-uee11e809 {
   0% {
     opacity: 0;
   }
@@ -5928,7 +5928,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uefcb68f4 {
+@keyframes inline-uee11e809 {
   0% {
     opacity: 0;
   }
