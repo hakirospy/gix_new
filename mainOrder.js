@@ -496,6 +496,7 @@ document.querySelector('.oplata .tabcontent').classList.add('active');
 document.querySelector('.order_content_blue .title').innerHTML = "Шаг 3 из 3. Выберите удобный способ оплаты"
 
 timerOpenP(document.querySelector('.oplata'))
+BX.Sale.OrderAjaxComponent.sendRequest('refreshOrderAjax');
 }
 
 
@@ -516,7 +517,7 @@ button_next_oplata.addEventListener('click', function (event) {
         document.querySelector("#ID_PAY_SYSTEM_ID_2").click() 
         activeRemoveTab()
         
-        document.querySelector("#bx-soa-orderSave > a").click()
+       
         document.querySelector("#bx-soa-orderSave > a").click()
 
 
