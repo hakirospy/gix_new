@@ -336,6 +336,15 @@ body.overflow_html
   display: grid
   align-items: center
   order: 8
+  &:hover
+    color: $main-green-color
+  &:hover .icon
+    background: url('../img/favourite_hover.svg')
+    width: 28px
+    height: 28px
+    left: -30px
+    top: 4px
+      
   .icon
     background: url("../img/liked_green.svg")
     content: ''
@@ -345,12 +354,8 @@ body.overflow_html
     position: absolute
     left: -25px
     top: 10px
-    &:hover
-      background: url('../img/favourite_hover.svg')
-      width: 28px
-      height: 28px
-      left: -30px
-      top: 4px
+
+      
 
 .backet
   position: relative

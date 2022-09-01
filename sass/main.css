@@ -453,6 +453,18 @@ body.overflow_html {
           order: 8;
 }
 
+.liked:hover {
+  color: #A9FF35;
+}
+
+.liked:hover .icon {
+  background: url("../img/favourite_hover.svg");
+  width: 28px;
+  height: 28px;
+  left: -30px;
+  top: 4px;
+}
+
 .liked .icon {
   background: url("../img/liked_green.svg");
   content: '';
@@ -463,14 +475,6 @@ body.overflow_html {
   position: absolute;
   left: -25px;
   top: 10px;
-}
-
-.liked .icon:hover {
-  background: url("../img/favourite_hover.svg");
-  width: 28px;
-  height: 28px;
-  left: -30px;
-  top: 4px;
 }
 
 .backet {
@@ -5963,15 +5967,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u574fb9c3;
-          animation-name: inline-u574fb9c3;
+  -webkit-animation-name: inline-ubf11e591;
+          animation-name: inline-ubf11e591;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u574fb9c3 {
+@-webkit-keyframes inline-ubf11e591 {
   0% {
     opacity: 0;
   }
@@ -5980,7 +5984,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u574fb9c3 {
+@keyframes inline-ubf11e591 {
   0% {
     opacity: 0;
   }
