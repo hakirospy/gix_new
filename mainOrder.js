@@ -588,11 +588,11 @@ button_next_oplata.addEventListener('click', function (event) {
     }else{
 
         BX.Sale.OrderAjaxComponent.editActiveDeliveryBlock(true);
-        //BX.Sale.OrderAjaxComponent.editActiveRegionBlock(true);
+        BX.Sale.OrderAjaxComponent.editActiveRegionBlock(true);
 
 
-        /*BX.Sale.OrderAjaxComponent.editActivePickUpBlock(true);*/
-        //BX.Sale.OrderAjaxComponent.editActivePropsBlock(true);
+        BX.Sale.OrderAjaxComponent.editActivePickUpBlock(true);
+        BX.Sale.OrderAjaxComponent.editActivePropsBlock(true);
         BX.Sale.OrderAjaxComponent.editActivePaySystemBlock(true);
 
         document.querySelector("#ID_PAY_SYSTEM_ID_2").click() 
