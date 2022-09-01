@@ -1106,6 +1106,16 @@ body.overflow_html {
   line-height: 17px;
 }
 
+.button_slider:hover {
+  background: linear-gradient(45deg, #2B3547 0%, #2B3547 0.01%, #3B414B 100%);
+  color: white;
+}
+
+.button_slider:focus {
+  background: #1E242E;
+  color: white;
+}
+
 .big .button_slider {
   left: 96px;
   top: 269px;
@@ -5940,15 +5950,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u07b3e54b;
-          animation-name: inline-u07b3e54b;
+  -webkit-animation-name: inline-u59d5a914;
+          animation-name: inline-u59d5a914;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u07b3e54b {
+@-webkit-keyframes inline-u59d5a914 {
   0% {
     opacity: 0;
   }
@@ -5957,7 +5967,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u07b3e54b {
+@keyframes inline-u59d5a914 {
   0% {
     opacity: 0;
   }
