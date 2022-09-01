@@ -496,6 +496,11 @@ document.querySelector('.oplata .tabcontent').classList.add('active');
 document.querySelector('.order_content_blue .title').innerHTML = "Шаг 3 из 3. Выберите удобный способ оплаты"
 
 timerOpenP(document.querySelector('.oplata'))
+
+
+
+
+
 BX.Sale.OrderAjaxComponent.sendRequest('refreshOrderAjax');
 }
 
@@ -582,7 +587,13 @@ button_next_oplata.addEventListener('click', function (event) {
     
     }else{
 
-       
+        BX.Sale.OrderAjaxComponent.editActiveDeliveryBlock(true);
+        //BX.Sale.OrderAjaxComponent.editActiveRegionBlock(true);
+
+
+        /*BX.Sale.OrderAjaxComponent.editActivePickUpBlock(true);*/
+        //BX.Sale.OrderAjaxComponent.editActivePropsBlock(true);
+        BX.Sale.OrderAjaxComponent.editActivePaySystemBlock(true);
 
         document.querySelector("#ID_PAY_SYSTEM_ID_2").click() 
         activeRemoveTab()
