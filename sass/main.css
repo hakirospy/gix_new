@@ -1583,6 +1583,11 @@ body.overflow_html {
   color: white;
 }
 
+.cart button:focus {
+  background: #1E242E;
+  color: white;
+}
+
 .cart .compare {
   background: url("../img/compare.svg");
   width: 38px;
@@ -5935,15 +5940,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u49f06d1b;
-          animation-name: inline-u49f06d1b;
+  -webkit-animation-name: inline-u07b3e54b;
+          animation-name: inline-u07b3e54b;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u49f06d1b {
+@-webkit-keyframes inline-u07b3e54b {
   0% {
     opacity: 0;
   }
@@ -5952,7 +5957,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u49f06d1b {
+@keyframes inline-u07b3e54b {
   0% {
     opacity: 0;
   }
