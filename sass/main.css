@@ -1962,6 +1962,10 @@ body.overflow_html {
   color: #A9FF35;
 }
 
+.contact_block form a:hover {
+  text-decoration: underline;
+}
+
 .contact_block form button {
   border-radius: 4px;
   padding: 16px 24px;
@@ -5951,15 +5955,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uedf7681f;
-          animation-name: inline-uedf7681f;
+  -webkit-animation-name: inline-uc1f31b01;
+          animation-name: inline-uc1f31b01;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uedf7681f {
+@-webkit-keyframes inline-uc1f31b01 {
   0% {
     opacity: 0;
   }
@@ -5968,7 +5972,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uedf7681f {
+@keyframes inline-uc1f31b01 {
   0% {
     opacity: 0;
   }
