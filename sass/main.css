@@ -203,6 +203,10 @@ body.overflow_html {
   display: inline-block;
 }
 
+.main_slider_block .tel .add_call:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 1420px) {
   .main_slider_block {
     -ms-grid-columns: 145px 150px minmax(150px, 338px) minmax(100px, 200px) 180px 135px 50px 135px 135px;
@@ -505,6 +509,7 @@ body.overflow_html {
   background-image: url("../img/logo_main.svg");
   width: 131px;
   height: 47px;
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {
@@ -5923,15 +5928,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u5e20a61a;
-          animation-name: inline-u5e20a61a;
+  -webkit-animation-name: inline-uc4f5c849;
+          animation-name: inline-uc4f5c849;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u5e20a61a {
+@-webkit-keyframes inline-uc4f5c849 {
   0% {
     opacity: 0;
   }
@@ -5940,7 +5945,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u5e20a61a {
+@keyframes inline-uc4f5c849 {
   0% {
     opacity: 0;
   }
