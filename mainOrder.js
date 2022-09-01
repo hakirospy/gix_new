@@ -503,6 +503,33 @@ BX.Sale.OrderAjaxComponent.sendRequest('refreshOrderAjax');
 })
 
 
+document.querySelector('.count_element .plus').addEventListener('keyup', function (event) {
+
+    console.log(event.parentElement)
+
+
+/*var ty=$(this).attr('idtov');
+
+    var post = {};
+    post[ty] = $(this).val();
+    post['z']=$(this).attr('id_znach');
+
+    BX.ajax.post(
+        "/local/ajax/edit_col.php",
+        post,
+        function (data) {
+        	console.log(data);
+            BX.Sale.OrderAjaxComponent.sendRequest('refreshOrderAjax');
+
+
+        }
+    );*/
+
+});
+
+
+
+
 let button_next_oplata= document.querySelector('.perehod_oformit')
 button_next_oplata.addEventListener('click', function (event) {
 
