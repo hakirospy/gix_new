@@ -1104,6 +1104,7 @@ body.overflow_html {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
+  cursor: pointer;
 }
 
 .button_slider:hover {
@@ -5950,15 +5951,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u59d5a914;
-          animation-name: inline-u59d5a914;
+  -webkit-animation-name: inline-uedf7681f;
+          animation-name: inline-uedf7681f;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u59d5a914 {
+@-webkit-keyframes inline-uedf7681f {
   0% {
     opacity: 0;
   }
@@ -5967,7 +5968,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u59d5a914 {
+@keyframes inline-uedf7681f {
   0% {
     opacity: 0;
   }
