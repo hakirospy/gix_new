@@ -596,6 +596,8 @@ button_next_oplata.addEventListener('click', function (event) {
         BX.Sale.OrderAjaxComponent.editActivePaySystemBlock(true);
 
         document.querySelector("#ID_PAY_SYSTEM_ID_2").click() 
+        document.querySelector("#ID_DELIVERY_ID_2").click() 
+        
         activeRemoveTab()
         
        
