@@ -544,7 +544,9 @@ document.querySelectorAll('.count_element .plus').forEach((inputCount) => {
 
     let id = parseInt( this.parentElement.parentElement.getAttribute('id').replace('delete',''))
 
-    let count = parseInt(this.value)+1
+    
+
+    let count = this.parentElement.querySelector('.input_coll').value
     console.log(00000)
     console.log(count)
     console.log(00000)
