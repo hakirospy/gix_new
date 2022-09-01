@@ -94,7 +94,7 @@ body.overflow_html {
 }
 
 .main_slider_block .search .icon {
-  background-image: url("../img/search.svg");
+  background: url("../img/search.svg");
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -5913,15 +5913,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u9de67ea0;
-          animation-name: inline-u9de67ea0;
+  -webkit-animation-name: inline-u79aa4ab1;
+          animation-name: inline-u79aa4ab1;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u9de67ea0 {
+@-webkit-keyframes inline-u79aa4ab1 {
   0% {
     opacity: 0;
   }
@@ -5930,7 +5930,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u9de67ea0 {
+@keyframes inline-u79aa4ab1 {
   0% {
     opacity: 0;
   }
