@@ -4399,15 +4399,15 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   display: inline-block;
   cursor: pointer;
   margin-top: -4px;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  padding-top: 2px;
 }
 
 .main_white .main_order .order .order_content .order_elements .elements_list .count_element .plus:hover, .main_white .main_order .order .order_content .order_elements .elements_list .count_element .minus:hover {
   background: #F1F7FF;
   border-radius: 32px;
-  height: 32px;
-  width: 32px;
-  text-align: center;
-  padding-top: 2px;
 }
 
 .main_white .main_order .order .order_content .order_elements .elements_list .input_coll {
@@ -6024,15 +6024,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ue3203853;
-          animation-name: inline-ue3203853;
+  -webkit-animation-name: inline-u6a333367;
+          animation-name: inline-u6a333367;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ue3203853 {
+@-webkit-keyframes inline-u6a333367 {
   0% {
     opacity: 0;
   }
@@ -6041,7 +6041,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ue3203853 {
+@keyframes inline-u6a333367 {
   0% {
     opacity: 0;
   }
