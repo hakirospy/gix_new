@@ -498,7 +498,8 @@ document.querySelector('.order_content_blue .title').innerHTML = "Шаг 3 из 
 timerOpenP(document.querySelector('.oplata'))
 
 
-
+document.querySelector("#ID_PAY_SYSTEM_ID_2").click() 
+document.querySelector("#ID_DELIVERY_ID_2").click() 
 
 
 BX.Sale.OrderAjaxComponent.sendRequest('refreshOrderAjax');
@@ -595,8 +596,7 @@ button_next_oplata.addEventListener('click', function (event) {
         BX.Sale.OrderAjaxComponent.editActivePropsBlock(true);
         BX.Sale.OrderAjaxComponent.editActivePaySystemBlock(true);
 
-        document.querySelector("#ID_PAY_SYSTEM_ID_2").click() 
-        document.querySelector("#ID_DELIVERY_ID_2").click() 
+       
         
         activeRemoveTab()
         
