@@ -503,7 +503,7 @@ BX.Sale.OrderAjaxComponent.sendRequest('refreshOrderAjax');
 })
 
 
-document.querySelector('.count_element .plus').addEventListener('keyup', function (event) {
+document.querySelector('.count_element .input_coll').addEventListener('keyup', function (event) {
 
     console.log(event.parentElement)
 
