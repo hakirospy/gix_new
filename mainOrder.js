@@ -535,7 +535,7 @@ document.querySelectorAll('.count_element .input_coll').forEach((inputCount) => 
 });
 
 
-//minus
+//plus
 
 
 document.querySelectorAll('.count_element .plus').forEach((inputCount) => { 
@@ -543,15 +543,29 @@ document.querySelectorAll('.count_element .plus').forEach((inputCount) => {
     inputCount.addEventListener('click', function (event) {
 
     let id = parseInt( this.parentElement.parentElement.getAttribute('id').replace('delete',''))
-console.log(id)
-console.log(999999)
-   // calculate_count(this.value, id);
-   // count_all_summ()
+
+
+    calculate_count(this.value, id);
+    count_all_summ()
 
 });
 });
 
+//minus
 
+
+document.querySelectorAll('.count_element .minus').forEach((inputCount) => { 
+
+    inputCount.addEventListener('click', function (event) {
+
+    let id = parseInt( this.parentElement.parentElement.getAttribute('id').replace('delete',''))
+
+
+    calculate_count(this.value, id);
+    count_all_summ()
+
+});
+});
 
 
 
