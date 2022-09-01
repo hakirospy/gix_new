@@ -505,7 +505,7 @@ BX.Sale.OrderAjaxComponent.sendRequest('refreshOrderAjax');
 
 document.querySelector('.count_element .input_coll').addEventListener('keyup', function (event) {
 
-    console.log(this.parentElement)
+    console.log(this.parentElement.parentElement)
 
 
 /*var ty=$(this).attr('idtov');
