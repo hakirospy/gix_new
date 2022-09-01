@@ -388,7 +388,7 @@ body.overflow_html {
   cursor: pointer;
 }
 
-.go_cab:hover {
+.go_cab:hover .title a {
   color: #A9FF35;
   cursor: pointer;
 }
@@ -442,7 +442,7 @@ body.overflow_html {
   cursor: pointer;
 }
 
-.compare:hover {
+.compare:hover .title a {
   color: #A9FF35;
   cursor: pointer;
 }
@@ -5996,15 +5996,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ua5c389ec;
-          animation-name: inline-ua5c389ec;
+  -webkit-animation-name: inline-u2ccd3d3e;
+          animation-name: inline-u2ccd3d3e;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ua5c389ec {
+@-webkit-keyframes inline-u2ccd3d3e {
   0% {
     opacity: 0;
   }
@@ -6013,7 +6013,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ua5c389ec {
+@keyframes inline-u2ccd3d3e {
   0% {
     opacity: 0;
   }
