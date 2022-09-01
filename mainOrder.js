@@ -503,17 +503,17 @@ BX.Sale.OrderAjaxComponent.sendRequest('refreshOrderAjax');
 })
 
 
-document.querySelector('.count_element .input_coll').addEventListener('keyup', function (event) {
+
+
+document.querySelectorAll('.count_element .input_coll').forEach((inputCount) => { 
+
+    inputCount.addEventListener('keyup', function (event) {
 
     let id = parseInt( this.parentElement.parentElement.getAttribute('id').replace('delete',''))
-    console.log(this.value)
-
-
-/*var ty=$(this).attr('idtov');
-
+  
     var post = {};
-    post[ty] = $(this).val();
-    post['z']=$(this).attr('id_znach');
+    post[id] = parseInt(this.value);
+console.log(post)
 
     BX.ajax.post(
         "/local/ajax/edit_col.php",
@@ -524,8 +524,9 @@ document.querySelector('.count_element .input_coll').addEventListener('keyup', f
 
 
         }
-    );*/
+    );
 
+});
 });
 
 
