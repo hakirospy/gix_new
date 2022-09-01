@@ -502,32 +502,55 @@ BX.Sale.OrderAjaxComponent.sendRequest('refreshOrderAjax');
 
 })
 
+function calculate_count(count, id){
 
-
-
-document.querySelectorAll('.count_element .input_coll').forEach((inputCount) => { 
-
-    inputCount.addEventListener('keyup', function (event) {
-
-    let id = parseInt( this.parentElement.parentElement.getAttribute('id').replace('delete',''))
-  
     var post = {};
-    post[id] = parseInt(this.value);
-console.log(post)
+    post[id] = parseInt(count);
+
 
     BX.ajax.post(
         "/local/ajax/edit_col.php",
         post,
         function (data) {
-        	console.log(data);
+        	
             BX.Sale.OrderAjaxComponent.sendRequest('refreshOrderAjax');
 
 
         }
     );
 
+}
+
+// pole coll
+document.querySelectorAll('.count_element .input_coll').forEach((inputCount) => { 
+
+    inputCount.addEventListener('keyup', function (event) {
+
+    let id = parseInt( this.parentElement.parentElement.getAttribute('id').replace('delete',''))
+
+    calculate_count(this.value, id);
+    count_all_summ()
+
 });
 });
+
+
+//minus
+
+
+document.querySelectorAll('.count_element .plus').forEach((inputCount) => { 
+
+    inputCount.addEventListener('click', function (event) {
+
+    let id = parseInt( this.parentElement.parentElement.getAttribute('id').replace('delete',''))
+console.log(id)
+console.log(999999)
+   // calculate_count(this.value, id);
+   // count_all_summ()
+
+});
+});
+
 
 
 
@@ -585,7 +608,7 @@ fetch(`/local/ajax/delete_tovar.php?&tovar=${id}`).then(data => data.json()).the
 count_all_summ()
 
 
-console.log(data);
+
    
 
    
