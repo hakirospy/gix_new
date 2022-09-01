@@ -544,8 +544,8 @@ document.querySelectorAll('.count_element .plus').forEach((inputCount) => {
 
     let id = parseInt( this.parentElement.parentElement.getAttribute('id').replace('delete',''))
 
-
-    calculate_count(this.value, id);
+    let count = parseInt(this.value)+1
+    calculate_count(count, id);
     count_all_summ()
 
 });
@@ -561,7 +561,8 @@ document.querySelectorAll('.count_element .minus').forEach((inputCount) => {
     let id = parseInt( this.parentElement.parentElement.getAttribute('id').replace('delete',''))
 
 
-    calculate_count(this.value, id);
+    let count = parseInt(this.value)-1
+    calculate_count(count, id);
     count_all_summ()
 
 });
