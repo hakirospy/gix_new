@@ -6052,7 +6052,17 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   font-size: 20px;
   line-height: 36px;
   margin-top: 18px;
-  display: inline-block;
+}
+
+.popup-window-buttons:nth-child(1) {
+  background: #A9FF35;
+  border-radius: 4px;
+  padding: 16px 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: #1E242E;
 }
 
 /* specific animation */
@@ -6075,15 +6085,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u12e97306;
-          animation-name: inline-u12e97306;
+  -webkit-animation-name: inline-u28b81851;
+          animation-name: inline-u28b81851;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u12e97306 {
+@-webkit-keyframes inline-u28b81851 {
   0% {
     opacity: 0;
   }
@@ -6092,7 +6102,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u12e97306 {
+@keyframes inline-u28b81851 {
   0% {
     opacity: 0;
   }
