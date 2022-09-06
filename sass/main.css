@@ -6019,8 +6019,9 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 
 .popup-window-titlebar-close-icon {
   background-image: url("../img/close_black.svg");
-  width: 29px;
-  height: 29px;
+  width: 42px;
+  height: 41px;
+  opacity: 1;
 }
 
 .popup-window-titlebar-text {
@@ -6029,10 +6030,29 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   font-weight: 600;
   font-size: 16px;
   line-height: 28px;
+  color: black;
 }
 
 .popup-window-titlebar {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popup-window-content p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 36px;
+  margin-top: 18px;
+  display: inline-block;
 }
 
 /* specific animation */
@@ -6055,15 +6075,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u312ed2dc;
-          animation-name: inline-u312ed2dc;
+  -webkit-animation-name: inline-u12e97306;
+          animation-name: inline-u12e97306;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u312ed2dc {
+@-webkit-keyframes inline-u12e97306 {
   0% {
     opacity: 0;
   }
@@ -6072,7 +6092,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u312ed2dc {
+@keyframes inline-u12e97306 {
   0% {
     opacity: 0;
   }
