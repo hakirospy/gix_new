@@ -6014,7 +6014,7 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 }
 
 .popup-window.popup-window-with-titlebar {
-  border-radius: 32px;
+  border-radius: 28px;
 }
 
 .popup-window-titlebar-close-icon {
@@ -6052,6 +6052,10 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   font-size: 20px;
   line-height: 36px;
   margin-top: 18px;
+}
+
+.popup-window-content img {
+  max-height: 250px;
 }
 
 .popup-window-buttons button:nth-child(1) {
@@ -6098,15 +6102,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u3dbd430c;
-          animation-name: inline-u3dbd430c;
+  -webkit-animation-name: inline-ue8302f79;
+          animation-name: inline-ue8302f79;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u3dbd430c {
+@-webkit-keyframes inline-ue8302f79 {
   0% {
     opacity: 0;
   }
@@ -6115,7 +6119,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u3dbd430c {
+@keyframes inline-ue8302f79 {
   0% {
     opacity: 0;
   }
