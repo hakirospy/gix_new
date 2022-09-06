@@ -6059,7 +6059,19 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   border-radius: 4px;
   padding: 16px 24px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  color: #1E242E;
+  border: none;
+}
+
+.popup-window-buttons button:nth-child(2) {
+  border-radius: 4px;
+  border: 1px solid #1E242E;
+  padding: 16px 24px;
+  font-style: normal;
+  font-weight: 300;
   font-size: 10px;
   line-height: 12px;
   color: #1E242E;
@@ -6085,15 +6097,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u92a18c2b;
-          animation-name: inline-u92a18c2b;
+  -webkit-animation-name: inline-u79c8b2e9;
+          animation-name: inline-u79c8b2e9;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u92a18c2b {
+@-webkit-keyframes inline-u79c8b2e9 {
   0% {
     opacity: 0;
   }
@@ -6102,7 +6114,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u92a18c2b {
+@keyframes inline-u79c8b2e9 {
   0% {
     opacity: 0;
   }
