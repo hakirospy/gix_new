@@ -6013,6 +6013,10 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   width: 100%;
 }
 
+.popup-window.popup-window-with-titlebar {
+  border-radius: 32px;
+}
+
 /* specific animation */
 /* https://daneden.me/animate/ */
 .details_cart_tab[open] .title::after {
@@ -6033,15 +6037,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ueb0d1e33;
-          animation-name: inline-ueb0d1e33;
+  -webkit-animation-name: inline-ucd7f828c;
+          animation-name: inline-ucd7f828c;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ueb0d1e33 {
+@-webkit-keyframes inline-ucd7f828c {
   0% {
     opacity: 0;
   }
@@ -6050,7 +6054,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ueb0d1e33 {
+@keyframes inline-ucd7f828c {
   0% {
     opacity: 0;
   }
