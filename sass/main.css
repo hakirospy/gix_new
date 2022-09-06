@@ -6060,7 +6060,7 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 }
 
 .popup-window-with-titlebar .popup-window-content {
-  padding: 35px;
+  padding: 35px 35px 0px 35px;
 }
 
 .popup-window-content p {
@@ -6123,15 +6123,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uba719f76;
-          animation-name: inline-uba719f76;
+  -webkit-animation-name: inline-u17da9991;
+          animation-name: inline-u17da9991;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uba719f76 {
+@-webkit-keyframes inline-u17da9991 {
   0% {
     opacity: 0;
   }
@@ -6140,7 +6140,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uba719f76 {
+@keyframes inline-u17da9991 {
   0% {
     opacity: 0;
   }
