@@ -4283,8 +4283,11 @@ footer
   line-height: 28px
   color: black
   padding: 0px
-.popup-window-close-icon:after
+.popup-window-close-icon
+  &::after
+  
   content: ''
+  content: none
 .popup-window-titlebar
 
   display: flex
