@@ -6093,10 +6093,6 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   border: none;
 }
 
-.popup-window-buttons button:nth-child(1)::after {
-  content: 'In Basket';
-}
-
 .popup-window-buttons button:nth-child(2) {
   background: white;
   border-radius: 4px;
@@ -6127,15 +6123,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u599be024;
-          animation-name: inline-u599be024;
+  -webkit-animation-name: inline-uba719f76;
+          animation-name: inline-uba719f76;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u599be024 {
+@-webkit-keyframes inline-uba719f76 {
   0% {
     opacity: 0;
   }
@@ -6144,7 +6140,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u599be024 {
+@keyframes inline-uba719f76 {
   0% {
     opacity: 0;
   }
