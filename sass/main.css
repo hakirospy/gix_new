@@ -6077,6 +6077,11 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   height: 250px;
 }
 
+.popup-window-buttons button {
+  font-family: 'Montserrat';
+  font-style: normal;
+}
+
 .popup-window-buttons button:nth-child(1) {
   background: #A9FF35;
   border-radius: 4px;
@@ -6121,15 +6126,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u6c99f384;
-          animation-name: inline-u6c99f384;
+  -webkit-animation-name: inline-u8e11112a;
+          animation-name: inline-u8e11112a;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u6c99f384 {
+@-webkit-keyframes inline-u8e11112a {
   0% {
     opacity: 0;
   }
@@ -6138,7 +6143,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u6c99f384 {
+@keyframes inline-u8e11112a {
   0% {
     opacity: 0;
   }
