@@ -6034,7 +6034,7 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   padding: 0px;
 }
 
-.popup-window-close-icon {
+.popup-window-close-icon::after {
   content: '';
   content: none;
 }
@@ -6121,15 +6121,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u551b34cb;
-          animation-name: inline-u551b34cb;
+  -webkit-animation-name: inline-u60594fd7;
+          animation-name: inline-u60594fd7;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u551b34cb {
+@-webkit-keyframes inline-u60594fd7 {
   0% {
     opacity: 0;
   }
@@ -6138,7 +6138,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u551b34cb {
+@keyframes inline-u60594fd7 {
   0% {
     opacity: 0;
   }
