@@ -6043,6 +6043,18 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 35px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  align-items: flex-end;
+}
+
+.popup-window-with-titlebar .popup-window-content {
+  padding: 35px;
 }
 
 .popup-window-content p {
@@ -6103,15 +6115,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uccbad713;
-          animation-name: inline-uccbad713;
+  -webkit-animation-name: inline-u1f22ac95;
+          animation-name: inline-u1f22ac95;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uccbad713 {
+@-webkit-keyframes inline-u1f22ac95 {
   0% {
     opacity: 0;
   }
@@ -6120,7 +6132,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uccbad713 {
+@keyframes inline-u1f22ac95 {
   0% {
     opacity: 0;
   }
