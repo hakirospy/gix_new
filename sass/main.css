@@ -6031,6 +6031,11 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   font-size: 16px;
   line-height: 28px;
   color: black;
+  padding: 0px;
+}
+
+.popup-window-close-icon:after {
+  content: '';
 }
 
 .popup-window-titlebar {
@@ -6115,15 +6120,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u1f22ac95;
-          animation-name: inline-u1f22ac95;
+  -webkit-animation-name: inline-u885aaf5d;
+          animation-name: inline-u885aaf5d;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u1f22ac95 {
+@-webkit-keyframes inline-u885aaf5d {
   0% {
     opacity: 0;
   }
@@ -6132,7 +6137,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u1f22ac95 {
+@keyframes inline-u885aaf5d {
   0% {
     opacity: 0;
   }
