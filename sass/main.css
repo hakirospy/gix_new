@@ -2151,6 +2151,7 @@ footer .footer .logo_bottom span {
 footer .footer .logo_bottom .first_span {
   padding-bottom: 32px;
   padding-top: 16px;
+  color: white;
 }
 
 footer .footer .menu_bottom > span, footer .footer .contact_bottom > span {
@@ -6152,15 +6153,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u1acf4d36;
-          animation-name: inline-u1acf4d36;
+  -webkit-animation-name: inline-ua96ec582;
+          animation-name: inline-ua96ec582;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u1acf4d36 {
+@-webkit-keyframes inline-ua96ec582 {
   0% {
     opacity: 0;
   }
@@ -6169,7 +6170,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u1acf4d36 {
+@keyframes inline-ua96ec582 {
   0% {
     opacity: 0;
   }
