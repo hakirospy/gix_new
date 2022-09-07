@@ -4428,6 +4428,12 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   padding-top: 2px;
 }
 
+@media screen and (max-width: 720px) {
+  .main_white .main_order .order .order_content .order_elements .elements_list .count_element .plus, .main_white .main_order .order .order_content .order_elements .elements_list .count_element .minus {
+    width: 20px;
+  }
+}
+
 .main_white .main_order .order .order_content .order_elements .elements_list .count_element .plus:hover, .main_white .main_order .order .order_content .order_elements .elements_list .count_element .minus:hover {
   background: #F1F7FF;
   border-radius: 32px;
@@ -6172,15 +6178,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u0982c44f;
-          animation-name: inline-u0982c44f;
+  -webkit-animation-name: inline-u031fd9fe;
+          animation-name: inline-u031fd9fe;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u0982c44f {
+@-webkit-keyframes inline-u031fd9fe {
   0% {
     opacity: 0;
   }
@@ -6189,7 +6195,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u0982c44f {
+@keyframes inline-u031fd9fe {
   0% {
     opacity: 0;
   }
