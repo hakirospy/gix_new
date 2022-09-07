@@ -5115,6 +5115,12 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
       flex-wrap: wrap;
 }
 
+@media screen and (max-width: 520px) {
+  .main_white .catalog_content .seo_tag {
+    display: none;
+  }
+}
+
 .main_white .catalog_content .seo_tag span {
   font-weight: 400;
   font-size: 14px;
@@ -6141,15 +6147,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u0aa5c233;
-          animation-name: inline-u0aa5c233;
+  -webkit-animation-name: inline-uff009fcb;
+          animation-name: inline-uff009fcb;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u0aa5c233 {
+@-webkit-keyframes inline-uff009fcb {
   0% {
     opacity: 0;
   }
@@ -6158,7 +6164,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u0aa5c233 {
+@keyframes inline-uff009fcb {
   0% {
     opacity: 0;
   }
