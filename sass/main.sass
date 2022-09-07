@@ -860,6 +860,8 @@ body.overflow_html
   margin-bottom: 10px
   @include for-macbook-and-tablet
    font-size: 16px
+  @media (max-width: 560px)
+    font-size: 14px
    
 
 .info-main .text>div:nth-child(2)
@@ -872,6 +874,8 @@ body.overflow_html
   color: $white-color
   @include for-macbook-and-tablet
    align-self: self-start
+  @media (max-width: 560px)
+    font-size: 12px
 
 
 .button_slider 
@@ -1346,7 +1350,7 @@ body.overflow_html
     background: linear-gradient(247.73deg, #1E242E 0%, #2B3547 100%)
     border-radius: 32px
     border: none
-    height: 564px
+    padding-bottom: 83px
 
     position: relative
 
@@ -1416,6 +1420,7 @@ body.overflow_html
 
     @media (max-width: 985px)
       font-size: 12px
+      padding-top: 8px
 
   .more 
     font-weight: 500
@@ -1732,6 +1737,11 @@ footer
   vertical-align: text-top
   cursor: pointer
   font-size: 25px
+  @media screen and ( max-width:540px  )
+    margin-top: 5px
+    margin-right: 8px
+
+
   
   input
     visibility: hidden

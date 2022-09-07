@@ -1126,6 +1126,12 @@ body.overflow_html {
   }
 }
 
+@media (max-width: 560px) {
+  .info-main .text span {
+    font-size: 14px;
+  }
+}
+
 .info-main .text > div:nth-child(2) {
   font-family: 'Montserrat';
   font-style: normal;
@@ -1140,6 +1146,12 @@ body.overflow_html {
     -ms-flex-item-align: self-start;
         -ms-grid-row-align: self-start;
         align-self: self-start;
+  }
+}
+
+@media (max-width: 560px) {
+  .info-main .text > div:nth-child(2) {
+    font-size: 12px;
   }
 }
 
@@ -1727,7 +1739,7 @@ body.overflow_html {
   background: linear-gradient(247.73deg, #1E242E 0%, #2B3547 100%);
   border-radius: 32px;
   border: none;
-  height: 564px;
+  padding-bottom: 83px;
   position: relative;
 }
 
@@ -1812,6 +1824,7 @@ body.overflow_html {
 @media (max-width: 985px) {
   .seren.news .cart .prev {
     font-size: 12px;
+    padding-top: 8px;
   }
 }
 
@@ -2288,6 +2301,13 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   vertical-align: text-top;
   cursor: pointer;
   font-size: 25px;
+}
+
+@media screen and (max-width: 540px) {
+  .style_green {
+    margin-top: 5px;
+    margin-right: 8px;
+  }
 }
 
 .style_green input {
@@ -6126,15 +6146,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u23632a2f;
-          animation-name: inline-u23632a2f;
+  -webkit-animation-name: inline-u2aba8d1c;
+          animation-name: inline-u2aba8d1c;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u23632a2f {
+@-webkit-keyframes inline-u2aba8d1c {
   0% {
     opacity: 0;
   }
@@ -6143,7 +6163,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u23632a2f {
+@keyframes inline-u2aba8d1c {
   0% {
     opacity: 0;
   }
