@@ -2612,7 +2612,6 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
       grid-template-columns: 375px 375px minmax(200px, 800px);
   gap: 30px;
   color: white;
-  margin-right: 30px;
 }
 
 @media (max-width: 1240px) {
@@ -2825,7 +2824,6 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   display: grid;
   -ms-grid-columns: (minmax(290px, 375px))[4];
       grid-template-columns: repeat(4, minmax(290px, 375px));
-  margin-right: 30px;
 }
 
 @media (max-width: 1310px) {
@@ -2998,7 +2996,6 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   display: grid;
   -ms-grid-columns: (minmax(290px, 375px))[3];
       grid-template-columns: repeat(3, minmax(290px, 375px));
-  margin-right: 30px;
 }
 
 @media (max-width: 1310px) {
@@ -3180,7 +3177,6 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   display: grid;
   -ms-grid-columns: 775px (minmax(290px, 375px))[2];
       grid-template-columns: 775px repeat(2, minmax(290px, 375px));
-  margin-right: 30px;
   position: relative;
 }
 
@@ -6153,15 +6149,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ua96ec582;
-          animation-name: inline-ua96ec582;
+  -webkit-animation-name: inline-u057a9b5f;
+          animation-name: inline-u057a9b5f;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ua96ec582 {
+@-webkit-keyframes inline-u057a9b5f {
   0% {
     opacity: 0;
   }
@@ -6170,7 +6166,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ua96ec582 {
+@keyframes inline-u057a9b5f {
   0% {
     opacity: 0;
   }
