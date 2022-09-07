@@ -3636,6 +3636,11 @@ footer
         font-size: 14px
         line-height: 145%
         color: #8E9297
+        @media screen and ( max-width: 650px  )
+          font-size: 12px
+          line-height: 165%
+
+
         &::after
           content: ''
           background-image: url('../img/drop.svg')
@@ -3702,6 +3707,9 @@ footer
       transform: matrix(1, 0, 0, -1, 0, 0)
       content: ''
       height: 1px
+      @media screen and ( max-width: 660px  )
+        margin-top: 8px
+        background: #E5EFFE
     .title
       padding-top: 32px
       display: grid
@@ -3765,6 +3773,8 @@ footer
         margin-left: 10px
         font-family: 'Montserrat'
         font-style: normal
+        @media screen and ( max-width: 720px  )
+          font-size: 12px
     .ya-share2__item_more.ya-share2__item_has-pretty-view
       
       .ya-share2__icon_more  
