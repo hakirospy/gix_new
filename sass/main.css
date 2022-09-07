@@ -3126,15 +3126,7 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 }
 
 .warranty-section {
-  display: -ms-grid;
-  display: grid;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 50px;
   margin-bottom: 80px;
-  -ms-grid-columns: minmax(200px, 1600px);
-      grid-template-columns: minmax(200px, 1600px);
-  margin-left: 33px;
 }
 
 @media (max-width: 610px) {
@@ -6176,15 +6168,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u0d539119;
-          animation-name: inline-u0d539119;
+  -webkit-animation-name: inline-u514a86fc;
+          animation-name: inline-u514a86fc;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u0d539119 {
+@-webkit-keyframes inline-u514a86fc {
   0% {
     opacity: 0;
   }
@@ -6193,7 +6185,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u0d539119 {
+@keyframes inline-u514a86fc {
   0% {
     opacity: 0;
   }
