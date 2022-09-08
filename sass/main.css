@@ -1622,6 +1622,10 @@ body.overflow_html {
   margin: 0px;
 }
 
+.cart .product-item-image-wrapper span {
+  background-size: 65% auto;
+}
+
 .seren a {
   -webkit-text-decoration: auto;
           text-decoration: auto;
@@ -1745,10 +1749,6 @@ body.overflow_html {
   border: none;
   padding-bottom: 83px;
   position: relative;
-}
-
-.seren.news .cart .product-item-image-wrapper span {
-  background-size: 65% auto;
 }
 
 .seren.news .cart .img {
@@ -6153,15 +6153,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u9343f223;
-          animation-name: inline-u9343f223;
+  -webkit-animation-name: inline-u527cd4a2;
+          animation-name: inline-u527cd4a2;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u9343f223 {
+@-webkit-keyframes inline-u527cd4a2 {
   0% {
     opacity: 0;
   }
@@ -6170,7 +6170,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u9343f223 {
+@keyframes inline-u527cd4a2 {
   0% {
     opacity: 0;
   }
