@@ -1627,7 +1627,7 @@ body.overflow_html {
 }
 
 .cart .product-item-image-wrapper span {
-  background-size: 55% auto;
+  background-size: 50% auto;
 }
 
 .seren a {
@@ -6157,15 +6157,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-udf98f030;
-          animation-name: inline-udf98f030;
+  -webkit-animation-name: inline-u689cb846;
+          animation-name: inline-u689cb846;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-udf98f030 {
+@-webkit-keyframes inline-u689cb846 {
   0% {
     opacity: 0;
   }
@@ -6174,7 +6174,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-udf98f030 {
+@keyframes inline-u689cb846 {
   0% {
     opacity: 0;
   }
