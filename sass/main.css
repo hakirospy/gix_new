@@ -65,6 +65,10 @@ body.overflow_html {
   text-decoration: none;
 }
 
+#search:active #title-search-input {
+  display: block;
+}
+
 .title-search-result {
   background-color: #202732;
   padding: 0px;
@@ -6191,15 +6195,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u39c792fb;
-          animation-name: inline-u39c792fb;
+  -webkit-animation-name: inline-u7966ca82;
+          animation-name: inline-u7966ca82;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u39c792fb {
+@-webkit-keyframes inline-u7966ca82 {
   0% {
     opacity: 0;
   }
@@ -6208,7 +6212,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u39c792fb {
+@keyframes inline-u7966ca82 {
   0% {
     opacity: 0;
   }
