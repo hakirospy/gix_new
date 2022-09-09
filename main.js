@@ -42,3 +42,11 @@ document.querySelector('.button_menu').addEventListener('click', function(){
     document.querySelector('body').classList.toggle('overflow_html')
     
     })
+
+
+    document.querySelector('.bx-searchtitle').addEventListener('click', function(){
+
+        this.classList.toggle('open')
+        console.log(window.innerWidth)
+        
+        })
