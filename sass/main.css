@@ -103,6 +103,10 @@ body.overflow_html {
   border-bottom: 1px solid #3B414B;
 }
 
+.main_slider_block .search .search-title-result-item .search-title-result-item-image-container {
+  display: none;
+}
+
 .main_slider_block .search .search-title-result-item .search-title-result-item-info {
   padding: 16px 48px;
 }
@@ -6173,15 +6177,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uf89d1c36;
-          animation-name: inline-uf89d1c36;
+  -webkit-animation-name: inline-u7887189b;
+          animation-name: inline-u7887189b;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uf89d1c36 {
+@-webkit-keyframes inline-u7887189b {
   0% {
     opacity: 0;
   }
@@ -6190,7 +6194,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uf89d1c36 {
+@keyframes inline-u7887189b {
   0% {
     opacity: 0;
   }
