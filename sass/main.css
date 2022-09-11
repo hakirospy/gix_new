@@ -6174,13 +6174,13 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   height: 250px;
 }
 
-.popup-window-buttons button {
+.popup-window-buttons button, .popup-window-buttons span {
   font-family: 'Montserrat';
   font-style: normal;
   font-size: 11px;
 }
 
-.popup-window-buttons button:nth-child(1) {
+.popup-window-buttons button:nth-child(1), .popup-window-buttons span:nth-child(1) {
   background: #A9FF35;
   border-radius: 4px;
   padding: 16px 16px;
@@ -6190,7 +6190,7 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   border: none;
 }
 
-.popup-window-buttons button:nth-child(2) {
+.popup-window-buttons button:nth-child(2), .popup-window-buttons span:nth-child(2) {
   background: white;
   border-radius: 4px;
   border: 1px solid #1E242E;
@@ -6220,15 +6220,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u61a669a9;
-          animation-name: inline-u61a669a9;
+  -webkit-animation-name: inline-ue3b85db0;
+          animation-name: inline-ue3b85db0;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u61a669a9 {
+@-webkit-keyframes inline-ue3b85db0 {
   0% {
     opacity: 0;
   }
@@ -6237,7 +6237,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u61a669a9 {
+@keyframes inline-ue3b85db0 {
   0% {
     opacity: 0;
   }
