@@ -75,21 +75,21 @@ document.querySelector('.button_menu').addEventListener('click', function(){
             // when window width is >= 320px
   
             880: {
-              slidesPerView: 5,
+              slidesPerView: 3,
               spaceBetween: 20
             },
             1041: {
-              slidesPerView: 6,
+              slidesPerView: 4,
               spaceBetween: 20
             },
   
             1331: {
-              slidesPerView: 5,
+              slidesPerView: 4,
               spaceBetween: 20
             },
   
             1571: {
-              slidesPerView: 6,
+              slidesPerView: 4,
               spaceBetween: 20
             },
   
