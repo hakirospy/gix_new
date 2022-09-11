@@ -71,9 +71,13 @@ document.querySelector('.button_menu').addEventListener('click', function(){
             200: {
               // centeredSlides: true,
               slidesPerView: 'auto',
+              spaceBetween: 20
             },
             // when window width is >= 320px
-  
+            8280: {
+                slidesPerView: 2,
+                spaceBetween: 20
+              },
             880: {
               slidesPerView: 3,
               spaceBetween: 20
