@@ -50,3 +50,49 @@ document.querySelector('.button_menu').addEventListener('click', function(){
         console.log(window.innerWidth)
         
         })
+
+
+
+
+        const swiperMain = new Swiper('.cart_block', {
+          // Default parameters
+          slidesPerView: 4,
+          spaceBetween: 20,
+  
+          speed: 100,
+  
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          // Responsive breakpoints
+          breakpoints: {
+  
+            200: {
+              // centeredSlides: true,
+              slidesPerView: 'auto',
+            },
+            // when window width is >= 320px
+  
+            880: {
+              slidesPerView: 5,
+              spaceBetween: 20
+            },
+            1041: {
+              slidesPerView: 6,
+              spaceBetween: 20
+            },
+  
+            1331: {
+              slidesPerView: 5,
+              spaceBetween: 20
+            },
+  
+            1571: {
+              slidesPerView: 6,
+              spaceBetween: 20
+            },
+  
+          }
+        })
+     
