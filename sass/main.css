@@ -139,6 +139,7 @@ body.overflow_html {
 
 .main_slider_block .search .icon {
   background: url("../img/search.svg");
+  background-repeat: no-repeat;
   width: 18px;
   height: 19px;
   position: absolute;
@@ -1662,8 +1663,8 @@ body.overflow_html {
 
 @media (max-width: 550px) {
   .cart_block {
-    -ms-grid-columns: (minmax(280px, 320px))[1];
-        grid-template-columns: repeat(1, minmax(280px, 320px));
+    -ms-grid-columns: (minmax(240px, 320px))[1];
+        grid-template-columns: repeat(1, minmax(240px, 320px));
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -6230,15 +6231,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u9c760520;
-          animation-name: inline-u9c760520;
+  -webkit-animation-name: inline-uf9b0e540;
+          animation-name: inline-uf9b0e540;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u9c760520 {
+@-webkit-keyframes inline-uf9b0e540 {
   0% {
     opacity: 0;
   }
@@ -6247,7 +6248,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u9c760520 {
+@keyframes inline-uf9b0e540 {
   0% {
     opacity: 0;
   }
