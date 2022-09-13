@@ -53,7 +53,21 @@ document.querySelector('.button_menu').addEventListener('click', function(){
 
 // mobile search 
 
+function searchFunc(){
 
+    if(window.innerWidth<800){
+        console.log(0)
+    
+    document.querySelector('.search_mobile').style.display = 'block'
+    
+    document.querySelector('.main_slider_block').style.display = 'none'
+    
+    
+    
+    }
+    return false
+
+}
 document.querySelector('#search .icon').addEventListener('submit', function(){
 
 
