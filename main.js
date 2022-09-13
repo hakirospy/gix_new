@@ -58,6 +58,7 @@ document.querySelector('#search .icon').addEventListener('submit', function(){
 
 
 if(window.innerWidth<800){
+    console.log(0)
 
 document.querySelector('.search_mobile').style.display = 'block'
 
