@@ -53,7 +53,7 @@ document.querySelector('.button_menu').addEventListener('click', function(){
 
 // mobile search 
 
-function searchFunc(){
+function searchFunc(event){
 
     if(window.innerWidth<800){
         console.log(0)
@@ -63,7 +63,7 @@ function searchFunc(){
     document.querySelector('.main_slider_block').style.display = 'none'
     
     
-    return false
+    event.preventDefault();
     }else{
     return true
     }
