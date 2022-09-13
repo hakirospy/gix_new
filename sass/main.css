@@ -105,6 +105,10 @@ body.overflow_html {
   line-height: 135%;
 }
 
+*:focus {
+  outline: none;
+}
+
 .search_mobile {
   position: relative;
   width: 100%;
@@ -123,6 +127,10 @@ body.overflow_html {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+}
+
+.search_mobile input:focus {
+  outline: none;
 }
 
 .search_mobile .close {
@@ -6282,15 +6290,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u7a13c5de;
-          animation-name: inline-u7a13c5de;
+  -webkit-animation-name: inline-ub7af46a4;
+          animation-name: inline-ub7af46a4;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u7a13c5de {
+@-webkit-keyframes inline-ub7af46a4 {
   0% {
     opacity: 0;
   }
@@ -6299,7 +6307,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u7a13c5de {
+@keyframes inline-ub7af46a4 {
   0% {
     opacity: 0;
   }
