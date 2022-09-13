@@ -63,12 +63,12 @@ function searchFunc(){
     document.querySelector('.main_slider_block').style.display = 'none'
     
     
-    
-    }
     return false
+    }
+    return true
 
 }
-document.querySelector('#search .icon').addEventListener('submit', function(){
+/*document.querySelector('#search .icon').addEventListener('submit', function(){
 
 
 if(window.innerWidth<800){
@@ -84,7 +84,7 @@ document.querySelector('.main_slider_block').style.display = 'none'
 
 return false
 
-}, false)
+}, false)*/
 
 document.querySelector('.search_mobile .close').addEventListener('click', function(){
 
