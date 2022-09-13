@@ -44,59 +44,40 @@ document.querySelector('.button_menu').addEventListener('click', function(){
     })
 
 
-    document.querySelector('.bx-searchtitle').addEventListener('click', function(){
+    /*document.querySelector('.bx-searchtitle').addEventListener('click', function(){
 
         this.classList.toggle('open')
         console.log(window.innerWidth)
         
-        })
+        })*/
+
+// mobile search 
+
+
+document.querySelector('#search .icon').addEventListener('click', function(){
+
+
+if(window.innerWidth<800){
+
+document.querySelector('.search_mobile').style.display = 'block'
+
+document.querySelector('.main_slider_block').style.display = 'none'
 
 
 
+}
 
-        const swiperMain = new Swiper('.cart_block', {
-          // Default parameters
-          slidesPerView: 4,
-          spaceBetween: 20,
-  
-          speed: 100,
-  
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          // Responsive breakpoints
-          breakpoints: {
-  
-            200: {
-              // centeredSlides: true,
-              slidesPerView: 'auto',
-              spaceBetween: 20
-            },
-            // when window width is >= 320px
-            8280: {
-                slidesPerView: 2,
-                spaceBetween: 20
-              },
-            880: {
-              slidesPerView: 3,
-              spaceBetween: 20
-            },
-            1041: {
-              slidesPerView: 4,
-              spaceBetween: 20
-            },
-  
-            1331: {
-              slidesPerView: 4,
-              spaceBetween: 20
-            },
-  
-            1571: {
-              slidesPerView: 4,
-              spaceBetween: 20
-            },
-  
-          }
-        })
-     
+return false
+
+})
+
+document.querySelector('.search_mobile .close').addEventListener('click', function(){
+
+    document.querySelector('.search_mobile').style.display = 'none'
+
+    document.querySelector('.main_slider_block').style.display = 'grid'
+
+
+})
+
+      
