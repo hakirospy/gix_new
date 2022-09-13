@@ -64,8 +64,9 @@ function searchFunc(){
     
     
     return false
-    }
+    }else{
     return true
+    }
 
 }
 /*document.querySelector('#search .icon').addEventListener('submit', function(){
