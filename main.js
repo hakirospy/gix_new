@@ -70,7 +70,7 @@ document.querySelector('.main_slider_block').style.display = 'none'
 
 return false
 
-})
+}, false)
 
 document.querySelector('.search_mobile .close').addEventListener('click', function(){
 
