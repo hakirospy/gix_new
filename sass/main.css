@@ -65,13 +65,15 @@ body.overflow_html {
   text-decoration: none;
 }
 
-#search.open > + .go_cab {
-  display: none;
-}
-
 .title-search-result {
   background-color: #202732;
   padding: 0px;
+}
+
+@media screen and (max-width: 800px) {
+  .title-search-result {
+    border: none;
+  }
 }
 
 .title-search-result .search-title-result-last-item {
@@ -6280,15 +6282,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u96031b3a;
-          animation-name: inline-u96031b3a;
+  -webkit-animation-name: inline-u7a13c5de;
+          animation-name: inline-u7a13c5de;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u96031b3a {
+@-webkit-keyframes inline-u7a13c5de {
   0% {
     opacity: 0;
   }
@@ -6297,7 +6299,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u96031b3a {
+@keyframes inline-u7a13c5de {
   0% {
     opacity: 0;
   }
