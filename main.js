@@ -54,7 +54,7 @@ document.querySelector('.button_menu').addEventListener('click', function(){
 // mobile search 
 
 
-document.querySelector('#search .icon').addEventListener('click', function(){
+document.querySelector('#search .icon').addEventListener('submit', function(){
 
 
 if(window.innerWidth<800){
