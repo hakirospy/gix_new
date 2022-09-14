@@ -841,11 +841,12 @@ body.overflow_html {
 @media (max-width: 460px) {
   .slider_main_block .small:after {
     background-image: url("../img/mask-small-mobile-small_new.png");
-    height: 288px;
+    height: 320px;
     background-color: #EDEDED;
     border-radius: 40px;
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: center center;
+    background-size: 100% 100%;
   }
 }
 
@@ -1332,18 +1333,13 @@ body.overflow_html {
     position: absolute;
     width: 133px;
     height: 49px;
-    left: 475px;
+    left: auto;
     top: 55px;
+    right: 7%;
     border: 1.2px solid #1E242E;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-radius: 4px;
-  }
-}
-
-@media (max-width: 690px) {
-  .small .button_slider {
-    left: 69%;
   }
 }
 
@@ -1359,7 +1355,8 @@ body.overflow_html {
     margin-inline: auto;
     position: relative;
     right: initial;
-    top: 158px;
+    top: 185px;
+    width: 208px;
   }
 }
 
@@ -6296,15 +6293,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ufa8b66c7;
-          animation-name: inline-ufa8b66c7;
+  -webkit-animation-name: inline-u56871ea8;
+          animation-name: inline-u56871ea8;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ufa8b66c7 {
+@-webkit-keyframes inline-u56871ea8 {
   0% {
     opacity: 0;
   }
@@ -6313,7 +6310,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ufa8b66c7 {
+@keyframes inline-u56871ea8 {
   0% {
     opacity: 0;
   }
