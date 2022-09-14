@@ -753,7 +753,7 @@ body.overflow_html {
 
 @media (min-width: 768px) and (max-width: 1550px) {
   .slider_main_block .big:after {
-    background-image: url("../img/mask-banner-big_.png");
+    background-image: url("../img/mask-banner-big_new.png");
     height: 320px;
     background-position: right;
     background-repeat: no-repeat;
@@ -762,7 +762,7 @@ body.overflow_html {
 
 @media (max-width: 930px) {
   .slider_main_block .big:after {
-    background-image: url("../img/mask-banner-big_.png");
+    background-image: url("../img/mask-banner-big_new.png");
     height: 320px;
     background-position: right;
     background-repeat: no-repeat;
@@ -782,6 +782,7 @@ body.overflow_html {
 
 .slider_main_block .small {
   position: relative;
+  border-radius: 48px;
 }
 
 @media (max-width: 460px) {
@@ -797,12 +798,12 @@ body.overflow_html {
   height: 400px;
   display: block;
   background-size: cover;
+  border-radius: 48px;
 }
 
 @media (min-width: 768px) and (max-width: 1550px) {
   .slider_main_block .small {
     background-color: #EDEDED;
-    border-radius: 40px;
   }
   .slider_main_block .small:after {
     background-image: url("../img/mask-banner-small-medium_new.png");
@@ -815,7 +816,6 @@ body.overflow_html {
     background-image: url("../img/mask-banner-small-mobile_new.png");
     height: 160px;
     background-color: #EDEDED;
-    border-radius: 40px;
   }
 }
 
@@ -824,7 +824,6 @@ body.overflow_html {
     background-image: url("../img/mask-banner-small-mobile_new.png");
     height: 160px;
     background-color: #EDEDED;
-    border-radius: 40px;
   }
 }
 
@@ -833,7 +832,6 @@ body.overflow_html {
     background-image: url("../img/mask-banner-small-mobile_new.png");
     height: 160px;
     background-color: #EDEDED;
-    border-radius: 40px;
     background-repeat: no-repeat;
   }
 }
@@ -843,7 +841,6 @@ body.overflow_html {
     background-image: url("../img/mask-small-mobile-small_new.png");
     height: 320px;
     background-color: #EDEDED;
-    border-radius: 40px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
@@ -6293,15 +6290,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u56871ea8;
-          animation-name: inline-u56871ea8;
+  -webkit-animation-name: inline-ud788d908;
+          animation-name: inline-ud788d908;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u56871ea8 {
+@-webkit-keyframes inline-ud788d908 {
   0% {
     opacity: 0;
   }
@@ -6310,7 +6307,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u56871ea8 {
+@keyframes inline-ud788d908 {
   0% {
     opacity: 0;
   }

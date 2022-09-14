@@ -561,14 +561,14 @@ body.overflow_html
   display: block
   @include for-macbook-and-tablet
   
-    background-image: url('../img/mask-banner-big_.png')
+    background-image: url('../img/mask-banner-big_new.png')
     height: 320px
     background-position: right
     background-repeat: no-repeat
 
   @media (max-width: 930px)
 
-    background-image: url('../img/mask-banner-big_.png')
+    background-image: url('../img/mask-banner-big_new.png')
     height: 320px
     background-position: right
     background-repeat: no-repeat
@@ -590,6 +590,7 @@ body.overflow_html
 .slider_main_block .small
  
  position: relative
+ border-radius: 48px
  @media (max-width: 460px)
    top: -129px
    
@@ -601,11 +602,13 @@ body.overflow_html
   height: 400px 
   display: block 
   background-size: cover
+  border-radius: 48px
+  
 
  @include for-macbook-and-tablet
 
   background-color: $greey-color
-  border-radius: 40px
+
   &:after
     background-image: url('../img/mask-banner-small-medium_new.png')
     height: 320px
@@ -616,7 +619,7 @@ body.overflow_html
     background-image: url('../img/mask-banner-small-mobile_new.png')
     height: 160px
     background-color: $greey-color
-    border-radius: 40px
+
 
  @media (max-width: 690px)
  
@@ -624,7 +627,7 @@ body.overflow_html
     background-image: url('../img/mask-banner-small-mobile_new.png')
     height: 160px
     background-color: $greey-color
-    border-radius: 40px
+
 
  @media (max-width: 560px)
  
@@ -632,7 +635,7 @@ body.overflow_html
     background-image: url('../img/mask-banner-small-mobile_new.png')
     height: 160px
     background-color: $greey-color
-    border-radius: 40px
+
     background-repeat: no-repeat
 
  @media (max-width: 460px)
@@ -641,7 +644,7 @@ body.overflow_html
     background-image: url('../img/mask-small-mobile-small_new.png')
     height: 320px
     background-color: $greey-color
-    border-radius: 40px
+
     background-repeat: no-repeat
     background-position: center center
     background-size: 100% 100%
