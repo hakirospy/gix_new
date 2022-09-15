@@ -43,13 +43,21 @@ document.querySelector('.button_menu').addEventListener('click', function(){
     
     })
 
+   
+var mobilemenu = document.querySelector('#mobilemenu-overlay')
+if(mobilemenu){
 
-    /*document.querySelector('.bx-searchtitle').addEventListener('click', function(){
 
-        this.classList.toggle('open')
-        console.log(window.innerWidth)
-        
-        })*/
+    mobilemenu.addEventListener('click', function(){
+
+        document.querySelector('.button_menu').classList.remove('open')
+
+
+    })
+}
+
+ 
+ 
 
 // mobile search 
 
