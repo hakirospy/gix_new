@@ -97,7 +97,11 @@ document.querySelector('.search_mobile .close').addEventListener('click', functi
 })
 
 
-document.querySelector('.buttom-favorite .clear').addEventListener('click',function(){
+
+
+var clear = document.querySelector('.buttom-favorite .clear')
+if(clear){
+clear.addEventListener('click',function(){
 
 
     fetch(`/local/ajax/delete_favourite.php?add_backet=9`).then(data => data.json()).then(data => {
@@ -106,9 +110,11 @@ console.log('delete');
 
     })
 })
+}
 
-
-document.querySelector('.buttom-favorite .buy-all').addEventListener('click',function(){
+var buyAll = document.querySelector('.buttom-favorite .buy-all')
+if(buyAll){
+    buyAll.addEventListener('click',function(){
 
 
     fetch(`/local/ajax/delete_favourite.php?add_backet=7`).then(data => data.json()).then(data => {
@@ -117,7 +123,7 @@ console.log('to backet');
 
     })
 })
-
+}
 
 $(document).ready(function() {
     /* Favorites */
