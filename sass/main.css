@@ -5825,7 +5825,7 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   margin-right: 12px;
 }
 
-.main_white .main_cart .block_backet .block_liked_favourite .favourite .active::before {
+.main_white .main_cart .block_backet .block_liked_favourite .favourite.active::before {
   background-image: url("../img/favourite_cart_active.svg");
 }
 
@@ -6294,15 +6294,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u6dcb5cbc;
-          animation-name: inline-u6dcb5cbc;
+  -webkit-animation-name: inline-u4737fd60;
+          animation-name: inline-u4737fd60;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u6dcb5cbc {
+@-webkit-keyframes inline-u4737fd60 {
   0% {
     opacity: 0;
   }
@@ -6311,7 +6311,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u6dcb5cbc {
+@keyframes inline-u4737fd60 {
   0% {
     opacity: 0;
   }
