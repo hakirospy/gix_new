@@ -3639,6 +3639,11 @@ section.favorite {
   margin-bottom: 40px;
 }
 
+section.favorite .waitingfor {
+  margin-top: 25px;
+  font-size: 23px;
+}
+
 section.favorite .cart_block {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -6300,15 +6305,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u7b30c710;
-          animation-name: inline-u7b30c710;
+  -webkit-animation-name: inline-ubdeaf526;
+          animation-name: inline-ubdeaf526;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u7b30c710 {
+@-webkit-keyframes inline-ubdeaf526 {
   0% {
     opacity: 0;
   }
@@ -6317,7 +6322,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u7b30c710 {
+@keyframes inline-ubdeaf526 {
   0% {
     opacity: 0;
   }
