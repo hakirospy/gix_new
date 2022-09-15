@@ -108,8 +108,6 @@ location.reload();
 })
 
 
-
-
 document.querySelector('.buttom-favorite .buy-all').addEventListener('click',function(){
 
 
