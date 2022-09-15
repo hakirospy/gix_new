@@ -102,7 +102,7 @@ document.querySelector('.buttom-favorite .clear').addEventListener('click',funct
 
     fetch(`/local/ajax/delete_favourite.php?add_backet=9`).then(data => data.json()).then(data => {
 console.log('delete');
-location.reload();
+//location.reload();
 
     })
 })
@@ -113,7 +113,7 @@ document.querySelector('.buttom-favorite .buy-all').addEventListener('click',fun
 
     fetch(`/local/ajax/delete_favourite.php?add_backet=7`).then(data => data.json()).then(data => {
 console.log('to backet');
-location.reload();
+//location.reload();
 
     })
 })
