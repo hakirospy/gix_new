@@ -96,6 +96,31 @@ document.querySelector('.search_mobile .close').addEventListener('click', functi
 
 })
 
+
+document.querySelector('.buttom-favorite .clear').addEventListener('click',function(){
+
+
+    fetch(`/local/ajax/delete_favourite.php?&add_backet=9`).then(data => data.json()).then(data => {
+console.log('delete');
+location.reload();
+
+    })
+})
+
+
+
+
+document.querySelector('.buttom-favorite .buy-all').addEventListener('click',function(){
+
+
+    fetch(`/local/ajax/delete_favourite.php?&add_backet=7`).then(data => data.json()).then(data => {
+console.log('to backet');
+location.reload();
+
+    })
+})
+
+
 $(document).ready(function() {
     /* Favorites */
     $('.favor').on('click', function(e) {
