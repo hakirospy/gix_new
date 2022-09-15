@@ -56,7 +56,7 @@ document.querySelector('.button_menu').addEventListener('click', function(){
 function searchFunc(event){
 
     if(window.innerWidth<800){
-        console.log(0)
+      
     
     document.querySelector('.search_mobile').style.display = 'block'
     
