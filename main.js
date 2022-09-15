@@ -106,7 +106,7 @@ clear.addEventListener('click',function(){
 
     fetch(`/local/ajax/delete_favourite.php?add_backet=9`).then(data => data.json()).then(data => {
 console.log('delete');
-//location.reload();
+location.reload();
 
     })
 })
@@ -119,7 +119,7 @@ if(buyAll){
 
     fetch(`/local/ajax/delete_favourite.php?add_backet=7`).then(data => data.json()).then(data => {
 console.log('to backet');
-//location.reload();
+location.reload();
 
     })
 })
