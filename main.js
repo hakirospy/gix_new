@@ -59,7 +59,7 @@ if(mobilemenu){
 
 document.querySelector('.add_call').addEventListener('click', function(){
 
-
+    document.querySelector('.invite').click();
     document.querySelector('.js-fa-envelope i').click();
 
 
