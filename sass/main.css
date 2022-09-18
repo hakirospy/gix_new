@@ -114,6 +114,11 @@ body.overflow_html {
   outline: none;
 }
 
+* {
+  -webkit-box-sizing: initial;
+          box-sizing: initial;
+}
+
 .search_mobile {
   position: relative;
   width: 100%;
@@ -2579,6 +2584,8 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   font-size: 12px;
   line-height: 145%;
   cursor: pointer;
+  -webkit-box-sizing: initial;
+          box-sizing: initial;
   height: 17px;
   padding: 6px 12px 6px 12px;
   width: -webkit-fit-content;
@@ -2692,6 +2699,8 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   float: left;
   margin-right: 23px;
   cursor: pointer;
+  -webkit-box-sizing: initial;
+          box-sizing: initial;
 }
 
 .pagenation .page-item:hover, .pagenation .page-item ~ .active {
@@ -6310,15 +6319,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u186dea6e;
-          animation-name: inline-u186dea6e;
+  -webkit-animation-name: inline-ue6b85414;
+          animation-name: inline-ue6b85414;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u186dea6e {
+@-webkit-keyframes inline-ue6b85414 {
   0% {
     opacity: 0;
   }
@@ -6327,7 +6336,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u186dea6e {
+@keyframes inline-ue6b85414 {
   0% {
     opacity: 0;
   }
