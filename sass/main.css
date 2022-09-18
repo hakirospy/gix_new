@@ -1975,6 +1975,10 @@ body.overflow_html {
   bottom: 26px;
 }
 
+.seren.news .more:hover {
+  text-decoration: underline;
+}
+
 .seren.news .more a {
   padding-right: 11px;
 }
@@ -6320,15 +6324,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ub83b23fa;
-          animation-name: inline-ub83b23fa;
+  -webkit-animation-name: inline-uded595ef;
+          animation-name: inline-uded595ef;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ub83b23fa {
+@-webkit-keyframes inline-uded595ef {
   0% {
     opacity: 0;
   }
@@ -6337,7 +6341,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ub83b23fa {
+@keyframes inline-uded595ef {
   0% {
     opacity: 0;
   }
