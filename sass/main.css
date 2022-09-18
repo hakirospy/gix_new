@@ -2498,6 +2498,7 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
 
 .news-main .crumbs {
   color: #A9FF35;
+  font-size: 14px;
 }
 
 .news-main .crumbs span {
@@ -6319,15 +6320,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ue6b85414;
-          animation-name: inline-ue6b85414;
+  -webkit-animation-name: inline-ub83b23fa;
+          animation-name: inline-ub83b23fa;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ue6b85414 {
+@-webkit-keyframes inline-ub83b23fa {
   0% {
     opacity: 0;
   }
@@ -6336,7 +6337,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ue6b85414 {
+@keyframes inline-ub83b23fa {
   0% {
     opacity: 0;
   }
