@@ -65,7 +65,21 @@ document.querySelector('.add_call').addEventListener('click', function(){
 
 })
 
- 
+
+document.querySelector('#main_liked').addEventListener('click', function(){
+
+    window.location.replace('/izbrannoe/');
+
+})
+
+
+document.querySelector('#main_compare').addEventListener('click', function(){
+
+    window.location.replace('/catalog/compare/');
+
+})
+
+
  
 
 // mobile search 
