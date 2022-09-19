@@ -1882,6 +1882,7 @@ body.overflow_html {
 .seren.news .cart .img {
   border-radius: 32px 32px 0px 0px;
   position: relative;
+  height: 240px;
 }
 
 .seren.news .cart .label {
@@ -6342,15 +6343,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u0ce4808e;
-          animation-name: inline-u0ce4808e;
+  -webkit-animation-name: inline-u50f7f1dd;
+          animation-name: inline-u50f7f1dd;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u0ce4808e {
+@-webkit-keyframes inline-u50f7f1dd {
   0% {
     opacity: 0;
   }
@@ -6359,7 +6360,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u0ce4808e {
+@keyframes inline-u50f7f1dd {
   0% {
     opacity: 0;
   }
