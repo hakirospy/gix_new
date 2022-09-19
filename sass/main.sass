@@ -4527,6 +4527,115 @@ section.favorite
       line-height: 12px
       color: #1E242E
     
+// detail news
+.more_news_slider
+  
+  .seren
+    background: initial
+    .desc
+      font-weight: 600
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 25px
+    .cart_block
+      grid-template-columns: repeat(4, minmax(200px, 375px))!important
+
+
+.content_detail_news
+  display: grid
+  grid-template-columns: 1fr 3fr
+  margin-top: 20px
+
+  .content
+    span
+      display: block
+      margin-top: -40px
+      font-style: italic
+      font-weight: 400
+      font-size: 16px
+      line-height: 34px
+      color: #8E99AB
+    img
+      border-radius: 32px
+      margin-bottom: 40px
+    p
+      color: white
+      font-weight: 500
+      font-size: 16px
+      line-height: 150%
+      
+    h2
+      font-weight: 600
+      font-size: 18px
+      line-height: 140%
+      color: #FFFFFF
+    .spec_line
+      position: relative
+      margin-left: 14px
+      &::before
+        content: ''
+        width: 5px
+        background: #EDEDED
+        height: 100%
+        position: absolute
+        left: -14px
+
+  .author
+    display: flex
+    flex-direction: column
+    .author_name
+      font-weight: 600
+      font-size: 16px
+      line-height: 24px
+      color: white
+    .desc_author
+      font-weight: 400
+      font-size: 16px
+      line-height: 110%
+      margin-top: 15px
+      margin-bottom: 15px
+
+
+      color: #8E99AB
+    .time_pub
+      font-weight: 500
+      font-size: 16px
+      line-height: 24px
+      color: white
+    .share_text
+      font-weight: 600
+      font-size: 16px
+      line-height: 24px
+      color: white
+      margin-top: 45px
+.content_detail_news + .text-main-news 
+.filter-new-button
+  background: $main-black-color
+  border-radius: 20px
+  font-family: 'Montserrat'
+  font-style: normal
+  font-weight: 400
+  font-size: 12px
+  line-height: 145%
+  cursor: pointer
+  box-sizing: initial
+  
+  height: 17px
+  padding: 6px 12px 6px 12px
+  width: fit-content
+  float: left
+  margin-right: 14px
+  margin-bottom: 14px
+  color: $white-color
+  /* or 17px */
+
+  text-transform: uppercase
+  &:hover
+    background: $seren-color
+.active
+  background: $seren-color
+a
+  text-decoration: none
 
 /* specific animation */
 /* https://daneden.me/animate/ */
