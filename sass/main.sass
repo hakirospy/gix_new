@@ -4545,6 +4545,13 @@ section.favorite
   display: grid
   grid-template-columns: 1fr 3fr
   margin-top: 20px
+  margin-right: 24px
+  @media screen and (max-width: 850px)
+    grid-template-columns: auto 65%
+    column-gap: 20px
+  @media screen and (max-width: 750px)
+    grid-template-columns: 1fr
+    row-gap: 30px
 
   .content
     color: white
@@ -4556,20 +4563,27 @@ section.favorite
       font-size: 16px
       line-height: 34px
       color: #8E99AB
+      @media screen and (max-width: 750px)
+        font-size: 12px
     img
       border-radius: 32px
       margin-bottom: 40px
+      max-width: 100%
     p
       color: white
       font-weight: 500
       font-size: 16px
       line-height: 150%
+      @media screen and (max-width: 750px)
+        font-size: 12px
       
     h2
       font-weight: 600
       font-size: 18px
       line-height: 140%
       color: #FFFFFF
+      @media screen and (max-width: 750px)
+        font-size: 14px
     .spec_line
       position: relative
       margin-left: 14px
@@ -4588,6 +4602,8 @@ section.favorite
       font-weight: 600
       font-size: 16px
       line-height: 24px
+      @media screen and (max-width: 750px)
+        font-size: 14px
       color: white
     .desc_author
       font-weight: 400
@@ -4595,6 +4611,8 @@ section.favorite
       line-height: 110%
       margin-top: 15px
       margin-bottom: 15px
+      @media screen and (max-width: 750px)
+        font-size: 12px
 
 
       color: #8E99AB
@@ -4603,12 +4621,16 @@ section.favorite
       font-size: 16px
       line-height: 24px
       color: white
+      @media screen and (max-width: 750px)
+        font-size: 12px
     .share_text
       font-weight: 600
       font-size: 16px
       line-height: 24px
       color: white
       margin-top: 45px
+      @media screen and (max-width: 750px)
+        font-size: 12px
 .content_detail_news + .text-main-news 
   .filter-new-button
     background: $main-black-color
