@@ -6517,6 +6517,7 @@ section.favorite .buttom-favorite .buy-all, section.favorite .buttom-favorite .c
 
 @media screen and (max-width: 750px) {
   .content_detail_news .author .share_text {
+    margin-top: 0px;
     font-size: 12px;
   }
 }
@@ -6577,15 +6578,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u939d5377;
-          animation-name: inline-u939d5377;
+  -webkit-animation-name: inline-u0a44718c;
+          animation-name: inline-u0a44718c;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u939d5377 {
+@-webkit-keyframes inline-u0a44718c {
   0% {
     opacity: 0;
   }
@@ -6594,7 +6595,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u939d5377 {
+@keyframes inline-u0a44718c {
   0% {
     opacity: 0;
   }
