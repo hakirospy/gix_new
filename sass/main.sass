@@ -1700,6 +1700,9 @@ body.overflow_html
 
 footer
   background: #1B1C1B
+  .adress_bottom
+    line-height: 25px
+    max-width: 73%
   
   .footer
     display: grid
@@ -1844,6 +1847,16 @@ footer
       .contact_bottom 
         order: 4
         margin-top: 15px
+        grid-column-start: 1
+        grid-column-end: 3
+        text-align: center
+        .adress_bottom
+          max-width: 100%
+          text-align: center
+          /* display: flex; */
+          margin-left: 10%
+          /* justify-content: space-around; */
+          margin-right: 10%
 
 
     
