@@ -6331,7 +6331,7 @@ section.favorite .buttom-favorite .buy-all, section.favorite .buttom-favorite .c
   .news-main {
     margin-left: 16px;
   }
-  .news-main .name {
+  .news-main .text-nain-news .name {
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
@@ -6567,15 +6567,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u0ac91cb4;
-          animation-name: inline-u0ac91cb4;
+  -webkit-animation-name: inline-u590c82e5;
+          animation-name: inline-u590c82e5;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u0ac91cb4 {
+@-webkit-keyframes inline-u590c82e5 {
   0% {
     opacity: 0;
   }
@@ -6584,7 +6584,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u0ac91cb4 {
+@keyframes inline-u590c82e5 {
   0% {
     opacity: 0;
   }
