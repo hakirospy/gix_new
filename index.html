@@ -11,9 +11,18 @@
     <link href='https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.0/dist/css/splide.min.css' rel='stylesheet'>
 
     <script type="module" src="./js/main.js"></script>-->
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   
 </head>
 
+
+
 <body>
+
+
+
+
     <section class="slider_main">
 <div class="search_mobile">
     <div class="icon"></div>
@@ -144,6 +153,9 @@
 
 
 
+        <button class="open_modal" data-swal-template="#my-template">
+            Trigger modal
+          </button>
 
         <section class="seren ">
             <div class="name">Каталог</div>
@@ -396,6 +408,55 @@
 
         </section>
 
+        <script>
+            document.querySelector('.open_modal').addEventListener('click', function (e) {
+            
+                (async () => {
+
+const { value: formValues } = await Swal.fire({
+  title: 'Вход',
+  text: 'Search for a movie. e.g. "La La Land".',
+  input: "text",
+  button: {
+    text: "Search!",
+    closeModal: false,
+  }
+}).then(formValues => {
+  if (!formValues) throw null;
+ 
+  return fetch(`https://itunes.apple.com/search?term=${formValues}&entity=movie`);
+})
+.then(results => {
+  return results.json();
+})
+.then(json => {
+  const movie = json.results[0];
+ 
+  if (!movie) {
+    return Swal.fire("No movie was found!");
+  }
+ 
+  const name = movie.trackName;
+  const imageURL = movie.artworkUrl100;
+ 
+  Swal.fire({
+    title: "Top result:",
+    text: name,
+    imageUrl: imageURL,
+  });
+})
+
+
+})()
+            })
+
+
+           
+
+            
+            
+            </script>
+
         <footer>
 
             <div class="footer">
@@ -452,7 +513,7 @@
         </footer>
 
 
-<script src="main.js"></script>
+
 </body>
 
 </html>
