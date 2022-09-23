@@ -6638,15 +6638,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-udbc52c45;
-          animation-name: inline-udbc52c45;
+  -webkit-animation-name: inline-uee9d76f7;
+          animation-name: inline-uee9d76f7;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-udbc52c45 {
+@-webkit-keyframes inline-uee9d76f7 {
   0% {
     opacity: 0;
   }
@@ -6655,7 +6655,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-udbc52c45 {
+@keyframes inline-uee9d76f7 {
   0% {
     opacity: 0;
   }
@@ -6692,7 +6692,7 @@ summary::marker {
 }
 
 #authModal .modal-content .close {
-  font-size: calc(1.275rem + 2.3vw);
+  font-size: 47px;
   font-weight: 100;
   line-height: 1;
   color: white;
@@ -6700,8 +6700,8 @@ summary::marker {
   text-align: right;
   opacity: 1;
   position: absolute;
-  right: -37px;
-  top: -48px;
+  right: calc(0.3rem - 35px);
+  top: calc(0.4rem - 48px);
 }
 
 #authModal .modal-content .title {
