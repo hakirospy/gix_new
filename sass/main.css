@@ -6638,15 +6638,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ucf988b86;
-          animation-name: inline-ucf988b86;
+  -webkit-animation-name: inline-u9182208b;
+          animation-name: inline-u9182208b;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ucf988b86 {
+@-webkit-keyframes inline-u9182208b {
   0% {
     opacity: 0;
   }
@@ -6655,7 +6655,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ucf988b86 {
+@keyframes inline-u9182208b {
   0% {
     opacity: 0;
   }
@@ -6710,6 +6710,18 @@ summary::marker {
   line-height: 36px;
   color: #A9FF35;
   margin-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#authModal .modal-content .title .registration_link {
+  color: #FFFFFF;
+  -webkit-text-decoration: auto;
+          text-decoration: auto;
 }
 
 #authModal .modal-content #auth-form .row {
@@ -6724,6 +6736,13 @@ summary::marker {
   border: 1px solid #FFFFFF;
   border-radius: 4px;
   margin-bottom: 10px;
+}
+
+#authModal .modal-content #auth-form .lose_password {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #8E99AB;
 }
 
 #authModal .modal-content #auth-form input[type=button] {
