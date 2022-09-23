@@ -497,12 +497,14 @@ body.overflow_html {
   cursor: pointer;
 }
 
-.go_cab:hover .icon {
-  background: url("../img/vhod_hover.svg");
-  width: 28px;
-  height: 28px;
-  left: -30px;
-  top: -5px;
+@media (max-width: 1030px) {
+  .go_cab:hover .icon {
+    background: url("../img/vhod_hover.svg");
+    width: 28px;
+    height: 28px;
+    left: -30px;
+    top: -5px;
+  }
 }
 
 .go_cab .icon {
@@ -6624,15 +6626,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u903efc8d;
-          animation-name: inline-u903efc8d;
+  -webkit-animation-name: inline-ub262b941;
+          animation-name: inline-ub262b941;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u903efc8d {
+@-webkit-keyframes inline-ub262b941 {
   0% {
     opacity: 0;
   }
@@ -6641,7 +6643,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u903efc8d {
+@keyframes inline-ub262b941 {
   0% {
     opacity: 0;
   }
