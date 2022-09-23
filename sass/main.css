@@ -497,7 +497,7 @@ body.overflow_html {
   cursor: pointer;
 }
 
-@media (max-width: 1030px) {
+@media (min-width: 1030px) {
   .go_cab:hover .icon {
     background: url("../img/vhod_hover.svg");
     width: 28px;
@@ -6626,15 +6626,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ub262b941;
-          animation-name: inline-ub262b941;
+  -webkit-animation-name: inline-u2f983ee2;
+          animation-name: inline-u2f983ee2;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ub262b941 {
+@-webkit-keyframes inline-u2f983ee2 {
   0% {
     opacity: 0;
   }
@@ -6643,7 +6643,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ub262b941 {
+@keyframes inline-u2f983ee2 {
   0% {
     opacity: 0;
   }
