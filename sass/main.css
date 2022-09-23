@@ -6638,15 +6638,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u027acb18;
-          animation-name: inline-u027acb18;
+  -webkit-animation-name: inline-ub875e29f;
+          animation-name: inline-ub875e29f;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u027acb18 {
+@-webkit-keyframes inline-ub875e29f {
   0% {
     opacity: 0;
   }
@@ -6655,7 +6655,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u027acb18 {
+@keyframes inline-ub875e29f {
   0% {
     opacity: 0;
   }
@@ -6721,6 +6721,11 @@ summary::marker {
 #authModal .modal-content .title .registration_link {
   color: #FFFFFF;
   text-decoration: none;
+}
+
+#authModal .modal-content #auth-form .message.error {
+  color: red;
+  margin-bottom: 14px;
 }
 
 #authModal .modal-content #auth-form .row {
