@@ -497,13 +497,24 @@ body.overflow_html {
   cursor: pointer;
 }
 
-@media (min-width: 1030px) {
+.go_cab:hover .icon {
+  background: url("../img/vhod_hover.svg");
+  width: 28px;
+  height: 28px;
+  left: -30px;
+  top: -5px;
+}
+
+@media (max-width: 1030px) {
   .go_cab:hover .icon {
-    background: url("../img/vhod_hover.svg");
-    width: 28px;
-    height: 28px;
-    left: -30px;
-    top: -5px;
+    background: url("../img/vhod.svg");
+    content: '';
+    width: 16px;
+    height: 17px;
+    display: -ms-grid;
+    display: grid;
+    position: absolute;
+    left: -25px;
   }
 }
 
@@ -6626,15 +6637,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u2f983ee2;
-          animation-name: inline-u2f983ee2;
+  -webkit-animation-name: inline-ub2aa463d;
+          animation-name: inline-ub2aa463d;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u2f983ee2 {
+@-webkit-keyframes inline-ub2aa463d {
   0% {
     opacity: 0;
   }
@@ -6643,7 +6654,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u2f983ee2 {
+@keyframes inline-ub2aa463d {
   0% {
     opacity: 0;
   }
