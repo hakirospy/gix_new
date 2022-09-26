@@ -804,7 +804,7 @@ body.overflow_html {
 
 @media (max-width: 650px) {
   .slider_main_block .big:after {
-    background-image: url("../img/mask_banner_big_mob_new.png");
+    background-image: url("../img/mask_banner_big_mob_new_.png");
     height: 16rem;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -6742,15 +6742,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u9aabb525;
-          animation-name: inline-u9aabb525;
+  -webkit-animation-name: inline-ub1f3ba52;
+          animation-name: inline-ub1f3ba52;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u9aabb525 {
+@-webkit-keyframes inline-ub1f3ba52 {
   0% {
     opacity: 0;
   }
@@ -6759,7 +6759,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u9aabb525 {
+@keyframes inline-ub1f3ba52 {
   0% {
     opacity: 0;
   }
