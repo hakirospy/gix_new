@@ -753,21 +753,40 @@ body.overflow_html {
 
 .slider_main_block .big {
   max-width: 1184px;
-  background-color: #A9FF35;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1E2132), color-stop(445%, #7A32A5));
+  background: linear-gradient(#1E2132, #7A32A5 445%);
   border-radius: 40px;
   position: relative;
 }
 
-.slider_main_block .big:after {
-  background-image: url("../img/mask-banner-big1.png");
+.slider_main_block .big .star_big {
+  background-image: url("../img/start_big_slider.svg");
   content: '';
   height: 400px;
   display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 624px;
+}
+
+@media (max-width: 1330px) {
+  .slider_main_block .big .star_big {
+    display: none;
+  }
+}
+
+.slider_main_block .big:after {
+  background-image: url("../img/mask-banner-big1_new.png");
+  content: '';
+  height: 400px;
+  display: block;
+  border-radius: 40px;
 }
 
 @media (min-width: 768px) and (max-width: 1550px) {
   .slider_main_block .big:after {
-    background-image: url("../img/mask-banner-big_.png");
+    background-image: url("../img/mask-banner-big_new_.png");
     height: 320px;
     background-position: right;
     background-repeat: no-repeat;
@@ -776,7 +795,7 @@ body.overflow_html {
 
 @media (max-width: 930px) {
   .slider_main_block .big:after {
-    background-image: url("../img/mask-banner-big_.png");
+    background-image: url("../img/mask-banner-big_new_.png");
     height: 320px;
     background-position: right;
     background-repeat: no-repeat;
@@ -785,7 +804,7 @@ body.overflow_html {
 
 @media (max-width: 650px) {
   .slider_main_block .big:after {
-    background-image: url("../img/mask_banner_big_mob.png");
+    background-image: url("../img/mask_banner_big_mob_new.png");
     height: 16rem;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -1302,15 +1321,9 @@ body.overflow_html {
 }
 
 .big .button_slider {
-  left: 96px;
-  top: 269px;
-}
-
-@media (min-width: 608px) and (max-width: 1550px) {
-  .big .button_slider {
-    left: 56px;
-    top: 212px;
-  }
+  top: 48px;
+  position: relative;
+  background-color: #AFFF37;
 }
 
 @media (max-width: 650px) {
@@ -1319,7 +1332,9 @@ body.overflow_html {
     left: initial;
     top: initial;
     margin-inline: auto;
-    margin-top: 24px;
+    margin-top: 14px;
+    width: 208px;
+    text-align: center;
   }
 }
 
@@ -1425,55 +1440,127 @@ body.overflow_html {
   }
 }
 
-.big .title {
+.big .cont {
+  left: 96px;
+  top: 80px;
   position: absolute;
-  font-family: 'Montserrat';
+}
+
+@media (max-width: 1550px) {
+  .big .cont {
+    left: 56px;
+    top: 40px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .big .cont .text_big_slider_3 {
+    display: none;
+  }
+}
+
+@media (max-width: 1120px) {
+  .big .cont .text_big_slider_2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .big .cont {
+    top: 64px;
+  }
+}
+
+@media (max-width: 650px) {
+  .big .cont {
+    position: initial;
+  }
+}
+
+@media (max-width: 1024px) {
+  .big .text_big_slider_1, .big .text_big_slider_2, .big .text_big_slider_3 {
+    display: none;
+  }
+}
+
+.big .laptop_title {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .big .laptop_title {
+    display: block;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    color: white;
+    padding-top: 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  .big .laptop_title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 125%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
+
+.big .title {
   font-style: normal;
   line-height: 120%;
   font-weight: 600;
-  color: #1E242E;
-  width: 180px;
-  height: 29px;
-  left: 96px;
-  top: 88px;
-  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 56px;
 }
 
-@media (min-width: 608px) and (max-width: 1550px) {
+@media (max-width: 1550px) {
   .big .title {
-    width: 150px;
-    height: 24px;
-    left: 56px;
-    top: 64px;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .big .title {
     font-size: 20px;
   }
 }
 
 @media (max-width: 650px) {
   .big .title {
-    width: initial;
-    height: 29px;
+    font-weight: 600;
     font-size: 14px;
-    text-align: center;
-    position: relative;
+    line-height: 145%;
     margin-top: 40px;
-    top: initial;
-    left: initial;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 
 .big .text {
-  position: absolute;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  color: #1E242E;
-  line-height: 120%;
-  width: 247px;
-  height: 96px;
-  left: 96px;
-  top: 141px;
-  font-size: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (210px)[3];
+      grid-template-columns: repeat(3, 210px);
+}
+
+.big .text .title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 125%;
+  color: #F4F4F4;
+  padding-bottom: 8px;
+  padding-top: 18px;
+}
+
+.big .text .desc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  color: #8D839F;
 }
 
 @media (min-width: 608px) and (max-width: 1550px) {
@@ -1488,7 +1575,11 @@ body.overflow_html {
 
 @media (max-width: 650px) {
   .big .text {
-    width: 149px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin-inline: auto;
     height: initial;
     left: initial;
@@ -1496,6 +1587,7 @@ body.overflow_html {
     font-size: 24px;
     text-align: center;
     position: relative;
+    width: 150px;
   }
 }
 
@@ -6638,15 +6730,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ub875e29f;
-          animation-name: inline-ub875e29f;
+  -webkit-animation-name: inline-u23928ba1;
+          animation-name: inline-u23928ba1;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ub875e29f {
+@-webkit-keyframes inline-u23928ba1 {
   0% {
     opacity: 0;
   }
@@ -6655,7 +6747,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ub875e29f {
+@keyframes inline-u23928ba1 {
   0% {
     opacity: 0;
   }

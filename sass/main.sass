@@ -564,30 +564,46 @@ body.overflow_html
 
 .slider_main_block .big
  max-width: 1184px
- background-color: $main-green-color
+ background: linear-gradient( #1E2132 , #7A32A5 445%)
+ //background-color: $main-green-color
  border-radius: 40px 
  position: relative
+
+ .star_big
+    background-image: url('../img/start_big_slider.svg')
+    content: ''
+    height: 400px
+    display: block
+    position: absolute
+    bottom: 0px
+
+    left: 0px
+    width: 624px
+    @media (max-width: 1330px)
+      display: none
+  
  &:after
-  background-image: url('../img/mask-banner-big1.png')
+  background-image: url('../img/mask-banner-big1_new.png')
   content: ''
   height: 400px
   display: block
+  border-radius: 40px
   @include for-macbook-and-tablet
   
-    background-image: url('../img/mask-banner-big_.png')
+    background-image: url('../img/mask-banner-big_new_.png')
     height: 320px
     background-position: right
     background-repeat: no-repeat
 
   @media (max-width: 930px)
 
-    background-image: url('../img/mask-banner-big_.png')
+    background-image: url('../img/mask-banner-big_new_.png')
     height: 320px
     background-position: right
     background-repeat: no-repeat
 
   @media (max-width: 650px)
-      background-image: url('../img/mask_banner_big_mob.png')
+      background-image: url('../img/mask_banner_big_mob_new.png')
       height: 16rem
       background-position: bottom center
       background-repeat: no-repeat
@@ -994,18 +1010,20 @@ body.overflow_html
     color: white
 
 .big .button_slider
-  left: 96px
-  top: 269px
+  
+  top: 48px
+  position: relative
+  background-color:  #AFFF37
 
-  @include for-macbook-and-tablet-mobile
-    left: 56px
-    top: 212px 
+ 
   @media (max-width: 650px)
     position: relative
     left: initial
     top: initial
     margin-inline: auto
-    margin-top: 24px
+    margin-top: 14px
+    width: 208px
+    text-align: center
 
 .small .button_slider
   left: 48px
@@ -1092,38 +1110,78 @@ body.overflow_html
     align-items: center
     margin: 0 auto
 
-  
+.big .cont
+  left: 96px
+  top: 80px
+  position: absolute
+  @media (max-width: 1550px)
+    left: 56px
+    top: 40px
+  @media (max-width: 1350px)
+    .text_big_slider_3
+      display: none
+  @media (max-width: 1120px)
+    .text_big_slider_2
+      display: none
+  @media (max-width: 1024px)
+    top: 64px
+  @media (max-width: 650px)
+    position: initial
+
+
+.big
+  .text_big_slider_1, .text_big_slider_2, .text_big_slider_3
+    @media (max-width: 1024px)
+      display: none
+
+  .laptop_title
+    display: none
+    @media (max-width: 1024px)
+      display: block
+      font-weight: 600
+      font-size: 32px
+      line-height: 120%
+      color: white
+      padding-top: 16px
+    @media (max-width: 650px)
+      font-weight: 500
+      font-size: 24px
+      line-height: 125%
+      
+
+      text-align: center
+
+
+      color: #FFFFFF
+
 
 .big .title
-  position: absolute
-  font-family: 'Montserrat'
+ 
+
   font-style: normal
   line-height: 120%
   font-weight: 600
-  color: #1E242E
-  width: 180px
-  height: 29px
-  left: 96px
-  top: 88px
-  font-size: 24px
+  color: $white-color
+  font-weight: 600
+  font-size: 56px
 
-  @include for-macbook-and-tablet-mobile
 
-    width: 150px
-    height: 24px
-    left: 56px
-    top: 64px
+  @media (max-width: 1550px)
+
+  
+    font-size: 36px
+  @media (max-width: 1024px)
     font-size: 20px
+  
   @media (max-width: 650px)
-    width: initial 
-    height: 29px
-
+    font-weight: 600
     font-size: 14px
-    text-align: center
-    position: relative
+    line-height: 145%
     margin-top: 40px
-    top: initial
-    left: initial
+
+
+    text-align: center
+    text-transform: uppercase
     
 
 
@@ -1131,18 +1189,21 @@ body.overflow_html
   
 
 .big .text
-  position: absolute
-  font-family: 'Montserrat'
-  font-style: normal
-  font-weight: 600
-  color: #1E242E
-  line-height: 120%
-  width: 247px
-  height: 96px
-  left: 96px 
-  top: 141px
-  font-size: 40px
+  display: grid
+  grid-template-columns: repeat(3,210px)
 
+  .title
+    font-weight: 500
+    font-size: 20px
+    line-height: 125%
+    color: #F4F4F4
+    padding-bottom: 8px
+    padding-top: 18px
+  .desc
+    font-weight: 500
+    font-size: 16px
+    line-height: 125%
+    color: #8D839F
   @include for-macbook-and-tablet-mobile
 
     width: 198px
@@ -1151,7 +1212,8 @@ body.overflow_html
     top: 104px
     font-size: 32px
   @media (max-width: 650px)
-    width: 149px
+    display: flex
+    justify-content: space-around
     margin-inline: auto
     height: initial
     left: initial
@@ -1159,6 +1221,7 @@ body.overflow_html
     font-size: 24px
     text-align: center
     position: relative
+    width: 150px
 
 
 .seren
