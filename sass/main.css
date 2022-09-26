@@ -813,7 +813,7 @@ body.overflow_html {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .slider_main_block .big:after {
     background-size: 100% 160%;
   }
@@ -6735,15 +6735,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uf23e4955;
-          animation-name: inline-uf23e4955;
+  -webkit-animation-name: inline-u504ab475;
+          animation-name: inline-u504ab475;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uf23e4955 {
+@-webkit-keyframes inline-u504ab475 {
   0% {
     opacity: 0;
   }
@@ -6752,7 +6752,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uf23e4955 {
+@keyframes inline-u504ab475 {
   0% {
     opacity: 0;
   }
