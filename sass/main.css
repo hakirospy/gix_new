@@ -1667,6 +1667,12 @@ body.overflow_html {
   gap: 12px;
 }
 
+@media (max-width: 1630px) {
+  .seren .all_tovar {
+    margin-right: 30px;
+  }
+}
+
 @media (max-width: 700px) {
   .seren .all_tovar {
     display: none;
@@ -6740,15 +6746,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u4d4f75fb;
-          animation-name: inline-u4d4f75fb;
+  -webkit-animation-name: inline-u3db8055c;
+          animation-name: inline-u3db8055c;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u4d4f75fb {
+@-webkit-keyframes inline-u3db8055c {
   0% {
     opacity: 0;
   }
@@ -6757,7 +6763,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u4d4f75fb {
+@keyframes inline-u3db8055c {
   0% {
     opacity: 0;
   }
