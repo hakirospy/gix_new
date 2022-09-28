@@ -630,8 +630,11 @@ body.overflow_html
   content: ''
   height: 400px 
   display: block 
-  background-size: cover
+  background-size: contain
   border-radius: 48px
+  @media (max-width: 730px)
+
+    background-size: cover
   
 
  @include for-macbook-and-tablet
@@ -647,9 +650,10 @@ body.overflow_html
   &:after
     background-image: url('../img/mask-banner-small-mobile_new.png')
     height: 160px
+    
     background-color: $greey-color
 
-
+ 
  @media (max-width: 690px)
  
   &:after
