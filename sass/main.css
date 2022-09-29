@@ -987,7 +987,9 @@ body.overflow_html {
 
 @media (max-width: 650px) {
   .razdel_main_page div:nth-child(1):after {
-    margin-top: 68px;
+    margin-top: 47px;
+    height: 113px;
+    width: 100px;
     border-bottom-right-radius: 24px;
   }
 }
@@ -1044,8 +1046,10 @@ body.overflow_html {
 
 @media (max-width: 650px) {
   .razdel_main_page div:nth-child(3):after {
-    margin-top: 58px;
+    margin-top: 51px;
     border-bottom-right-radius: 28px;
+    width: 111px;
+    height: 107px;
   }
 }
 
@@ -1069,9 +1073,10 @@ body.overflow_html {
 @media (max-width: 650px) {
   .razdel_main_page div:nth-child(4):after {
     width: 111px;
-    height: 94px;
-    margin-top: 65px;
+    height: 109px;
+    margin-top: 50px;
     border-bottom-right-radius: 24px;
+    background-size: cover;
   }
 }
 
@@ -1095,10 +1100,11 @@ body.overflow_html {
 
 @media (max-width: 650px) {
   .razdel_main_page div:nth-child(5):after {
-    width: 111px;
-    height: 94px;
-    margin-top: 65px;
+    width: 124px;
+    height: 125px;
+    margin-top: 35px;
     border-bottom-right-radius: 24px;
+    background-size: cover;
   }
 }
 
@@ -1121,17 +1127,12 @@ body.overflow_html {
 
 @media (max-width: 650px) {
   .razdel_main_page div:nth-child(6):after {
-    width: 104px;
-    height: 94px;
-    margin-top: 65px;
+    width: 120px;
+    height: 122px;
+    margin-top: 38px;
     margin-right: 0px;
     border-bottom-right-radius: 24px;
-  }
-}
-
-@media (max-width: 400px) {
-  .razdel_main_page div:nth-child(6):after {
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -6774,15 +6775,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u47291011;
-          animation-name: inline-u47291011;
+  -webkit-animation-name: inline-ubff01a30;
+          animation-name: inline-ubff01a30;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u47291011 {
+@-webkit-keyframes inline-ubff01a30 {
   0% {
     opacity: 0;
   }
@@ -6791,7 +6792,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u47291011 {
+@keyframes inline-ubff01a30 {
   0% {
     opacity: 0;
   }
