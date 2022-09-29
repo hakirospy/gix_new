@@ -1900,10 +1900,6 @@ body.overflow_html {
   padding-top: 75%;
 }
 
-.cart .product-item-image-wrapper span {
-  background-size: 50% auto;
-}
-
 .seren a {
   -webkit-text-decoration: auto;
           text-decoration: auto;
@@ -6789,15 +6785,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u8e13cc57;
-          animation-name: inline-u8e13cc57;
+  -webkit-animation-name: inline-u96531840;
+          animation-name: inline-u96531840;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u8e13cc57 {
+@-webkit-keyframes inline-u96531840 {
   0% {
     opacity: 0;
   }
@@ -6806,7 +6802,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u8e13cc57 {
+@keyframes inline-u96531840 {
   0% {
     opacity: 0;
   }
