@@ -911,11 +911,11 @@ body.overflow_html
   margin-left: 30px
   margin-right: 30px
   padding-bottom: 80px
-  
+  grid-template-columns: repeat(4, minmax(200px, 375px))
+  grid-gap: 30px 
+  justify-content: center
+  margin-top: 80px
 
-
- 
- 
   @include for-macbook-and-tablet-mobile
    grid-template-columns: repeat(4, minmax(200px, 100%))
    justify-content: center
@@ -931,18 +931,14 @@ body.overflow_html
   
    grid-template-columns:  repeat(1, 1fr) 
    margin-top: 62px
+  @media (max-width: 450px)
+    margin-top: 56px
+    margin-left: 16px
+    margin-right: 16px
+    grid-gap: 16px 
+
 
    
-  
-
-  grid-template-columns: repeat(4, minmax(200px, 375px))
-  grid-gap: 30px 
-  justify-content: center
-  
-
- 
-  margin-top: 80px
-
 
   
 
@@ -967,6 +963,10 @@ body.overflow_html
   @include for-769_990
   
     grid-template:  minmax(100px, auto)/ 58px 1fr
+  @media (max-width: 450px)
+    padding-left: 16px
+    padding-right: 16px
+
   
 
 
