@@ -2862,6 +2862,10 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   }
 }
 
+.pagenation .page-item.active {
+  border-color: #A9FF35;
+}
+
 .pagenation .page-item {
   font-family: 'Montserrat';
   font-style: normal;
@@ -6785,15 +6789,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u7f0f39c6;
-          animation-name: inline-u7f0f39c6;
+  -webkit-animation-name: inline-u8e13cc57;
+          animation-name: inline-u8e13cc57;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u7f0f39c6 {
+@-webkit-keyframes inline-u8e13cc57 {
   0% {
     opacity: 0;
   }
@@ -6802,7 +6806,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u7f0f39c6 {
+@keyframes inline-u8e13cc57 {
   0% {
     opacity: 0;
   }

@@ -2160,7 +2160,9 @@ footer
       background-position-x: 10px
       background-position-y: 14px
       background-size: 50%
-      
+  .page-item.active
+    border-color: $main-green-color
+        
   .page-item
     font-family: 'Montserrat'
     font-style: normal
@@ -2177,6 +2179,7 @@ footer
     margin-right: 23px
     cursor: pointer
     box-sizing: initial
+
     &:hover, ~ .active
       border-color: $main-green-color
     @media (max-width: 1140px)
