@@ -1049,6 +1049,12 @@ body.overflow_html {
   margin-top: 9px;
 }
 
+@media (max-width: 1550px) {
+  .razdel_main_page div:nth-child(4):after {
+    margin-top: 47px;
+  }
+}
+
 @media (max-width: 768px) {
   .razdel_main_page div:nth-child(4):after {
     margin-top: -15px;
@@ -1106,6 +1112,12 @@ body.overflow_html {
   margin-right: -6px;
   border-bottom-right-radius: 56px;
   margin-top: 9px;
+}
+
+@media (max-width: 1550px) {
+  .razdel_main_page div:nth-child(6):after {
+    margin-top: 48px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -6754,15 +6766,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u1116e0eb;
-          animation-name: inline-u1116e0eb;
+  -webkit-animation-name: inline-u8083780e;
+          animation-name: inline-u8083780e;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u1116e0eb {
+@-webkit-keyframes inline-u8083780e {
   0% {
     opacity: 0;
   }
@@ -6771,7 +6783,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u1116e0eb {
+@keyframes inline-u8083780e {
   0% {
     opacity: 0;
   }
