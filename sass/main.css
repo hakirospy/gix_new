@@ -639,7 +639,7 @@ body.overflow_html {
   margin-top: 8px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 650px) {
   .backet:hover .title {
     color: #A9FF35;
     cursor: pointer;
@@ -6774,15 +6774,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u1707e84d;
-          animation-name: inline-u1707e84d;
+  -webkit-animation-name: inline-uf6c46b53;
+          animation-name: inline-uf6c46b53;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u1707e84d {
+@-webkit-keyframes inline-uf6c46b53 {
   0% {
     opacity: 0;
   }
@@ -6791,7 +6791,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u1707e84d {
+@keyframes inline-uf6c46b53 {
   0% {
     opacity: 0;
   }
