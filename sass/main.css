@@ -1850,10 +1850,14 @@ body.overflow_html {
 }
 
 .button_all_slider a {
-  color: #1E242E;
+  color: #A9FF35;
   font-weight: 500;
   font-size: 14px;
   line-height: 125%;
+}
+
+.black .button_all_slider a {
+  color: #1E242E;
 }
 
 .cart_block_slider .swiper-slide {
@@ -6845,15 +6849,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u0fef1199;
-          animation-name: inline-u0fef1199;
+  -webkit-animation-name: inline-u5eb6c781;
+          animation-name: inline-u5eb6c781;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u0fef1199 {
+@-webkit-keyframes inline-u5eb6c781 {
   0% {
     opacity: 0;
   }
@@ -6862,7 +6866,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u0fef1199 {
+@keyframes inline-u5eb6c781 {
   0% {
     opacity: 0;
   }
