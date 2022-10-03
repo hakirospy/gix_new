@@ -2467,6 +2467,12 @@ footer .footer {
   }
 }
 
+@media (max-width: 550px) {
+  footer .footer {
+    padding-top: 56px;
+  }
+}
+
 @media (max-width: 470px) {
   footer .footer {
     padding-left: 16px;
@@ -2557,6 +2563,13 @@ footer .footer .menu_bottom div {
         grid-template-columns: 1fr;
     -ms-grid-rows: (39px)[5];
         grid-template-rows: repeat(5, 39px);
+  }
+}
+
+@media (max-width: 550px) {
+  footer .footer .menu_bottom div {
+    -ms-grid-rows: (36px)[5];
+        grid-template-rows: repeat(5, 36px);
   }
 }
 
@@ -2673,13 +2686,12 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 3;
-    text-align: center;
+    text-align: left;
   }
   footer .footer .contact_bottom .adress_bottom {
     max-width: 100%;
-    text-align: center;
+    text-align: left;
     /* display: flex; */
-    margin-left: 10%;
     /* justify-content: space-around; */
     margin-right: 10%;
   }
@@ -6868,15 +6880,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ufe24e029;
-          animation-name: inline-ufe24e029;
+  -webkit-animation-name: inline-ubfffe642;
+          animation-name: inline-ubfffe642;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ufe24e029 {
+@-webkit-keyframes inline-ubfffe642 {
   0% {
     opacity: 0;
   }
@@ -6885,7 +6897,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ufe24e029 {
+@keyframes inline-ubfffe642 {
   0% {
     opacity: 0;
   }
