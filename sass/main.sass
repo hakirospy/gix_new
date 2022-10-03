@@ -1263,7 +1263,7 @@ body.overflow_html
   overflow: hidden
 
 
-  grid-gap: 30px
+  column-gap: 30px
   //padding-left: 30px
 
   justify-content: center
@@ -1275,6 +1275,9 @@ body.overflow_html
   @media (max-width: 700px)
     padding-top: 56px
     padding-left: 0px
+  @media (max-width: 550px)
+    padding-bottom: 72px
+
 
 .seren div, .seren span
   font-family: 'Montserrat'
@@ -1461,7 +1464,7 @@ body.overflow_html
 .cart_block
   display: grid
   grid-template-columns: repeat(4, minmax(200px, 364px))
-  grid-gap: 29px
+  column-gap: 29px
   /*margin-left: 30px
    margin-right: 30px*/
   justify-content: center
