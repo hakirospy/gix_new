@@ -1890,18 +1890,18 @@ body.overflow_html {
 }
 
 @media (max-width: 1280px) {
-  .cart_block.tovar_slider, .cart_block.vieved_tovar, .catalog-section .cart_block.popular_tovar {
+  .cart_block.tovar_slider, .cart_block.vieved_tovar, section .cart_block.popular_tovar {
     margin-right: 150px;
   }
 }
 
 @media (max-width: 480px) {
-  .cart_block.tovar_slider, .cart_block.vieved_tovar, .catalog-section .cart_block.popular_tovar {
+  .cart_block.tovar_slider, .cart_block.vieved_tovar, section .cart_block.popular_tovar {
     margin-right: 62px;
   }
 }
 
-.cart_block.tovar_slider, .cart_block.vieved_tovar, .catalog-section .cart_block.popular_tovar {
+.cart_block.tovar_slider, .cart_block.vieved_tovar, section .cart_block.popular_tovar {
   grid-gap: 0px;
   -webkit-column-gap: 32px;
           column-gap: 32px;
@@ -6942,15 +6942,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ued65cbeb;
-          animation-name: inline-ued65cbeb;
+  -webkit-animation-name: inline-uf215ac40;
+          animation-name: inline-uf215ac40;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ued65cbeb {
+@-webkit-keyframes inline-uf215ac40 {
   0% {
     opacity: 0;
   }
@@ -6959,7 +6959,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ued65cbeb {
+@keyframes inline-uf215ac40 {
   0% {
     opacity: 0;
   }
