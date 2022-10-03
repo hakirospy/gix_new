@@ -1849,17 +1849,23 @@ body.overflow_html
       
 
 .mobile_remix
+  display: grid
   @media (max-width: 550px)
     grid-template-columns: 1fr 1fr
-    display: grid   
+       
 .offerta_text
   font-weight: 400
   font-size: 10px
   line-height: 135%
-
-
   text-align: center
   color: #8E9297
+  margin-left: 32px
+  margin-right: 32px
+  @media (max-width: 550px)
+    margin-left: 16px
+    margin-right: 16px
+
+
 
 .contact_bottom  > .all_lawer
   display: none

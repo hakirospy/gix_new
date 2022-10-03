@@ -2431,12 +2431,15 @@ body.overflow_html {
   }
 }
 
+.mobile_remix {
+  display: -ms-grid;
+  display: grid;
+}
+
 @media (max-width: 550px) {
   .mobile_remix {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    display: -ms-grid;
-    display: grid;
   }
 }
 
@@ -2446,6 +2449,15 @@ body.overflow_html {
   line-height: 135%;
   text-align: center;
   color: #8E9297;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+@media (max-width: 550px) {
+  .offerta_text {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 }
 
 .contact_bottom > .all_lawer {
@@ -6914,15 +6926,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u92b3523a;
-          animation-name: inline-u92b3523a;
+  -webkit-animation-name: inline-u46dd8ce9;
+          animation-name: inline-u46dd8ce9;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u92b3523a {
+@-webkit-keyframes inline-u46dd8ce9 {
   0% {
     opacity: 0;
   }
@@ -6931,7 +6943,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u92b3523a {
+@keyframes inline-u46dd8ce9 {
   0% {
     opacity: 0;
   }
