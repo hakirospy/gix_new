@@ -2454,6 +2454,12 @@ body.overflow_html {
   padding-bottom: 32px;
 }
 
+@media (min-width: 950px) {
+  .offerta_text {
+    margin-top: -25px;
+  }
+}
+
 @media (min-width: 780px) {
   .offerta_text {
     margin-left: 40px;
@@ -6936,15 +6942,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ud8cd031a;
-          animation-name: inline-ud8cd031a;
+  -webkit-animation-name: inline-u862b45de;
+          animation-name: inline-u862b45de;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ud8cd031a {
+@-webkit-keyframes inline-u862b45de {
   0% {
     opacity: 0;
   }
@@ -6953,7 +6959,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ud8cd031a {
+@keyframes inline-u862b45de {
   0% {
     opacity: 0;
   }
