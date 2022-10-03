@@ -2066,6 +2066,12 @@ body.overflow_html {
   }
 }
 
+@media (max-width: 550px) {
+  .seren.news .content {
+    padding: 16px 24px 24px;
+  }
+}
+
 .seren.news .date {
   font-size: 12px;
   line-height: 145%;
@@ -6797,15 +6803,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u85a046c3;
-          animation-name: inline-u85a046c3;
+  -webkit-animation-name: inline-ucc8a9e56;
+          animation-name: inline-ucc8a9e56;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u85a046c3 {
+@-webkit-keyframes inline-ucc8a9e56 {
   0% {
     opacity: 0;
   }
@@ -6814,7 +6820,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u85a046c3 {
+@keyframes inline-ucc8a9e56 {
   0% {
     opacity: 0;
   }
