@@ -1832,6 +1832,24 @@ body.overflow_html {
   }
 }
 
+.button_all_slider {
+  display: none;
+  border: 1.2px solid #A9FF35;
+  width: 288px;
+  border-radius: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 24px;
+}
+
+.button_all_slider a {
+  color: #1E242E;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 125%;
+}
+
 .cart_block_slider .swiper-slide {
   height: auto;
 }
@@ -6821,15 +6839,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u781efbaa;
-          animation-name: inline-u781efbaa;
+  -webkit-animation-name: inline-uff21368f;
+          animation-name: inline-uff21368f;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u781efbaa {
+@-webkit-keyframes inline-uff21368f {
   0% {
     opacity: 0;
   }
@@ -6838,7 +6856,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u781efbaa {
+@keyframes inline-uff21368f {
   0% {
     opacity: 0;
   }
