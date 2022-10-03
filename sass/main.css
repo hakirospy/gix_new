@@ -2648,6 +2648,11 @@ footer .footer .menu_bottom div a {
   }
 }
 
+footer .footer .menu_bottom div a:hover {
+  -webkit-text-decoration: revert;
+          text-decoration: revert;
+}
+
 footer .footer .contact_bottom {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
@@ -6942,15 +6947,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u61568627;
-          animation-name: inline-u61568627;
+  -webkit-animation-name: inline-u2ddc76c2;
+          animation-name: inline-u2ddc76c2;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u61568627 {
+@-webkit-keyframes inline-u2ddc76c2 {
   0% {
     opacity: 0;
   }
@@ -6959,7 +6964,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u61568627 {
+@keyframes inline-u2ddc76c2 {
   0% {
     opacity: 0;
   }
