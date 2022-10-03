@@ -2451,6 +2451,7 @@ body.overflow_html {
   color: #8E9297;
   margin-left: 32px;
   margin-right: 32px;
+  margin-bottom: 32px;
 }
 
 @media (max-width: 550px) {
@@ -2490,7 +2491,7 @@ footer .footer {
   display: grid;
   -ms-grid-columns: minmax(200px, 400px) minmax(100px, 400px) minmax(100px, 400px) minmax(200px, 400px);
       grid-template-columns: minmax(200px, 400px) minmax(100px, 400px) minmax(100px, 400px) minmax(200px, 400px);
-  padding-bottom: 30px;
+  padding-bottom: 8px;
   color: #FFFFFF;
   padding-top: 64px;
   -webkit-box-pack: center;
@@ -6926,15 +6927,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u46dd8ce9;
-          animation-name: inline-u46dd8ce9;
+  -webkit-animation-name: inline-uf5447831;
+          animation-name: inline-uf5447831;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u46dd8ce9 {
+@-webkit-keyframes inline-uf5447831 {
   0% {
     opacity: 0;
   }
@@ -6943,7 +6944,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u46dd8ce9 {
+@keyframes inline-uf5447831 {
   0% {
     opacity: 0;
   }
