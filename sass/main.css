@@ -1834,7 +1834,7 @@ body.overflow_html {
 
 .button_all_slider {
   display: none;
-  border: 1.2px solid #A9FF35;
+  border: 1.2px solid #1E242E;
   width: 288px;
   border-radius: 4px;
   -webkit-box-align: center;
@@ -1857,7 +1857,7 @@ body.overflow_html {
 }
 
 .black .button_all_slider {
-  border: 1.2px solid #1E242E;
+  border: 1.2px solid #A9FF35;
 }
 
 .black .button_all_slider a {
@@ -6853,15 +6853,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uc2670c2d;
-          animation-name: inline-uc2670c2d;
+  -webkit-animation-name: inline-ufad0d593;
+          animation-name: inline-ufad0d593;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uc2670c2d {
+@-webkit-keyframes inline-ufad0d593 {
   0% {
     opacity: 0;
   }
@@ -6870,7 +6870,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uc2670c2d {
+@keyframes inline-ufad0d593 {
   0% {
     opacity: 0;
   }
