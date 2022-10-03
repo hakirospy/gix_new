@@ -2611,8 +2611,8 @@ footer .footer .menu_bottom > span, footer .footer .contact_bottom > span {
 footer .footer .menu_bottom div {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 130px 110px;
+      grid-template-columns: 130px 110px;
   -ms-grid-rows: (48px)[3];
       grid-template-rows: repeat(3, 48px);
   margin-top: 24px;
@@ -6942,15 +6942,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uf215ac40;
-          animation-name: inline-uf215ac40;
+  -webkit-animation-name: inline-u2e2b2c81;
+          animation-name: inline-u2e2b2c81;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uf215ac40 {
+@-webkit-keyframes inline-u2e2b2c81 {
   0% {
     opacity: 0;
   }
@@ -6959,7 +6959,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uf215ac40 {
+@keyframes inline-u2e2b2c81 {
   0% {
     opacity: 0;
   }
