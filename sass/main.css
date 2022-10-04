@@ -2439,6 +2439,8 @@ body.overflow_html {
 .mobile_remix {
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 33px;
+      grid-template-rows: 33px;
 }
 
 @media (max-width: 550px) {
@@ -2511,15 +2513,15 @@ footer {
 }
 
 footer .adress_bottom {
-  line-height: 25px;
+  line-height: 22px;
   max-width: 73%;
 }
 
 footer .footer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(200px, 400px) minmax(100px, 400px) minmax(100px, 400px) minmax(200px, 400px);
-      grid-template-columns: minmax(200px, 400px) minmax(100px, 400px) minmax(100px, 400px) minmax(200px, 400px);
+  -ms-grid-columns: minmax(200px, 408px) minmax(100px, 409px) minmax(100px, 408px) minmax(200px, 373px);
+      grid-template-columns: minmax(200px, 408px) minmax(100px, 409px) minmax(100px, 408px) minmax(200px, 373px);
   padding-bottom: 8px;
   color: #FFFFFF;
   padding-top: 64px;
@@ -2632,8 +2634,8 @@ footer .footer .menu_bottom div {
   display: grid;
   -ms-grid-columns: 138px 110px;
       grid-template-columns: 138px 110px;
-  -ms-grid-rows: (48px)[3];
-      grid-template-rows: repeat(3, 48px);
+  -ms-grid-rows: (33px)[3];
+      grid-template-rows: repeat(3, 33px);
   margin-top: 24px;
 }
 
@@ -2682,7 +2684,7 @@ footer .footer .contact_bottom .text {
   font-weight: 400;
   font-size: 14px;
   line-height: 50px;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
 @media (max-width: 600px) {
@@ -2716,7 +2718,7 @@ footer .footer .contact_bottom .youtube {
 
 footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtube, footer .footer .contact_bottom .instagram {
   display: inline-block;
-  margin-right: 25px;
+  margin-right: 34px;
 }
 
 @media (max-width: 700px) {
@@ -6966,15 +6968,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u268840d0;
-          animation-name: inline-u268840d0;
+  -webkit-animation-name: inline-uc1178ef3;
+          animation-name: inline-uc1178ef3;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u268840d0 {
+@-webkit-keyframes inline-uc1178ef3 {
   0% {
     opacity: 0;
   }
@@ -6983,7 +6985,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u268840d0 {
+@keyframes inline-uc1178ef3 {
   0% {
     opacity: 0;
   }

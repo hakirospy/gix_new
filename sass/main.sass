@@ -1853,6 +1853,7 @@ body.overflow_html
 
 .mobile_remix
   display: grid
+  grid-template-rows: 33px
   @media (max-width: 550px)
     grid-template-columns: 1fr 1fr
   a
@@ -1896,12 +1897,12 @@ body.overflow_html
 footer
   background: #1B1C1B
   .adress_bottom
-    line-height: 25px
+    line-height: 22px
     max-width: 73%
   
   .footer
     display: grid
-    grid-template-columns:  minmax(200px, 400px)  minmax(100px, 400px)  minmax(100px, 400px)  minmax(200px, 400px)
+    grid-template-columns: minmax(200px, 408px) minmax(100px, 409px) minmax(100px, 408px) minmax(200px, 373px)
     padding-bottom: 8px
     color: $white-color
     padding-top: 64px
@@ -1973,7 +1974,7 @@ footer
     .menu_bottom div
       display: grid
       grid-template-columns: 138px 110px 
-      grid-template-rows: repeat(3,48px)
+      grid-template-rows: repeat(3,33px)
       margin-top: 24px
       @media (max-width: 980px)
         grid-template-columns: 1fr
@@ -2000,7 +2001,7 @@ footer
         font-weight: 400
         font-size: 14px
         line-height: 50px
-        margin-bottom: 28px
+        margin-bottom: 25px
         @media (max-width: 600px)
           line-height: 41px
           font-size: 12px
@@ -2022,7 +2023,7 @@ footer
       .facebook, .youtube, .instagram
        
         display: inline-block
-        margin-right: 25px
+        margin-right: 34px
 
    
     @media (max-width: 700px)
