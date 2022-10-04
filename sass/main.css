@@ -2591,7 +2591,7 @@ footer .footer .logo_bottom span {
   line-height: 145%;
   display: -ms-grid;
   display: grid;
-  max-width: 204px;
+  max-width: 212px;
   color: #A9FF35;
 }
 
@@ -2611,7 +2611,7 @@ footer .footer .menu_bottom > span, footer .footer .contact_bottom > span {
   font-weight: 600;
   font-size: 14px;
   line-height: 145%;
-  text-transform: uppercase;
+  /*text-transform: uppercase*/
   display: -ms-grid;
   display: grid;
 }
@@ -2622,11 +2622,16 @@ footer .footer .menu_bottom > span, footer .footer .contact_bottom > span {
   }
 }
 
+footer .footer .menu_bottom.second div {
+  -ms-grid-columns: 114px 110px;
+      grid-template-columns: 114px 110px;
+}
+
 footer .footer .menu_bottom div {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 130px 110px;
-      grid-template-columns: 130px 110px;
+  -ms-grid-columns: 138px 110px;
+      grid-template-columns: 138px 110px;
   -ms-grid-rows: (48px)[3];
       grid-template-rows: repeat(3, 48px);
   margin-top: 24px;
@@ -6961,15 +6966,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u151540df;
-          animation-name: inline-u151540df;
+  -webkit-animation-name: inline-u268840d0;
+          animation-name: inline-u268840d0;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u151540df {
+@-webkit-keyframes inline-u268840d0 {
   0% {
     opacity: 0;
   }
@@ -6978,7 +6983,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u151540df {
+@keyframes inline-u268840d0 {
   0% {
     opacity: 0;
   }
