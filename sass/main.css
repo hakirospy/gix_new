@@ -2,6 +2,12 @@ body {
   background: #1E242E;
 }
 
+.swiper-wrapper {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  padding-bottom: 24px;
+}
+
 body {
   margin: 0px;
   font-family: 'Montserrat';
@@ -7069,15 +7075,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u07afa0c0;
-          animation-name: inline-u07afa0c0;
+  -webkit-animation-name: inline-u14696aef;
+          animation-name: inline-u14696aef;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u07afa0c0 {
+@-webkit-keyframes inline-u14696aef {
   0% {
     opacity: 0;
   }
@@ -7086,7 +7092,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u07afa0c0 {
+@keyframes inline-u14696aef {
   0% {
     opacity: 0;
   }
