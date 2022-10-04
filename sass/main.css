@@ -5,7 +5,7 @@ body {
 .swiper-wrapper {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  padding-bottom: 24px;
+  padding-bottom: 30px;
 }
 
 body {
@@ -1773,6 +1773,12 @@ body.overflow_html {
           justify-content: center;
   -ms-flex-line-pack: space-evenly;
       align-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  .seren .title {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -7075,15 +7081,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u14696aef;
-          animation-name: inline-u14696aef;
+  -webkit-animation-name: inline-u66739b0f;
+          animation-name: inline-u66739b0f;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u14696aef {
+@-webkit-keyframes inline-u66739b0f {
   0% {
     opacity: 0;
   }
@@ -7092,7 +7098,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u14696aef {
+@keyframes inline-u66739b0f {
   0% {
     opacity: 0;
   }
