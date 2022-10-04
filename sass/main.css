@@ -2295,9 +2295,9 @@ body.overflow_html {
   background-size: cover;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 550px) {
   .contact_block .picture_contact {
-    display: none;
+    height: 200px;
   }
 }
 
@@ -2311,6 +2311,14 @@ body.overflow_html {
     width: initial;
     margin-right: 30px;
     margin-left: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .contact_block .submit_form {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 
@@ -7052,15 +7060,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u0f0e0ba8;
-          animation-name: inline-u0f0e0ba8;
+  -webkit-animation-name: inline-u8cd0d375;
+          animation-name: inline-u8cd0d375;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u0f0e0ba8 {
+@-webkit-keyframes inline-u8cd0d375 {
   0% {
     opacity: 0;
   }
@@ -7069,7 +7077,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u0f0e0ba8 {
+@keyframes inline-u8cd0d375 {
   0% {
     opacity: 0;
   }
