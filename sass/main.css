@@ -2484,6 +2484,12 @@ body.overflow_html {
 @media (min-width: 950px) {
   .offerta_text {
     margin-top: -25px;
+    padding-top: 10px;
+    padding-bottom: 24px;
+    grid-column-end: 5;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -2662,7 +2668,7 @@ footer .footer .menu_bottom div {
   margin-top: 24px;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1080px) {
   footer .footer .menu_bottom div {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -7003,15 +7009,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u642cf47a;
-          animation-name: inline-u642cf47a;
+  -webkit-animation-name: inline-u7ba7f00f;
+          animation-name: inline-u7ba7f00f;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u642cf47a {
+@-webkit-keyframes inline-u7ba7f00f {
   0% {
     opacity: 0;
   }
@@ -7020,7 +7026,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u642cf47a {
+@keyframes inline-u7ba7f00f {
   0% {
     opacity: 0;
   }
