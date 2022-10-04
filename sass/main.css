@@ -2626,6 +2626,12 @@ footer .footer .menu_bottom > span, footer .footer .contact_bottom > span {
   }
 }
 
+@media (max-width: 450px) {
+  footer .footer .menu_bottom > span, footer .footer .contact_bottom > span {
+    text-transform: uppercase;
+  }
+}
+
 footer .footer .menu_bottom.second div {
   -ms-grid-columns: 114px 110px;
       grid-template-columns: 114px 110px;
@@ -6972,15 +6978,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u3cfecf15;
-          animation-name: inline-u3cfecf15;
+  -webkit-animation-name: inline-ud8d7955b;
+          animation-name: inline-ud8d7955b;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u3cfecf15 {
+@-webkit-keyframes inline-ud8d7955b {
   0% {
     opacity: 0;
   }
@@ -6989,7 +6995,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u3cfecf15 {
+@keyframes inline-ud8d7955b {
   0% {
     opacity: 0;
   }
