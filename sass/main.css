@@ -2702,6 +2702,7 @@ footer .footer .contact_bottom .facebook {
   background-image: url("../img/facebook.svg");
   width: 10px;
   height: 20px;
+  margin-left: 4px;
 }
 
 footer .footer .contact_bottom .instagram {
@@ -2714,6 +2715,7 @@ footer .footer .contact_bottom .youtube {
   background-image: url("../img/youtube.svg");
   width: 18px;
   height: 14px;
+  margin-left: -6px;
 }
 
 footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtube, footer .footer .contact_bottom .instagram {
@@ -6968,15 +6970,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uc1178ef3;
-          animation-name: inline-uc1178ef3;
+  -webkit-animation-name: inline-u29bbdbe8;
+          animation-name: inline-u29bbdbe8;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uc1178ef3 {
+@-webkit-keyframes inline-u29bbdbe8 {
   0% {
     opacity: 0;
   }
@@ -6985,7 +6987,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uc1178ef3 {
+@keyframes inline-u29bbdbe8 {
   0% {
     opacity: 0;
   }
