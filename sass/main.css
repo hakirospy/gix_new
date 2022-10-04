@@ -1879,25 +1879,25 @@ body.overflow_html {
 
 @media (max-width: 1280px) {
   .cart_block.news_slider {
-    margin-right: 150px;
+    margin-right: 0px;
   }
 }
 
 @media (max-width: 480px) {
   .cart_block.news_slider {
-    margin-right: 75px;
+    margin-right: 0px;
   }
 }
 
 @media (max-width: 1280px) {
   .cart_block.tovar_slider, .cart_block.vieved_tovar, section .cart_block.popular_tovar {
-    margin-right: 150px;
+    margin-right: 0px;
   }
 }
 
 @media (max-width: 480px) {
   .cart_block.tovar_slider, .cart_block.vieved_tovar, section .cart_block.popular_tovar {
-    margin-right: 62px;
+    margin-left: -30px;
   }
 }
 
@@ -6961,15 +6961,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ud84bd48e;
-          animation-name: inline-ud84bd48e;
+  -webkit-animation-name: inline-u3b9f89eb;
+          animation-name: inline-u3b9f89eb;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ud84bd48e {
+@-webkit-keyframes inline-u3b9f89eb {
   0% {
     opacity: 0;
   }
@@ -6978,7 +6978,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ud84bd48e {
+@keyframes inline-u3b9f89eb {
   0% {
     opacity: 0;
   }
