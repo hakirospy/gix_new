@@ -422,7 +422,7 @@ body.overflow_html {
 
 @media (max-width: 550px) {
   .main_slider_block {
-    margin-left: 16px;
+    margin-left: 0px;
     padding-left: 16px;
   }
   .main_slider_block .liked, .main_slider_block .compare, .main_slider_block .tel, .main_slider_block .city {
@@ -7069,15 +7069,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ub8615960;
-          animation-name: inline-ub8615960;
+  -webkit-animation-name: inline-u07afa0c0;
+          animation-name: inline-u07afa0c0;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ub8615960 {
+@-webkit-keyframes inline-u07afa0c0 {
   0% {
     opacity: 0;
   }
@@ -7086,7 +7086,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ub8615960 {
+@keyframes inline-u07afa0c0 {
   0% {
     opacity: 0;
   }
