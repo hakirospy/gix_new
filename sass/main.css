@@ -2002,7 +2002,7 @@ body.overflow_html {
   padding: 16px 24px;
   border: none;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 17px;
   color: #1E242E;
   background: #A9FF35;
@@ -6972,15 +6972,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uf5d188db;
-          animation-name: inline-uf5d188db;
+  -webkit-animation-name: inline-u3cfecf15;
+          animation-name: inline-u3cfecf15;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uf5d188db {
+@-webkit-keyframes inline-u3cfecf15 {
   0% {
     opacity: 0;
   }
@@ -6989,7 +6989,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uf5d188db {
+@keyframes inline-u3cfecf15 {
   0% {
     opacity: 0;
   }
