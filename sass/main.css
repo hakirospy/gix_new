@@ -2526,7 +2526,6 @@ footer .footer {
   display: grid;
   -ms-grid-columns: minmax(200px, 408px) minmax(100px, 409px) minmax(100px, 408px) minmax(200px, 373px);
       grid-template-columns: minmax(200px, 408px) minmax(100px, 409px) minmax(100px, 408px) minmax(200px, 373px);
-  padding-bottom: 8px;
   color: #FFFFFF;
   padding-top: 64px;
   -webkit-box-pack: center;
@@ -2637,6 +2636,13 @@ footer .footer .menu_bottom > span, footer .footer .contact_bottom > span {
 footer .footer .menu_bottom.second div {
   -ms-grid-columns: 114px 110px;
       grid-template-columns: 114px 110px;
+}
+
+@media (max-width: 1200px) {
+  footer .footer .menu_bottom.second div {
+    -ms-grid-columns: 114px;
+        grid-template-columns: 114px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -6997,15 +7003,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ud37f445b;
-          animation-name: inline-ud37f445b;
+  -webkit-animation-name: inline-u642cf47a;
+          animation-name: inline-u642cf47a;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ud37f445b {
+@-webkit-keyframes inline-u642cf47a {
   0% {
     opacity: 0;
   }
@@ -7014,7 +7020,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ud37f445b {
+@keyframes inline-u642cf47a {
   0% {
     opacity: 0;
   }

@@ -1909,7 +1909,7 @@ footer
   .footer
     display: grid
     grid-template-columns: minmax(200px, 408px) minmax(100px, 409px) minmax(100px, 408px) minmax(200px, 373px)
-    padding-bottom: 8px
+
     color: $white-color
     padding-top: 64px
     justify-content: center
@@ -1979,7 +1979,9 @@ footer
 
     .menu_bottom.second div
       grid-template-columns: 114px 110px 
-      
+      @media (max-width: 1200px)
+        grid-template-columns: 114px 
+
       @media (max-width: 550px)
         grid-template-columns: 82px 70px
 
