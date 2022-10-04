@@ -2485,15 +2485,6 @@ body.overflow_html {
   }
 }
 
-@media (min-width: 780px) {
-  .offerta_text {
-    margin-left: 40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
 @media (max-width: 550px) {
   .offerta_text {
     margin-left: 16px;
@@ -6979,15 +6970,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uffbdd542;
-          animation-name: inline-uffbdd542;
+  -webkit-animation-name: inline-u1c1e28d1;
+          animation-name: inline-u1c1e28d1;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uffbdd542 {
+@-webkit-keyframes inline-u1c1e28d1 {
   0% {
     opacity: 0;
   }
@@ -6996,7 +6987,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uffbdd542 {
+@keyframes inline-u1c1e28d1 {
   0% {
     opacity: 0;
   }
