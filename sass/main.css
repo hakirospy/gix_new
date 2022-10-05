@@ -539,7 +539,7 @@ body.overflow_html {
   }
 }
 
-@media (max-width: 1030px) and (max-width: 550px) {
+@media (max-width: 550px) {
   .go_cab:hover .icon {
     left: 20px;
   }
@@ -7093,15 +7093,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u75e67f84;
-          animation-name: inline-u75e67f84;
+  -webkit-animation-name: inline-u192f3211;
+          animation-name: inline-u192f3211;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u75e67f84 {
+@-webkit-keyframes inline-u192f3211 {
   0% {
     opacity: 0;
   }
@@ -7110,7 +7110,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u75e67f84 {
+@keyframes inline-u192f3211 {
   0% {
     opacity: 0;
   }
