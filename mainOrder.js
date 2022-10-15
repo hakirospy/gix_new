@@ -162,6 +162,7 @@ function animationData( old_price, price_element, deliverPrice){
 
 function addDeliveryToSumm(){
     var deliverPrice = document.querySelector('input[name="delivery_price"]').value
+    var calcTabAll = document.querySelector('.countAllElem span')
     var allPriceCalc = document.querySelector('.allPriceCalc')
     let  allPriceOplata = document.querySelector('.allPriceOplata')
     var mainPriceElem = document.querySelector('.all_price')
@@ -169,6 +170,7 @@ function addDeliveryToSumm(){
     var newMainPrice = mainPrice + parseInt(deliverPrice)
 
     animateValue(mainPriceElem, mainPrice, newMainPrice, 500)
+    animateValue(calcTabAll, mainPrice, newMainPrice, 500)
     animateValue(allPriceCalc, mainPrice, newMainPrice, 500)
     animateValue(allPriceOplata, mainPrice, newMainPrice, 500)
 
