@@ -29,13 +29,7 @@ document.querySelector('input[name="lastname"]').addEventListener("keyup", (even
 
  
 
-document.querySelector('input[name="otchestvo"]').addEventListener("keyup", (event) => { 
-    
-    
 
-    document.querySelector('input[name="ORDER_PROP_1"]').value  = document.querySelector('input[name="name"]').value + ' ' + document.querySelector('input[name="lastname"]').value + ' ' + event.srcElement.value
-
-})
 
 
 
@@ -394,9 +388,6 @@ document.querySelector('input[name="phone"]').setCustomValidity('Введите 
     document.querySelector('input[name="email"]').reportValidity()
     document.querySelector('input[name="email"]').setCustomValidity('Введите адресс вашей почты')
 
-}else if(document.querySelector('input[name="otchestvo"]').value.length < 5 ){
-    document.querySelector('input[name="otchestvo"]').reportValidity()
-    document.querySelector('input[name="otchestvo"]').setCustomValidity('Введите свое Отчество')
 
 
 }else if(document.querySelector('input[name="lastname"]').value.length < 2 ){
@@ -455,11 +446,7 @@ document.querySelector('input[name="name"]').addEventListener('keyup', function 
             this.setCustomValidity('');
             
             })
-            document.querySelector('input[name="otchestvo"]').addEventListener('keyup', function (e) {
-
-                this.setCustomValidity('');
-                
-                })
+           
                 document.querySelector('input[name="address"]').addEventListener('keyup', function (e) {
 
                     this.setCustomValidity('');
