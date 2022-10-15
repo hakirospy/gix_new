@@ -1384,11 +1384,15 @@ body.overflow_html {
   font-size: 14px;
   line-height: 17px;
   cursor: pointer;
+  display: block;
+  text-decoration: none;
 }
 
 .button_slider:hover {
   background: linear-gradient(45deg, #2B3547 0%, #2B3547 0.01%, #3B414B 100%);
   color: white;
+  -webkit-text-decoration: revert;
+          text-decoration: revert;
 }
 
 .button_slider:focus {
@@ -7099,15 +7103,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u518fb4b8;
-          animation-name: inline-u518fb4b8;
+  -webkit-animation-name: inline-u9593c585;
+          animation-name: inline-u9593c585;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u518fb4b8 {
+@-webkit-keyframes inline-u9593c585 {
   0% {
     opacity: 0;
   }
@@ -7116,7 +7120,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u518fb4b8 {
+@keyframes inline-u9593c585 {
   0% {
     opacity: 0;
   }
