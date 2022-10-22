@@ -5224,7 +5224,11 @@ summary
       @media screen and (max-width: 1024px)
         order: 2
 
+    .orders
+      &:nth-child(3)
+        margin-top: 16px
 
+        
     .content
       padding: 40px 48px
       
@@ -5267,6 +5271,153 @@ summary
           @media screen and (max-width: 550px)
             margin-top: 4px
             font-size: 12px
+      .choice
+        display: flex
+        flex-wrap: wrap
+        align-content: center
+        justify-content: flex-end
+        margin-top: -15px
+        margin-bottom: 28px
+        svg
+          transition: all 0.5s
+
+      &> .open_block
+        .choice svg
+          transform: rotate(180deg)
+          
+      .content_name_order
+        .choice
+          display: flex
+          flex-wrap: wrap
+          align-content: center
+          justify-content: flex-end
+          margin-top: -15px
+          margin-bottom: 28px
+          cursor: pointer
+          svg
+            transition: all 0.5s
+        & > .open_block
+          .choice svg
+            transform: rotate(180deg)
+            
+            
+      
+        
+        .main_content
+          margin-top: 24px
+          background-color: #F1F7FF
+          border-radius: 16px
+          padding: 32px 40px
+          @media screen and (max-width: 650px)
+            padding: 0px
+            background-color: initial
+          &:nth-child(3)
+            margin-top: 8px
+            
+          .itog, .itog-slushba
+            display: flex
+            justify-content: stretch
+            margin: 16px 0px
+            column-gap: 6px
+            @media screen and (max-width: 550px)
+              margin: 5px 0px
+            .dotes
+              border-bottom: 1px dashed #8E9297
+        
+              flex-basis: 0
+
+              flex-grow: 1
+              max-width: 100%
+          .itog
+            margin-bottom: 16px
+            div
+              font-family: 'Montserrat'
+              font-style: normal
+              font-weight: 500
+              font-size: 16px
+              line-height: 125%
+              color:#202732
+              @media screen and (max-width: 650px)
+                font-size: 12px
+                font-weight: 400
+            .sale
+              font-family: 'Montserrat'
+              font-style: normal
+              font-weight: 500
+              font-size: 16px
+              line-height: 125%
+              color: #8E9297
+              @media screen and (max-width: 550px)
+                font-size: 10px
+            &.last
+            margin-bottom: 0px
+          .itog-slushba
+            justify-content: space-between
+            align-items: center
+            @media screen and (max-width: 550px)
+              flex-direction: column
+              align-items: flex-start
+              align-content: center
+            div
+              &:nth-child(2)
+                @media screen and (max-width: 550px)
+                  font-size: 10px!important
+                
+                  color: #8E9297!important
+        
+            div:not(.bigger-dost)
+              font-family: 'Montserrat'
+              font-style: normal
+              font-weight: 400
+              font-size: 14px
+              line-height: 135%
+              color: #202732
+              @media screen and (max-width: 550px)
+                font-size: 12px
+            &.bigger-dost
+              font-family: 'Montserrat'
+              font-style: normal
+              font-weight: 500
+              font-size: 16px
+              line-height: 125%
+              color: #202732
+          
+          .line
+              margin-top: 8px
+              margin-bottom: 8px
+          .line.itog
+            margin-top: 16px 
+          
+          .block-tovar-orders
+            display: grid
+            grid-template-columns: auto auto auto
+            column-gap: 30px
+            
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 8px
+            div
+              font-style: normal
+              font-weight: 400
+              font-size: 14px
+              line-height: 135%
+              font-family: 'Montserrat'
+              font-style: normal
+              color: #202732
+              @media screen and (max-width: 550px)
+                font-size: 10px
+          
+        .title
+          font-family: 'Montserrat'
+          font-style: normal
+          font-weight: 500
+          font-size: 16px
+          line-height: 125%
+          color: #202732
+          cursor: pointer
+          @media screen and (max-width: 550px)
+            font-size: 14px
+
       .content_main_order
         display: grid
         grid-template-columns: minmax(100px,200px) 1fr
