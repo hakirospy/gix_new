@@ -488,8 +488,8 @@ timerOpenP(document.querySelector('.oplata'))
 
 
 let deliveris = document.querySelectorAll('input[name="radio"]:checked');
-            let values = [];
-            checkboxes.forEach((checkbox) => {
+values_delivery = ''
+            deliveris.forEach((checkbox) => {
                 values_delivery = checkbox.getAttribute("attr-delivery-id");
             });
 
