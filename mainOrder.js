@@ -415,7 +415,7 @@ document.querySelector('input[name="address"]').setCustomValidity('Введит�
 }else{
 
 
-
+    BX.Sale.OrderAjaxComponent.editActiveDeliveryBlock(true);
 
 let deliveris = document.querySelectorAll('input[name="radio"]:checked');
 values_delivery = ''
@@ -493,7 +493,7 @@ document.querySelector('.oplata .tabcontent').classList.add('active');
 document.querySelector('.order_content_blue .title').innerHTML = "Шаг 3 из 3. Выберите удобный способ оплаты"
 
 timerOpenP(document.querySelector('.oplata'))
-
+BX.Sale.OrderAjaxComponent.editActiveDeliveryBlock(true);
 
 let deliveris = document.querySelectorAll('input[name="radio"]:checked');
 values_delivery = ''
