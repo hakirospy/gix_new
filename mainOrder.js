@@ -484,8 +484,6 @@ button_next_delivery.addEventListener('click', function (event) {
     if (validate_delivery() == true) {
 
         activeRemoveTab()
-
-
         document.querySelector('.navigate_order').children[2].appendChild(document.createElement('span'))
         document.querySelector('.navigate_order').children[1].classList.add('grens')
         document.querySelector('.oplata .tabcontent').classList.remove('close');
@@ -494,17 +492,20 @@ button_next_delivery.addEventListener('click', function (event) {
         document.querySelector('.order_content_blue .title').innerHTML = "Шаг 3 из 3. Выберите удобный способ оплаты"
 
         timerOpenP(document.querySelector('.oplata'))
+
         BX.Sale.OrderAjaxComponent.editActiveDeliveryBlock(true);
 
         let deliveris = document.querySelectorAll('input[name="radio"]:checked');
+
         values_delivery = ''
+
         deliveris.forEach((checkbox) => {
+
             values_delivery = checkbox.getAttribute("attr-delivery-id");
+
         });
 
-
         document.querySelector("#ID_DELIVERY_ID_" + values_delivery).click()
-
 
         BX.Sale.OrderAjaxComponent.sendRequest('refreshOrderAjax');
     }
@@ -598,7 +599,8 @@ button_next_oplata.addEventListener('click', function (event) {
 
         BX.Sale.OrderAjaxComponent.editActivePickUpBlock(true);
         BX.Sale.OrderAjaxComponent.editActivePropsBlock(true);
-        BX.Sale.OrderAjaxComponent.editActivePaySystemBlock(true);
+        if(document.querySelectorAll('input[name="radio"]').length>1){
+        BX.Sale.OrderAjaxComponent.editActivePaySystemBlock(true);}
 
 
 
