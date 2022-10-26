@@ -604,7 +604,7 @@ button_next_oplata.addEventListener('click', function (event) {
         payment.forEach((checkbox) => {
             values_payment = checkbox.getAttribute("attr-payment-id");
         });
-
+ 
 
         document.querySelector("#ID_PAY_SYSTEM_ID_" + values_payment).click()
         }
