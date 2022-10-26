@@ -487,8 +487,17 @@ document.querySelector('.order_content_blue .title').innerHTML = "Шаг 3 из 
 timerOpenP(document.querySelector('.oplata'))
 
 
+let deliveris = document.querySelectorAll('input[name="radio"]:checked');
+            let values = [];
+            checkboxes.forEach((checkbox) => {
+                values_delivery = checkbox.getAttribute("attr-delivery-id");
+            });
+
+
+
+
 document.querySelector("#ID_PAY_SYSTEM_ID_2").click() 
-document.querySelector("#ID_DELIVERY_ID_2").click() 
+document.querySelector("#ID_DELIVERY_ID_".values_delivery).click() 
 
 
 BX.Sale.OrderAjaxComponent.sendRequest('refreshOrderAjax');
