@@ -414,8 +414,16 @@ document.querySelector('input[name="address"]').setCustomValidity('Введит�
 
 }else{
 
-return true
 
+
+
+let deliveris = document.querySelectorAll('input[name="radio"]:checked');
+values_delivery = ''
+            deliveris.forEach((checkbox) => {
+                values_delivery = checkbox.getAttribute("attr-delivery-id");
+            });
+            document.querySelector("#ID_DELIVERY_ID_"+values_delivery).click() 
+            return true
 } 
 }
 
