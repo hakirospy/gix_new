@@ -484,7 +484,7 @@ button_next_delivery.addEventListener('click', function (event) {
 
         timerOpenP(document.querySelector('.oplata'))
 
-        BX.Sale.OrderAjaxComponent.editActiveDeliveryBlock(true);
+        //BX.Sale.OrderAjaxComponent.editActiveDeliveryBlock(true);
 
         let deliveris = document.querySelectorAll('input[name="radio"]:checked');
 
