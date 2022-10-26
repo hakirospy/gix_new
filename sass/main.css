@@ -7104,15 +7104,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u7ff31506;
-          animation-name: inline-u7ff31506;
+  -webkit-animation-name: inline-ufdfd9fad;
+          animation-name: inline-ufdfd9fad;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u7ff31506 {
+@-webkit-keyframes inline-ufdfd9fad {
   0% {
     opacity: 0;
   }
@@ -7121,7 +7121,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u7ff31506 {
+@keyframes inline-ufdfd9fad {
   0% {
     opacity: 0;
   }
@@ -7839,6 +7839,7 @@ summary::marker {
 
 .cabinet .content-cabinet .content .content_main_order .text_right .descript {
   padding-top: 15px;
+  margin-bottom: 0px;
 }
 
 @media screen and (max-width: 650px) {
