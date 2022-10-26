@@ -30,9 +30,6 @@ document.querySelector('input[name="lastname"]').addEventListener("keyup", (even
 
 
 
-
-
-
 document.querySelector('input[name="email"]').addEventListener("keyup", (event) => {
 
 
@@ -53,12 +50,6 @@ document.querySelector('input[name="address"]').addEventListener("keyup", (event
     document.querySelector('textarea[name="ORDER_PROP_7"]').value = event.srcElement.value
 
 })
-
-
-
-
-
-
 
 
 
@@ -350,7 +341,7 @@ button_next.addEventListener('click', function (event) {
     timerOpenP(document.querySelector('.delivery ').parentNode.children[1])
 
 })
-
+ 
 
 
 function checkedRadio(elem) {
@@ -599,13 +590,15 @@ button_next_oplata.addEventListener('click', function (event) {
 
         BX.Sale.OrderAjaxComponent.editActivePickUpBlock(true);
         BX.Sale.OrderAjaxComponent.editActivePropsBlock(true);
+
         if(document.querySelectorAll('input[name="radio"]').length>1){
+
         BX.Sale.OrderAjaxComponent.editActivePaySystemBlock(true);}
 
-
-
         activeRemoveTab()
-        /*
+
+        if(document.querySelectorAll('input[name="radio"]').length>1){
+           
         let payment = document.querySelectorAll('input[name="radioPay"]:checked');
         values_payment = ''
         payment.forEach((checkbox) => {
@@ -613,7 +606,8 @@ button_next_oplata.addEventListener('click', function (event) {
         });
 
 
-        document.querySelector("#ID_PAY_SYSTEM_ID_" + values_payment).click()*/
+        document.querySelector("#ID_PAY_SYSTEM_ID_" + values_payment).click()
+        }
 
 
         document.querySelector("#bx-soa-orderSave > a").click()
