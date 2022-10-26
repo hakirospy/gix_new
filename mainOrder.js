@@ -591,13 +591,12 @@ button_next_oplata.addEventListener('click', function (event) {
         BX.Sale.OrderAjaxComponent.editActivePickUpBlock(true);
         BX.Sale.OrderAjaxComponent.editActivePropsBlock(true);
 
-        if(document.querySelectorAll('input[name="radioPay"]').length>1){
-
-        BX.Sale.OrderAjaxComponent.editActivePaySystemBlock(true);}
 
         activeRemoveTab()
 
         if(document.querySelectorAll('input[name="radioPay"]').length>1){
+
+            BX.Sale.OrderAjaxComponent.editActivePaySystemBlock(true);
            
         let payment = document.querySelectorAll('input[name="radioPay"]:checked');
         values_payment = ''
@@ -605,8 +604,8 @@ button_next_oplata.addEventListener('click', function (event) {
             values_payment = checkbox.getAttribute("attr-payment-id");
         });
  
-
         document.querySelector("#ID_PAY_SYSTEM_ID_" + values_payment).click()
+
         }
 
 
