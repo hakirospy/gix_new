@@ -493,11 +493,15 @@ values_delivery = ''
                 values_delivery = checkbox.getAttribute("attr-delivery-id");
             });
 
+            let payment = document.querySelectorAll('input[name="radioPay"]:checked');
+            values_payment = ''
+            payment.forEach((checkbox) => {
+                            values_payment = checkbox.getAttribute("attr-payment-id");
+                        });
 
 
-
-document.querySelector("#ID_PAY_SYSTEM_ID_2").click() 
-document.querySelector("#ID_DELIVERY_ID_".values_delivery).click() 
+document.querySelector("#ID_PAY_SYSTEM_ID_"+values_payment).click() 
+document.querySelector("#ID_DELIVERY_ID_"+values_delivery).click() 
 
 
 BX.Sale.OrderAjaxComponent.sendRequest('refreshOrderAjax');
