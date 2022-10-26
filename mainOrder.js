@@ -591,13 +591,13 @@ button_next_oplata.addEventListener('click', function (event) {
         BX.Sale.OrderAjaxComponent.editActivePickUpBlock(true);
         BX.Sale.OrderAjaxComponent.editActivePropsBlock(true);
 
-        if(document.querySelectorAll('input[name="radio"]').length>1){
+        if(document.querySelectorAll('input[name="radioPay"]').length>1){
 
         BX.Sale.OrderAjaxComponent.editActivePaySystemBlock(true);}
 
         activeRemoveTab()
 
-        if(document.querySelectorAll('input[name="radio"]').length>1){
+        if(document.querySelectorAll('input[name="radioPay"]').length>1){
            
         let payment = document.querySelectorAll('input[name="radioPay"]:checked');
         values_payment = ''
