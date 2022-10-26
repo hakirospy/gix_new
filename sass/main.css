@@ -7103,15 +7103,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u848d1bf1;
-          animation-name: inline-u848d1bf1;
+  -webkit-animation-name: inline-u2d96904d;
+          animation-name: inline-u2d96904d;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u848d1bf1 {
+@-webkit-keyframes inline-u2d96904d {
   0% {
     opacity: 0;
   }
@@ -7120,7 +7120,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u848d1bf1 {
+@keyframes inline-u2d96904d {
   0% {
     opacity: 0;
   }
@@ -7985,6 +7985,25 @@ summary::marker {
   .cabinet .content-cabinet .content .content_main_order .block-tovar-orders div {
     font-size: 10px;
   }
+}
+
+.cabinet .content-cabinet .content .subscribe-edit {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+}
+
+.cabinet .content-cabinet .content .subscribe-edit input {
+  padding: 15px 24px 15px 16px;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+  color: #8E9297;
+  font-family: 'Montserrat';
 }
 
 .cabinet .content-cabinet .content .title-tab {
