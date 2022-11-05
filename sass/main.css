@@ -1806,12 +1806,6 @@ body.overflow_html {
   width: 100%;
 }
 
-@media (max-width: 550px) {
-  .news_slider.swiper-container {
-    margin-left: 16px;
-  }
-}
-
 .seren .desc {
   font-size: 14px;
   line-height: 145%;
@@ -7118,15 +7112,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u15e3f8e9;
-          animation-name: inline-u15e3f8e9;
+  -webkit-animation-name: inline-u96a9a95c;
+          animation-name: inline-u96a9a95c;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u15e3f8e9 {
+@-webkit-keyframes inline-u96a9a95c {
   0% {
     opacity: 0;
   }
@@ -7135,7 +7129,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u15e3f8e9 {
+@keyframes inline-u96a9a95c {
   0% {
     opacity: 0;
   }
