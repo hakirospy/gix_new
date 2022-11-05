@@ -1806,15 +1806,9 @@ body.overflow_html {
   width: 100%;
 }
 
-@media (max-width: 1024px) {
-  .news_slider.swiper-container {
-    max-width: 1100px;
-  }
-}
-
 @media (max-width: 550px) {
   .news_slider.swiper-container {
-    max-width: 650px;
+    margin-left: 16px;
   }
 }
 
@@ -7124,15 +7118,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uab31e97a;
-          animation-name: inline-uab31e97a;
+  -webkit-animation-name: inline-u15e3f8e9;
+          animation-name: inline-u15e3f8e9;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uab31e97a {
+@-webkit-keyframes inline-u15e3f8e9 {
   0% {
     opacity: 0;
   }
@@ -7141,7 +7135,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uab31e97a {
+@keyframes inline-u15e3f8e9 {
   0% {
     opacity: 0;
   }
