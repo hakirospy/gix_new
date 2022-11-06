@@ -7113,15 +7113,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u1bcd0f53;
-          animation-name: inline-u1bcd0f53;
+  -webkit-animation-name: inline-u342a2728;
+          animation-name: inline-u342a2728;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u1bcd0f53 {
+@-webkit-keyframes inline-u342a2728 {
   0% {
     opacity: 0;
   }
@@ -7130,7 +7130,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u1bcd0f53 {
+@keyframes inline-u342a2728 {
   0% {
     opacity: 0;
   }
@@ -8342,13 +8342,20 @@ summary::marker {
   padding: 2px 6px;
 }
 
-.catalog-section-list-item {
+.sections_bloks_catalog {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 240px))[6];
+      grid-template-columns: repeat(6, minmax(200px, 240px));
+}
+
+.sections_bloks_catalog .catalog-section-list-item {
   background: #EDEDED;
   border-radius: 48px;
   margin-right: 32px;
 }
 
-.catalog-section-list-item .img_sections {
+.sections_bloks_catalog .catalog-section-list-item .img_sections {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8357,14 +8364,14 @@ summary::marker {
           justify-content: flex-end;
 }
 
-.catalog-section-list-item .img_sections .item-img {
+.sections_bloks_catalog .catalog-section-list-item .img_sections .item-img {
   width: 85px;
   display: block;
   height: 85px;
   background-repeat: no-repeat;
 }
 
-.catalog-section-list-item .title_sections {
+.sections_bloks_catalog .catalog-section-list-item .title_sections {
   color: #1B1C1B;
   font-family: 'Montserrat';
   font-style: normal;
