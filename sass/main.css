@@ -7113,15 +7113,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u45407022;
-          animation-name: inline-u45407022;
+  -webkit-animation-name: inline-ud8885043;
+          animation-name: inline-ud8885043;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u45407022 {
+@-webkit-keyframes inline-ud8885043 {
   0% {
     opacity: 0;
   }
@@ -7130,7 +7130,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u45407022 {
+@keyframes inline-ud8885043 {
   0% {
     opacity: 0;
   }
@@ -8345,5 +8345,16 @@ summary::marker {
 .catalog-section-list-item {
   background: #EDEDED;
   border-radius: 48px;
+  margin-right: 32px;
+}
+
+.catalog-section-list-item .catalog-section-list-item-inner {
+  color: #1B1C1B;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 125%;
+  padding: 33px 40px;
 }
 /*# sourceMappingURL=main.css.map */
