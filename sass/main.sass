@@ -5812,7 +5812,7 @@ summary
     grid-template-columns: repeat(4, minmax(200px, 220px))
     gap: 16px
   @media screen and (max-width: 1024px)
-    grid-template-columns: repeat(3, minmax(200px, 220px))
+    grid-template-columns: repeat(4, minmax(200px, 220px))
     
 
   .catalog-section-list-item
@@ -5822,13 +5822,15 @@ summary
     width: 100%
     height: 220px
     position: relative
+    @media screen and (max-width: 1024px)
+      height: 220px
     .img_sections
       position: absolute
 
       right: 10px
       bottom: 0px
       .item-img
-        width: 153px
+        width: 156px
         display: block
         height: 112px
         background-repeat: no-repeat

@@ -7113,15 +7113,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u6e60b1da;
-          animation-name: inline-u6e60b1da;
+  -webkit-animation-name: inline-u3febbf2b;
+          animation-name: inline-u3febbf2b;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u6e60b1da {
+@-webkit-keyframes inline-u3febbf2b {
   0% {
     opacity: 0;
   }
@@ -7130,7 +7130,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u6e60b1da {
+@keyframes inline-u3febbf2b {
   0% {
     opacity: 0;
   }
@@ -8361,8 +8361,8 @@ summary::marker {
 
 @media screen and (max-width: 1024px) {
   .sections_bloks_catalog {
-    -ms-grid-columns: (minmax(200px, 220px))[3];
-        grid-template-columns: repeat(3, minmax(200px, 220px));
+    -ms-grid-columns: (minmax(200px, 220px))[4];
+        grid-template-columns: repeat(4, minmax(200px, 220px));
   }
 }
 
@@ -8374,6 +8374,12 @@ summary::marker {
   position: relative;
 }
 
+@media screen and (max-width: 1024px) {
+  .sections_bloks_catalog .catalog-section-list-item {
+    height: 220px;
+  }
+}
+
 .sections_bloks_catalog .catalog-section-list-item .img_sections {
   position: absolute;
   right: 10px;
@@ -8381,7 +8387,7 @@ summary::marker {
 }
 
 .sections_bloks_catalog .catalog-section-list-item .img_sections .item-img {
-  width: 153px;
+  width: 156px;
   display: block;
   height: 112px;
   background-repeat: no-repeat;
