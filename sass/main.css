@@ -7113,15 +7113,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uce02bca2;
-          animation-name: inline-uce02bca2;
+  -webkit-animation-name: inline-u5298a995;
+          animation-name: inline-u5298a995;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uce02bca2 {
+@-webkit-keyframes inline-u5298a995 {
   0% {
     opacity: 0;
   }
@@ -7130,7 +7130,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uce02bca2 {
+@keyframes inline-u5298a995 {
   0% {
     opacity: 0;
   }
@@ -8349,6 +8349,13 @@ summary::marker {
       grid-template-columns: repeat(5, minmax(200px, 220px));
   gap: 32px;
   margin-bottom: 32px;
+}
+
+@media screen and (max-width: 1550px) {
+  .sections_bloks_catalog {
+    -ms-grid-columns: (minmax(200px, 220px))[4];
+        grid-template-columns: repeat(4, minmax(200px, 220px));
+  }
 }
 
 .sections_bloks_catalog .catalog-section-list-item {
