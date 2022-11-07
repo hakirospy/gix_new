@@ -2027,9 +2027,6 @@ body.overflow_html {
     margin-left: 16px;
     margin-right: 16px;
   }
-  .cart_block .swiper-slide {
-    padding-bottom: 0px;
-  }
 }
 
 .cart_block .bx-touch .product-item {
@@ -7181,15 +7178,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u3a37c32c;
-          animation-name: inline-u3a37c32c;
+  -webkit-animation-name: inline-ue56fbd05;
+          animation-name: inline-ue56fbd05;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u3a37c32c {
+@-webkit-keyframes inline-ue56fbd05 {
   0% {
     opacity: 0;
   }
@@ -7198,7 +7195,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u3a37c32c {
+@keyframes inline-ue56fbd05 {
   0% {
     opacity: 0;
   }
