@@ -2102,7 +2102,7 @@ body.overflow_html {
     height: 40px;
   }
   .cart button::after {
-    background: url("../img/backet_mobil.png");
+    background: url("../img/backet_mobil.svg");
     content: '';
     width: 18px;
     height: 20px;
@@ -7175,15 +7175,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u59cc7546;
-          animation-name: inline-u59cc7546;
+  -webkit-animation-name: inline-u47fc2297;
+          animation-name: inline-u47fc2297;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u59cc7546 {
+@-webkit-keyframes inline-u47fc2297 {
   0% {
     opacity: 0;
   }
@@ -7192,7 +7192,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u59cc7546 {
+@keyframes inline-u47fc2297 {
   0% {
     opacity: 0;
   }
