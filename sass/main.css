@@ -2145,6 +2145,12 @@ body.overflow_html {
   background: url("../img/liked_active.svg");
 }
 
+@media (max-width: 550px) {
+  .product-item-info-container {
+    margin-bottom: 0px;
+  }
+}
+
 .cart .block_button {
   margin-top: 16px;
   -ms-grid-columns: 123px 1fr 1fr;
@@ -7176,15 +7182,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u2c89b4e9;
-          animation-name: inline-u2c89b4e9;
+  -webkit-animation-name: inline-uda531c13;
+          animation-name: inline-uda531c13;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u2c89b4e9 {
+@-webkit-keyframes inline-uda531c13 {
   0% {
     opacity: 0;
   }
@@ -7193,7 +7199,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u2c89b4e9 {
+@keyframes inline-uda531c13 {
   0% {
     opacity: 0;
   }
