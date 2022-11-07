@@ -1823,7 +1823,7 @@ body.overflow_html {
 
 @media (max-width: 550px) {
   .news_slider .swiper-slide.cart {
-    width: 252px;
+    width: 300px;
   }
 }
 
@@ -7184,15 +7184,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u114fa892;
-          animation-name: inline-u114fa892;
+  -webkit-animation-name: inline-ud92fa238;
+          animation-name: inline-ud92fa238;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u114fa892 {
+@-webkit-keyframes inline-ud92fa238 {
   0% {
     opacity: 0;
   }
@@ -7201,7 +7201,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u114fa892 {
+@keyframes inline-ud92fa238 {
   0% {
     opacity: 0;
   }
