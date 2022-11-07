@@ -1864,6 +1864,12 @@ body.overflow_html {
           box-shadow: 0px 14px 20px rgba(69, 126, 175, 0.25);
 }
 
+@media (max-width: 550px) {
+  .cart {
+    border-radius: 16px;
+  }
+}
+
 .label .new {
   padding: 6px 12px;
   width: 90px;
@@ -2140,6 +2146,16 @@ body.overflow_html {
 .cart .name_tovar a {
   text-decoration: none;
   color: #202732;
+}
+
+@media (max-width: 550px) {
+  .cart .name_tovar a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 135%;
+  }
 }
 
 .seren.news .cart_block {
@@ -7114,15 +7130,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u48d990b3;
-          animation-name: inline-u48d990b3;
+  -webkit-animation-name: inline-uedee04f9;
+          animation-name: inline-uedee04f9;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u48d990b3 {
+@-webkit-keyframes inline-uedee04f9 {
   0% {
     opacity: 0;
   }
@@ -7131,7 +7147,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u48d990b3 {
+@keyframes inline-uedee04f9 {
   0% {
     opacity: 0;
   }
