@@ -1914,6 +1914,12 @@ body.overflow_html {
   }
 }
 
+@media (max-width: 550px) {
+  .cart .name_tovar {
+    padding-top: 0px;
+  }
+}
+
 .button_all_slider {
   display: none;
   -ms-flex-pack: distribute;
@@ -2063,6 +2069,16 @@ body.overflow_html {
   font-size: 20px;
   line-height: 135%;
   color: #202732;
+}
+
+@media (max-width: 550px) {
+  .cart .price {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 145%;
+  }
 }
 
 .cart button {
@@ -7130,15 +7146,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uedee04f9;
-          animation-name: inline-uedee04f9;
+  -webkit-animation-name: inline-u2c70fd72;
+          animation-name: inline-u2c70fd72;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uedee04f9 {
+@-webkit-keyframes inline-u2c70fd72 {
   0% {
     opacity: 0;
   }
@@ -7147,7 +7163,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uedee04f9 {
+@keyframes inline-u2c70fd72 {
   0% {
     opacity: 0;
   }
