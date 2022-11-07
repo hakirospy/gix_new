@@ -1584,7 +1584,15 @@ body.overflow_html
   line-height: 17px
   color: $main-black-color
 
+  @media (max-width: 550px)
+    padding: 0px
+    content: ''
+    font-size: 0px
+    width: 64px
+    height: 40px
 
+    &::after
+      background: url("../img/backet_mobil.png")
   //width: 124px
   //height: 49px
 
@@ -1622,6 +1630,9 @@ body.overflow_html
   grid-template-columns: 123px 1fr 1fr
   display: grid
   max-width: 235px
+  @media (max-width: 550px)
+    grid-template-columns: 64px 1fr 1fr
+    align-items: center
 
 
 .seren.black

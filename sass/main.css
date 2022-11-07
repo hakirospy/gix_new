@@ -2093,6 +2093,19 @@ body.overflow_html {
   border-radius: 4px;
 }
 
+@media (max-width: 550px) {
+  .cart button {
+    padding: 0px;
+    content: '';
+    font-size: 0px;
+    width: 64px;
+    height: 40px;
+  }
+  .cart button::after {
+    background: url("../img/backet_mobil.png");
+  }
+}
+
 .cart button:hover {
   background: linear-gradient(45deg, #2B3547 0%, #2B3547 0.01%, #3B414B 100%);
   color: white;
@@ -2134,6 +2147,16 @@ body.overflow_html {
   display: -ms-grid;
   display: grid;
   max-width: 235px;
+}
+
+@media (max-width: 550px) {
+  .cart .block_button {
+    -ms-grid-columns: 64px 1fr 1fr;
+        grid-template-columns: 64px 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .seren.black {
@@ -7147,15 +7170,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u094147c6;
-          animation-name: inline-u094147c6;
+  -webkit-animation-name: inline-u99cd4031;
+          animation-name: inline-u99cd4031;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u094147c6 {
+@-webkit-keyframes inline-u99cd4031 {
   0% {
     opacity: 0;
   }
@@ -7164,7 +7187,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u094147c6 {
+@keyframes inline-u99cd4031 {
   0% {
     opacity: 0;
   }
