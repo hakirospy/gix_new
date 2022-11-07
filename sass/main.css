@@ -5739,8 +5739,9 @@ section.favorite .buttom-favorite .buy-all, section.favorite .buttom-favorite .c
 }
 
 .main_white .catalog_content .content_items .cart_block {
-  -ms-grid-columns: (minmax(280px, 376px))[3];
-      grid-template-columns: repeat(3, minmax(280px, 376px));
+  -ms-grid-columns: (minmax(180px, 286px))[3];
+      grid-template-columns: repeat(3, minmax(180px, 286px));
+  grid-gap: 16px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -7196,15 +7197,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ue5fcf7ff;
-          animation-name: inline-ue5fcf7ff;
+  -webkit-animation-name: inline-ubc533c8a;
+          animation-name: inline-ubc533c8a;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ue5fcf7ff {
+@-webkit-keyframes inline-ubc533c8a {
   0% {
     opacity: 0;
   }
@@ -7213,7 +7214,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ue5fcf7ff {
+@keyframes inline-ubc533c8a {
   0% {
     opacity: 0;
   }
