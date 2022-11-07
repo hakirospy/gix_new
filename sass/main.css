@@ -1804,7 +1804,12 @@ body.overflow_html {
 
 .news_slider.swiper-container {
   width: 100%;
-  margin-left: 16px;
+}
+
+@media (max-width: 968px) {
+  .news_slider.swiper-container {
+    margin-left: 16px;
+  }
 }
 
 .seren .desc {
@@ -1930,7 +1935,7 @@ body.overflow_html {
 
 @media (max-width: 550px) {
   .news .button_all_slider {
-    margin-top: -10px;
+    margin-top: -20px;
   }
 }
 
@@ -7191,15 +7196,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ue9ac0e1e;
-          animation-name: inline-ue9ac0e1e;
+  -webkit-animation-name: inline-ue5fcf7ff;
+          animation-name: inline-ue5fcf7ff;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ue9ac0e1e {
+@-webkit-keyframes inline-ue5fcf7ff {
   0% {
     opacity: 0;
   }
@@ -7208,7 +7213,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ue9ac0e1e {
+@keyframes inline-ue5fcf7ff {
   0% {
     opacity: 0;
   }
