@@ -65,11 +65,11 @@ var $mobileMenu = $(".button_menu.open");
   $(document).on("click", ".button_menu .item a ", function (e) {
     var $this = $(this);
 
-    //$this.hasClass("parent")
-    console.log($this.hasClass("parent"));
-    if (1==1) {
+   
+
+    if ($this.hasClass("parent")) {
       e.preventDefault();
-      console.log(1312);
+  
       if (!$mobileMenu.isDowndrop) {
         $this.closest(".menu_mob").addClass("expanded");
         MoveMobileMenuWrapNext();
@@ -111,6 +111,7 @@ function MoveMobileMenuWrapNext() {
     if (!$mobileMenu.isDowndrop) {
       var $scroller = $mobileMenu.find(".scroller").first();
       var $wrap = $mobileMenu.find(".wrap").first();
+      console.log('start scroller calcul')
       if ($wrap.length) {
         var params = $wrap.data("params");
         var $dropdownNext = $mobileMenu.find(".expanded>.dropdown").eq(params.depth);
