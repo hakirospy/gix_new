@@ -38,27 +38,7 @@ chek.classList.add('active');
 
 // menu next list prev list
 
-var $mobileMenu = $(".button_menu.open");
-  if ($mobileMenu.length) {
-    $mobileMenu.isLeftSide = $mobileMenu.hasClass("leftside");
-    $mobileMenu.isOpen = $mobileMenu.hasClass("show");
-    $mobileMenu.isDowndrop = false;//$mobileMenu.find(">.scroller").hasClass("downdrop");
-   
-  }
 
-  if (!$mobileMenu.isDowndrop) {
-    var $wrap = $mobileMenu.find(".wrap").first();
-    var params = $wrap.data("params");
-    if (typeof params === "undefined") {
-      params = {
-        depth: 0,
-        scroll: {},
-        height: {},
-      };
-    }
-    $wrap.data("params", params);
-    console.log('add xero param');
-  }
 
 
 
@@ -222,8 +202,35 @@ if(document.querySelector('.button_menu').classList.contains('open') == false){
 
 
 
+
+
+
     this.classList.toggle('open')
     document.querySelector('body').classList.toggle('overflow_html') 
+
+    var $mobileMenu = $(".button_menu.open");
+    if ($mobileMenu.length) {
+      $mobileMenu.isLeftSide = $mobileMenu.hasClass("leftside");
+      $mobileMenu.isOpen = $mobileMenu.hasClass("show");
+      $mobileMenu.isDowndrop = false;//$mobileMenu.find(">.scroller").hasClass("downdrop");
+     
+    }
+  
+    if (!$mobileMenu.isDowndrop) {
+      var $wrap = $mobileMenu.find(".wrap").first();
+      var params = $wrap.data("params");
+      if (typeof params === "undefined") {
+        params = {
+          depth: 0,
+          scroll: {},
+          height: {},
+        };
+      }
+      $wrap.data("params", params);
+  
+    }
+
+
 }
     })
 
