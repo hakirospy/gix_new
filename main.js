@@ -42,7 +42,7 @@ var $mobileMenu = $(".menu_mob");
   if ($mobileMenu.length) {
     $mobileMenu.isLeftSide = $mobileMenu.hasClass("leftside");
     $mobileMenu.isOpen = $mobileMenu.hasClass("show");
-    $mobileMenu.isDowndrop = $mobileMenu.find(">.scroller").hasClass("downdrop");
+    $mobileMenu.isDowndrop = false;//$mobileMenu.find(">.scroller").hasClass("downdrop");
    
   }
 
