@@ -57,6 +57,7 @@ var $mobileMenu = $(".button_menu.open");
       };
     }
     $wrap.data("params", params);
+    console.log('add xero param');
   }
 
 
