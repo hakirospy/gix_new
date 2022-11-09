@@ -108,6 +108,7 @@ var $mobileMenu = $(".button_menu.open");
 
 
 function MoveMobileMenuWrapNext() {
+    var $mobileMenu = $(".button_menu.open");
     if (!$mobileMenu.isDowndrop) {
       var $scroller = $mobileMenu.find(".scroller").first();
       var $wrap = $mobileMenu.find(".wrap").first();
@@ -162,6 +163,7 @@ function MoveMobileMenuWrapNext() {
   }
 
   function MoveMobileMenuWrapPrev() {
+    var $mobileMenu = $(".button_menu.open");
     if (!$mobileMenu.isDowndrop) {
       var $scroller = $mobileMenu.find(".scroller").first();
       var $wrap = $mobileMenu.find(".wrap").first();
