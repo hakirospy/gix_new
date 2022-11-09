@@ -52,7 +52,7 @@ var $mobileMenu = $(".menu_mob");
     var $this = $(this);
 
     //$this.hasClass("parent")
-
+    console.log(1312);
     if (1==1) {
       e.preventDefault();
       console.log(1312);
