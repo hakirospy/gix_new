@@ -51,11 +51,11 @@ var $mobileMenu = $(".menu_mob");
   $(document).on("click", ".button_menu  .item a", function (e) {
     var $this = $(this);
 
-    console.log(1312);
+    
 
     if ($this.hasClass("parent")) {
       e.preventDefault();
-
+      console.log(1312);
       if (!$mobileMenu.isDowndrop) {
         $this.closest(".menu_mob").addClass("expanded");
         MoveMobileMenuWrapNext();
