@@ -45,6 +45,51 @@ var $mobileMenu = $(".menu_mob");
     $mobileMenu.isDowndrop = $mobileMenu.find(">.scroller").hasClass("downdrop");
    
   }
+
+
+
+  $(document).on("click", ".button_menu  a", function (e) {
+    var $this = $(this);
+    if ($this.hasClass("parent")) {
+      e.preventDefault();
+
+      if (!$mobileMenu.isDowndrop) {
+        $this.closest(".menu_mob").addClass("expanded");
+        MoveMobileMenuWrapNext();
+      } else {
+        if (!$this.closest(".menu_mob").hasClass("expanded")) {
+          $this.closest(".menu_mob").addClass("expanded");
+        } else {
+          $this.closest(".menu_mob").removeClass("expanded");
+        }
+      }
+    } else {
+      if ($this.closest("li").hasClass("counters")) {
+        var href = $this.attr("href");
+        if (typeof href !== "undefined") {
+          if (href !== "javascript:void(0)") {
+            window.location.href = href;
+            window.location.reload();
+          } else {
+            return
+          }
+        }
+      }
+
+   
+    }
+  });
+
+  $(document).on("click", ".button_menu .dropdown .menu_back", function (e) {
+    e.preventDefault();
+    var $this = $(this);
+    MoveMobileMenuWrapPrev();
+    setTimeout(function () {
+      $this.closest(".expanded").removeClass("expanded");
+    }, 400);
+  });
+
+
 function MoveMobileMenuWrapNext() {
     if (!$mobileMenu.isDowndrop) {
       var $scroller = $mobileMenu.find(".scroller").first();
