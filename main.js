@@ -113,10 +113,11 @@ function MoveMobileMenuWrapNext() {
       var $wrap = $mobileMenu.find(".wrap").first();
       
       if ($wrap.length) {
-        console.log('start scroller calcul')
+       
         var params = $wrap.data("params");
         var $dropdownNext = $mobileMenu.find(".expanded>.dropdown").eq(params.depth);
         if ($dropdownNext.length) {
+            console.log('scroller ')
           // save scroll position
           params.scroll[params.depth] = parseInt($mobileMenu.scrollTop());
 
