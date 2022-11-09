@@ -111,7 +111,7 @@ function MoveMobileMenuWrapNext() {
     if (!$mobileMenu.isDowndrop) {
       var $scroller = $mobileMenu.find(".scroller").first();
       var $wrap = $mobileMenu.find(".wrap").first();
-      console.log('params'+ params)
+      console.log($mobileMenu)
       if ($wrap.length) {
        
         var params = $wrap.data("params");
