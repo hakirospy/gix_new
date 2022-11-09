@@ -115,6 +115,7 @@ function MoveMobileMenuWrapNext() {
       if ($wrap.length) {
        
         var params = $wrap.data("params");
+        console.log('params'+ params)
         var $dropdownNext = $mobileMenu.find(".expanded>.dropdown").eq(params.depth);
         if ($dropdownNext.length) {
             console.log('scroller ')
