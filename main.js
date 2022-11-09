@@ -191,11 +191,11 @@ function MoveMobileMenuWrapNext() {
 // menu
 
 document.querySelector('.button_menu').addEventListener('click', function(){
-console.log(document.querySelector('.button_menu').classList.contains('open'));
-console.log(123213);
+if(document.querySelector('.button_menu').classList.contains('open') == false){
+
     this.classList.toggle('open')
-    document.querySelector('body').classList.toggle('overflow_html')
-    
+    document.querySelector('body').classList.toggle('overflow_html') 
+}
     })
 
    
