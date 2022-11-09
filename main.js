@@ -38,7 +38,7 @@ chek.classList.add('active');
 
 // menu next list prev list
 
-var $mobileMenu = $(".menu_mob");
+var $mobileMenu = $(".button_menu.open");
   if ($mobileMenu.length) {
     $mobileMenu.isLeftSide = $mobileMenu.hasClass("leftside");
     $mobileMenu.isOpen = $mobileMenu.hasClass("show");
