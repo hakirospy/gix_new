@@ -44,6 +44,7 @@ chek.classList.add('active');
 
   $(document).on("click", ".button_menu .item a ", function (e) {
     var $this = $(this);
+    var $mobileMenu = $(".button_menu.open");
 
    
 
