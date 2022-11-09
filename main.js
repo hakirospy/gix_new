@@ -48,7 +48,7 @@ var $mobileMenu = $(".menu_mob");
 
 
 
-  $(document).on("click", ".button_menu ", function (e) {
+  $(document).on("click", ".button_menu .item a ", function (e) {
     var $this = $(this);
 
     //$this.hasClass("parent")
