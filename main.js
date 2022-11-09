@@ -242,7 +242,7 @@ if(mobilemenu){
 
     mobilemenu.addEventListener('click', function(){
 
-        //document.querySelector('.button_menu').classList.remove('open')
+        document.querySelector('.button_menu').classList.remove('open')
 
 
     })
