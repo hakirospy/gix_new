@@ -34,6 +34,115 @@ chek.classList.add('active');
 }
 	}
 
+
+
+// menu next list prev list
+
+var $mobileMenu = $(".menu_mob");
+  if ($mobileMenu.length) {
+    $mobileMenu.isLeftSide = $mobileMenu.hasClass("leftside");
+    $mobileMenu.isOpen = $mobileMenu.hasClass("show");
+    $mobileMenu.isDowndrop = $mobileMenu.find(">.scroller").hasClass("downdrop");
+   
+  }
+function MoveMobileMenuWrapNext() {
+    if (!$mobileMenu.isDowndrop) {
+      var $scroller = $mobileMenu.find(".scroller").first();
+      var $wrap = $mobileMenu.find(".wrap").first();
+      if ($wrap.length) {
+        var params = $wrap.data("params");
+        var $dropdownNext = $mobileMenu.find(".expanded>.dropdown").eq(params.depth);
+        if ($dropdownNext.length) {
+          // save scroll position
+          params.scroll[params.depth] = parseInt($mobileMenu.scrollTop());
+
+          // height while move animating
+          params.height[params.depth + 1] = Math.max(
+            $dropdownNext.height(),
+            !params.depth
+              ? $wrap.height()
+              : $mobileMenu
+                  .find(".expanded>.dropdown")
+                  .eq(params.depth - 1)
+                  .height()
+          );
+          $scroller.css("height", params.height[params.depth + 1] + "px");
+
+          // inc depth
+          ++params.depth;
+
+          // translateX for move
+          $wrap.css("transform", "translateX(" + -100 * params.depth + "%)");
+
+          // scroll to top
+          setTimeout(function () {
+            $mobileMenu.animate({ scrollTop: 0 }, 200);
+          }, 100);
+
+          // height on enimating end
+          var h = $dropdownNext.height();
+          setTimeout(function () {
+            if (h) {
+              $scroller.css("height", h + "px");
+            } else {
+              $scroller.css("height", "");
+            }
+          }, 200);
+        }
+
+        $wrap.data("params", params);
+      }
+    }
+  }
+
+  function MoveMobileMenuWrapPrev() {
+    if (!$mobileMenu.isDowndrop) {
+      var $scroller = $mobileMenu.find(".scroller").first();
+      var $wrap = $mobileMenu.find(".wrap").first();
+      if ($wrap.length) {
+        var params = $wrap.data("params");
+        if (params.depth > 0) {
+          var $dropdown = $mobileMenu.find(".expanded>.dropdown").eq(params.depth - 1);
+          if ($dropdown.length) {
+            // height while move animating
+            $scroller.css("height", params.height[params.depth] + "px");
+
+            // dec depth
+            --params.depth;
+
+            // translateX for move
+            $wrap.css("transform", "translateX(" + -100 * params.depth + "%)");
+
+            // restore scroll position
+            setTimeout(function () {
+              $mobileMenu.animate({ scrollTop: params.scroll[params.depth] }, 200);
+            }, 100);
+
+            // height on enimating end
+            var h = !params.depth
+              ? false
+              : $mobileMenu
+                  .find(".expanded>.dropdown")
+                  .eq(params.depth - 1)
+                  .height();
+            setTimeout(function () {
+              if (h) {
+                $scroller.css("height", h + "px");
+              } else {
+                $scroller.css("height", "");
+              }
+            }, 200);
+          }
+        }
+
+        $wrap.data("params", params);
+      }
+    }
+  }
+
+
+
+
 // menu
 
 document.querySelector('.button_menu').addEventListener('click', function(){
