@@ -6649,6 +6649,10 @@ section.favorite .buttom-favorite .buy-all, section.favorite .buttom-favorite .c
   cursor: pointer;
 }
 
+.button_menu .expanded .dropdown {
+  display: block;
+}
+
 .button_menu .menu_mob {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7228,15 +7232,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u0feaaea7;
-          animation-name: inline-u0feaaea7;
+  -webkit-animation-name: inline-u314fdfe7;
+          animation-name: inline-u314fdfe7;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u0feaaea7 {
+@-webkit-keyframes inline-u314fdfe7 {
   0% {
     opacity: 0;
   }
@@ -7245,7 +7249,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u0feaaea7 {
+@keyframes inline-u314fdfe7 {
   0% {
     opacity: 0;
   }
