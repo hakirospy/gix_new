@@ -48,7 +48,7 @@ var $mobileMenu = $(".menu_mob");
 
 
 
-  $(document).on("click", ".button_menu  a", function (e) {
+  $(document).on("click", ".button_menu  .item a", function (e) {
     var $this = $(this);
     if ($this.hasClass("parent")) {
       e.preventDefault();
@@ -204,7 +204,7 @@ if(mobilemenu){
 
     mobilemenu.addEventListener('click', function(){
 
-        document.querySelector('.button_menu').classList.remove('open')
+        //document.querySelector('.button_menu').classList.remove('open')
 
 
     })
