@@ -191,7 +191,7 @@ function MoveMobileMenuWrapNext() {
 // menu
 
 document.querySelector('.button_menu').addEventListener('click', function(){
-console.log(this.classList.contains('.open'));
+console.log(document.querySelector('.main_slider_block').classList.contains('.open'));
     this.classList.toggle('open')
     document.querySelector('body').classList.toggle('overflow_html')
     
