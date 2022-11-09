@@ -51,9 +51,9 @@ var $mobileMenu = $(".menu_mob");
   $(document).on("click", ".button_menu ", function (e) {
     var $this = $(this);
 
-    
+    //$this.hasClass("parent")
 
-    if ($this.hasClass("parent")) {
+    if (1==1) {
       e.preventDefault();
       console.log(1312);
       if (!$mobileMenu.isDowndrop) {
