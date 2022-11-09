@@ -112,12 +112,12 @@ function MoveMobileMenuWrapNext() {
     if (!$mobileMenu.isDowndrop) {
       var $scroller = $mobileMenu.find(".scroller").first();
       var $wrap = $mobileMenu.find(".wrap").first();
-      console.log($mobileMenu)
+     
       if ($wrap.length) {
        
         var params = $wrap.data("params");
         
-        var $dropdownNext = $mobileMenu.find(".expanded>.dropdown").eq(params.depth);
+        var $dropdownNext = $mobileMenu.find(".expanded>.item .dropdown").eq(params.depth);
         if ($dropdownNext.length) {
             console.log('scroller ')
           // save scroll position
