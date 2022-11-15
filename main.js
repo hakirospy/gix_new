@@ -195,15 +195,7 @@ function MoveMobileMenuWrapNext() {
 // menu
 
 document.querySelector('.button_menu').addEventListener('click', function(){
-if(document.querySelector('.button_menu').classList.contains('open') == false){
-
-
-
-
-
-
-
-
+//if(document.querySelector('.button_menu').classList.contains('open') == false){
 
 
     this.classList.toggle('open')
@@ -232,7 +224,7 @@ if(document.querySelector('.button_menu').classList.contains('open') == false){
     }
 */
 
-}
+//}
     })
 
    
