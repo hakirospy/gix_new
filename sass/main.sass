@@ -184,7 +184,8 @@ body.overflow_html
 
  display: grid
 
- grid-template-columns: 195px 150px minmax(100px, 338px) minmax(100px, 200px) 180px repeat(4,135px)
+ //grid-template-columns: 195px 150px minmax(100px, 338px) minmax(100px, 200px) 180px repeat(4,135px)
+ grid-template-columns: 187px 115px minmax(100px, 339px) minmax(100px, 226px) 207px 117px 133px 152px 108px
 
  
  justify-content: center
@@ -651,7 +652,7 @@ body.overflow_html
  &:after
   background-image: url('../img/mask-banner-small_new.png')
   content: ''
-  height: 400px 
+  height: 399px 
   display: block 
   background-size: contain
   border-radius: 48px
@@ -4692,7 +4693,7 @@ section.favorite
   &:hover
     cursor: pointer
   
-
+  
   .menu_mob  
     border-top-left-radius: 0px
     border-bottom-left-radius: 0px
@@ -4709,23 +4710,22 @@ section.favorite
     height: initial
     @media screen and ( max-width: 450px  )
       top: 60px
-
     
-    .item
-      background-color: #1E242E 
-     
-      font-weight: 500
-      font-size: 14px
-      line-height: 125%
-      color: white
-      border-bottom: 1px solid #1B1C1B
-      
-      position: relative
+.button_menu.open   
+  .item
+    background-color: #1E242E 
+    font-weight: 500
+    font-size: 14px
+    line-height: 125%
+    color: white
+    border-bottom: 1px solid #1B1C1B
+    position: relative
+    padding: 24px 0px 24px 24px
 
-      padding: 24px 0px 24px 24px
-      @media screen and ( max-width: 530px  )
-        padding: 16px 0px 16px 16px
+    @media screen and ( max-width: 530px  )
+      padding: 16px 0px 16px 16px
 
+    &.dopmenu 
       &::after
         background-image: url("../img/strelka_right_mob.svg")
         content: ''
@@ -4737,66 +4737,89 @@ section.favorite
 
         @media screen and ( max-width: 530px  )
           right: 16px
-      &:hover
-        background-color: $main-green-color
-        &::after
-          background-image: url("../img/strelka_right_mob_black.svg")
-        a
-          color: #1E242E
-        .sum_menu
-          left: 0
+    &:hover
+      background-color: $main-green-color
+      &::after
+        background-image: url("../img/strelka_right_mob_black.svg")
+      a
+        color: #1E242E
+      & > .sum_menu.first
+        @media screen and ( min-width: 640px  )
+          visibility: visible
           box-shadow: 3px 0px 10px 0px rgba(0, 0, 0, 0.45)
+          opacity: 1
+    .dropdown 
+      left: 100%
+      top: 0
+      width: 100%
+      border: medium none
+      box-shadow: none
+      visibility: visible
+      opacity: 1
+      display: none
+      position: absolute
+      z-index: 5
+
+  
+      margin: 0
+      padding: 0
+
+    .expanded  
       .dropdown 
-        left: 100%
-        top: 0
-        width: 100%
-        border: medium none
-        box-shadow: none
-        visibility: visible
-        opacity: 1
-        display: none
-        position: absolute
-        z-index: 5
- 
+        display: block
+    @media screen and ( min-width: 640px  )
+      .sum_menu.first
+        left: 320px
+    @media screen and ( min-width: 960px  )
+      .sum_menu.two
+        left: 640px
+    .dopmenu
+      @media screen and ( min-width: 960px  )
+        &:hover
+          .sum_menu
+            opacity: 1
+            visibility: visible
+
+    .sum_menu
+      
+
+
+      border-top-left-radius: 0px
+      border-bottom-left-radius: 0px
+      z-index: 3002
+      overflow: hidden
+      overflow-y: auto
+      //transition: left 0.4s ease 0s, opacity 0.4s ease 0s
+      position: fixed
+      left: 0
+      top: 77px
+      bottom: 0
+      width: 320px
+      max-width: 100%
+      opacity: 0
+      height: initial
+      visibility: hidden
+      @media screen and ( max-width: 450px  )
+        top: 60px
+      .item_sub
+        background-color: #1E242E 
     
-        margin: 0
-        padding: 0
+        font-weight: 500
+        font-size: 14px
+        line-height: 125%
         
-      .expanded  
-        .dropdown 
-          display: block
-      .sum_menu
+        border-bottom: 1px solid #1B1C1B
+   
+        position: relative
 
-        border-top-left-radius: 0px
-        border-bottom-left-radius: 0px
-        z-index: 3002
-        overflow: hidden
-        overflow-y: auto
-        transition: left 0.4s ease 0s, opacity 0.4s ease 0s
-        position: fixed
-        left: -100%
-        top: 77px
-        bottom: 0
-        width: 320px
-        max-width: 100%
-        height: initial
-        @media screen and ( max-width: 450px  )
-          top: 60px
-        .item_sub
-          background-color: #1E242E 
-     
-          font-weight: 500
-          font-size: 14px
-          line-height: 125%
+        padding: 24px 0px 24px 24px
+        a
           color: white
-          border-bottom: 1px solid #1B1C1B
-          width: 100%
-          position: relative
 
-          padding: 24px 0px 24px 24px
-          @media screen and ( max-width: 530px  )
-            padding: 16px 0px 16px 16px
+        @media screen and ( max-width: 530px  )
+          padding: 16px 0px 16px 16px
 
+        &.dopmenu 
           &::after
             background-image: url("../img/strelka_right_mob.svg")
             content: ''
@@ -4808,26 +4831,26 @@ section.favorite
 
             @media screen and ( max-width: 530px  )
               right: 16px
-          &:hover
-            background-color: $main-green-color
-            &::after
-              background-image: url("../img/strelka_right_mob_black.svg")
-            a
-              color: #1E242E
+        &:hover
+          background-color: $main-green-color
+          &::after
+            background-image: url("../img/strelka_right_mob_black.svg")
+          &>a
+            color: #1E242E
 
 
 
 
-    .item_menu
-      font-weight: 500
-      font-size: 12px
-      line-height: 125%
-      color: $white-color
-      padding: 24px 24px
-      background-color: #1B1C1B
-      border-bottom: 1px solid #1E242E
-      @media screen and ( max-width: 530px  )
-        padding: 13px 16px
+  .item_menu
+    font-weight: 500
+    font-size: 12px
+    line-height: 125%
+    color: $white-color
+    padding: 24px 24px
+    background-color: #1B1C1B
+    border-bottom: 1px solid #1E242E
+    @media screen and ( max-width: 530px  )
+      padding: 13px 16px
 
 .button_menu.open
   @media screen and ( max-width: 530px  )

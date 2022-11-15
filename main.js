@@ -195,7 +195,7 @@ function MoveMobileMenuWrapNext() {
 // menu
 
 document.querySelector('.button_menu').addEventListener('click', function(){
-//if(document.querySelector('.button_menu').classList.contains('open') == false){
+if(document.querySelector('.button_menu').classList.contains('open') == false){
 
 
 
@@ -208,7 +208,7 @@ document.querySelector('.button_menu').addEventListener('click', function(){
 
     this.classList.toggle('open')
     document.querySelector('body').classList.toggle('overflow_html') 
-/*
+
     var $mobileMenu = $(".button_menu.open");
     if ($mobileMenu.length) {
       $mobileMenu.isLeftSide = $mobileMenu.hasClass("leftside");
@@ -230,9 +230,9 @@ document.querySelector('.button_menu').addEventListener('click', function(){
       $wrap.data("params", params);
   
     }
-*/
 
-//}
+
+}
     })
 
    
@@ -242,7 +242,7 @@ if(mobilemenu){
 
     mobilemenu.addEventListener('click', function(){
 
-        document.querySelector('.button_menu').classList.remove('open')
+       // document.querySelector('.button_menu').classList.remove('open')
 
 
     })
