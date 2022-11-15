@@ -285,6 +285,10 @@ body.overflow_html {
           order: 4;
 }
 
+.main_slider_block .city span {
+  font-size: 14px;
+}
+
 .main_slider_block .tel {
   position: relative;
   display: -ms-grid;
@@ -7256,15 +7260,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uc329b642;
-          animation-name: inline-uc329b642;
+  -webkit-animation-name: inline-u50614388;
+          animation-name: inline-u50614388;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uc329b642 {
+@-webkit-keyframes inline-u50614388 {
   0% {
     opacity: 0;
   }
@@ -7273,7 +7277,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uc329b642 {
+@keyframes inline-u50614388 {
   0% {
     opacity: 0;
   }
