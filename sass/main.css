@@ -6832,10 +6832,6 @@ section.favorite .buttom-favorite .buy-all, section.favorite .buttom-favorite .c
   background-image: url("../img/strelka_right_mob_black.svg");
 }
 
-.button_menu.open .item.dopmenu:hover a {
-  color: #1E242E;
-}
-
 @media screen and (min-width: 640px) {
   .button_menu.open .item.dopmenu:hover .sum_menu.first {
     visibility: visible;
@@ -7380,15 +7376,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u06d25767;
-          animation-name: inline-u06d25767;
+  -webkit-animation-name: inline-u6b28de2b;
+          animation-name: inline-u6b28de2b;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u06d25767 {
+@-webkit-keyframes inline-u6b28de2b {
   0% {
     opacity: 0;
   }
@@ -7397,7 +7393,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u06d25767 {
+@keyframes inline-u6b28de2b {
   0% {
     opacity: 0;
   }
