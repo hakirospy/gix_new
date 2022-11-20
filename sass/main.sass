@@ -4750,6 +4750,7 @@ section.favorite
   visibility: hidden
   @media screen and ( max-width: 450px  )
     top: 70px
+
   .item_sub
     background-color: #1E242E 
 
@@ -4896,7 +4897,46 @@ section.favorite
             visibility: visible
 
     
+  .sum_menu
+      
 
+    
+  .item_sub
+    background-color: #1E242E 
+
+    font-weight: 500
+    font-size: 14px
+    line-height: 125%
+    
+    border-bottom: 1px solid #1B1C1B
+
+    position: relative
+
+    padding: 24px 0px 24px 24px
+    a
+      color: white
+
+    @media screen and ( max-width: 530px  )
+      padding: 16px 0px 16px 16px
+
+    &.dopmenu 
+      &::after
+        background-image: url("../img/strelka_right_mob.svg")
+        content: ''
+        height: 16px
+        width: 16px
+        display: inline-block
+        position: absolute
+        right: 24px
+
+        @media screen and ( max-width: 530px  )
+          right: 16px
+    &:hover
+      background-color: $main-green-color
+      &::after
+        background-image: url("../img/strelka_right_mob_black.svg")
+      &>a
+        color: #1E242E
 
 
 
