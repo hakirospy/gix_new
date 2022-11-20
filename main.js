@@ -194,38 +194,82 @@ function MoveMobileMenuWrapNext() {
 
 // menu
 
+
+
+
+
+
+let cbox = document.querySelectorAll(".dopmenu");
+
+cbox.forEach(box => {
+
+    box.addEventListener('click', function(){
+
+
+    this.lastElementChild.classList.add('open')
+
+    document.querySelector('.back_menu').classList.add('back')
+
+
+    if(window.innerWidth<650){
+    document.querySelector('.menu_mob').classList.add('level')
+    }
+
+return false
+
+
+  });
+});
+
+
+
 document.querySelector('.button_menu').addEventListener('click', function(){
-//if(document.querySelector('.button_menu').classList.contains('open') == false){
+    console.log(444)
+    
+if(document.querySelector('.button_menu').classList.contains('open') == false && document.querySelector('.back_menu').classList.contains('close') == false){
+
 
 
     this.classList.toggle('open')
     document.querySelector('body').classList.toggle('overflow_html') 
-/*
-    var $mobileMenu = $(".button_menu.open");
-    if ($mobileMenu.length) {
-      $mobileMenu.isLeftSide = $mobileMenu.hasClass("leftside");
-      $mobileMenu.isOpen = $mobileMenu.hasClass("show");
-      $mobileMenu.isDowndrop = false;//$mobileMenu.find(">.scroller").hasClass("downdrop");
-     
-    }
-  
-    if (!$mobileMenu.isDowndrop) {
-      var $wrap = $mobileMenu.find(".wrap").first();
-      var params = $wrap.data("params");
-      if (typeof params === "undefined") {
-        params = {
-          depth: 0,
-          scroll: {},
-          height: {},
-        };
-      }
-      $wrap.data("params", params);
-  
-    }
-*/
 
-//}
+    
+
+
+}else{
+
+    document.querySelector('.back_menu').classList.remove('close')
+
+}
     })
+
+
+  
+
+    document.querySelector('.back_menu').addEventListener('click', function(){
+
+
+       
+
+        if(document.querySelectorAll('.sum_menu.open').length == 0){
+           
+
+        document.querySelector('.back_menu').classList.add('close')
+
+        document.querySelector('.back_menu').parentElement.classList.remove('open')
+    
+        document.querySelector('body').classList.remove('overflow_html') 
+        }
+        else{
+
+            document.querySelectorAll('.sum_menu.open')[parseInt(document.querySelectorAll('.sum_menu.open').length)-1].classList.remove('open')
+            if(document.querySelectorAll('.sum_menu.open').length == 0) {document.querySelector('.menu_mob').classList.remove('level')}
+            document.querySelector('.back_menu').classList.remove('back')
+            
+        }
+    
+    })
+    
 
    
 var mobilemenu = document.querySelector('#mobilemenu-overlay')

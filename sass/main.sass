@@ -4710,10 +4710,55 @@ section.favorite
     width: 320px
     max-width: 100%
     height: initial
-    @media screen and ( max-width: 450px  )
+    background-color: #1B1C1B
+    @media screen and ( max-width: 530px  )
       top: 60px
-    
+      
+
 .button_menu.open   
+  @media screen and ( max-width: 530px  )
+    .item .sum_menu.open
+      opacity: 1
+      left: 0px
+      visibility: visible
+      top: 60px
+      
+      
+
+    margin-top: -17px
+    .back_menu
+      display: grid
+      left: 0px
+      
+      &::after
+        background-image: url(../img/back_menu_link.svg)
+        width: 5px
+        height: 8px
+        content: ''
+        position: absolute
+        left: 15px
+
+      .user_icon
+        background-image: url(../img/vhod.svg)
+        width: 16px
+        height: 17px
+        display: block
+      .compare_icon
+        background: url(../img/compare_green.svg)
+        width: 16px
+        height: 17px
+        display: block
+      .liked_icon
+        background: url(../img/liked_green.svg)
+        width: 16px
+        height: 17px
+        display: block
+      .backet_icon
+        background: url(../img/backet.svg)
+        display: block
+        width: 16px
+        height: 17px
+  
   .item
     background-color: #1E242E 
     font-weight: 500
@@ -4726,6 +4771,12 @@ section.favorite
 
     @media screen and ( max-width: 530px  )
       padding: 16px 0px 16px 16px
+    &:hover
+      background-color: $main-green-color
+      &::after
+        background-image: url("../img/strelka_right_mob_black.svg")
+      &>a
+        color: #1E242E
 
     &.dopmenu 
       &::after
@@ -4739,17 +4790,18 @@ section.favorite
 
         @media screen and ( max-width: 530px  )
           right: 16px
-    &:hover
-      background-color: $main-green-color
-      &::after
-        background-image: url("../img/strelka_right_mob_black.svg")
-      a
-        color: #1E242E
-      & > .sum_menu.first
-        @media screen and ( min-width: 640px  )
-          visibility: visible
-          box-shadow: 3px 0px 10px 0px rgba(0, 0, 0, 0.45)
-          opacity: 1
+      &:hover
+        background-color: $main-green-color
+        
+        &::after
+          background-image: url("../img/strelka_right_mob_black.svg")
+        a
+          color: #1E242E
+        .sum_menu.first
+          @media screen and ( min-width: 640px  )
+            visibility: visible
+            box-shadow: 3px 0px 10px 0px rgba(0, 0, 0, 0.45)
+            opacity: 1
     .dropdown 
       left: 100%
       top: 0
@@ -4766,9 +4818,7 @@ section.favorite
       margin: 0
       padding: 0
 
-    .expanded  
-      .dropdown 
-        display: block
+
     @media screen and ( min-width: 640px  )
       .sum_menu.first
         left: 320px
@@ -4792,6 +4842,7 @@ section.favorite
       overflow: hidden
       overflow-y: auto
       //transition: left 0.4s ease 0s, opacity 0.4s ease 0s
+      transition: left 0.4s ease 0s, opacity 0.4s ease 0s
       position: fixed
       left: 0
       top: 77px
@@ -4802,7 +4853,7 @@ section.favorite
       height: initial
       visibility: hidden
       @media screen and ( max-width: 450px  )
-        top: 60px
+        top: 70px
       .item_sub
         background-color: #1E242E 
     
@@ -4853,7 +4904,29 @@ section.favorite
     border-bottom: 1px solid #1E242E
     @media screen and ( max-width: 530px  )
       padding: 13px 16px
-
+.level .item_menu
+  left: -100%
+  position: absolute
+.back_menu
+  display: grid
+  transition: left 0.4s ease 0s, opacity 0.4s ease 0s
+  left: -100%
+  
+  max-width: 100%
+  color:  $main-green-color
+  background: #1e242e
+  width: max-content
+  height: 60px
+  z-index: 3003
+  position: fixed
+  grid-template-columns: 80px repeat(4,32px)
+  justify-content: space-around
+  
+  top: 0px
+  align-items: center
+  border-bottom: 1px solid #1B1C1B
+  padding-left: 32px
+  column-gap: 20px
 .button_menu.open
   @media screen and ( max-width: 530px  )
     background-image: url("../img/close_menu_mob.svg")
@@ -4881,7 +4954,7 @@ section.favorite
   top: 77px
   z-index: 2999
   @media screen and ( max-width: 450px  )
-    top: 60px
+    top: 0px
 
 .search-language-guess
   width: 100%
