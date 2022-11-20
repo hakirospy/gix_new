@@ -4716,7 +4716,18 @@ section.favorite
       top: 60px
     a
       font-size: 14px
-      
+.item
+  background-color: #1E242E 
+  font-weight: 500
+  font-size: 14px
+  line-height: 125%
+  color: white
+  border-bottom: 1px solid #1B1C1B
+  position: relative
+  padding: 24px 0px 24px 24px
+
+  @media screen and ( max-width: 530px  )
+    padding: 16px 0px 16px 16px   
 
 .button_menu.open   
   @media screen and ( max-width: 530px  )
@@ -4765,17 +4776,7 @@ section.favorite
         height: 17px
   
   .item
-    background-color: #1E242E 
-    font-weight: 500
-    font-size: 14px
-    line-height: 125%
-    color: white
-    border-bottom: 1px solid #1B1C1B
-    position: relative
-    padding: 24px 0px 24px 24px
-
-    @media screen and ( max-width: 530px  )
-      padding: 16px 0px 16px 16px
+   
     &:hover
       background-color: $main-green-color
       &::after
