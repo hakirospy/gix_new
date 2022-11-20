@@ -196,9 +196,6 @@ function MoveMobileMenuWrapNext() {
 
 
 
-
-
-
 let cbox = document.querySelectorAll(".dopmenu");
 
 cbox.forEach(box => {
