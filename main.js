@@ -42,7 +42,7 @@ chek.classList.add('active');
 
 
 
-  $(document).on("click", ".button_menu .item a ", function (e) {
+  /*$(document).on("click", ".button_menu .item a ", function (e) {
     var $this = $(this);
     var $mobileMenu = $(".button_menu.open");
 
@@ -187,7 +187,7 @@ function MoveMobileMenuWrapNext() {
         $wrap.data("params", params);
       }
     }
-  }
+  }*/
 
 
 
