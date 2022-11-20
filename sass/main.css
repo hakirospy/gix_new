@@ -1157,10 +1157,10 @@ body.overflow_html {
 .razdel_main_page div:nth-child(6):after {
   background: url("../img/protect.png");
   width: 160px;
-  height: 160px;
-  margin-right: -6px;
-  border-bottom-right-radius: 56px;
-  margin-top: 9px;
+  height: 239px;
+  margin-right: 0px;
+  border-bottom-right-radius: 47px;
+  margin-top: 0px;
 }
 
 @media (max-width: 768px) {
@@ -7356,15 +7356,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uc38a5571;
-          animation-name: inline-uc38a5571;
+  -webkit-animation-name: inline-u56732ab4;
+          animation-name: inline-u56732ab4;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uc38a5571 {
+@-webkit-keyframes inline-u56732ab4 {
   0% {
     opacity: 0;
   }
@@ -7373,7 +7373,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uc38a5571 {
+@keyframes inline-u56732ab4 {
   0% {
     opacity: 0;
   }
