@@ -4439,6 +4439,8 @@ section.favorite
               border: 1px solid rgba(32, 39, 50, 0.15)
               margin-right: 10px
               border-radius: 8px
+              @media screen and ( max-width: 600px  )
+                padding: 7px 10px
        
 
               &:hover
@@ -6085,6 +6087,200 @@ summary
 
       
 
+.tradein
+
+  .titlet
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 600
+    font-size: 20px
+    line-height: 135%
+  .descr
+    padding-bottom: 24px
+    padding-top: 8px
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 145%
+    
+    color: #8E9297
+    a
+      color: #202732
+      text-decoration: underline 
+  .buttons_choose
+    display: flex
+    column-gap: 16px
+    
+
+    span
+      width: 100%
+      text-align: center
+      color: #1B1C1B
+      padding: 16px 24px
+      border: 1.2px solid #8E9297
+      border-radius: 4px
+      cursor: pointer
+      &:hover
+        background: linear-gradient(45deg, #2B3547 0%, #2B3547 0.01%, #3B414B 100%)
+        color: white
+      &.active
+        background: linear-gradient(45deg, #2B3547 0%, #2B3547 0.01%, #3B414B 100%)
+        color: white
+  .line_first
+
+    margin-top: 24px
+    background: #DAE2EC
+    height: 1px
+    width: 100%
+    
+
+.tradeincalc
+  .main_title
+    position: relative
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 500
+    font-size: 24px
+    line-height: 125%
+    color: #202732
+    .close_trade
+      background-image: url('../img/close_tradein.svg')
+      width: 14px
+      height: 14px
+      display: block
+      position: absolute
+      right: 0px
+      top: -10px
+      cursor: pointer
+  .line_trade
+    background: #DAE2EC
+    height: 1px
+    width: 100%
+    margin-top: 24px
+    margin-bottom: 24px
+
+  .title_pod
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 600
+    font-size: 20px
+    line-height: 135%
+    color: #202732
+  .descr
+    padding-bottom: 24px
+    padding-top: 8px
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 145%
+    
+    color: #8E9297
+    a
+      color: #202732
+      text-decoration: underline 
+
+  .select
+    position: relative
+  select
+    appearance: none
+    background-color: transparent
+    padding: 15px
+    border: 1px solid #8E9297
+    border-radius: 4px
+    width: 100%
+    cursor: inherit
+    flex: 1
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 145%
+    color: #202732
+    cursor: pointer
+  .descr2
+    margin-top: 24px
+    padding-top: 0px
+  .descr3
+    padding-bottom: 16px
+  .descr4
+    padding-bottom: 8px
+    padding-top: 24px
+  .descr5
+    padding-top: 16px
+  .select::after
+    content: ''
+    position: absolute
+    background: url('../img/select_strelka.svg')
+    top: 48%
+    right: 16px
+    width: 8px
+    height: 5px
+
+    cursor: pointer
+    pointer-events: none
+    transition: .25s all ease
+  .buttons_choose
+    display: flex
+    column-gap: 16px
+    
+
+    span
+      width: 100%
+      text-align: center
+      color: #1B1C1B
+      padding: 16px 24px
+      border: 1.2px solid #8E9297
+      border-radius: 4px
+      cursor: pointer
+      &:hover
+        background: linear-gradient(45deg, #2B3547 0%, #2B3547 0.01%, #3B414B 100%)
+        color: white
+      &.active
+        background: linear-gradient(45deg, #2B3547 0%, #2B3547 0.01%, #3B414B 100%)
+        color: white
+  .statusSvg
+    position: relative
+    input[name='changeSerial']
+      border: 1px solid #8E9297
+      border-radius: 4px
+      font-family: 'Montserrat'
+      font-style: normal
+      font-weight: 400
+      font-size: 14px
+      line-height: 145%
+      color: #202732
+      padding: 16px 15px
+      width: 100%
+      background: initial
+    &::after
+      content: ''
+      background: url('../img/chose_serial.svg')
+      width: 17px
+      height: 13px
+      display: block
+      position: absolute
+      top: 40%
+      right: 16px
+  .choseSerial
+    background: #A9FF35
+    border-radius: 4px
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 125%
+    color: #1E242E
+    text-align: center
+    width: 100%
+    border: none
+    padding: 25px
+    margin-top: 16px
+    
+
+    
+    
 
 
 

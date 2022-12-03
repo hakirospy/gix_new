@@ -7381,15 +7381,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uf8493c6b;
-          animation-name: inline-uf8493c6b;
+  -webkit-animation-name: inline-u25686218;
+          animation-name: inline-u25686218;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uf8493c6b {
+@-webkit-keyframes inline-u25686218 {
   0% {
     opacity: 0;
   }
@@ -7398,7 +7398,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uf8493c6b {
+@keyframes inline-u25686218 {
   0% {
     opacity: 0;
   }
@@ -8742,5 +8742,249 @@ summary::marker {
   .sections_bloks_catalog .catalog-section-list-item .title_sections a {
     font-size: 14px;
   }
+}
+
+.tradein .titlet {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 135%;
+}
+
+.tradein .descr {
+  padding-bottom: 24px;
+  padding-top: 8px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+  color: #8E9297;
+}
+
+.tradein .descr a {
+  color: #202732;
+  text-decoration: underline;
+}
+
+.tradein .buttons_choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+}
+
+.tradein .buttons_choose span {
+  width: 100%;
+  text-align: center;
+  color: #1B1C1B;
+  padding: 16px 24px;
+  border: 1.2px solid #8E9297;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tradein .buttons_choose span:hover {
+  background: linear-gradient(45deg, #2B3547 0%, #2B3547 0.01%, #3B414B 100%);
+  color: white;
+}
+
+.tradein .buttons_choose span.active {
+  background: linear-gradient(45deg, #2B3547 0%, #2B3547 0.01%, #3B414B 100%);
+  color: white;
+}
+
+.tradein .line_first {
+  margin-top: 24px;
+  background: #DAE2EC;
+  height: 1px;
+  width: 100%;
+}
+
+.tradeincalc .main_title {
+  position: relative;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 125%;
+  color: #202732;
+}
+
+.tradeincalc .main_title .close_trade {
+  background-image: url("../img/close_tradein.svg");
+  width: 14px;
+  height: 14px;
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: -10px;
+  cursor: pointer;
+}
+
+.tradeincalc .line_trade {
+  background: #DAE2EC;
+  height: 1px;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.tradeincalc .title_pod {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 135%;
+  color: #202732;
+}
+
+.tradeincalc .descr {
+  padding-bottom: 24px;
+  padding-top: 8px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+  color: #8E9297;
+}
+
+.tradeincalc .descr a {
+  color: #202732;
+  text-decoration: underline;
+}
+
+.tradeincalc .select {
+  position: relative;
+}
+
+.tradeincalc select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  padding: 15px;
+  border: 1px solid #8E9297;
+  border-radius: 4px;
+  width: 100%;
+  cursor: inherit;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+  color: #202732;
+  cursor: pointer;
+}
+
+.tradeincalc .descr2 {
+  margin-top: 24px;
+  padding-top: 0px;
+}
+
+.tradeincalc .descr3 {
+  padding-bottom: 16px;
+}
+
+.tradeincalc .descr4 {
+  padding-bottom: 8px;
+  padding-top: 24px;
+}
+
+.tradeincalc .descr5 {
+  padding-top: 16px;
+}
+
+.tradeincalc .select::after {
+  content: '';
+  position: absolute;
+  background: url("../img/select_strelka.svg");
+  top: 48%;
+  right: 16px;
+  width: 8px;
+  height: 5px;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+.tradeincalc .buttons_choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+}
+
+.tradeincalc .buttons_choose span {
+  width: 100%;
+  text-align: center;
+  color: #1B1C1B;
+  padding: 16px 24px;
+  border: 1.2px solid #8E9297;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tradeincalc .buttons_choose span:hover {
+  background: linear-gradient(45deg, #2B3547 0%, #2B3547 0.01%, #3B414B 100%);
+  color: white;
+}
+
+.tradeincalc .buttons_choose span.active {
+  background: linear-gradient(45deg, #2B3547 0%, #2B3547 0.01%, #3B414B 100%);
+  color: white;
+}
+
+.tradeincalc .statusSvg {
+  position: relative;
+}
+
+.tradeincalc .statusSvg input[name='changeSerial'] {
+  border: 1px solid #8E9297;
+  border-radius: 4px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+  color: #202732;
+  padding: 16px 15px;
+  width: 100%;
+  background: initial;
+}
+
+.tradeincalc .statusSvg::after {
+  content: '';
+  background: url("../img/chose_serial.svg");
+  width: 17px;
+  height: 13px;
+  display: block;
+  position: absolute;
+  top: 40%;
+  right: 16px;
+}
+
+.tradeincalc .choseSerial {
+  background: #A9FF35;
+  border-radius: 4px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 125%;
+  color: #1E242E;
+  text-align: center;
+  width: 100%;
+  border: none;
+  padding: 25px;
+  margin-top: 16px;
 }
 /*# sourceMappingURL=main.css.map */
