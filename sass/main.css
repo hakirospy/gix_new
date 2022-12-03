@@ -8014,7 +8014,7 @@ summary::marker {
   display: grid;
   -ms-grid-columns: minmax(100px, 200px) 1fr;
       grid-template-columns: minmax(100px, 200px) 1fr;
-}
+} 
 
 @media screen and (max-width: 1024px) {
   .cabinet .content-cabinet .content .content_main_order {
