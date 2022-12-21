@@ -263,7 +263,7 @@ console.log(333)
             if(document.querySelectorAll('.sum_menu.open').length == 0) {document.querySelector('.menu_mob').classList.remove('level')}
             document.querySelector('.back_menu').classList.remove('back')
           
-            
+            document.querySelector('body').classList.toggle('overflow_html') 
         }
     
     })
