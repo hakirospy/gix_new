@@ -235,6 +235,7 @@ if(document.querySelector('.button_menu').classList.contains('open') == false &&
 }else{
 
     document.querySelector('.back_menu').classList.remove('close')
+    document.querySelector('body').classList.toggle('overflow_html') 
 
 }
     })
@@ -244,7 +245,7 @@ if(document.querySelector('.button_menu').classList.contains('open') == false &&
 
     document.querySelector('.back_menu').addEventListener('click', function(){
 
-console.log(333)
+console.log(333) 
        
 
         if(document.querySelectorAll('.sum_menu.open').length == 0){
