@@ -262,7 +262,7 @@ console.log(333)
             document.querySelectorAll('.sum_menu.open')[parseInt(document.querySelectorAll('.sum_menu.open').length)-1].classList.remove('open')
             if(document.querySelectorAll('.sum_menu.open').length == 0) {document.querySelector('.menu_mob').classList.remove('level')}
             document.querySelector('.back_menu').classList.remove('back')
-            document.querySelector('body').classList.toggle('overflow_html') 
+          
             
         }
     
