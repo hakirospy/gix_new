@@ -277,6 +277,7 @@ if(mobilemenu){
     mobilemenu.addEventListener('click', function(){
 
         document.querySelector('.button_menu').classList.remove('open')
+        document.querySelector('body').classList.toggle('overflow_html') 
 
 
     })
