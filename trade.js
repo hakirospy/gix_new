@@ -45,7 +45,7 @@ if(document.querySelector('select[name="obemPhone"]').options.selectedIndex == 0
 document.querySelector('.buy_button').addEventListener('click', function(){
 
 console.log(777);
-let price = document.querySelector('.main_price').setAttribute('new-price')
+let price = document.querySelector('.main_price').getAttribute('new-price');
 let allData = dataToOrder();
 fetch('https://gix.ru/calculator/addToBasket.php?data='+allData+"&price"+price).then((resp) => resp.text())
     .then((data) => {
