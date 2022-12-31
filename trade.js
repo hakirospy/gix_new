@@ -16,8 +16,6 @@ document.querySelector('.edit_traid').addEventListener('click', function(){
    
    })
 
-
-
 // close trade
 
 document.querySelectorAll('.block_backet  .close_trade').forEach(close => {close.addEventListener('click', function(){
