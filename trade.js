@@ -134,9 +134,7 @@ function mainPrice( salePrice){
 // show old price 
 
 document.querySelector('.have_bags .buttons_choose').addEventListener('click', function(){
-
-
-    document.querySelector('.old_price_cart').style.display = 'block';
+document.querySelector('.old_price_cart').style.display = 'block';
       
 })
 
