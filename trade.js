@@ -90,7 +90,7 @@ function dataToOrder(){
    let sostoyaniy = document.querySelector('select[name="stayPhone"]').options[document.querySelector('select[name="stayPhone"]').options.selectedIndex].text;
    let telephone = document.querySelector('select[name="modelPhone"]').options[document.querySelector('select[name="modelPhone"]').options.selectedIndex].text;
 
-   return telephone+'<br>'+grande+'<br>'+sostoyaniy
+   return telephone+'<br>'+grande+'<br>'+sostoyaniy+"<br>"+document.querySelector('.changeSerial').value.trim()
 
 }
 
@@ -106,7 +106,7 @@ fetch('https://gix.ru/calculator/items.json?rt='+randomNum()).then((resp) => res
     .then((data) => {
   let summa = parseInt(data.find(item => item.model == model).level5.replace('.', ""))
    if(bug > 0) { summa = parseInt(data.find(item => item.model == model)['level'+bug].replace('.', ""))}
-   console.log(summa)
+ 
    if(bug2 < 0) {summa = summa + parseInt(bug2.replace('.', ""))}
    
 
@@ -121,7 +121,7 @@ fetch('https://gix.ru/calculator/items.json?rt='+randomNum()).then((resp) => res
 
 function mainPrice( salePrice){
 
-
+    document.querySelector('.main_price').setAttribute('sale-price') = salePrice;
     let oldPrice = parseInt(document.querySelector('.main_price').getAttribute('data'))
     let newPrice = oldPrice - salePrice
     document.querySelector('.main_price').innerHTML = newPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")+' ₽ <span class="old_price_cart">'+oldPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")+' ₽</span>'
