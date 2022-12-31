@@ -47,7 +47,7 @@ document.querySelector('.buy_button').addEventListener('click', function(){
 console.log(777);
 
 let allData = dataToOrder();
-fetch('https://gix.ru/calculator/addToBasket.php?data='+allData).then((resp) => resp.json())
+fetch('https://gix.ru/calculator/addToBasket.php?data='+allData).then((resp) => resp.text())
     .then((data) => {
 
 console.log(data)
