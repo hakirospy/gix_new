@@ -46,6 +46,15 @@ document.querySelector('.buy_button').addEventListener('click', function(){
 
 console.log(777);
 
+let allData = dataToOrder();
+fetch('https://gix.ru/calculator/addToBasket.php?data='+allData).then((resp) => resp.json())
+    .then((data) => {
+
+console.log(data)
+
+
+    })
+
 })
 // select RAM
 document.querySelector('select[name="obemPhone"]').addEventListener('change', function(){
