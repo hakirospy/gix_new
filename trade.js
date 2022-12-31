@@ -90,7 +90,7 @@ function dataToOrder(){
    let sostoyaniy = document.querySelector('select[name="stayPhone"]').options[document.querySelector('select[name="stayPhone"]').options.selectedIndex].text;
    let telephone = document.querySelector('select[name="modelPhone"]').options[document.querySelector('select[name="modelPhone"]').options.selectedIndex].text;
 
-   return telephone+'<br>'+grande+'<br>'+sostoyaniy+"<br>"+document.querySelector('.changeSerial').value.trim()
+   return telephone+';<br>'+grande+';<br>'+sostoyaniy+";<br>"+document.querySelector('.changeSerial').value.trim()+";"
 
 }
 
