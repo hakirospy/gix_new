@@ -40,6 +40,13 @@ if(document.querySelector('select[name="obemPhone"]').options.selectedIndex == 0
     
 
 })
+// add to basket
+
+document.querySelector('.buy_button').addEventListener('click', function(){
+
+console.log(777);
+
+})
 // select RAM
 document.querySelector('select[name="obemPhone"]').addEventListener('change', function(){
 
