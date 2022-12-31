@@ -117,7 +117,6 @@ fetch('https://gix.ru/calculator/items.json?rt='+randomNum()).then((resp) => res
 
 }
 
-
 function mainPrice( salePrice){
 
     document.querySelector('.main_price').setAttribute('sale-price',salePrice);
@@ -210,7 +209,6 @@ function getBugs(){
      })
  
  }
-
 
  // get bugs2
 function getBugs2(){
