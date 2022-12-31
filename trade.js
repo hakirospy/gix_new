@@ -70,8 +70,6 @@ document.querySelectorAll('.have_bags  span').forEach(buton=>
     document.querySelector('.choose_serial_number').style.display = 'block';
     buton.classList.add('active')
     window.scrollTo(0,1200)
-
-
 })
 })
 
