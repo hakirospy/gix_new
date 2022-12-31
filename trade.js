@@ -120,7 +120,7 @@ fetch('https://gix.ru/calculator/items.json?rt='+randomNum()).then((resp) => res
 
 function mainPrice( salePrice){
 
-    document.querySelector('.main_price').setAttribute('sale-price') = salePrice;
+    document.querySelector('.main_price').setAttribute('sale-price',salePrice);
     let oldPrice = parseInt(document.querySelector('.main_price').getAttribute('data'))
     let newPrice = oldPrice - salePrice
     document.querySelector('.main_price').innerHTML = newPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")+' ₽ <span class="old_price_cart">'+oldPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")+' ₽</span>'
