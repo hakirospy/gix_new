@@ -98,11 +98,9 @@ function dataToOrder(){
 
 function calculate(){
 
-
 let model =  document.querySelector('select[name="modelPhone"]').options[document.querySelector('select[name="modelPhone"]').options.selectedIndex].value
 let bug =  document.querySelector('select[name="obemPhone"]').options[document.querySelector('select[name="obemPhone"]').options.selectedIndex].value
 let bug2 =  document.querySelector('select[name="stayPhone"]').options[document.querySelector('select[name="stayPhone"]').options.selectedIndex].value
-
 
 fetch('https://gix.ru/calculator/items.json?rt='+randomNum()).then((resp) => resp.json())
     .then((data) => {
