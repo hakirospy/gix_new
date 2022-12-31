@@ -7396,15 +7396,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u91a69239;
-          animation-name: inline-u91a69239;
+  -webkit-animation-name: inline-u24410a09;
+          animation-name: inline-u24410a09;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u91a69239 {
+@-webkit-keyframes inline-u24410a09 {
   0% {
     opacity: 0;
   }
@@ -7413,7 +7413,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u91a69239 {
+@keyframes inline-u24410a09 {
   0% {
     opacity: 0;
   }
@@ -9099,6 +9099,12 @@ summary::marker {
   padding: 25px;
   margin-top: 16px;
   position: relative;
+}
+
+.tradeincalc .answer_text {
+  padding-top: 17px;
+  font-size: 13px;
+  line-height: 21px;
 }
 
 .choose_serial_number, .choose_trash, .choose_haracteristic, .have_bags, .tradeincalc {
