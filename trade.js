@@ -59,7 +59,6 @@ console.log(data)
 // select RAM
 document.querySelector('select[name="obemPhone"]').addEventListener('change', function(){
 
-
     if(document.querySelector('select[name="stayPhone"]').options.selectedIndex == 0)getBugs2();
    
     document.querySelector('.choose_trash').style.display = 'block';
