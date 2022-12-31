@@ -90,6 +90,22 @@ function randomNum(){
 
 }
 
+// data to order
+
+function dataToOrder(){
+
+   let grande =  document.querySelector('select[name="obemPhone"]').options[document.querySelector('select[name="obemPhone"]').options.selectedIndex].text;
+   let sostoyaniy = document.querySelector('select[name="stayPhone"]').options[document.querySelector('select[name="stayPhone"]').options.selectedIndex].text;
+   let telephone = document.querySelector('select[name="modelPhone"]').options[document.querySelector('select[name="modelPhone"]').options.selectedIndex].text;
+
+   return grande+'<br>'+sostoyaniy+'<br>'+telephone
+
+
+
+}
+
+
+
 //calculate price
 
 function calculate(){
