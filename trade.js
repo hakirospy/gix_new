@@ -209,7 +209,6 @@ function getBugs(){
      })
  
  }
-
  // get bugs2
 function getBugs2(){
     let  models = '<option value="0" selected value=0>---</option>'
