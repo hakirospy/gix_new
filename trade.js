@@ -91,7 +91,7 @@ let bug =  document.querySelector('select[name="obemPhone"]').options[document.q
 let bug2 =  document.querySelector('select[name="stayPhone"]').options[document.querySelector('select[name="stayPhone"]').options.selectedIndex].value
 
 
-fetch('items.json').then((resp) => resp.json())
+fetch('https://gix.ru/calculator/items.json').then((resp) => resp.json())
     .then((data) => {
   let summa = parseInt(data.find(item => item.model == model).level5.replace('.', ""))
    if(bug > 0) { summa = parseInt(data.find(item => item.model == model)['level'+bug].replace('.', ""))}
@@ -152,7 +152,7 @@ async function getImei(imei) {
       const response = await fetch('https://gix.ru/f.php?imei='+imei, {mode: 'no-cors'});
       const dataFirst = await response.text(); 
       //fetch('https://gix.ru/imei/'+imei+'.json', {mode: 'no-cors'}).then((resp) => resp.json())
-      fetch(imei+'.json', {mode: 'no-cors'}).then((resp) => resp.json())
+      fetch('https://gix.ru/imei/'+imei+'.json', {mode: 'no-cors'}).then((resp) => resp.json())
     .then((data) => {
         document.querySelector('.choseSerial').classList.remove('spinnerBtn')
         document.querySelector('.answer_text').innerHTML = data.result;
