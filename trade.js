@@ -115,7 +115,6 @@ fetch('https://gix.ru/calculator/items.json?rt='+randomNum()).then((resp) => res
     
 })
 
-
 }
 
 
