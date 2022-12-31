@@ -81,6 +81,15 @@ document.querySelectorAll('.have_bags  span').forEach(buton=>
 })
 })
 
+// randoom number 
+
+function randomNum(){
+
+   return Math.floor(Math.random() * 100)
+
+
+}
+
 //calculate price
 
 function calculate(){
@@ -91,7 +100,7 @@ let bug =  document.querySelector('select[name="obemPhone"]').options[document.q
 let bug2 =  document.querySelector('select[name="stayPhone"]').options[document.querySelector('select[name="stayPhone"]').options.selectedIndex].value
 
 
-fetch('https://gix.ru/calculator/items.json').then((resp) => resp.json())
+fetch('https://gix.ru/calculator/items.json?rt='+randomNum()).then((resp) => resp.json())
     .then((data) => {
   let summa = parseInt(data.find(item => item.model == model).level5.replace('.', ""))
    if(bug > 0) { summa = parseInt(data.find(item => item.model == model)['level'+bug].replace('.', ""))}
@@ -169,7 +178,7 @@ async function getImei(imei) {
 
 function getModel(){
    let  models = '<option selected disabled>Model</option>'
-    fetch('https://gix.ru/calculator/items.json',{mode: 'no-cors'}).then((resp) => resp.json())
+    fetch('https://gix.ru/calculator/items.json?rt='+randomNum(),{mode: 'no-cors'}).then((resp) => resp.json())
     .then((data) => {
         data.forEach((item) => {
 
@@ -188,7 +197,7 @@ getModel();
 // get bugs
 function getBugs(){
     let  models = '<option selected value=0 >---</option>'
-     fetch('https://gix.ru/calculator/bugs.json',{mode: 'no-cors'}).then((resp) => resp.json())
+     fetch('https://gix.ru/calculator/bugs.json?rt='+randomNum(),{mode: 'no-cors'}).then((resp) => resp.json())
      .then((data) => {
          data.forEach((item) => {
  
@@ -206,7 +215,7 @@ function getBugs(){
  // get bugs2
 function getBugs2(){
     let  models = '<option value="0" selected value=0>---</option>'
-     fetch('https://gix.ru/calculator/bugs2.json',{mode: 'no-cors'}).then((resp) => resp.json())
+     fetch('https://gix.ru/calculator/bugs2.json?rt='+randomNum(),{mode: 'no-cors'}).then((resp) => resp.json())
      .then((data) => {
          data.forEach((item) => {
  
