@@ -240,12 +240,11 @@ if(document.querySelector('.button_menu').classList.contains('open') == false &&
 }
     })
 
-
+   
   
-
     document.querySelector('.back_menu').addEventListener('click', function(){
 
-console.log(333) 
+ 
        
 
         if(document.querySelectorAll('.sum_menu.open').length == 0){
@@ -305,6 +304,8 @@ document.querySelector('#main_compare').addEventListener('click', function(){
     window.location.replace('/catalog/compare/');
 
 })
+
+
 
 
  

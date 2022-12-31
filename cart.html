@@ -457,13 +457,23 @@ const sliderImages = new Swiper('.slider__images .swiper-container', { // ище
                 <div class="buy_block">
 
                     <div class="block_backet">
+
+                      <div class="sales_trade">
+
+                        <div class="descr middle"><span>Ваша скидка:</span> <span class="edit_traid">Изменить</span></div>
+                        
+                        <div class="titlet">0 <span>₽</span></div>
+                        <div class="line_first"></div>
+                          </div>
+
+
 <div class="tradein">
 <div class="titlet">У вас есть старая техника?</div>
 <div class="descr">Получите скидку на новую технику, сдав старую при покупке в <a href="/">Трейд ин</a></div>
 
 <div class="buttons_choose">
 
-  <span>Есть</span><span>Нет</span>
+  <span class="open_traide">Есть</span><span class="close_trade">Нет</span>
 </div>
 
 <div class="line_first"></div>
@@ -471,7 +481,10 @@ const sliderImages = new Swiper('.slider__images .swiper-container', { // ище
 </div>
 
 
-<div class="tradeincalc">
+
+
+<div class="tradeincalc" >
+ 
 
 <div class="main_title">Расчет Trade-in <span class="close_trade"></span></div>
 
@@ -493,7 +506,7 @@ const sliderImages = new Swiper('.slider__images .swiper-container', { // ище
 
 </select>
 </div>
-
+<div class="choose_haracteristic">
 <div class="descr descr4">Выбери характеристики устройства</div>
 
 
@@ -510,7 +523,8 @@ const sliderImages = new Swiper('.slider__images .swiper-container', { // ище
   
   </select>
   </div>
-
+</div>
+<div class="choose_trash">
   <div class="line_trade"></div>
 
 
@@ -521,34 +535,38 @@ const sliderImages = new Swiper('.slider__images .swiper-container', { // ище
 
 <div class="select">
   <select name="stayPhone"  id="">
-    <option selected >Как новый</option>
+    <option selected  >---</option>
+    <option >Как новый</option>
   <option value="128GB">Старый</option>
-  <option value="iphone13">Потертый</option>
+  <option value="iphone13">Потертый</option> 
 
-
-  
-  
-  
   </select>
   </div>
+
+</div>
+<div class="have_bags">
   <div class="descr descr4">Есть неисправности?</div>
   <div class="buttons_choose">
 
-    <span>Есть</span><span class="active">Нет</span>
+    <span>Есть</span><span >Нет</span>
   </div>
-
+</div>
+<div class="choose_serial_number">
   <div class="line_trade"></div>
 
 
   <div class="main_title">Серийный номер</div>
   <div class="descr descr3">Введите код вашего устройства для проверки на подлинность</div>
-  <div class="statusSvg"><input class="changeSerial" placeholder="23847283748234734" name="changeSerial" /></div>
-  <button class="choseSerial">Проверить</button>
+  <div class="statusSvg"><input class="changeSerial" placeholder="Введите код" name="changeSerial" /></div>
+  <button class="choseSerial" id="spinnerBtn">Проверить</button>
+  <div class="answer_text"></div>
 
-  <div class="line_trade"></div>
+
+</div>
+<div class="line_trade last"></div>
 </div>
 
-                        <div class="main_price">72 990 ₽</div>
+                        <div class="main_price" data="72990" >72 990 ₽ <span class="old_price_cart">102 990 ₽</span> </div>
                         <div class="buy_button"><span>В корзину</span></div>
 
                         <div class="block_liked_favourite">
@@ -805,19 +823,7 @@ const sliderImages = new Swiper('.slider__images .swiper-container', { // ище
     </footer>
 
     </section>
-
+    <script src="/trade.js?ty=2169"></script>
 </body>
 
 </html>
-<!--
-go went gone
-come came come 
-do did done
-drive drove driven
-take took taken
-have had had
-find found found 
-buy bought bought 
-think thought thought 
-
--->

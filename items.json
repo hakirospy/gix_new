@@ -1,0 +1,79 @@
+[
+    {
+        "model": "13 Pro Max 128GB",
+        "level5": "40.000",
+        "level4": "36.000",
+        "level3": "28.700",
+        "level2": "11.700"
+    },
+    {
+        "model": "13 Pro Max 256GB",
+        "level5": "43.000",
+        "level4": "39.000",
+        "level3": "31.700",
+        "level2": "14.700"
+    },
+    {
+        "model": "13 Pro Max 512GB",
+        "level5": "46.000",
+        "level4": "42.000",
+        "level3": "34.700",
+        "level2": "17.700"
+    },
+    {
+        "model": "13 Pro Max 1TB",
+        "level5": "48.000",
+        "level4": "44.000",
+        "level3": "36.700",
+        "level2": "19.700"
+    },
+    {
+        "model": "13 Pro 128GB",
+        "level5": "34.000",
+        "level4": "30.000",
+        "level3": "22.700",
+        "level2": "5.700"
+    },
+    {
+        "model": "13 Pro 256GB",
+        "level5": "38.000",
+        "level4": "34.000",
+        "level3": "26.700",
+        "level2": "9.700"
+    },
+    {
+        "model": "13 Pro 512GB",
+        "level5": "39.000",
+        "level4": "35.000",
+        "level3": "27.700",
+        "level2": "10.700"
+    },
+    {
+        "model": "13 Pro 1TB",
+        "level5": "41.000",
+        "level4": "37.000",
+        "level3": "29.700",
+        "level2": "12.700"
+    },
+    {
+        "model": "iPhone 13 128GB",
+        "level5": "25.200",
+        "level4": "22.200",
+        "level3": "17.900",
+        "level2": 900
+    },
+    {
+        "model": "iPhone 13 256GB",
+        "level5": "27.500",
+        "level4": "24.500",
+        "level3": "20.200",
+        "level2": "3.200"
+    },
+    {
+        "model": "iPhone 13 512GB",
+        "level5": "29.500",
+        "level4": "26.500",
+        "level3": "22.200",
+        "level2": "5.200"
+    }
+]

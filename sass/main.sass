@@ -4542,6 +4542,8 @@ section.favorite
         font-size: 32px
         line-height: 120%
         color: #1B1C1B
+        display: flex
+        align-items: center
       .buy_button
         background: linear-gradient(263.49deg, #A9FF35 0%, #BFFF3A 100%)
         border-radius: 4px
@@ -6132,9 +6134,76 @@ summary
     background: #DAE2EC
     height: 1px
     width: 100%
+.old_price_cart
+  font-family: 'Montserrat'
+  font-style: normal
+  font-weight: 600
+  font-size: 18px
+  line-height: 135%
+  text-decoration-line: line-through
+  color: #8E9297
+  display: none
+  padding-left: 10px
+.sales_trade
+  display: none
+  width: 100%
+  .line_first
+    margin-top: 24px
+    background: #DAE2EC
+    height: 1px
+    width: 100%
+  .titlet
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 600
+    font-size: 20px
+    line-height: 135%
+    margin-top: 8px
+  .descr
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 145%
+    color: #8E9297
+    display: flex
+    justify-content: space-between
+    .edit_traid
+      color: #202732
+      line-height: 145%
+      cursor: pointer
+
+@keyframes spin
+  0%
+    transform: rotate(0deg)
     
+  100%
+    transform: rotate(360deg)
+
 
 .tradeincalc
+  .spinnerBtn
+    
+    &::after
+    
+      position: absolute
+      content: " "
+      border: 0.2em solid #fff
+      width: 2em
+      height: 2em
+      top: 1.15em
+      border-radius: 1em
+      right: 6em
+      display: block
+      border-top-color: #424242
+      animation: spin 2s linear infinite
+
+
+    
+  
+         
+
+  
   .main_title
     position: relative
     font-family: 'Montserrat'
@@ -6158,6 +6227,9 @@ summary
     width: 100%
     margin-top: 24px
     margin-bottom: 24px
+  .line_trade.last
+    margin-bottom: 0px
+
 
   .title_pod
     font-family: 'Montserrat'
@@ -6198,6 +6270,7 @@ summary
     line-height: 145%
     color: #202732
     cursor: pointer
+    padding-right: 25px
   .descr2
     margin-top: 24px
     padding-top: 0px
@@ -6276,6 +6349,10 @@ summary
     border: none
     padding: 25px
     margin-top: 16px
+    position: relative
+.choose_serial_number, .choose_trash, .choose_haracteristic, .have_bags, .tradeincalc
+  display: none 
+
     
 
     
