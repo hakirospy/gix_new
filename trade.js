@@ -54,8 +54,6 @@ document.querySelector('select[name="obemPhone"]').addEventListener('change', fu
 
 // select stay
 document.querySelector('select[name="stayPhone"]').addEventListener('change', function(){
-
-    
     document.querySelector('.have_bags').style.display = 'block';
     calculate();
     window.scrollTo(0,1100)
