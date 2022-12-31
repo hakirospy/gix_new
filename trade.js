@@ -211,17 +211,16 @@ function getBugs(){
  }
  // get bugs2
 function getBugs2(){
-    let  models = '<option value="0" selected value=0>---</option>'
+     let  models = '<option value="0" selected value=0>---</option>'
      fetch('https://gix.ru/calculator/bugs2.json?rt='+randomNum(),{mode: 'no-cors'}).then((resp) => resp.json())
      .then((data) => {
-         data.forEach((item) => {
+        data.forEach((item) => {
  
- models += `<option value='${item.price}'>${item.addition}</option>`
+            models += `<option value='${item.price}'>${item.addition}</option>`
  
- 
-         })
+                                })
         
-         document.querySelector('select[name="stayPhone"]').innerHTML = models
+        document.querySelector('select[name="stayPhone"]').innerHTML = models
      })
  
  }
