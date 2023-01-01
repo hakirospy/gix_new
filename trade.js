@@ -37,7 +37,7 @@ if(document.querySelector('select[name="obemPhone"]').options.selectedIndex == 0
     document.querySelector('.choose_haracteristic').style.display = 'block';
     calculate();
     document.querySelector('.buy_block').style.position = 'relative';
-    window.scrollTo(0,700)
+    window.scrollTo(0,500)
     
 
 })
@@ -65,7 +65,7 @@ document.querySelector('select[name="obemPhone"]').addEventListener('change', fu
    
     document.querySelector('.choose_trash').style.display = 'block';
     calculate();
-    window.scrollTo(0,800)
+    window.scrollTo(0,600)
 
 })
 
@@ -73,7 +73,7 @@ document.querySelector('select[name="obemPhone"]').addEventListener('change', fu
 document.querySelector('select[name="stayPhone"]').addEventListener('change', function(){
     document.querySelector('.have_bags').style.display = 'block';
     calculate();
-    window.scrollTo(0,900)
+    window.scrollTo(0,700)
 
 })
 
