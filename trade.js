@@ -25,6 +25,7 @@ document.querySelectorAll('.block_backet  .close_trade').forEach(close => {close
     document.querySelector('.tradeincalc').style.display = 'none';
 
      document.querySelector('.sales_trade').style.display = 'block';
+     document.querySelector('.buy_block').style.position = 'sticky';
    
    
    }) 
