@@ -77,7 +77,6 @@ document.querySelector('select[name="stayPhone"]').addEventListener('change', fu
 
 })
 
-
 // select bugs
 document.querySelectorAll('.have_bags  span').forEach(buton=>
     { buton.addEventListener('click', function(){
