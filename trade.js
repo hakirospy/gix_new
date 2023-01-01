@@ -80,12 +80,12 @@ document.querySelector('select[name="stayPhone"]').addEventListener('change', fu
 // select bugs
 document.querySelectorAll('.have_bags  span').forEach(buton=>
     { buton.addEventListener('click', function(){
-
+console.log(buton)
     document.querySelectorAll('.have_bags  span')[0].classList.remove('active');
     document.querySelectorAll('.have_bags  span')[1].classList.remove('active');
     document.querySelector('.choose_serial_number').style.display = 'block';
     buton.classList.add('active')
-    window.scrollTo(0,1200)
+    window.scrollTo(0,1000)
 })
 })
 
