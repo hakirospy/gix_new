@@ -83,9 +83,10 @@ document.querySelectorAll('.have_bags  span').forEach(buton=>
 console.log(buton.innerHTML)
     document.querySelectorAll('.have_bags  span')[0].classList.remove('active');
     document.querySelectorAll('.have_bags  span')[1].classList.remove('active');
-    if(buton.innerHTML == "Да")  document.querySelector('.choose_serial_number').style.display = 'block';
     buton.classList.add('active')
-    window.scrollTo(0,1000)
+    if(buton.innerHTML == "Да")  {document.querySelector('.choose_serial_number').style.display = 'block';
+    
+    window.scrollTo(0,1000)}
 })
 })
 
