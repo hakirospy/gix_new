@@ -40,6 +40,9 @@ if(document.querySelector('select[name="obemPhone"]').options.selectedIndex == 0
     document.querySelector('.buy_block').style.position = 'relative';
     if(window.innerWidth>800){
     window.scrollTo(0,500)
+    }else{
+
+        window.scrollTo(0,1000)
     }
 
 })
@@ -69,6 +72,10 @@ document.querySelector('select[name="obemPhone"]').addEventListener('change', fu
     calculate();
     if(window.innerWidth>800){
     window.scrollTo(0,600)
+    }else{
+
+        window.scrollTo(0,1100)
+
     }
 })
 
@@ -78,6 +85,10 @@ document.querySelector('select[name="stayPhone"]').addEventListener('change', fu
     calculate();
     if(window.innerWidth>800){
     window.scrollTo(0,700)
+    }else{
+
+        window.scrollTo(0,1200)
+
     }
 })
 
@@ -90,7 +101,11 @@ console.log(buton.innerHTML)
     buton.classList.add('active')
     if(buton.innerHTML == "Да")  {document.querySelector('.choose_serial_number').style.display = 'block';
     if(window.innerWidth>800){
-    window.scrollTo(0,1000)}
+    window.scrollTo(0,1000)}else{
+
+        window.scrollTo(0,1600)
+
+    }
     }
 })
 })
