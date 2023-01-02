@@ -50,7 +50,7 @@ if(document.querySelector('select[name="obemPhone"]').options.selectedIndex == 0
 
 document.querySelector('.buy_button').addEventListener('click', function(){
 
-console.log(777);
+
 let price = document.querySelector('.main_price').getAttribute('new-price');
 
 let idTov = document.querySelector('.main_price').getAttribute('idTov');
@@ -129,7 +129,7 @@ function dataToOrder(){
    let sostoyaniy = document.querySelector('select[name="stayPhone"]').options[document.querySelector('select[name="stayPhone"]').options.selectedIndex].text;
    let telephone = document.querySelector('select[name="modelPhone"]').options[document.querySelector('select[name="modelPhone"]').options.selectedIndex].text;
 
-   return telephone+';<br>'+grande+';<br>'+sostoyaniy+";<br>"+document.querySelector('.changeSerial').value.trim()+";"
+   return telephone+';'+grande+';'+sostoyaniy+";"+document.querySelector('.changeSerial').value.trim()+";"
 
 }
 
