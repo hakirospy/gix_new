@@ -49,7 +49,7 @@ if(document.querySelector('select[name="obemPhone"]').options.selectedIndex == 0
 
   
         window.scrollBy({
-            top: 60,
+            top: 100,
             behavior: 'smooth'
         });
     }
@@ -95,7 +95,7 @@ document.querySelector('select[name="obemPhone"]').addEventListener('change', fu
 
 
         window.scrollBy({
-            top: 60,
+            top: 100,
             behavior: 'smooth'
         });
       
