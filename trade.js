@@ -47,7 +47,11 @@ if(document.querySelector('select[name="obemPhone"]').options.selectedIndex == 0
 
     }else{
 
-        window.scrollTo(0,window.pageYOffset+20)
+  
+        window.scrollBy({
+            top: window.pageYOffset+20,
+            behavior: 'smooth'
+        });
     }
 
 })
@@ -89,7 +93,12 @@ document.querySelector('select[name="obemPhone"]').addEventListener('change', fu
 
     }else{
 
-        window.scrollTo(0,window.pageYOffset+20)
+
+        window.scrollBy({
+            top: window.pageYOffset+20,
+            behavior: 'smooth'
+        });
+      
 
     }
 })
@@ -108,7 +117,12 @@ document.querySelector('select[name="stayPhone"]').addEventListener('change', fu
 
     }else{
 
-        window.scrollTo(0,window.pageYOffset+120)
+ 
+
+        window.scrollBy({
+            top: window.pageYOffset+120,
+            behavior: 'smooth'
+        });
 
     }
 })
@@ -134,7 +148,15 @@ console.log(buton.innerHTML)
 
 }else{
 
-        window.scrollTo(0,window.pageYOffset+200)
+       
+
+
+        window.scrollBy({
+            top: window.pageYOffset+200,
+            behavior: 'smooth'
+        });
+
+
 
     }
     }
@@ -235,7 +257,12 @@ document.querySelector('.choseSerial').addEventListener('click', function(){
 
 }else{
 
-        window.scrollTo(0,window.pageYOffset+200)
+    window.scrollBy({
+        top: window.pageYOffset+200,
+        behavior: 'smooth'
+    });
+
+       // window.scrollTo(0,window.pageYOffset+200)
 
     }
     
