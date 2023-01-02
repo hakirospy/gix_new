@@ -127,7 +127,7 @@ console.log(buton.innerHTML)
 
     if(window.innerWidth>800){
         window.scrollBy({
-            top: 1000,
+            top: 200,
             behavior: 'smooth'
         });
 
