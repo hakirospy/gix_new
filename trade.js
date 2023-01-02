@@ -49,7 +49,7 @@ if(document.querySelector('select[name="obemPhone"]').options.selectedIndex == 0
 
   
         window.scrollBy({
-            top: window.pageYOffset+20,
+            top: 30,
             behavior: 'smooth'
         });
     }
@@ -120,7 +120,7 @@ document.querySelector('select[name="stayPhone"]').addEventListener('change', fu
  
 
         window.scrollBy({
-            top: window.pageYOffset+120,
+            top: 120,
             behavior: 'smooth'
         });
 
@@ -152,7 +152,7 @@ console.log(buton.innerHTML)
 
 
         window.scrollBy({
-            top: window.pageYOffset+200,
+            top: 200,
             behavior: 'smooth'
         });
 
@@ -258,7 +258,7 @@ document.querySelector('.choseSerial').addEventListener('click', function(){
 }else{
 
     window.scrollBy({
-        top: window.pageYOffset+200,
+        top: 200,
         behavior: 'smooth'
     });
 
