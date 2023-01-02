@@ -4536,6 +4536,8 @@ section.favorite
       @media screen and ( max-width: 900px  )
         margin-left: 0px
         margin-bottom: 20px
+      @media screen and ( max-width: 600px  )
+        padding: 32px 24px
      
       .main_price
         font-weight: 600
@@ -4544,6 +4546,11 @@ section.favorite
         color: #1B1C1B
         display: flex
         align-items: center
+
+        @media screen and ( max-width: 600px  )
+          font-weight: 600
+          font-size: 20px
+          line-height: 135%
       .buy_button
         background: linear-gradient(263.49deg, #A9FF35 0%, #BFFF3A 100%)
         border-radius: 4px
@@ -4566,7 +4573,7 @@ section.favorite
         align-content: space-around
         align-items: flex-start
         width: 100%
-        justify-content: space-evenly
+        justify-content: space-between
         margin-top: 30px
         @media screen and ( max-width: 450px  )
           margin-top: 0px
@@ -4605,7 +4612,7 @@ section.favorite
 
       .delivery
         display: flex
-        justify-content: space-around
+        justify-content: space-between
         flex-wrap: nowrap
         width: 100%
         align-items: flex-end
@@ -6128,6 +6135,8 @@ summary
       &.active
         background: linear-gradient(45deg, #2B3547 0%, #2B3547 0.01%, #3B414B 100%)
         color: white
+      @media screen and (max-width: 600px)
+        padding: 11.5px 24px
   .line_first
 
     margin-top: 24px
@@ -6212,6 +6221,8 @@ summary
     font-size: 24px
     line-height: 125%
     color: #202732
+    @media screen and (max-width: 600px)
+      font-size: 18px
     .close_trade
       background-image: url('../img/close_tradein.svg')
       width: 14px
@@ -6227,6 +6238,9 @@ summary
     width: 100%
     margin-top: 24px
     margin-bottom: 24px
+    @media screen and (max-width: 600px)
+      margin-top: 16px
+      margin-bottom: 16px
   .line_trade.last
     margin-bottom: 0px
 
@@ -6238,6 +6252,8 @@ summary
     font-size: 20px
     line-height: 135%
     color: #202732
+    @media screen and (max-width: 600px)
+      font-size: 18px
   .descr
     padding-bottom: 24px
     padding-top: 8px
@@ -6248,6 +6264,8 @@ summary
     line-height: 145%
     
     color: #8E9297
+    @media screen and (max-width: 600px)
+      font-size: 12px
     a
       color: #202732
       text-decoration: underline 
