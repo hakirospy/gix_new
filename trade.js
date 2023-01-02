@@ -38,8 +38,9 @@ if(document.querySelector('select[name="obemPhone"]').options.selectedIndex == 0
     document.querySelector('.choose_haracteristic').style.display = 'block';
     calculate();
     document.querySelector('.buy_block').style.position = 'relative';
+    if(window.innerWidth>800){
     window.scrollTo(0,500)
-    
+    }
 
 })
 // add to basket
@@ -66,16 +67,18 @@ document.querySelector('select[name="obemPhone"]').addEventListener('change', fu
    
     document.querySelector('.choose_trash').style.display = 'block';
     calculate();
+    if(window.innerWidth>800){
     window.scrollTo(0,600)
-
+    }
 })
 
 // select stay
 document.querySelector('select[name="stayPhone"]').addEventListener('change', function(){
     document.querySelector('.have_bags').style.display = 'block';
     calculate();
+    if(window.innerWidth>800){
     window.scrollTo(0,700)
-
+    }
 })
 
 // select bugs
@@ -86,8 +89,9 @@ console.log(buton.innerHTML)
     document.querySelectorAll('.have_bags  span')[1].classList.remove('active');
     buton.classList.add('active')
     if(buton.innerHTML == "Да")  {document.querySelector('.choose_serial_number').style.display = 'block';
-    
+    if(window.innerWidth>800){
     window.scrollTo(0,1000)}
+    }
 })
 })
 
@@ -182,6 +186,7 @@ async function getImei(imei) {
     .then((data) => {
         document.querySelector('.choseSerial').classList.remove('spinnerBtn')
         document.querySelector('.answer_text').innerHTML = data.result;
+        document.querySelector('.answer_text').style.display = 'block';
       
     })
      
