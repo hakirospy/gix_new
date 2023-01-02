@@ -131,6 +131,14 @@ function dataToOrder(){
 
 }
 
+//cut dot function
+
+function cutDot(price){
+
+return price.replace('.', "")
+
+}
+
 //calculate price
 
 function calculate(){
@@ -141,10 +149,10 @@ let bug2 =  document.querySelector('select[name="stayPhone"]').options[document.
 
 fetch('https://gix.ru/calculator/items.json?rt='+randomNum()).then((resp) => resp.json())
     .then((data) => {
-  let summa = parseInt(data.find(item => item.model == model).level5.replace('.', ""))
-   if(bug > 0) { summa = parseInt(data.find(item => item.model == model)['level'+bug].replace('.', ""))}
+  let summa = parseInt(cutDot(data.find(item => item.model == model).level5))
+   if(bug > 0) { summa = parseInt(cutDot(data.find(item => item.model == model)['level'+bug]))}
  
-   if(bug2 < 0) {summa = summa + parseInt(bug2.replace('.', ""))}
+   if(bug2 < 0) {summa = summa + parseInt(cutDot(bug2))}
    
 
     mainPrice( summa)
