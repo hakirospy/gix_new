@@ -40,7 +40,7 @@ if(document.querySelector('select[name="obemPhone"]').options.selectedIndex == 0
     document.querySelector('.buy_block').style.position = 'relative';
     if(window.innerWidth>800){
         window.scrollBy({
-            top: 100,
+            top: 50,
             behavior: 'smooth'
         });
 
@@ -59,7 +59,7 @@ function addToMainBasket(){
 let price = document.querySelector('.main_price').getAttribute('new-price');
 let sale = document.querySelector('.main_price').getAttribute('sale-price');
 let idTov = document.querySelector('.main_price').getAttribute('idTov');
-console.log(idTov);
+
 let allData = dataToOrder()+sale;
 fetch('https://gix.ru/calculator/addToBasket.php?'+idTov+'='+allData+'&price='+price).then((resp) => resp.text())
     .then((data) => {
@@ -82,7 +82,7 @@ document.querySelector('select[name="obemPhone"]').addEventListener('change', fu
 
 
     window.scrollBy({
-        top: 600,
+        top: 100,
         behavior: 'smooth'
     });
 
@@ -102,7 +102,7 @@ document.querySelector('select[name="stayPhone"]').addEventListener('change', fu
    
 
     window.scrollBy({
-        top: 700,
+        top: 100,
         behavior: 'smooth'
     });
 
