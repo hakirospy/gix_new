@@ -87,7 +87,7 @@ document.querySelector('select[name="stayPhone"]').addEventListener('change', fu
     window.scrollTo(0,700)
     }else{
 
-        window.scrollTo(0,window.pageYOffset+80)
+        window.scrollTo(0,window.pageYOffset+120)
 
     }
 })
@@ -103,7 +103,7 @@ console.log(buton.innerHTML)
     if(window.innerWidth>800){
     window.scrollTo(0,1000)}else{
 
-        window.scrollTo(0,window.pageYOffset+100)
+        window.scrollTo(0,window.pageYOffset+200)
 
     }
     }
