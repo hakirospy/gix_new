@@ -42,7 +42,7 @@ if(document.querySelector('select[name="obemPhone"]').options.selectedIndex == 0
     window.scrollTo(0,500)
     }else{
 
-        window.scrollTo(0,1000)
+        window.scrollTo(0,window.pageYOffset+20)
     }
 
 })
