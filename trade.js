@@ -134,6 +134,8 @@ function dataToOrder(){
 //cut dot function
 
 function cutDot(price){
+
+price = String(price)
 console.log(price)
 return price.replace('.', '');
 
