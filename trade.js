@@ -131,7 +131,7 @@ function dataToOrder(){
 
    return 'Model: '+telephone+';<br>Износ: '+grande+';<br>Состояние: '+sostoyaniy+";<br>Imei: "+document.querySelector('.changeSerial').value.trim()+";<br> Скидка: "
 
-}
+} 
 
 //cut dot function
 
