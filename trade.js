@@ -52,9 +52,11 @@ document.querySelector('.buy_button').addEventListener('click', function(){
 
 console.log(777);
 let price = document.querySelector('.main_price').getAttribute('new-price');
-console.log(price);
+
+let idTov = document.querySelector('.main_price').getAttribute('idTov');
+console.log(idTov);
 let allData = dataToOrder();
-fetch('https://gix.ru/calculator/addToBasket.php?data='+allData+"&price"+price).then((resp) => resp.text())
+fetch('https://gix.ru/calculator/addToBasket.php?'+idTov+'='+allData+"&price"+price).then((resp) => resp.text())
     .then((data) => {
 
 console.log(data)
@@ -136,7 +138,7 @@ function dataToOrder(){
 function cutDot(price){
 
 price = String(price)
-console.log(price)
+
 return price.replace('.', '');
 
 }
