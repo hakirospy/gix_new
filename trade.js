@@ -226,6 +226,22 @@ document.querySelector('.choseSerial').addEventListener('click', function(){
   document.querySelector('.choseSerial').classList.add('spinnerBtn')
     getImei(document.querySelector('.changeSerial').value.trim());
 
+    if(window.innerWidth>800){
+        window.scrollBy({
+            top: 200,
+            behavior: 'smooth'
+        });
+
+
+}else{
+
+        window.scrollTo(0,window.pageYOffset+200)
+
+    }
+    
+
+
+
 })
 
 
