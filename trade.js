@@ -39,7 +39,12 @@ if(document.querySelector('select[name="obemPhone"]').options.selectedIndex == 0
     calculate();
     document.querySelector('.buy_block').style.position = 'relative';
     if(window.innerWidth>800){
-    window.scrollTo(0,500)
+        window.scrollBy({
+            top: 500,
+            behavior: 'smooth'
+        });
+
+
     }else{
 
         window.scrollTo(0,window.pageYOffset+20)
@@ -73,7 +78,15 @@ document.querySelector('select[name="obemPhone"]').addEventListener('change', fu
     document.querySelector('.choose_trash').style.display = 'block';
     calculate();
     if(window.innerWidth>800){
-    window.scrollTo(0,600)
+    //window.scrollTo(0,600)
+
+
+    window.scrollBy({
+        top: 600,
+        behavior: 'smooth'
+    });
+
+
     }else{
 
         window.scrollTo(0,window.pageYOffset+20)
@@ -86,7 +99,13 @@ document.querySelector('select[name="stayPhone"]').addEventListener('change', fu
     document.querySelector('.have_bags').style.display = 'block';
     calculate();
     if(window.innerWidth>800){
-    window.scrollTo(0,700)
+   
+
+    window.scrollBy({
+        top: 700,
+        behavior: 'smooth'
+    });
+
     }else{
 
         window.scrollTo(0,window.pageYOffset+120)
@@ -102,8 +121,18 @@ console.log(buton.innerHTML)
     document.querySelectorAll('.have_bags  span')[1].classList.remove('active');
     buton.classList.add('active')
     if(buton.innerHTML == "Да")  {document.querySelector('.choose_serial_number').style.display = 'block';
+
+
+
+
     if(window.innerWidth>800){
-    window.scrollTo(0,1000)}else{
+        window.scrollBy({
+            top: 1000,
+            behavior: 'smooth'
+        });
+
+
+}else{
 
         window.scrollTo(0,window.pageYOffset+200)
 
