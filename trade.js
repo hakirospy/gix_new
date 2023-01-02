@@ -40,7 +40,7 @@ if(document.querySelector('select[name="obemPhone"]').options.selectedIndex == 0
     document.querySelector('.buy_block').style.position = 'relative';
     if(window.innerWidth>800){
         window.scrollBy({
-            top: 500,
+            top: 300,
             behavior: 'smooth'
         });
 
