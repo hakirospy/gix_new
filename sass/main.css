@@ -7411,15 +7411,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u736d8492;
-          animation-name: inline-u736d8492;
+  -webkit-animation-name: inline-u843b138e;
+          animation-name: inline-u843b138e;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u736d8492 {
+@-webkit-keyframes inline-u843b138e {
   0% {
     opacity: 0;
   }
@@ -7428,7 +7428,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u736d8492 {
+@keyframes inline-u843b138e {
   0% {
     opacity: 0;
   }
@@ -8780,6 +8780,12 @@ summary::marker {
   font-weight: 600;
   font-size: 20px;
   line-height: 135%;
+}
+
+@media screen and (max-width: 600px) {
+  .tradein .titlet {
+    font-size: 16px;
+  }
 }
 
 .tradein .descr {
