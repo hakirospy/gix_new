@@ -95,7 +95,7 @@ document.querySelector('select[name="obemPhone"]').addEventListener('change', fu
 
 
         window.scrollBy({
-            top: window.pageYOffset+20,
+            top: window.pageYOffset,
             behavior: 'smooth'
         });
       
