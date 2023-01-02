@@ -5,6 +5,22 @@
  document.querySelector('.tradeincalc').style.display = 'block';
  document.querySelector('.tradein').style.display = 'none';
 
+ if(window.innerWidth>800){
+    window.scrollBy({
+        top: 50,
+        behavior: 'smooth'
+    });
+
+
+}else{
+
+
+    window.scrollBy({
+        top: 100,
+        behavior: 'smooth'
+    });
+}
+
 })
 
 
