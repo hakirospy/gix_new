@@ -52,10 +52,10 @@ function addToMainBasket(){
 
 
 let price = document.querySelector('.main_price').getAttribute('new-price');
-
+let sale = document.querySelector('.main_price').getAttribute('sale-price');
 let idTov = document.querySelector('.main_price').getAttribute('idTov');
 console.log(idTov);
-let allData = dataToOrder();
+let allData = dataToOrder()+sale;
 fetch('https://gix.ru/calculator/addToBasket.php?'+idTov+'='+allData+'&price='+price).then((resp) => resp.text())
     .then((data) => {
 
