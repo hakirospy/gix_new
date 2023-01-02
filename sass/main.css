@@ -7412,15 +7412,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u5c616a89;
-          animation-name: inline-u5c616a89;
+  -webkit-animation-name: inline-u23f10664;
+          animation-name: inline-u23f10664;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u5c616a89 {
+@-webkit-keyframes inline-u23f10664 {
   0% {
     opacity: 0;
   }
@@ -7429,7 +7429,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u5c616a89 {
+@keyframes inline-u23f10664 {
   0% {
     opacity: 0;
   }
@@ -8865,6 +8865,12 @@ summary::marker {
   padding-left: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  .old_price_cart {
+    font-size: 14px;
+  }
+}
+
 .sales_trade {
   display: none;
   width: 100%;
@@ -9170,6 +9176,12 @@ summary::marker {
   padding: 25px;
   margin-top: 16px;
   position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  .tradeincalc .choseSerial {
+    padding: 16px 24px;
+  }
 }
 
 .tradeincalc .answer_text {
