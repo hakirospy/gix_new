@@ -48,7 +48,7 @@ if(document.querySelector('select[name="obemPhone"]').options.selectedIndex == 0
 })
 // add to basket
 
-document.querySelector('.buy_button').addEventListener('click', function(){
+function addToMainBasket(){
 
 
 let price = document.querySelector('.main_price').getAttribute('new-price');
@@ -61,10 +61,10 @@ fetch('https://gix.ru/calculator/addToBasket.php?'+idTov+'='+allData+"&price"+pr
 
 console.log(data)
 
-
+ 
     })
 
-})
+}
 // select RAM
 document.querySelector('select[name="obemPhone"]').addEventListener('change', function(){
 
