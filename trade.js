@@ -134,7 +134,7 @@ function dataToOrder(){
 //cut dot function
 
 function cutDot(price){
-
+console.log(price)
 return price.replace('.', '');
 
 }
