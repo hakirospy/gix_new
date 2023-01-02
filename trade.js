@@ -129,7 +129,7 @@ function dataToOrder(){
    let sostoyaniy = document.querySelector('select[name="stayPhone"]').options[document.querySelector('select[name="stayPhone"]').options.selectedIndex].text;
    let telephone = document.querySelector('select[name="modelPhone"]').options[document.querySelector('select[name="modelPhone"]').options.selectedIndex].text;
 
-   return telephone+';'+grande+';'+sostoyaniy+";"+document.querySelector('.changeSerial').value.trim()+";"
+   return 'Model: '+telephone+';<br>Износ: '+grande+';<br>Состояние: '+sostoyaniy+";<br>Imei: "+document.querySelector('.changeSerial').value.trim()+";<br> Скидка: "
 
 }
 
