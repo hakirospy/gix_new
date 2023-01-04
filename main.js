@@ -292,7 +292,7 @@ document.querySelector('.add_call').addEventListener('click', function(){
 })
 
 
-document.querySelectorAll('.submit_form').addEventListener('click', function(){
+document.querySelector('.submit_form').addEventListener('click', function(){
 
       document.querySelector('.invite').click();
       document.querySelector('.js-fa-phone i').click();
