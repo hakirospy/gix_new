@@ -293,12 +293,9 @@ document.querySelector('.add_call').addEventListener('click', function(){
 
 
 document.querySelector('.submit_form').addEventListener('click', function(elem){
-  
-  document.querySelectorAll('.submit_form input').forEach(elem=>{
+  document.querySelectorAll('.submit_form input')[0].blur();
+  document.querySelectorAll('.submit_form input')[1].blur();
 
-elem.blur();
-
-  })
 
 
 
