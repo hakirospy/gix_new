@@ -293,7 +293,15 @@ document.querySelector('.add_call').addEventListener('click', function(){
 
 
 document.querySelector('.submit_form').addEventListener('click', function(elem){
-  document.querySelector('.submit_form input').blur();
+  
+  document.querySelectorAll('.submit_form input').forEach(elem=>{
+
+elem.blur();
+
+  })
+
+
+
       document.querySelector('.invite').click();
       document.querySelector('.js-fa-phone i').click();
 
