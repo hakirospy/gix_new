@@ -2897,27 +2897,27 @@ footer .footer .contact_bottom span {
 
 footer .footer .contact_bottom .vkontacte {
   background-image: url("../img/vk_new.svg");
-  width: 10px;
-  height: 20px;
+  width: 16px;
+  height: 10px;
   margin-left: 4px;
 }
 
 footer .footer .contact_bottom .odnoklasniki {
   background-image: url("../img/ok_new.svg");
   width: 10px;
-  height: 20px;
+  height: 18px;
 }
 
 footer .footer .contact_bottom .rutub {
   background-image: url("../img/rutube_new.svg");
-  width: 10px;
-  height: 20px;
+  width: 17px;
+  height: 15px;
 }
 
 footer .footer .contact_bottom .telegram {
   background-image: url("../img/telegram_new.svg");
-  width: 10px;
-  height: 20px;
+  width: 16px;
+  height: 14px;
   margin-left: -6px;
 }
 
@@ -2937,7 +2937,7 @@ footer .footer .contact_bottom .instagram {
 footer .footer .contact_bottom .youtube {
   background-image: url("../img/youtube.svg");
   width: 18px;
-  height: 15px;
+  height: 14px;
 }
 
 footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtube, footer .footer .contact_bottom .instagram, footer .footer .contact_bottom .rutub, footer .footer .contact_bottom .telegram, footer .footer .contact_bottom .vkontacte, footer .footer .contact_bottom .odnoklasniki {
@@ -7446,15 +7446,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u11316b08;
-          animation-name: inline-u11316b08;
+  -webkit-animation-name: inline-u2a5f67d2;
+          animation-name: inline-u2a5f67d2;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u11316b08 {
+@-webkit-keyframes inline-u2a5f67d2 {
   0% {
     opacity: 0;
   }
@@ -7463,7 +7463,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u11316b08 {
+@keyframes inline-u2a5f67d2 {
   0% {
     opacity: 0;
   }
