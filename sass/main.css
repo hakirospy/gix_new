@@ -2651,7 +2651,6 @@ body.overflow_html {
   .offerta_text {
     margin-top: -25px;
     padding-bottom: 24px;
-    grid-column-end: 5;
   }
 }
 
@@ -7447,15 +7446,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-uc7d4e952;
-          animation-name: inline-uc7d4e952;
+  -webkit-animation-name: inline-ud8701da6;
+          animation-name: inline-ud8701da6;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-uc7d4e952 {
+@-webkit-keyframes inline-ud8701da6 {
   0% {
     opacity: 0;
   }
@@ -7464,7 +7463,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-uc7d4e952 {
+@keyframes inline-ud8701da6 {
   0% {
     opacity: 0;
   }
