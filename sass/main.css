@@ -2942,7 +2942,8 @@ footer .footer .contact_bottom .youtube {
 
 footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtube, footer .footer .contact_bottom .instagram, footer .footer .contact_bottom .rutub, footer .footer .contact_bottom .telegram, footer .footer .contact_bottom .vkontacte, footer .footer .contact_bottom .odnoklasniki {
   display: inline-block;
-  margin-right: 34px;
+  margin-right: 20px;
+  cursor: pointer;
 }
 
 @media (max-width: 700px) {
@@ -7446,15 +7447,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u2a5f67d2;
-          animation-name: inline-u2a5f67d2;
+  -webkit-animation-name: inline-uc7d4e952;
+          animation-name: inline-uc7d4e952;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u2a5f67d2 {
+@-webkit-keyframes inline-uc7d4e952 {
   0% {
     opacity: 0;
   }
@@ -7463,7 +7464,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u2a5f67d2 {
+@keyframes inline-uc7d4e952 {
   0% {
     opacity: 0;
   }
