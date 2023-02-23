@@ -194,6 +194,18 @@ function MoveMobileMenuWrapNext() {
 
 // menu 
 
+$(".item.dopmenu").on("click", function(){
+  
+  if(window.innerWidth>650){
+
+
+    window.location.assign($(this).attr('attr-link'));
+  }
+  
+  
+   })
+
+
 
 
 let cbox = document.querySelectorAll(".dopmenu");
@@ -220,7 +232,7 @@ return false
 
 
 document.querySelector('.button_menu').addEventListener('click', function(){
-    console.log(444)
+    
     
 if(document.querySelector('.button_menu').classList.contains('open') == false && document.querySelector('.back_menu').classList.contains('close') == false){
 
