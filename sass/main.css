@@ -7448,15 +7448,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u92053a6d;
-          animation-name: inline-u92053a6d;
+  -webkit-animation-name: inline-uca9bab7a;
+          animation-name: inline-uca9bab7a;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u92053a6d {
+@-webkit-keyframes inline-uca9bab7a {
   0% {
     opacity: 0;
   }
@@ -7465,7 +7465,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u92053a6d {
+@keyframes inline-uca9bab7a {
   0% {
     opacity: 0;
   }
@@ -9235,5 +9235,28 @@ summary::marker {
 
 .choose_serial_number, .choose_trash, .choose_haracteristic, .have_bags, .tradeincalc {
   display: none;
+}
+
+.mob_sort {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .mob_sort {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.mob_sort select {
+  border: none;
+  background: initial;
+  color: white;
+  line-height: 18px;
+  font-size: 12px;
 }
 /*# sourceMappingURL=main.css.map */
