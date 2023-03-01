@@ -7486,15 +7486,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u1cd73217;
-          animation-name: inline-u1cd73217;
+  -webkit-animation-name: inline-u72670fcf;
+          animation-name: inline-u72670fcf;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u1cd73217 {
+@-webkit-keyframes inline-u72670fcf {
   0% {
     opacity: 0;
   }
@@ -7503,7 +7503,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u1cd73217 {
+@keyframes inline-u72670fcf {
   0% {
     opacity: 0;
   }
@@ -9292,6 +9292,12 @@ summary::marker {
     color: white;
     line-height: 18px;
     font-size: 12px;
+  }
+  .mob_sort::after {
+    background: url("../img/strelka_sort_news.svg");
+    width: 10px;
+    height: 10px;
+    position: absolute;
   }
 }
 /*# sourceMappingURL=main.css.map */
