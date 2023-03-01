@@ -3108,6 +3108,12 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   margin-right: 33px;
 }
 
+@media (max-width: 420px) {
+  .news-main .text-main-news .desc {
+    margin-right: 16px;
+  }
+}
+
 .news-main .text-main-news .name {
   font-family: 'Montserrat';
   font-style: normal;
@@ -7474,15 +7480,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-ufd91169c;
-          animation-name: inline-ufd91169c;
+  -webkit-animation-name: inline-u92d96f50;
+          animation-name: inline-u92d96f50;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-ufd91169c {
+@-webkit-keyframes inline-u92d96f50 {
   0% {
     opacity: 0;
   }
@@ -7491,7 +7497,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-ufd91169c {
+@keyframes inline-u92d96f50 {
   0% {
     opacity: 0;
   }
