@@ -3156,10 +3156,24 @@ footer .footer .contact_bottom .facebook, footer .footer .contact_bottom .youtub
   font-size: 16px;
   line-height: 24px;
   cursor: pointer;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
   color: #FFFFFF;
   margin-bottom: 16px;
+}
+
+@media screen and (max-width: 650px) {
+  .news-main .news-main-block .filter-news .filter-clear {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.news-main .news-main-block .filter-news .filter-clear a {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .news-main .news-main-block .filter-news .filter-new-button {
@@ -7448,15 +7462,15 @@ summary::marker {
 }
 
 .details_cart_tab[open] .text {
-  -webkit-animation-name: inline-u704f6ac2;
-          animation-name: inline-u704f6ac2;
+  -webkit-animation-name: inline-u7024d9b4;
+          animation-name: inline-u7024d9b4;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes inline-u704f6ac2 {
+@-webkit-keyframes inline-u7024d9b4 {
   0% {
     opacity: 0;
   }
@@ -7465,7 +7479,7 @@ summary::marker {
   }
 }
 
-@keyframes inline-u704f6ac2 {
+@keyframes inline-u7024d9b4 {
   0% {
     opacity: 0;
   }

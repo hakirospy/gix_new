@@ -2341,10 +2341,14 @@ footer
         line-height: 24px
         cursor: pointer
 
-        text-decoration-line: underline 
+        
         color: $white-color
-
         margin-bottom: 16px
+        @media screen and (max-width: 650px)
+          display: flex
+          justify-content: space-between
+        a
+          text-decoration-line: underline 
 
       .filter-new-button
         background: $main-black-color
